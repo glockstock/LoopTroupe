@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coaster Credits — track every coaster you've ridden</title>
+<meta name="description" content="A roller coaster credit tracker for enthusiasts. Browse every coaster in every park in America, log your rides, and review them.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎢%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400..700&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#/">
+    <svg class="brand-mark" viewBox="0 0 26 24" shape-rendering="crispEdges" aria-hidden="true">
+      <rect x="1" y="16" width="2" height="8" fill="#f4ead0"/>
+      <rect x="6" y="10" width="2" height="14" fill="#f4ead0"/>
+      <rect x="11" y="5" width="2" height="19" fill="#f4ead0"/>
+      <rect x="16" y="10" width="2" height="14" fill="#f4ead0"/>
+      <rect x="21" y="16" width="2" height="8" fill="#f4ead0"/>
+      <rect x="-1" y="13" width="6" height="3" fill="#d1342c"/>
+      <rect x="4" y="7" width="6" height="3" fill="#d1342c"/>
+      <rect x="9" y="2" width="6" height="3" fill="#d1342c"/>
+      <rect x="14" y="7" width="6" height="3" fill="#d1342c"/>
+      <rect x="19" y="13" width="6" height="3" fill="#d1342c"/>
+    </svg>
+    <span>Coaster<em>Credits</em></span>
+  </a>
+  <nav class="nav" id="nav">
+    <a href="#/" data-route="home">Home</a>
+    <a href="#/parks" data-route="parks">Parks</a>
+    <a href="#/coasters" data-route="coasters">Coasters</a>
+    <a href="#/credits" data-route="credits">My Credits <span class="nav-count" id="navCount">0</span></a>
+  </nav>
+</header>
+
+<main id="view" class="view"></main>
+
+<footer class="footer">
+  <p>Built for coaster enthusiasts. Every park in America, one credit at a time.</p>
+  <p class="footer-fine">Ride data stays in your browser — <a href="#/credits">export it</a> any time. Park list curated from public coaster databases.</p>
+</footer>
+
+<div class="modal-backdrop" id="modalBackdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true" id="modal"></div>
+</div>
+
+<div class="toast-rail" id="toastRail"></div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
