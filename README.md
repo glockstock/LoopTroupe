@@ -24,7 +24,7 @@ parks for your legacy credits.
 The site is 100% static (no build step) and deploys automatically:
 
 1. Merge this branch into `main`.
-2. In the repo, go to **Settings → Pages** and set **Source** to **GitHub Actions**
+2. In the repo, go to **Settings → Pages** and check that **Source** is the `gh-pages` branch
    (one-time step).
 3. The included workflow (`.github/workflows/deploy.yml`) publishes the site on every
    push to `main`.
