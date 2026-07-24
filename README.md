@@ -1,6 +1,6 @@
-# 🎢 Coaster Credits
+# 🎢 Loop Troupe
 
-A roller coaster **credit tracker** for enthusiasts. Browse every roller coaster in
+Goodreads for roller coasters: a **credit tracker** for enthusiasts. Browse every roller coaster in
 every park in America, check off the ones you've ridden, rate them, and write ride
 reviews — all in a fast, beautiful static site.
 

@@ -1,4 +1,4 @@
-/* Coaster Credits — single-page app.
+/* Loop Troupe — single-page app.
    Data: js/data.js (COASTER_DB). Ride log lives in localStorage. */
 
 (() => {
