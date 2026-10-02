@@ -60,6 +60,12 @@ Later on 2026-10-02 the owner set a new focus, then was asked what "the free fun
 
 On the backend question ("When accounts do come, which backend should the engineering manager plan around?") the owner chose the option "Decide later": keep the free side without login for now.
 
+Later on 2026-10-02, after the map and stats spikes, the owner answered three multiple-choice questions. These are chosen options, not the owner's free text; the option wording is quoted as it was put to them.
+
+- Asked "Put the real OpenStreetMap layout on park pages, starting with Cedar Point? Going live means publishing the map data under OpenStreetMap's open license (ODbL) with a credit line on every map," the owner chose **"Yes, Cedar Point first."** The option said: "Polish Cedar Point to ship quality (better contrast for unridden coasters, smoother phone panning, per-park default view), put it on the park page, then add the other 4 parks one by one. Every other park keeps today's diorama. Map data is published openly with attribution, as the license requires."
+- Asked "The ride zoom-in and '3D model' you described: what style?", the owner chose **"Pixel now, 3D trial later."** The option said: "Ride pages get a pixel-art zoom-in that matches the maps now. After that ships, the art director tries a chunky voxel/low-poly 3D version of one ride in our retro palette; it only goes live if you like it. Any 3D ride is an artist's interpretation (no open data has real track heights or loops)."
+- Asked "Where should ride page stats (height, speed, length, inversions, G-force) come from?", the owner chose **"Wikidata + Wikipedia."** The option said: "Wikidata (public domain) plus Wikipedia ride infoboxes, which have far more stats including G-force for some rides. Wikipedia's license (CC BY-SA) means crediting Wikipedia on ride pages and offering the stats file under the same license. Missing values are shown as missing, never guessed."
+
 ## Vision
 
 Loop Troupe is two things under one retro theme-park roof:
@@ -92,8 +98,8 @@ Facts are sourced; lines marked *Read* are our interpretation. apps.apple.com, d
 - **Regional coaster parks are not empty.** Ride Ready covers 15 parks, including Cedar Point, Kings Island, Carowinds, Kings Dominion, several Six Flags parks, Canada's Wonderland, Busch Gardens, and Dollywood. It sells live waits, day plans, and alerts (reported $24.99 per 14-day Trip Pass, or monthly) and publishes free crowd calendars and strategy pages. Official park apps are free with maps and waits; wait-time history is free (queue-times.com, thrill-data.com); free blog guides are plentiful. ([Ride Ready](https://rideready.app/), [Cedar Point official app](https://apps.apple.com/us/app/offline-guide-cedar-point/id903730552), [queue-times](https://queue-times.com/parks/50/stats/2025), [Undercover Tourist](https://www.undercovertourist.com/blog/guide-cedar-point-ohio/))
   *Read:* "nobody serves regional parks" is not true. Our wedge is **enthusiast-grade, opinionated guides linked to your credit log** (which credits you still need, the order to get them, best seats, quirks), not live waits or generic tips. Whether people pay for a guide when free blogs exist remains the central unknown for the paid side; the owner has deferred testing it, so the guide track first builds an excellent guide, free.
 - **Forums exist.** CoasterForce, CoasterBuzz, park boards such as KI Central, Theme Park Review, r/rollercoasters. ([CoasterBuzz](https://coasterbuzz.com/Forums/Topic/cedar-point-early-entry-strategy/2), [KI Central](https://kicentral.com/forums/topic/18737-my-thoughts-on-cedar-point-vs-kings-island/))
-- **Open map data exists.** OpenStreetMap has coaster tagging (`roller_coaster=track`, `=station`, `=support`). ([OSM wiki](https://wiki.openstreetmap.org/wiki/Tag:roller_coaster=track)) The map spike is checking five parks (Cedar Point, Kings Island, Dollywood, Six Flags Magic Mountain, Knoebels); coverage elsewhere is unverified. OSM data is under the Open Database License, which requires attribution and share-alike for derived databases.
-- **Open ride stats are partial.** Wikidata (public domain, CC0) carries some coaster facts (height, speed, length, inversions, manufacturer); a spike is checking coverage. G-force is rarely published anywhere. The best-known stats database, RCDB, is copyrighted and off limits.
+- **Open map data exists.** OpenStreetMap has coaster tagging (`roller_coaster=track`, `=station`, `=support`). ([OSM wiki](https://wiki.openstreetmap.org/wiki/Tag:roller_coaster=track)) The map spike (branch `spike/osm-park-map`) linked real coaster track to our coaster IDs at five parks: Cedar Point 18 (every operating coaster), Six Flags Magic Mountain 16, Kings Island 14, Dollywood 8, Knoebels 5. Known gaps: generic ride shapes, low contrast for unridden coasters at overview, and 30–90 ms frames when panning. Coverage elsewhere is unverified. OSM data is under the Open Database License, which requires attribution and share-alike for derived databases.
+- **Open ride stats are partial.** The Wikidata spike (branch `spike/coaster-stats`; Wikidata is CC0, public domain) matched 462 of our 1,024 coasters. Manufacturer and type are good; height, speed, and length are on only about 4% of our coasters; Wikidata has no property for inversions or G-force. English Wikipedia's roller-coaster infobox carries more, including a G-force field (the spike found a numeric value in 311 of about 888 infobox articles worldwide; US coverage is a subset and not yet measured). Wikipedia is CC BY-SA 4.0 (attribution and share-alike). The best-known stats database, RCDB, is copyrighted and off limits.
 
 ## Approved direction
 
@@ -102,8 +108,11 @@ What the owner has asked for. Where later direction changes earlier direction, t
 ### Current focus (2026-10-02, latest)
 
 - **The free credits app, without login, comes first.** Owner: "I want to focus on the park map spike and and the free functionality," then chose "Better credits app now": make the free tracker more compelling with no login. The examples in the option the owner picked were richer stats and milestones, top-10 rankings, trip logs, shareable credit images, and faster back-logging. The scope and order are in Roadmap, "Now: the free credits app."
-- **Park pages show the actual layout of the park.** Owner: "The parks should show the actual layout of the park." Interactive, with "little tiny animations" (a car going down a drop), and clicking in "zooms in to the map" on a ride. The product team's approach: pixel-isometric maps generated from OpenStreetMap where coverage allows, with today's procedural dioramas as the fallback.
-- **Every ride gets its own page.** Clicking into a ride shows its stats (the owner named speed and G-force) and "the best videos available online." The owner also described "a 3d model" of the ride; what form that takes is an open owner decision (Q-012).
+- **Park pages show the actual layout of the park.** Owner: "The parks should show the actual layout of the park." Interactive, with "little tiny animations" (a car going down a drop), and clicking in "zooms in to the map" on a ride. The product team's approach: pixel-isometric maps generated from OpenStreetMap, with today's procedural dioramas everywhere a real map has not gone live.
+- **Real OpenStreetMap maps go live, Cedar Point first (2026-10-02).** Owner chose: "Yes, Cedar Point first." Approved: polish Cedar Point's map to ship quality (better contrast for unridden coasters, smoother phone panning, a per-park default view), put it on the Cedar Point park page, then add the other four spike parks (Kings Island, Dollywood, Six Flags Magic Mountain, Knoebels) one at a time. Every other park keeps today's diorama. Map data is published openly under the ODbL with a credit line on every map (resolves Q-035). Which parks come after the five is still open (Q-037, C1c).
+- **Every ride gets its own page.** Clicking into a ride shows its stats (the owner named speed and G-force) and "the best videos available online."
+- **Ride pages: pixel zoom-in now, 3D trial later (2026-10-02).** Owner chose: "Pixel now, 3D trial later." Approved: ride pages get a pixel-art zoom-in that matches the maps now. After that ships, `art_director` tries a chunky voxel or low-poly 3D version of one ride in the retro palette; it goes live only if the owner likes it. Any 3D ride is an artist's interpretation, because no open data has real track heights or loops, and is presented as one (resolves Q-012).
+- **Ride stats come from Wikidata plus Wikipedia (2026-10-02).** Owner chose: "Wikidata + Wikipedia." Approved: stats come from Wikidata (CC0) and English Wikipedia ride infoboxes (CC BY-SA), including G-force where Wikipedia has it. Ride pages credit Wikipedia, and the stats file is offered under CC BY-SA. Missing values are shown as missing, never guessed (resolves Q-036).
 - **Accounts and the backend are deferred.** Owner: "Decide later." The free side stays without login for now; riders' credits stay in their browser. Accounts remain the long-term direction ("You log in and log your rides"), but they are not scheduled and no backend is chosen (Q-001). This replaces the earlier order in which accounts followed the first guide.
 - **The Cedar Point guide continues on its own track.** It now waits on the owner's team to verify it, and runs in parallel with the credits-app work rather than ahead of it. Nothing about the guide is dropped.
 
@@ -118,15 +127,15 @@ What the owner has asked for. Where later direction changes earlier direction, t
 
 ### Owner interest, recorded but not scoped
 
-- **A "virtual model of the park" and "a 3d model" of each ride.** The owner has described this twice, pointing to play.mint.gg/complete-shelf as inspiration. The current plan honors the feeling (a living model you click into) in pixel-isometric form; whether and how to add real 3D is the owner's call (Q-012). A realistic 3D look would depart from the approved retro direction.
+- **A "virtual model of the park" and "a 3d model" of each ride.** The owner has described this twice, pointing to play.mint.gg/complete-shelf as inspiration. Now partly scoped (2026-10-02): the pixel zoom-in and a later stylized 3D trial of one ride are approved (Current focus). A 3D model of a whole park, 3D for every ride, and a realistic 3D look are not scoped; realistic 3D would depart from the approved retro direction.
 - **Semi-automatically generated maps, like Isometric NYC.** The owner liked how cannoneyed.com/isometric-nyc recreated a city in a sim-game style. We are pursuing the same goal procedurally from OpenStreetMap data rather than by restyling satellite or map imagery, which carries terms-of-service problems (spike notes in `spikes/osm-park-map/README.md` on its branch).
 - **"Some kind of interactive map based on YouTube videos of the park."** Recorded as owner interest. We will not download YouTube videos or extract frames from them to derive map data: YouTube's Terms of Service forbid downloading content except where YouTube expressly allows it, and forbid automated access such as scrapers. Videos stay official, tap-to-load embeds with creator credit (Guide content policy, item 3). A person on the team may still watch a public video as ordinary research to hand-correct a map detail (for example, which way a train leaves the station), and the owner's team may use its own photos and footage freely.
 - **Community input that improves guides** ("some kind of community forum"; Q-011).
 
-### Exploration under way (not commitments)
+### Exploration (not commitments)
 
-- **OpenStreetMap park map spike** (`art_director`, `coaster_data_curator`, branch `spike/osm-park-map`): real layouts for the five pilot parks in the pixel-isometric style, with ridden coasters colored. The main OSM API works for a handful of small requests, which is fine for a spike but not for all 298 parks under OSM's usage policy (Q-034).
-- **Open ride-stats spike** (`coaster_data_curator`): Wikidata (CC0) coverage for height, speed, length, inversions, and manufacturer (Q-036).
+- **OpenStreetMap park map spike: done** (`art_director`, `coaster_data_curator`, branch `spike/osm-park-map`). Real layouts for the five pilot parks in the pixel-isometric style, with ridden coasters colored (results in Market context). The owner approved taking it to production, Cedar Point first (C1b). The main OSM API works for a handful of small requests, which is fine for the pilot parks but not for all 298 parks under OSM's usage policy (Q-034).
+- **Open ride-stats spike: done** (`coaster_data_curator`, branch `spike/coaster-stats`). Wikidata coverage measured (results in Market context). The owner approved Wikidata plus Wikipedia as the stats sources (C1a). Next: measure Wikipedia infobox coverage for our US coasters.
 - **Accounts, backend, and payments options** (`engineering_manager`, `docs/proposals/accounts-and-payments.md`): reference only, paused while accounts are deferred (Q-001).
 
 ## Positioning (proposed)
@@ -149,17 +158,17 @@ The owner set the current focus on 2026-10-02: the free credits app without logi
 
 | When | Track | Status | What |
 | --- | --- | --- | --- |
-| Now | **Free credits app, no login** | Focus approved 2026-10-02. Feature order within it is proposed by `product_manager`. | C1 real park maps and ride pages (owner-named, first); then C2 faster back-logging, C3 stats and milestones, C4 top-10 rankings, C5 shareable credit images, C6 trip logs |
+| Now | **Free credits app, no login** | Focus approved 2026-10-02. C1's map order (Cedar Point, then the other four spike parks one at a time), pixel ride zoom-in, and stats sources approved 2026-10-02. Order of C2–C6 is proposed by `product_manager`. | C1 real park maps and ride pages (owner-named, first); then C2 faster back-logging, C3 stats and milestones, C4 top-10 rankings, C5 shareable credit images, C6 trip logs |
 | Now, in parallel | **Cedar Point guide** | Approved. Built as an unpublished draft; waiting on the owner's team to verify it. | Verification, sign-off, go-live (Q-030) |
-| When the owner decides | **3D experiment** | Owner decision (Q-012) | A time-boxed stylized 3D trial of one ride, only if the owner wants it |
+| After the pixel zoom-in ships | **3D trial** | Approved 2026-10-02 ("Pixel now, 3D trial later"); goes live only if the owner likes it | `art_director` tries a chunky voxel or low-poly 3D version of one ride in the retro palette |
 | Later | **Accounts and community credits** | Approved direction, deferred by the owner ("Decide later"); backend not chosen (Q-001) | Sign-in, cloud-saved credits, public profiles and reviews |
 | Later | **Community tips and more guides** | Proposed (Q-008, Q-011) | Structured tips; 2–4 more guide parks |
 | Later | **Guide layers on park maps** | Proposed | Gates, food picks, and ride-order routes from a guide drawn on its park's map |
 | Deferred by the owner | **Paid guide test** | Deferred (Q-007, Q-010, Q-020, Q-027) | Kept below for when monetization returns |
 
-Older documents use phase numbers. They map as follows: Phase 1 is the Cedar Point guide; Phase 2 is accounts and community credits; Phase 3 is community tips and more guides; Phase 4 (generated park maps) moved into the credits app now as C1, apart from guide layers; Phase 5 (ride zoom-in) moved into C1 in pixel-isometric form, apart from any 3D, which waits on Q-012.
+Older documents use phase numbers. They map as follows: Phase 1 is the Cedar Point guide; Phase 2 is accounts and community credits; Phase 3 is community tips and more guides; Phase 4 (generated park maps) moved into the credits app now as C1, apart from guide layers; Phase 5 (ride zoom-in) moved into C1 in pixel-isometric form; the 3D trial follows it (approved 2026-10-02).
 
-### Now: the free credits app (focus approved 2026-10-02; order proposed)
+### Now: the free credits app (focus and C1 approved 2026-10-02; order of C2–C6 proposed)
 
 - **Goal:** make Loop Troupe the most delightful place to keep your coaster credits without signing in. See your rides on the real layout of each park, open any ride for its stats and best videos, and watch your riding life add up.
 - **Why now:** the owner asked for it. It also matches the market: credits logging is crowded and mostly free, so the free side wins on feel and delight, not feature count (Market context). *Assumption:* no competitor offers animated, real-layout park maps in a retro game style; we have not checked every app.
@@ -170,11 +179,11 @@ Older documents use phase numbers. They map as follows: Phase 1 is the Cedar Poi
 1. **No login and no backend.** Ride data stays in the rider's browser. Nothing a rider logs is sent anywhere. New fields (for example a top-10 list) are included in backup export and import.
 2. **Credits are safe.** Coaster IDs never change. New storage is additive, and existing logs are never lost or overwritten. Any change to the ride-log storage schema is a big change under AGENTS.md: `engineering_manager` proposes it and the owner approves it first.
 3. **Logging stays fast.** Marking a coaster ridden from a park page stays one tap. Maps, animations, and ride pages never sit in the way of logging.
-4. **No third-party requests on page load.** Map and stats data are built ahead of time and shipped with the site. Riders' browsers never call OpenStreetMap or Wikidata. Videos load only when tapped.
-5. **Honest data.** Decorative art (a coaster's silhouette, a map's estimated hill heights) is never presented as ride data. Stats come only from sources we may use, with the source shown. Estimated values are never shown as fact. No data is copied from copyrighted databases such as RCDB.
+4. **No third-party requests on page load.** Map and stats data are built ahead of time and shipped with the site. Riders' browsers never call OpenStreetMap, Wikidata, or Wikipedia. Videos load only when tapped.
+5. **Honest data.** Decorative art (a coaster's silhouette, a map's estimated hill heights, a 3D interpretation) is never presented as ride data. Stats come only from the approved sources (Wikidata and Wikipedia), with the source shown. Missing values are shown as missing, never guessed or estimated. No data is copied from copyrighted databases such as RCDB.
 6. **The retro look, accessible.** Pixel-isometric, in the design guide's palette. Works at 390px, by keyboard, and with screen readers. Animations stop under `prefers-reduced-motion`.
 
-**Priority order (proposed).** C1 is first because the owner named it. The order of C2–C6 ranks rider value. Back-logging comes first because every other feature depends on a rider's history being entered.
+**Priority order.** C1 is first because the owner named it; within C1, Cedar Point's map goes live first and the other four pilot parks follow one at a time (approved 2026-10-02). The order of C2–C6 ranks rider value. Back-logging comes first because every other feature depends on a rider's history being entered.
 
 #### C1. Real park maps and ride pages (first; owner-named)
 
@@ -187,19 +196,32 @@ Requirements:
 1. **Reachable from everywhere a coaster appears:** park pages, the A–Z index, My Credits, search results, guides, and a tap on the park map. An unknown ID shows a friendly "ride not found" page with a way back.
 2. **Header:** the coaster's name, its park (linked), and the state. Its operating or retired status is shown only once the data supports it (Q-029).
 3. **Your ride:** the rider's own log in place. That means the ridden toggle, first-ride date, times ridden, star rating, and review, edited with the existing log dialog. Logging from the ride page is as fast as from a park page.
-4. **Pixel vignette:** a large pixel-art view of this coaster with a small animation (the train climbing and dropping), colored in when ridden and gray when not. In C1a it is today's sprite, enlarged and animated; once the park has a real map, it can be a zoomed view of the coaster from that map. It is decorative and never implies the ride's real shape or type.
-5. **Stats:** height, drop, speed, length, inversions, manufacturer, opening year, and wood or steel, shown only where an open source we may use has them (Wikidata, CC0, is the leading candidate; Q-036). Each value shows its source. A missing value is left out, never estimated. G-force appears only where an open source publishes it, which will be rare. US units first (feet, mph), with metric alongside.
+4. **Pixel zoom-in (approved 2026-10-02, "Pixel now, 3D trial later"):** a pixel-art zoom-in on this coaster that matches the maps, with a small animation (the train climbing and dropping), colored in when ridden and gray when not. Where the park has a real map, it is a zoomed view of the coaster from that map. Where it does not, it is today's diorama sprite, enlarged and animated, in the same pixel style. It is decorative and never implies the ride's real shape or type. A stylized 3D view of one ride follows later as a trial (see "After the pixel zoom-in ships: the 3D trial").
+5. **Stats (sources approved 2026-10-02, "Wikidata + Wikipedia"):** height, drop, speed, length, inversions, G-force, manufacturer, type, opening year, and wood or steel.
+   - **Sources:** Wikidata (CC0) and English Wikipedia ride infoboxes (CC BY-SA 4.0), linked to our coaster IDs through a curated table (no runtime name matching). Expect inversions and G-force to come only from Wikipedia, and G-force to be present for a minority of rides.
+   - **Missing values are shown as missing, never guessed.** A stat with no value from either source is shown with a clear "not known" marker (wording by `ux_content_designer`), not hidden and never estimated. A ride with no stats at all says so in one line rather than showing a grid of blanks (layout by `product_designer`).
+   - **Disagreements:** where Wikidata and Wikipedia disagree, `coaster_data_curator` decides which value is right, checking the primary source either one cites (for example the park's or manufacturer's page), before it ships; an unresolved conflict is shown as missing. We never look values up in RCDB or another database whose terms forbid reuse (Q-040).
+   - **Credit and license:** each value shows its source. Every ride page that shows a Wikipedia value credits Wikipedia and links to the article. The stats data ships in its own file, separate from `js/data.js`, and is offered under CC BY-SA 4.0 with a notice saying so. Wikidata is credited as good practice although CC0 does not require it.
+   - US units first (feet, mph), with metric alongside.
 6. **Best videos:** up to three hand-picked videos, on-ride POV first, then the best review or history video. Each uses the platform's official embed and loads only when the rider taps it. The creator's name and a link to the original are always shown. No downloading, clipping, or re-hosting (Guide content policy, item 3). Coasters with no picks yet show no empty video box. How picks scale beyond pilot parks is Q-038.
 7. **Phone first:** the page works at 390px, with "Your ride" near the top, stats compact, and videos below.
 
 Acceptance:
 
 - Every coaster in `js/data.js`, including defunct coasters, has a working page. Existing credits show correctly on it, and logging from it updates the park page, My Credits, and the map at once.
-- Each stat shown traces to an open source with its date checked. `coaster_data_curator` spot-checks 20 pages with no errors. No page shows an estimated value as fact.
+- Each stat shown traces to Wikidata or Wikipedia with its date checked. Missing values show as missing on every page. `coaster_data_curator` spot-checks 20 pages with no errors. No page shows an estimated value as fact.
+- Every page with a Wikipedia value carries the Wikipedia credit and article link, and the stats file is published with its CC BY-SA notice.
 - Video picks follow the content policy. Nothing loads from a video platform until the rider taps.
 - `qa_engineer` passes it with no change to existing ride logs or backups. `product_designer` reviews the page. `ux_content_designer` reviews the copy.
 
-**C1b. Real park layouts on park pages** (pilot: the five spike parks, Cedar Point first)
+**C1b. Real park layouts on park pages** (approved 2026-10-02, "Yes, Cedar Point first": Cedar Point, then the other four spike parks one at a time)
+
+Order and polish:
+
+- **Cedar Point first.** Before it goes live, polish the spike's Cedar Point map to ship quality: better contrast for unridden coasters at overview, smoother panning on phones, and a per-park default view. Then it replaces the diorama on the Cedar Point park page.
+- **Then the other four, one at a time.** Kings Island, Dollywood, Six Flags Magic Mountain, and Knoebels each go live separately, each passing the acceptance bar below on its own. Proposed order: Kings Island, Six Flags Magic Mountain, Dollywood, Knoebels (Kings Island is flat and well linked; Magic Mountain and Dollywood are hillside parks that need terrain work; Knoebels has the fewest coasters). `product_manager` may reorder for team visits or readiness.
+- **Every other park keeps today's diorama.**
+- **Generic ride shapes** (a known spike gap) do not block go-live as long as the layout is recognized and the shapes stay decorative; per-type silhouettes are later polish within the approved look.
 
 Requirements:
 
@@ -208,17 +230,18 @@ Requirements:
 3. **Tap a ride to zoom to it.** The map highlights the coaster, steps in to it, and shows its name, ridden status, and a link to its ride page. Pan, pinch or step zoom, and a reset view work by touch, mouse, and keyboard. A list of the park's coasters next to the map gives an accessible path to every ride.
 4. **Little animations.** Trains run their circuits: slow on the lift, quick down the drops, pausing in the station. Under reduced motion the trains park and the zoom jumps instead of stepping.
 5. **Coverage is visible.** Every operating coaster in `js/data.js` for that park is on the map, or marked as a signpost or listed as "not on the map yet." The map never hides a credit.
-6. **Credit and licensing.** "© OpenStreetMap contributors" is shown on the map, linked to the OSM copyright page. Map data ships in its own file per park under the ODbL, separate from `js/data.js` (Q-035).
+6. **Credit and licensing (approved 2026-10-02).** A credit line, "© OpenStreetMap contributors" linked to the OSM copyright page, is shown on every map. Map data, including our curated fixes layered on it, is published openly in its own file per park under the ODbL, separate from `js/data.js`.
 7. **Built ahead of time.** Map data is fetched and processed outside the site, within OSM's usage policies, and never fetched from riders' browsers (Q-034).
 
 Acceptance (per park, before its map goes live):
 
 - A member of the owner's team (or, for a park the team doesn't know, a regular visitor) recognizes the layout and confirms the coasters are in the right places.
 - Every operating coaster appears or is clearly listed as missing, and each one on the map links to the right coaster ID through a curated link table, not runtime name matching.
-- At 390px on a mid-range phone the overview is legible, zoom and pan work one-handed, and the page meets a load and frame-rate budget set by `web_performance_engineer`. Logging from the park page is no slower than today.
+- At 390px on a mid-range phone the overview is legible, with unridden coasters clearly visible against the ground; zoom and pan work one-handed and smoothly; the default view frames the park's coasters; and the page meets a load and frame-rate budget set by `web_performance_engineer` (the spike's 30–90 ms frames while panning do not meet it). Logging from the park page is no slower than today.
+- The OSM credit line shows on the map at every width, and the park's map-data file is published with its ODbL notice.
 - `product_designer`, `motion_ux_engineer`, and `qa_engineer` have reviewed it. `product_experience_reviewer` has walked "open a park, find a ride, log it, open its page" with no unresolved blocking findings.
 
-**C1c. More parks.** After the pilot, add real maps in the order set by Q-037. Proposed: parks with the most coasters, parks the owner's team visits, and the next guide parks. Each park must pass the same bar, and the procedural diorama remains for the rest. Scaling to all 298 parks depends on a bulk data path that respects OSM's usage policy (Q-034).
+**C1c. More parks.** After the five pilot parks, add real maps in the order set by Q-037 (still open). Proposed: parks with the most coasters, parks the owner's team visits, and the next guide parks. Each park must pass the same bar, and the procedural diorama remains for the rest. Scaling to all 298 parks depends on a bulk data path that respects OSM's usage policy (Q-034).
 
 #### C2. Faster back-logging (recommended first upgrade)
 
@@ -230,7 +253,7 @@ Acceptance (per park, before its map goes live):
 #### C3. Stats and milestones (recommended second)
 
 - **Why:** the North Star is riders feeling proud of their count. Milestones turn a number into moments, and they work with today's data.
-- **Requirements:** a stats view with credits by year (from first-ride dates), by state, and by park; parks completed; and total rides. Wood versus steel and manufacturer appear once open stats data covers enough coasters (Q-036). Milestones include credit counts (1, 10, 25, 50, 100, 150, 200, 250, 300, 400, 500, and so on), first and fifth completed park, number of states, and a first defunct (legacy) credit. Each is marked with a small pixel celebration that never blocks logging. Milestones are computed from local data, so they appear after back-logging. A big back-log shows one summary rather than twenty pop-ups.
+- **Requirements:** a stats view with credits by year (from first-ride dates), by state, and by park; parks completed; and total rides. Wood versus steel and manufacturer appear once the ride stats data (C1a) covers enough coasters. Milestones include credit counts (1, 10, 25, 50, 100, 150, 200, 250, 300, 400, 500, and so on), first and fifth completed park, number of states, and a first defunct (legacy) credit. Each is marked with a small pixel celebration that never blocks logging. Milestones are computed from local data, so they appear after back-logging. A big back-log shows one summary rather than twenty pop-ups.
 - **Acceptance:** numbers match My Credits exactly. Milestones appear for history entered in bulk and survive backup and restore. Credits are counted per coaster ID (relocations follow Q-002). The copy is reviewed by `ux_content_designer`.
 
 #### C4. Top-10 rankings
@@ -253,7 +276,7 @@ Acceptance (per park, before its map goes live):
 
 **Success measures (no analytics; the owner deferred measurement):** the owner's team back-logs their full histories and uses the maps on their next park visit. The team recognizes every pilot map. The 3–5 trusted riders recruited for the guide (or riders like them) say the maps and ride pages make them want to log more. No credit is ever lost (`qa_engineer`).
 
-**Non-goals for this track:** sign-in, accounts, cloud sync, and public profiles (deferred by the owner); leaderboards against other riders, feeds, or friends; analytics; real 3D, until the owner decides Q-012; stats from copyrighted databases or estimated stats shown as fact; maps derived from downloaded videos; live wait times; importing from other apps (later).
+**Non-goals for this track:** sign-in, accounts, cloud sync, and public profiles (deferred by the owner); leaderboards against other riders, feeds, or friends; analytics; any live 3D beyond the one-ride trial, and the trial itself until the owner approves it; stats from copyrighted databases, or guessed or estimated stats shown as fact; maps derived from downloaded videos; live wait times; importing from other apps (later).
 
 ### In parallel: the Cedar Point guide, free for now (approved; formerly Phase 1)
 
@@ -302,12 +325,14 @@ Deferred by the owner on 2026-10-02 ("I'm not worried about monetization and che
 - **Acceptance:** the guide meets its definition of done; purchase-to-access works end to end; measures recorded.
 - **If it fails:** guides stay free content that draws riders to the credits app, and paid scope goes back to the owner.
 
-### When the owner decides: a stylized 3D experiment (Q-012)
+### After the pixel zoom-in ships: the 3D trial (approved 2026-10-02)
 
 - **Owner interest:** "a virtual model of the park" and "a 3d model" of each ride, with stats.
-- **What we do now instead:** C1 delivers the experience the owner describes (a living park model with tiny animations, click a ride to zoom in, stats, and videos) in pixel-isometric form, inside the approved retro look.
-- **Proposed, if the owner wants it:** after C1's pilot, `art_director` leads a time-boxed experiment with one ride in stylized 3D: chunky voxels or low-poly in the site's palette, rendered at low resolution and scaled up with crisp pixels so it still reads as retro. It ships only if the owner approves the result. Known limits: open map data has track in plan view only, with no real heights, loops, or inversions, so any 3D ride is an artist's interpretation, not an accurate model. A 3D library adds page weight and is a new dependency that needs `engineering_manager`'s approval.
-- **Non-goals:** realistic 3D (it departs from the approved look) unless the owner chooses it; presenting an interpreted model as the real track.
+- **Owner chose:** "Pixel now, 3D trial later." The option said: "Ride pages get a pixel-art zoom-in that matches the maps now. After that ships, the art director tries a chunky voxel/low-poly 3D version of one ride in our retro palette; it only goes live if you like it. Any 3D ride is an artist's interpretation (no open data has real track heights or loops)."
+- **Approved:** once the pixel zoom-in on ride pages (C1a, requirement 4) has shipped, `art_director` makes a time-boxed trial of one ride in chunky voxel or low-poly 3D, in the site's retro palette. It goes live only if the owner likes the result. Any 3D ride is presented as an artist's interpretation, never as the real track: open data has track in plan view only, with no real heights, loops, or inversions.
+- **Proposed (product team):** the trial ride is a Cedar Point coaster, since Cedar Point's map is first and the owner's team knows the park; `art_director` picks which, with `product_manager`. Render at low resolution and scale up with crisp pixels so it still reads as retro. A 3D library adds page weight and is a new dependency that needs `engineering_manager`'s approval; like everything in this track it ships with the site and makes no third-party request. Keep logging one tap away; the 3D view never sits between the rider and the ridden toggle.
+- **Not scoped:** 3D for every ride or for whole parks (only if the owner approves the trial and asks for more); realistic 3D (departs from the approved look).
+- **Non-goals:** presenting an interpreted model as the real track.
 
 ### Later: accounts and community credits (approved direction; deferred by the owner; formerly Phase 2)
 
@@ -354,7 +379,7 @@ Live today. Nothing from the approved direction above has shipped yet. The Cedar
 
 ## Experience direction
 
-Retro late-1990s theme-park-tycoon feel: pixel fonts, beveled windows, grass and sky, isometric pixel-art coasters and parks, whimsical colors. Inspired by the genre without copying any game's assets or trademarks. Whimsy should never slow down logging a ride. Guides share the look but put readability first. Real park maps and ride pages use the same pixel-isometric language as today's dioramas: whole pixels, the site palette, small stepped animations. Whether a stylized 3D view is added later is the owner's call (Q-012); a realistic 3D view would depart from this direction and needs owner approval of representative screens.
+Retro late-1990s theme-park-tycoon feel: pixel fonts, beveled windows, grass and sky, isometric pixel-art coasters and parks, whimsical colors. Inspired by the genre without copying any game's assets or trademarks. Whimsy should never slow down logging a ride. Guides share the look but put readability first. Real park maps and ride pages use the same pixel-isometric language as today's dioramas: whole pixels, the site palette, small stepped animations. A stylized 3D trial of one ride (chunky voxel or low-poly in the retro palette) follows the pixel zoom-in and goes live only if the owner likes it (approved 2026-10-02); a realistic 3D view would depart from this direction and needs owner approval of representative screens.
 
 ## Non-goals (current)
 
@@ -368,9 +393,9 @@ Retro late-1990s theme-park-tycoon feel: pixel fonts, beveled windows, grass and
 - Native app-store apps (Q-016).
 - Downloading, re-hosting, or paywalling other creators' videos or writing, including downloading YouTube videos to derive map or ride data.
 - Ride stats copied from copyrighted databases (such as RCDB), or estimated stats presented as fact.
-- Realistic 3D, unless the owner chooses it (Q-012).
+- Realistic 3D, and live 3D beyond the approved one-ride trial, unless the owner chooses it.
 - Ads or selling rider data (proposed; Q-014).
 
-Changes on 2026-10-02: ride stats (from open sources only) and real park layouts are now in scope in the credits app track (C1). Accounts remain approved direction but are deferred, so they are a non-goal for now (Q-001).
+Changes on 2026-10-02: ride stats (from open sources only) and real park layouts are now in scope in the credits app track (C1). Accounts remain approved direction but are deferred, so they are a non-goal for now (Q-001). Later the same day the owner approved a one-ride stylized 3D trial after the pixel zoom-in, so only realistic 3D and 3D beyond that trial remain non-goals; and ride stats now come from Wikidata and Wikipedia (CC BY-SA), still never from RCDB.
 
 None of these are permanent rejections; changing them needs owner approval. See `docs/open_questions.md`.
