@@ -12,24 +12,32 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#view">Skip to content</a>
 
 <header class="topbar">
   <a class="brand" href="#/">
-    <svg class="brand-mark" viewBox="0 0 26 24" shape-rendering="crispEdges" aria-hidden="true">
-      <rect x="1" y="16" width="2" height="8" fill="#f4ead0"/>
-      <rect x="6" y="10" width="2" height="14" fill="#f4ead0"/>
-      <rect x="11" y="5" width="2" height="19" fill="#f4ead0"/>
-      <rect x="16" y="10" width="2" height="14" fill="#f4ead0"/>
-      <rect x="21" y="16" width="2" height="8" fill="#f4ead0"/>
-      <rect x="-1" y="13" width="6" height="3" fill="#d1342c"/>
-      <rect x="4" y="7" width="6" height="3" fill="#d1342c"/>
-      <rect x="9" y="2" width="6" height="3" fill="#d1342c"/>
-      <rect x="14" y="7" width="6" height="3" fill="#d1342c"/>
-      <rect x="19" y="13" width="6" height="3" fill="#d1342c"/>
+    <svg class="brand-mark" viewBox="0 0 16 14" shape-rendering="crispEdges" aria-hidden="true">
+      <rect x="6" y="3" width="4" height="1" fill="#d1342c"/>
+      <rect x="5" y="4" width="1" height="1" fill="#d1342c"/>
+      <rect x="10" y="4" width="1" height="1" fill="#d1342c"/>
+      <rect x="4" y="5" width="1" height="4" fill="#d1342c"/>
+      <rect x="11" y="5" width="1" height="4" fill="#d1342c"/>
+      <rect x="5" y="9" width="1" height="1" fill="#d1342c"/>
+      <rect x="10" y="9" width="1" height="1" fill="#d1342c"/>
+      <rect x="6" y="10" width="1" height="1" fill="#d1342c"/>
+      <rect x="9" y="10" width="1" height="1" fill="#d1342c"/>
+      <rect x="0" y="11" width="16" height="1" fill="#d1342c"/>
+      <rect x="0" y="12" width="16" height="1" fill="#8f1f19"/>
+      <rect x="2" y="13" width="1" height="1" fill="#f4ead0"/>
+      <rect x="13" y="13" width="1" height="1" fill="#f4ead0"/>
+      <rect x="7" y="13" width="2" height="1" fill="#f4ead0"/>
+      <rect x="6" y="1" width="4" height="2" fill="#f2b71f"/>
+      <rect x="6" y="2" width="1" height="1" fill="#8f1f19"/>
+      <rect x="9" y="2" width="1" height="1" fill="#8f1f19"/>
     </svg>
     <span>Loop<em>Troupe</em></span>
   </a>
-  <nav class="nav" id="nav">
+  <nav class="nav" id="nav" aria-label="Main">
     <a href="#/" data-route="home">Home</a>
     <a href="#/parks" data-route="parks">Parks</a>
     <a href="#/coasters" data-route="coasters">Coasters</a>
@@ -37,7 +45,7 @@
   </nav>
 </header>
 
-<main id="view" class="view"></main>
+<main id="view" class="view" tabindex="-1"></main>
 
 <footer class="footer">
   <p>Loop Troupe — built for coaster enthusiasts. Every park in America, one credit at a time.</p>
@@ -45,10 +53,10 @@
 </footer>
 
 <div class="modal-backdrop" id="modalBackdrop" hidden>
-  <div class="modal" role="dialog" aria-modal="true" id="modal"></div>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1" id="modal"></div>
 </div>
 
-<div class="toast-rail" id="toastRail"></div>
+<div class="toast-rail" id="toastRail" role="status" aria-live="polite"></div>
 
 <script src="js/data.js"></script>
 <script src="js/app.js"></script>

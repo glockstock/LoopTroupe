@@ -21,15 +21,9 @@ parks for your legacy credits.
 
 ## Hosting on GitHub Pages
 
-The site is 100% static (no build step) and deploys automatically:
-
-1. Merge this branch into `main`.
-2. In the repo, go to **Settings → Pages** and check that **Source** is the `gh-pages` branch
-   (one-time step).
-3. The included workflow (`.github/workflows/deploy.yml`) publishes the site on every
-   push to `main`.
-
-Your site will be live at `https://<username>.github.io/LoopTroupe/`.
+Live at **https://glockstock.github.io/LoopTroupe/**. The site is 100% static (no build
+step): every push to `main` runs `.github/workflows/deploy.yml`, which publishes the
+repository to the `gh-pages` branch that GitHub Pages serves. A push to `main` is a release.
 
 ## Development
 
@@ -44,14 +38,22 @@ python3 -m http.server 8000
 
 ```
 index.html          app shell
-css/style.css       design system
+css/style.css       design system (tokens + components)
 js/data.js          the coaster database (parks → coasters)
-js/app.js           SPA logic: routing, views, ride log, backup
+js/app.js           SPA logic: routing, views, ride log, pixel scenes, backup
+docs/               product spec, technical spec, design guide, open questions
+.codex/agents/      specialist agent fleet (Codex)
+.claude/agents/     the same specialists for Claude Code
+AGENTS.md           who owns what, and how agents route work
 ```
+
+Start with `AGENTS.md`, then `docs/spec.md` (what we're building), `docs/tech_spec.md`
+(how it's built), and `docs/design_guide.md` (the retro design language).
 
 ## Data notes
 
 The park/coaster list was curated from a September 2024 public coaster-database
 snapshot, filtered to US parks, with notable 2025 additions (e.g. Universal Epic
 Universe) added by hand. Spotted a missing or misplaced coaster? Edit `js/data.js` —
-each park is a small JSON object — and open a PR.
+each park is a small JSON object — and open a PR. Never change an existing coaster
+`id`: riders' saved credits are stored under it.
