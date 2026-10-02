@@ -95,7 +95,9 @@ Rules:
 | Toast | `.toast` | Wood plaque, bottom center, announced via `role="status"`. Sits above the guide dock on phones. |
 | Guide card | `.guide-card.window` | On a park page, directly under the back link (above the park head, so it is visible without scrolling past the diorama): map icon in an inset well, "Park guide" kicker, title, one line, and a primary "Open the guide". Shown only when the guide is published, or with `?preview` (then with a Draft preview badge). |
 | Status badges | `.badge-draft`, `.badge-unconfirmed`, `.badge-estimate`, `.badge-new`, `.badge-ridden` | Extensions of `.badge`. Draft is dashed purple; Unconfirmed is orange with ink text; Estimate is pale blue; New credit is yellow; Ridden is green with a pixel check. |
-| Visually hidden | `.visually-hidden` | Screen-reader-only text (for example "Checklist:" on the dock, video titles on Play buttons). |
+| Visually hidden | `.visually-hidden` | Screen-reader-only text (for example "Checklist:" on the dock, video titles on Play buttons, "Source:" on stat tiles). |
+| Ride link | `a.ride-link` | Every coaster name outside its own ride page links to `#/coaster/<id>`: rows (`coasterRow`), credit entries, Recently logged, guide plan steps (`a.g-step-ride`) and legacy lines. Ink text with a 2px underline at 30% ink that goes solid on hover. In rows its hit area stretches over the whole name-and-meta column (`::after`, positioned on `.coaster-info`/`.credit-body`), so the toggle and Log/Edit keep their own targets and the park link in the meta line sits above it (`z-index: 1`). Never wrap a row's toggle or button in the link. |
+| Fact tile | `.g-fact`, `.ride-fact`, `.ride-stat` | One inset field tile (inset bevel, `--field`) with an uppercase Pixelify label. Shared by guide facts, the ride log, and ride stats; extend the shared selector rather than restyling a copy. |
 
 ## 4. Pixel art and isometric scenes
 
@@ -106,7 +108,8 @@ Rules:
 
 ### Coaster sprites
 - Six original silhouettes are generated procedurally by walking a track circuit over a 2×2-tile plot with a height profile: `woodie` (dense lattice supports, camelbacks), `looper` (vertical loop), `hyper` (tall lift and drop), `launch` (flat launch into a top hat), `junior` (low and compact), and `mouse` (switchback rows).
-- A silhouette is chosen from name cues (for example "mouse", "kiddie", "junior") and otherwise from a stable hash of the coaster id. **It is decorative, not data.** It must not be presented as the ride's real type; ride stats are a product non-goal.
+- A silhouette is chosen from name cues (for example "mouse", "kiddie", "junior") and otherwise from a stable hash of the coaster id. **It is decorative, not data.** It must not be presented as the ride's real type, height or layout, even on a ride page that shows real stats beside it (section 9).
+- `spritePrims(spec, { train })` returns the sprite's depth-tagged pieces; `coasterSprite()` sorts and joins them. The ride page asks for them without the parked train so it can animate its own.
 - Sprite parts take colors from CSS variables: `--tc` (track), `--tcd` (track shade), `--sup` (supports), `--car` and `--card` (train). Each sprite has a station roof in the track color and, when ridden, a cream train.
 - Draw order uses the painter's algorithm by iso depth (u + v) inside each sprite and across a scene.
 
@@ -118,7 +121,7 @@ Rules:
 - Each coaster carries a `<title>` (name and "ridden") for hover. The scene `<svg>` has `role="img"` and a label summarizing progress.
 
 ### Performance rule
-- Large repeated lists (park cards, empty states, page-head art) use **cached blob-URL `<img>` islands** (`islandSrc`), one per silhouette and color, rather than live `<use>` clones. Live `<use>` sprites are reserved for single dioramas. In testing, 298 cards with live sprites cost about 2s per search keystroke; images cost about 100ms.
+- Large repeated lists (park cards, empty states, page-head art) use **cached blob-URL `<img>` islands** (`islandSrc`), one per silhouette and color, rather than live `<use>` clones. Live `<use>` sprites are reserved for single dioramas and the one live sprite on a ride page. In testing, 298 cards with live sprites cost about 2s per search keystroke; images cost about 100ms.
 - Keep small icons to a single `<path>` or a `<symbol>` reference. Do not repeat multi-rect inline SVGs across 1,000 rows.
 
 ### Scenery and icons
@@ -130,6 +133,7 @@ Rules:
 
 - Motion is ambient or confirms feedback. It never blocks or delays an action.
 - Ambient: pixel clouds drift slowly (80 to 150s) across sky panels, behind the content.
+- Ride page train: three cars step round the sprite's circuit at 10 steps a second on whole pixels (slow up the chain lift, faster the lower it gets, a 1.2 s pause in the station; launch silhouettes skip the slow lift). It parks where dioramas park it under reduced motion, pauses while the tab is hidden or the picture is off screen, and stops itself once its page is gone.
 - Feedback: buttons press 2px. Cards lift 2px on hover (`steps(2)`). Progress fills step with `steps(10)`. Toasts step in and out with `steps(3)`.
 - Prefer `steps()` timing over smooth easing. Movement snaps like sprite animation.
 - `prefers-reduced-motion: reduce` stops the clouds (parked in fixed positions), removes transitions and animations, and turns off smooth scrolling.
@@ -193,3 +197,35 @@ Guides (`#/guide/<park-id>[/<section-id>]`, contract in `docs/tech_spec.md`, "Pa
 ### Navigation behavior
 - Section links are real routes (`#/guide/<park>/<section>`), so every section is shareable. When the guide is already on screen, the router scrolls instead of re-rendering, puts the section heading 12px under the top bar, and focuses it (`tabindex="-1"`). Re-tapping the current section's link scrolls back to it.
 - In preview, every in-guide link and the back link keep `?preview`.
+
+## 9. Ride pages
+
+Ride pages (`#/coaster/<coaster-id>`, contract in `docs/tech_spec.md`, "Ride pages (C1a)" and "Ride stats file contract (v1)") exist for every coaster in `js/data.js`, retired ones included. They answer "have I ridden it, and what is it?" in that order, so on a phone the rider's own log comes before anything decorative.
+
+### Page anatomy (this order at every width)
+1. **Back link** to the park (ink plaque).
+2. **Ride head** (`.ride-head.sky`): "Roller coaster" kicker, outlined h1, then a meta line with the state tag, the park (linked) and city. A defunct park adds the existing `badge-defunct` ("Defunct park"), which comes from park data. **No operating or closed status for the coaster itself** until the data supports it (Q-029, T-4); the stats file's `closed` field is never shown.
+3. **Your ride** (`.ride-you.window`): the standard coaster row (`coasterRow(id, { link: false, detail: false })`) with "In your credits" or "Not ridden yet" in the meta line, so the toggle, Log ride/Edit and the dialog behave exactly as everywhere else. Below it (`.ride-log`): three fact tiles (first ridden, times ridden, your rating), then the full review in the reading font with the coaster's track-color stripe (`.ride-review`), or "No review yet" with a secondary **Write a review** button. Unridden: one muted hint line. Logging redraws only this block and recolors the picture; focus stays on the same control (Edit after the first review is saved).
+4. **Pixel view** (`figure.ride-view.window`, "Pixel view"): see below.
+5. **Ride stats** (`.ride-stats.window`): see below.
+6. **Videos:** only when picks exist (Q-038). No empty box, ever.
+
+From 960px the pixel view (432px column) and the stats sit side by side; below that they stack.
+
+### Pixel view
+- One function, `rideView(c)`, decides what draws the picture and returns `{ html, mount(figure), refresh() }`. Today it is always the sprite view; a coaster on a published park map will get the map vignette there, falling back to the sprite. Whatever it returns reserves its final size on first paint.
+- Sprite view: the coaster's diorama silhouette (`shapeOf(id)`) on its own island (plot on a footpath, two trees, a bush, flowers, two guests) over a sky panel, drawn at **whole-pixel scale**: `--px` 2 up to 360px, 3 up to 759px, 4 from 760px (one art pixel = `--px` CSS pixels).
+- Colored when ridden; gray ghost track when not. Unlike dioramas, the ghost keeps a pale train (`#ece6d6` over `#7f7a6e`) so every ride page has its little animation.
+- A visible caption always says it is an illustration: "Illustration, not the real track." plus the color rule ("In color: it's one of your credits." / "Gray until you ride it."). The SVG has `role="img"` and a label with the name and ridden state.
+
+### Stats panel
+- `js/stats.json` loads once, on the first ride page; the rest of the page never waits for it. States: "Loading ride stats…" (`role="status"`); stats; one line when the file is missing or unreadable ("Ride stats aren't available yet."); a network failure line with **Retry**.
+- **Core rows always show** (height, top speed, track length, inversions, G-force, wood or steel, manufacturer, opened). Drop, ride time, type, designer and model show only when present. A missing core value is a dashed tile reading **"Not in open data"**: the words carry the meaning, the dashed edge echoes it. Never estimate or hide it.
+- **A coaster with no usable values gets one line**, not a grid of blanks: "No stats for this ride yet. We only show figures from open data (Wikipedia and Wikidata), and it doesn't cover this one yet."
+- **Numbers are tiles, names are rows.** Measurements (height, drop, speed, length, inversions, G-force, ride time) are compact tiles (`.ride-stat`) in an auto-fill grid: label, value in Pixelify 700, the other unit on its own muted line, then the source in words ("Wikipedia" or "Wikidata", with visually hidden "Source:"). Names and dates (wood or steel, type, manufacturer, designer, model, opened) follow as full-width rows (`.ride-stat.is-row`: label, value, source on one line; value on its own line below 480px), because maker names such as "Rocky Mountain Construction" would otherwise break mid-word in a phone tile. **Imperial first.** The unit the source published shows its figure verbatim (thousands separators added); the other is converted (ft, mph, km/h whole; m to one decimal).
+- A value counts only when its source is a complete reference (Wikipedia: `en`, title, integer revision; Wikidata: a `Q` number). Otherwise it is shown as missing. A ref's `lang` and `retrieved` fall back to the file-level defaults when the coaster's own ref leaves them out.
+- **Credit line** under the tiles, in the reading font, naming only the sources actually shown: the Wikipedia article linked to the exact revision, "by Wikipedia contributors, licensed CC BY-SA 4.0", "and from Wikidata (CC0)" when used, "Units converted by Loop Troupe.", and "Checked <oldest retrieval date>."
+- **Escaping:** every string from the file is escaped. Links are built only from the QID, the URL-encoded title and the integer revision; no URL in the file is ever used (not even `licenseUrl`).
+
+### Not found
+An unknown ID shows an empty-state window: gray sprite, "Ride not found", one line, and one primary action. That action goes to the park when the part before `--` is a real park ID ("Go to <park>", plus a text link to every coaster), otherwise to the A–Z index. The page never guesses which coaster was meant.

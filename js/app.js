@@ -187,7 +187,9 @@
       every: 3, train: 2, kf: [[0, 3], [.1, 17], [.62, 13], [.72, 6], [.86, 3], [1, 3]] },
   };
 
-  function coasterSprite(spec) {
+  // Depth-tagged primitives ({ d, s }), unsorted. `train: false` leaves out the
+  // parked train, for the ride page, which animates its own.
+  function spritePrims(spec, { train = true } = {}) {
     const prims = [];
     const { path, kf } = spec;
     const N = path.length;
@@ -213,7 +215,7 @@
     }
     // train: three cars just past the lift
     const t0 = Math.round(N * .08) + spec.train;
-    for (let k = 0; k < 3; k++) {
+    for (let k = 0; train && k < 3; k++) {
       const [u, v] = path[(t0 + k * 3) % N];
       const [x, y] = scr(u, v, hs[(t0 + k * 3) % N]);
       prims.push({ d: u + v + .3, s: R(x - 2, y - 4, 4, 3, 'var(--car)') + R(x - 2, y - 2, 4, 1, 'var(--card)') });
@@ -234,9 +236,10 @@
     prims.push({ d: su + sv + 3, s: `<polygon points="${rp(-2)}" fill="var(--tcd)"/><polygon points="${rp(0)}" fill="var(--tc)"/>` +
       R(...scr(su, sv + 2, 0).map((n, j) => j ? n - 8 : n), 1, 8, 'var(--sup)') +
       R(...scr(su + 6, sv + 2, 0).map((n, j) => j ? n - 8 : n), 1, 8, 'var(--sup)') });
-    prims.sort((a, b) => a.d - b.d);
-    return prims.map(p => p.s).join('');
+    return prims;
   }
+
+  const coasterSprite = spec => spritePrims(spec).sort((a, b) => a.d - b.d).map(p => p.s).join('');
 
   // Scenery is front-facing pixel art anchored at its ground point (0,0).
   const SCENERY = {
@@ -465,7 +468,7 @@
     const { parts, params } = parseHash();
     const page = parts[0] || 'home';
     // a park guide is a park sub-page, so it highlights Parks
-    const navPage = page === 'park' || page === 'guide' ? 'parks' : page;
+    const navPage = page === 'park' || page === 'guide' ? 'parks' : page === 'coaster' ? 'coasters' : page;
     document.querySelectorAll('.nav a').forEach(a => {
       const on = a.dataset.route === navPage;
       a.classList.toggle('active', on);
@@ -485,6 +488,7 @@
     else if (page === 'parks') renderParks(params);
     else if (page === 'park' && parts[1]) renderPark(parts[1], params);
     else if (page === 'guide' && parts[1]) renderGuide(parts[1], parts[2], params);
+    else if (page === 'coaster') renderCoaster(parts[1] || '');
     else if (page === 'coasters') renderCoasters(params);
     else if (page === 'credits') renderCredits();
     else renderHome();
@@ -572,7 +576,7 @@
           if (!c) return '';
           return `<div class="coaster-row ridden static" style="--tc:${colorOf.get(id)}">
             <div class="coaster-info">
-              <div class="cname">${esc(c.name)}</div>
+              <div class="cname">${rideLink(id, esc(c.name))}</div>
               <div class="csub"><a href="#/park/${c.park.id}">${esc(c.park.name)}</a><span>${fmtDate(r.date)}</span></div>
               ${r.rating ? stars(r.rating) : ''}
               ${r.review ? `<div class="review-snippet">“${esc(r.review)}”</div>` : ''}
@@ -756,21 +760,28 @@
 
   let parkRedraw = null;
 
+  // A coaster name that opens its ride page. `label` is already escaped. In rows
+  // the link's hit area stretches over the whole name-and-meta column (CSS).
+  const rideLink = (id, label, cls = 'ride-link') => `<a class="${cls}" href="#/coaster/${id}">${label}</a>`;
+
   const CHECK_SVG = `<svg viewBox="0 0 11 10" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="${
     [[0, 4], [1, 5], [2, 6], [3, 5], [4, 4], [5, 3], [6, 2], [7, 1], [8, 0]].map(([x, y]) => `M${x + 1} ${y + 1}h2v3h-2z`).join('')}"/></svg>`;
 
   // `sub` is extra markup (already escaped) shown first in the meta line, used by
-  // park guides for rank and "New credit" badges.
-  function coasterRow(id, { showPark = false, sub = '' } = {}) {
+  // park guides for rank and "New credit" badges. The name links to the ride
+  // page (`link: false` on the ride page itself); `detail: false` leaves out the
+  // date, count, stars and review, which the ride page shows in full.
+  function coasterRow(id, { showPark = false, sub = '', link = true, detail = true } = {}) {
     const c = coasterById.get(id);
-    const r = rides[id];
+    const r = detail ? rides[id] : null;
+    const ridden = !!rides[id];
     const name = esc(c.name);
-    return `<div class="coaster-row${r ? ' ridden' : ''}" data-id="${id}" style="--tc:${colorOf.get(id)}">
-      <button class="ride-toggle" type="button" aria-pressed="${!!r}" title="${r ? 'Ridden — click to edit or remove' : 'Mark as ridden'}" aria-label="${r ? `${name}: ridden, edit` : `Mark ${name} as ridden`}">
+    return `<div class="coaster-row${ridden ? ' ridden' : ''}" data-id="${id}" style="--tc:${colorOf.get(id)}">
+      <button class="ride-toggle" type="button" aria-pressed="${ridden}" title="${ridden ? 'Ridden — click to edit or remove' : 'Mark as ridden'}" aria-label="${ridden ? `${name}: ridden, edit` : `Mark ${name} as ridden`}">
         ${CHECK_SVG}
       </button>
       <div class="coaster-info">
-        <div class="cname">${name}</div>
+        <div class="cname">${link ? rideLink(id, name) : name}</div>
         <div class="csub">
           ${sub}
           ${showPark ? `<a href="#/park/${c.park.id}">${esc(c.park.name)}</a><span>${c.park.state}</span>` : ''}
@@ -780,7 +791,7 @@
         ${r?.rating ? stars(r.rating) : ''}
         ${r?.review ? `<div class="review-snippet">“${esc(r.review)}”</div>` : ''}
       </div>
-      <button class="icon-btn row-log" type="button" aria-label="${r ? `Edit ${name}` : `Log a ride on ${name}`}">${r ? 'Edit' : 'Log ride'}</button>
+      <button class="icon-btn row-log" type="button" aria-label="${ridden ? `Edit ${name}` : `Log a ride on ${name}`}">${ridden ? 'Edit' : 'Log ride'}</button>
     </div>`;
   }
 
@@ -886,7 +897,7 @@
         <div class="credit-entry" data-id="${e.id}" style="--tc:${colorOf.get(e.id)}">
           <div class="credit-num">#${entries.length - i}</div>
           <div class="credit-body">
-            <div class="cname">${esc(e.c.name)}</div>
+            <div class="cname">${rideLink(e.id, esc(e.c.name))}</div>
             <div class="csub">
               <a href="#/park/${e.c.park.id}">${esc(e.c.park.name)}</a><span>${e.c.park.state}</span>${e.r.date ? `<span>${fmtDate(e.r.date)}</span>` : ''}${(e.r.count || 1) > 1 ? `<span>×${e.r.count} rides</span>` : ''}
             </div>
@@ -964,6 +975,388 @@
     };
     reader.readAsText(file);
     e.target.value = '';
+  }
+
+  // ---------- ride pages ----------
+  // Contract: docs/tech_spec.md, "Ride pages (C1a)" and "Ride stats file contract
+  // (v1)". #/coaster/<coaster-id> shows a header, the rider's own log (the same
+  // coasterRow()/bindRows()/log dialog as everywhere, so the ride-log format is
+  // unchanged), a pixel view, the stats panel and, once picks exist, videos.
+
+  let coasterRedraw = null;
+
+  function renderCoaster(id) {
+    coasterRedraw = null;
+    const c = coasterById.get(id);
+    if (!c) { rideNotFound(id); return; }
+    const park = c.park;
+    const pic = rideView(c);
+
+    view.innerHTML = `
+      <a class="back-link" href="#/park/${park.id}">← ${esc(park.name)}</a>
+      <section class="ride-head sky">
+        <span class="cloud" aria-hidden="true"></span>
+        <span class="cloud c2" aria-hidden="true"></span>
+        <p class="kicker">Roller coaster</p>
+        <h1>${esc(c.name)}</h1>
+        <p class="meta">
+          <span class="state-tag">${park.state}</span>
+          <a href="#/park/${park.id}">${esc(park.name)}</a>
+          <span>${esc(park.city)}, ${esc(STATE_NAMES[park.state] || park.state)}</span>
+          ${park.defunct ? '<span class="badge badge-defunct">Defunct park</span>' : ''}
+        </p>
+      </section>
+      <section class="window ride-you" aria-labelledby="rideYouTitle">
+        <div class="window-bar"><h2 id="rideYouTitle">Your ride</h2></div>
+        <div id="rideYou">${rideYouHtml(id)}</div>
+      </section>
+      <div class="ride-grid">
+        ${pic.html}
+        <section class="window ride-stats" aria-labelledby="rideStatsTitle">
+          <div class="window-bar"><h2 id="rideStatsTitle">Ride stats</h2></div>
+          <div class="window-body" id="rideStats"><p class="ride-stats-msg" role="status">Loading ride stats…</p></div>
+        </section>
+      </div>
+      ${rideVideosHtml(c)}
+    `;
+
+    const you = $('#rideYou');
+    const bind = () => {
+      bindRows();
+      const w = you.querySelector('.ride-write');
+      if (w) w.addEventListener('click', () => openLogModal(id));
+    };
+    bind();
+    pic.mount(view.querySelector('.ride-view'));
+    fillRideStats(id);
+
+    // After a log change, redraw only "Your ride" and recolor the picture, so the
+    // train keeps running and keyboard focus stays on the same control.
+    coasterRedraw = () => {
+      if (!you.isConnected) { route(); return; }
+      const a = document.activeElement;
+      const cls = a && you.contains(a) ? ['ride-toggle', 'row-log', 'ride-write'].find(k => a.classList.contains(k)) : null;
+      you.innerHTML = rideYouHtml(id);
+      bind();
+      pic.refresh();
+      const el = cls && (you.querySelector(`.${cls}`) || you.querySelector('.row-log'));
+      if (el) el.focus({ preventScroll: true });
+    };
+  }
+
+  function rideNotFound(id) {
+    // Never guess a coaster: only point at the park the ID names, if it is one.
+    const park = parkById.get(String(id).split('--')[0]);
+    view.innerHTML = `<div class="empty-state window ride-missing">
+      ${spriteArt('looper', false)}
+      <h1 class="ride-missing-title">Ride not found</h1>
+      <p>We couldn't find that coaster. The link may be mistyped or out of date.</p>
+      ${park
+        ? `<a class="btn btn-primary" href="#/park/${park.id}">Go to ${esc(park.name)}</a><a href="#/coasters">Or browse every coaster</a>`
+        : '<a class="btn btn-primary" href="#/coasters">Browse every coaster</a>'}
+    </div>`;
+  }
+
+  // "Your ride": the standard row (toggle + Log/Edit), then the log in full.
+  function rideYouHtml(id) {
+    const r = rides[id];
+    const row = `<div class="coaster-list">${coasterRow(id, {
+      link: false, detail: false, sub: `<span>${r ? 'In your credits' : 'Not ridden yet'}</span>`,
+    })}</div>`;
+    if (!r) {
+      return `${row}<div class="ride-log"><p class="ride-hint">Ridden it? Tick the box to add the credit, or use <b>Log ride</b> to add the date, your rating and a review.</p></div>`;
+    }
+    const rating = Math.min(5, Math.max(0, Math.round(Number(r.rating) || 0)));
+    const count = Math.max(1, Math.round(Number(r.count) || 1));
+    return `${row}<div class="ride-log">
+      <dl class="ride-facts">
+        <div class="ride-fact"><dt>First ridden</dt><dd>${r.date ? esc(fmtDate(r.date)) : 'Not recorded'}</dd></div>
+        <div class="ride-fact"><dt>Times ridden</dt><dd>${count.toLocaleString()}</dd></div>
+        <div class="ride-fact"><dt>Your rating</dt><dd>${rating ? stars(rating) : 'Not rated'}</dd></div>
+      </dl>
+      ${r.review
+        ? `<div class="ride-review" style="--tc:${colorOf.get(id)}"><h3 class="ride-label">Your review</h3><p>${esc(r.review)}</p></div>`
+        : '<p class="ride-review-empty"><span>No review yet.</span><button class="btn btn-small ride-write" type="button">Write a review</button></p>'}
+    </div>`;
+  }
+
+  // The ride page's picture: the one seam for what draws it. Today it is always
+  // the procedural sprite, enlarged. Later (tech spec decision 10) a coaster on a
+  // published park map gets a map vignette here instead, falling back to the
+  // sprite. Whatever it returns: { html, mount(figure), refresh() }; the html
+  // reserves its final size so nothing shifts while it loads.
+  function rideView(c) {
+    return spriteView(c);
+  }
+
+  // Sprite view: the diorama silhouette on its own island, drawn at a whole-number
+  // scale (CSS --px), with a train that steps round the circuit: slow up the
+  // lift, faster the lower it gets, a pause in the station.
+  const RV_BOX = [-48, -44, 96, 92];
+  const RV_ISLAND =
+    '<polygon points="-44,16 0,38 0,46 -44,24" fill="#8b5a2b"/><polygon points="0,38 44,16 44,24 0,46" fill="#6d4220"/>' +
+    '<polygon points="-44,16 0,38 0,40 -44,18" fill="#2f7a2a"/><polygon points="0,38 44,16 44,18 0,40" fill="#256522"/>' +
+    '<polygon points="0,-6 44,16 0,38 -44,16" fill="#58ac46"/>' +
+    '<polygon points="0,-3 38,16 0,35 -38,16" fill="#d9c08a" stroke="#b39a62" stroke-width="1"/>' +
+    '<polygon points="0,0 32,16 0,32 -32,16" fill="#4c9d3c" stroke="#3c7a2e" stroke-width="1"/>' +
+    '<use href="#spr-tree" x="-40" y="17"/><use href="#spr-pine" x="40" y="16"/>' +
+    R(-36, 11, 2, 2, '#f0c49a') + R(-36, 13, 2, 3, '#3868c8') + R(-36, 16, 2, 1, '#3b2f1c');
+  const RV_FRONT = '<use href="#spr-bush" x="-18" y="33"/><use href="#spr-flowers" x="20" y="32"/>' +
+    R(33, 13, 2, 2, '#f0c49a') + R(33, 15, 2, 3, '#f2b71f') + R(33, 18, 2, 1, '#3b2f1c');
+
+  function spriteView(c) {
+    const shape = shapeOf(c.id);
+    const spec = SHAPE_SPECS[shape];
+    const prims = spritePrims(spec, { train: false }).sort((a, b) => a.d - b.d);
+    const depths = prims.map(p => p.d);
+    const N = spec.path.length;
+    const hs = spec.path.map((_, i) => profileAt(spec.kf, i / N));
+    const at = i => { const [u, v] = spec.path[i]; return [(u - v) * 2, (u + v) - hs[i], u + v + .3]; };
+    // Where dioramas park the train (head car), and the top of the lift.
+    const rest = Math.round(N * .08) + spec.train + 6;
+    let liftTop = 0;
+    for (let i = 0; i < N / 2; i++) if (hs[i] > hs[liftTop]) liftTop = i;
+    const hTop = hs[liftTop];
+    const chain = shape !== 'launch';
+
+    const ridden = () => !!rides[c.id];
+    const style = () => rideStyle(c.id, ridden()) + (ridden() ? '' : ';--car:#ece6d6;--card:#7f7a6e');
+    const label = () => `Pixel illustration of ${c.name}, ${ridden() ? 'in color because you have ridden it' : 'in gray until you ride it'}`;
+    const caption = () => `Illustration, not the real track. ${ridden() ? 'In color: it\'s one of your credits.' : 'Gray until you ride it.'}`;
+    const [bx, by, bw, bh] = RV_BOX;
+
+    const html = `<figure class="window ride-view">
+        <div class="window-bar"><h2>Pixel view</h2></div>
+        <div class="ride-stage sky">
+          <span class="cloud" aria-hidden="true"></span>
+          <svg class="ride-sprite" viewBox="${bx} ${by} ${bw} ${bh}" shape-rendering="crispEdges" role="img" aria-label="${esc(label())}" style="${style()}">
+            ${RV_ISLAND}<g class="rv-track">${prims.map(p => `<g>${p.s}</g>`).join('')}</g>${RV_FRONT}
+          </svg>
+        </div>
+        <figcaption class="ride-caption">${caption()}</figcaption>
+      </figure>`;
+
+    let svg = null;
+    let cap = null;
+    function mount(figure) {
+      svg = figure.querySelector('.ride-sprite');
+      cap = figure.querySelector('.ride-caption');
+      const track = svg.querySelector('.rv-track');
+      const pieces = [...track.children];
+      const cars = [0, 1, 2].map(() => {
+        const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        g.setAttribute('class', 'rv-car');
+        g.innerHTML = R(-2, -4, 4, 3, 'var(--car)') + R(-2, -2, 4, 1, 'var(--card)');
+        return g;
+      });
+      let pos = rest;
+      let wait = 0;
+      const place = () => cars.forEach((g, k) => {
+        const i = ((Math.floor(pos) - k * 3) % N + N) % N;
+        const [x, y, d] = at(i);
+        g.setAttribute('transform', `translate(${x} ${y})`);
+        // painter's order: just before the first track piece nearer the viewer
+        let lo = 0, hi = depths.length;
+        while (lo < hi) { const m = (lo + hi) >> 1; if (depths[m] <= d) lo = m + 1; else hi = m; }
+        track.insertBefore(g, pieces[lo] || null);
+      });
+      const step = () => {
+        if (wait > 0) { wait--; return; }
+        const i = Math.floor(pos) % N;
+        pos += chain && i < liftTop ? 1 / 3 : .5 + .2 * Math.sqrt(Math.max(0, hTop - hs[i]));
+        if (pos >= N) { pos -= N; wait = 12; }
+      };
+
+      // 10 steps a second; parked under reduced motion, paused while the tab is
+      // hidden or the picture is off screen, and stopped for good once the page
+      // has moved on (the timer checks, so the router needs no teardown hook).
+      const reduce = window.matchMedia ? matchMedia('(prefers-reduced-motion: reduce)') : null;
+      let timer = null;
+      let onScreen = true;
+      let io = null;
+      const halt = () => { clearInterval(timer); timer = null; };
+      const sync = () => {
+        if (!svg.isConnected) {
+          halt();
+          document.removeEventListener('visibilitychange', sync);
+          if (reduce && reduce.removeEventListener) reduce.removeEventListener('change', sync);
+          if (io) io.disconnect();
+          return;
+        }
+        const still = !!(reduce && reduce.matches);
+        const run = !still && !document.hidden && onScreen;
+        if (still) { pos = rest; wait = 0; place(); }
+        if (run && !timer) timer = setInterval(() => { if (!svg.isConnected) { sync(); return; } step(); place(); }, 100);
+        else if (!run && timer) halt();
+      };
+      document.addEventListener('visibilitychange', sync);
+      if (reduce && reduce.addEventListener) reduce.addEventListener('change', sync);
+      if ('IntersectionObserver' in window) {
+        io = new IntersectionObserver(es => { onScreen = es[es.length - 1].isIntersecting; sync(); });
+        io.observe(svg);
+      }
+      place();
+      sync();
+    }
+
+    function refresh() {
+      if (!svg) return;
+      svg.setAttribute('style', style());
+      svg.setAttribute('aria-label', label());
+      cap.textContent = caption();
+    }
+
+    return { html, mount, refresh };
+  }
+
+  // ---- ride stats: js/stats.json (CC BY-SA 4.0), lazy-loaded once ----
+  // Every string from the file is escaped. Links are built only from a QID
+  // (^Q\d+$), a URL-encoded title and an integer revision ID; nothing else in
+  // the file ever becomes a URL. A value whose source is not a complete
+  // Wikipedia or Wikidata reference is treated as missing.
+
+  const STATS_SRC = 'js/stats.json';
+  let statsLoad = null;
+  function loadStats() {
+    if (!statsLoad) {
+      statsLoad = fetch(STATS_SRC)
+        .then(res => {
+          if (res.status === 404) return null; // not published yet: say so, no retry
+          if (!res.ok) throw new Error(`stats ${res.status}`);
+          return res.json();
+        })
+        .then(d => (d && d.schema === 1 && d.coasters && typeof d.coasters === 'object' ? d : null))
+        .catch(err => { statsLoad = null; throw err; }); // a network failure can be retried
+    }
+    return statsLoad;
+  }
+
+  function fillRideStats(id) {
+    const box = $('#rideStats');
+    loadStats().then(data => {
+      if (box.isConnected) box.innerHTML = rideStatsHtml(data, id);
+    }, () => {
+      if (!box.isConnected) return;
+      box.innerHTML = '<p class="ride-stats-msg">Couldn\'t load ride stats. Check your signal and try again.</p><button class="btn btn-small" type="button" id="statsRetry">Retry</button>';
+      $('#statsRetry').addEventListener('click', () => {
+        box.innerHTML = '<p class="ride-stats-msg" role="status">Loading ride stats…</p>';
+        fillRideStats(id);
+      });
+    });
+  }
+
+  const STAT_ROWS = [
+    { k: 'height', label: 'Height', core: true, fmt: 'len' },
+    { k: 'drop', label: 'Drop', fmt: 'len' },
+    { k: 'speed', label: 'Top speed', core: true, fmt: 'speed' },
+    { k: 'length', label: 'Track length', core: true, fmt: 'len' },
+    { k: 'inversions', label: 'Inversions', core: true, fmt: 'int' },
+    { k: 'gforce', label: 'G-force', core: true, fmt: 'g' },
+    { k: 'duration', label: 'Ride time', fmt: 'dur' },
+    // names and dates: full-width rows under the number tiles
+    { k: 'material', label: 'Wood or steel', core: true, fmt: 'material', row: true },
+    { k: 'type', label: 'Type', fmt: 'list', row: true },
+    { k: 'manufacturer', label: 'Manufacturer', core: true, fmt: 'str', row: true },
+    { k: 'designer', label: 'Designer', fmt: 'str', row: true },
+    { k: 'model', label: 'Model', fmt: 'str', row: true },
+    { k: 'opened', label: 'Opened', core: true, fmt: 'date', row: true },
+  ];
+  // `closed` is deliberately not shown: open data lags closures (T-4, Q-029).
+  const SOURCE_NAMES = { wp: 'Wikipedia', wd: 'Wikidata' };
+  const MATERIALS = { steel: 'Steel', wood: 'Wood', hybrid: 'Hybrid (wood and steel)' };
+  const STAT_DATE_RE = /^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?$/;
+
+  const isNum = n => typeof n === 'number' && Number.isFinite(n);
+  const fig = (n, digits = 0) => n.toLocaleString('en-US', { maximumFractionDigits: digits });
+  const refOk = (src, ref) => !!ref && typeof ref === 'object' && (src === 'wp'
+    ? ref.lang === 'en' && typeof ref.title === 'string' && ref.title.trim() !== '' && Number.isInteger(ref.revid) && ref.revid > 0
+    : src === 'wd' && typeof ref.qid === 'string' && /^Q\d+$/.test(ref.qid));
+
+  // Imperial first. The unit the source published shows its figure verbatim;
+  // the other unit is converted from the stored metric value.
+  function statValue(fmt, f) {
+    const v = f.v;
+    const pub = Array.isArray(f.pub) && isNum(f.pub[0]) ? f.pub : null;
+    const pubIn = unit => (pub && pub[1] === unit ? fig(pub[0], 3) : null);
+    switch (fmt) {
+      case 'len':
+        return isNum(v) ? { main: `${pubIn('ft') || fig(v / 0.3048)} ft`, alt: `${pubIn('m') || fig(v, 1)} m` } : null;
+      case 'speed':
+        return isNum(v) ? { main: `${pubIn('mph') || fig(v / 1.609344)} mph`, alt: `${pubIn('km/h') || fig(v)} km/h` } : null;
+      case 'dur': {
+        if (!isNum(v)) return null;
+        const s = Math.round(pub && pub[1] === 's' ? pub[0] : v);
+        return { main: s < 60 ? `${s} s` : `${Math.floor(s / 60)} min${s % 60 ? ` ${s % 60} s` : ''}` };
+      }
+      case 'g': return isNum(v) ? { main: `${fig(v, 2)} g` } : null;
+      case 'int': return Number.isInteger(v) && v >= 0 ? { main: String(v) } : null;
+      case 'material': return Object.prototype.hasOwnProperty.call(MATERIALS, v) ? { main: MATERIALS[v] } : null;
+      case 'list': {
+        const a = (Array.isArray(v) ? v : [v]).filter(s => typeof s === 'string' && s.trim());
+        return a.length ? { main: esc(a.join(', ')) } : null;
+      }
+      case 'str': return typeof v === 'string' && v.trim() ? { main: esc(v) } : null;
+      case 'date': {
+        const m = typeof v === 'string' ? STAT_DATE_RE.exec(v) : null;
+        if (!m) return null;
+        if (m[3]) return { main: esc(fmtDate(v)) };
+        if (m[2]) return { main: esc(new Date(Number(m[1]), Number(m[2]) - 1, 1).toLocaleDateString(undefined, { year: 'numeric', month: 'long' })) };
+        return { main: m[1] };
+      }
+      default: return null;
+    }
+  }
+
+  function rideStatsHtml(data, id) {
+    if (!data) return '<p class="ride-stats-msg">Ride stats aren\'t available yet.</p>';
+    const e = Object.prototype.hasOwnProperty.call(data.coasters, id) ? data.coasters[id] : null;
+    const own = e && e.refs && typeof e.refs === 'object' ? e.refs : {};
+    // `lang` and `retrieved` are hoisted to the top of the file; a coaster's ref
+    // carries its own only where it differs (per-coaster value, else file default).
+    const refs = {};
+    for (const k of Object.keys(SOURCE_NAMES)) {
+      const r = own[k];
+      if (r && typeof r === 'object') {
+        refs[k] = { lang: data.lang, retrieved: data.retrieved, ...r };
+      }
+    }
+    const used = new Set();
+    const rows = STAT_ROWS.map(row => {
+      const f = e && e[row.k] && typeof e[row.k] === 'object' ? e[row.k] : null;
+      const src = f && Object.prototype.hasOwnProperty.call(SOURCE_NAMES, f.src) && refOk(f.src, refs[f.src]) ? f.src : null;
+      const val = src ? statValue(row.fmt, f) : null;
+      if (val) used.add(src);
+      return { row, val, src };
+    }).filter(({ row, val }) => val || row.core);
+
+    if (!used.size) {
+      return '<p class="ride-stats-msg">No stats for this ride yet. We only show figures from open data (Wikipedia and Wikidata), and it doesn\'t cover this one yet.</p>';
+    }
+
+    const tiles = rows.map(({ row, val, src }) => (val
+      ? `<div class="ride-stat${row.row ? ' is-row' : ''}"><dt>${row.label}</dt><dd class="rs-val"><b>${val.main}</b>${val.alt ? ` <span>${val.alt}</span>` : ''}</dd><dd class="rs-src"><span class="visually-hidden">Source: </span>${SOURCE_NAMES[src]}</dd></div>`
+      : `<div class="ride-stat is-missing${row.row ? ' is-row' : ''}"><dt>${row.label}</dt><dd class="rs-val">Not in open data</dd></div>`)).join('');
+
+    // Credit line: title, authors, source revision, license and our changes.
+    const ext = (href, text) => `<a href="${href}" target="_blank" rel="noopener noreferrer">${text}</a>`;
+    const wp = used.has('wp') ? refs.wp : null;
+    const wd = used.has('wd') ? refs.wd : null;
+    let credit = '';
+    if (wp) {
+      credit += `Stats from the Wikipedia article ${ext(`https://en.wikipedia.org/w/index.php?title=${encodeURIComponent(wp.title)}&amp;oldid=${wp.revid}`, `“${esc(wp.title)}”`)} by Wikipedia contributors, licensed ${ext('https://creativecommons.org/licenses/by-sa/4.0/', 'CC BY-SA 4.0')}`;
+    }
+    if (wd) credit += `${wp ? ', and from ' : 'Stats from '}${ext(`https://www.wikidata.org/wiki/${wd.qid}`, 'Wikidata')} (CC0)`;
+    credit += '. Units converted by Loop Troupe.';
+    const checked = [wp, wd].filter(Boolean).map(r => r.retrieved).filter(d => typeof d === 'string' && DATE_RE.test(d)).sort()[0];
+    if (checked) credit += ` Checked ${esc(fmtDate(checked))}.`;
+
+    return `<dl class="ride-stat-grid">${tiles}</dl><p class="ride-credit">${credit}</p>`;
+  }
+
+  // Video picks (spec C1a requirement 6) wait on a home and a format (Q-038,
+  // T-6). Until a coaster has picks there is no video box at all.
+  function rideVideosHtml() {
+    return '';
   }
 
   // ---------- park guides ----------
@@ -1243,7 +1636,7 @@
       const c = parkCoaster(st.coasterId);
       const est = st.kind === 'estimate' && st.time;
       const head = st.time || c ? `<div class="g-step-head">
-          ${c ? `<span class="g-step-ride" style="--tc:${colorOf.get(c.id)}">${esc(c.name)}</span>${dyn(() => creditTag(c.id), 'span')}` : ''}
+          ${c ? `<a class="g-step-ride" href="#/coaster/${c.id}" style="--tc:${colorOf.get(c.id)}">${esc(c.name)}</a>${dyn(() => creditTag(c.id), 'span')}` : ''}
           ${st.time ? `<span class="g-time">${txt(st.time)}</span>${est ? '<span class="badge badge-estimate">Estimate</span>' : ''}` : ''}
         </div>` : '';
       return `<li class="g-step${c ? ' is-ride' : ' is-note'}">
@@ -1325,7 +1718,7 @@
           return `<div class="progress-meta g-check-meta"><span><b>${done}</b> of ${opIds.length} operating coasters ridden</span><span>${Math.round(done / opIds.length * 100)}%</span></div>${meter(done / opIds.length)}`;
         })}
         ${dyn(() => `<div class="coaster-list window-list">${opIds.map(cid => coasterRow(cid)).join('')}</div>`)}
-        ${legacy.length ? dyn(() => `<p class="g-legacy"><b>Legacy credits</b>, no longer operating and not counted above: ${legacy.map(c => `${esc(c.name)}${rides[c.id] ? ' (ridden)' : ''}`).join(', ')}.</p>`) : ''}
+        ${legacy.length ? dyn(() => `<p class="g-legacy"><b>Legacy credits</b>, no longer operating and not counted above: ${legacy.map(c => `${rideLink(c.id, esc(c.name), 'g-legacy-link')}${rides[c.id] ? ' (ridden)' : ''}`).join(', ')}.</p>`) : ''}
         <p class="g-fine">${claimText(credits)}</p>
       </div>`;
     }
@@ -1569,6 +1962,7 @@
     if (page === 'park' && parkRedraw) parkRedraw();
     else if (page === 'coasters' && coastersRedraw) coastersRedraw();
     else if (page === 'guide' && guideRedraw) guideRedraw();
+    else if (page === 'coaster' && coasterRedraw) coasterRedraw();
     else route();
   }
 
