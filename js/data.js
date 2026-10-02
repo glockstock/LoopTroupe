@@ -355,7 +355,7 @@ const COASTER_DB = {
     },
     {
      "id": "disney-california-adventure--incrediocoaster",
-     "name": "Incrediocoaster"
+     "name": "Incredicoaster"
     }
    ]
   },
@@ -516,6 +516,10 @@ const COASTER_DB = {
     {
      "id": "knott-s-berry-farm--windjammer",
      "name": "Windjammer"
+    },
+    {
+     "id": "knott-s-berry-farm--xcelerator",
+     "name": "Xcelerator"
     }
    ]
   },
@@ -1858,6 +1862,10 @@ const COASTER_DB = {
    "state": "IA",
    "coasters": [
     {
+     "id": "lost-island-theme-park--fire-runner",
+     "name": "Fire Runner"
+    },
+    {
      "id": "lost-island-theme-park--lokolo",
      "name": "Lokolo"
     },
@@ -2534,6 +2542,10 @@ const COASTER_DB = {
     {
      "id": "six-flags-new-england--pandemonium",
      "name": "Pandemonium"
+    },
+    {
+     "id": "six-flags-new-england--quantum-accelerator",
+     "name": "Quantum Accelerator"
     },
     {
      "id": "six-flags-new-england--superman-the-ride",
@@ -3705,6 +3717,34 @@ const COASTER_DB = {
    ]
   },
   {
+   "id": "nickelodeon-universe-american-dream",
+   "name": "Nickelodeon Universe American Dream",
+   "city": "East Rutherford",
+   "state": "NJ",
+   "coasters": [
+    {
+     "id": "nickelodeon-universe-american-dream--nickelodeon-slime-streak",
+     "name": "Nickelodeon Slime Streak"
+    },
+    {
+     "id": "nickelodeon-universe-american-dream--sandy-s-blasting-bronco",
+     "name": "Sandy's Blasting Bronco"
+    },
+    {
+     "id": "nickelodeon-universe-american-dream--the-shredder",
+     "name": "The Shredder"
+    },
+    {
+     "id": "nickelodeon-universe-american-dream--timmy-s-half-pipe-havoc",
+     "name": "Timmy's Half-Pipe Havoc"
+    },
+    {
+     "id": "nickelodeon-universe-american-dream--tmnt-shellraiser",
+     "name": "TMNT Shellraiser"
+    }
+   ]
+  },
+  {
    "id": "playland-s-castaway-cove",
    "name": "Playland's Castaway Cove",
    "city": "Ocean City",
@@ -3813,6 +3853,10 @@ const COASTER_DB = {
     {
      "id": "six-flags-great-adventure--the-dark-knight",
      "name": "The Dark Knight"
+    },
+    {
+     "id": "six-flags-great-adventure--the-flash-vertical-velocity",
+     "name": "The Flash: Vertical Velocity"
     },
     {
      "id": "six-flags-great-adventure--viper",
@@ -5958,6 +6002,10 @@ const COASTER_DB = {
      "name": "Titan"
     },
     {
+     "id": "six-flags-over-texas--tormenta-rampaging-run",
+     "name": "Tormenta Rampaging Run"
+    },
+    {
      "id": "six-flags-over-texas--wile-e-coyote-s-grand-canyon-blaster",
      "name": "Wile E. Coyote's Grand Canyon Blaster"
     }
@@ -6139,6 +6187,10 @@ const COASTER_DB = {
      "name": "Big Bad Wolf"
     },
     {
+     "id": "busch-gardens-williamsburg--big-bad-wolf-the-wolf-s-revenge",
+     "name": "Big Bad Wolf: The Wolf's Revenge"
+    },
+    {
      "id": "busch-gardens-williamsburg--darkoaster-escape-the-storm",
      "name": "DarKoaster Escape the Storm"
     },
@@ -6257,6 +6309,10 @@ const COASTER_DB = {
     {
      "id": "kings-dominion--shockwave",
      "name": "Shockwave"
+    },
+    {
+     "id": "kings-dominion--tumbili",
+     "name": "Tumbili"
     },
     {
      "id": "kings-dominion--twisted-timbers",
