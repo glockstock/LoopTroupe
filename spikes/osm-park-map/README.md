@@ -1,8 +1,18 @@
 # Spike: isometric park maps from OpenStreetMap
 
-Status: **spike, not a feature.** Nothing here is linked from the site, and the site's files are unchanged. The renderer is built and tested against a **synthetic fixture** ("Test Park", fictional). No real park has been rendered yet because OpenStreetMap's Overpass API was unreachable from the build environment (see [Network status](#network-status)).
+Status: **spike, not a feature.** Nothing here is linked from the site, and the site's files are unchanged.
 
-Question: can we generate Loop Troupe park maps in the site's pixel-isometric style semi-automatically, with small animations (a train on its circuit) and click-to-zoom on a ride? The approach here is **procedural from OpenStreetMap data**, where coaster track is mapped as ways tagged `roller_coaster=track`, rather than restyling map imagery with an image model.
+Five real parks were fetched from the main OpenStreetMap API, one request each:
+
+- Cedar Point
+- Kings Island
+- Dollywood
+- Six Flags Magic Mountain
+- Knoebels
+
+The renderer was first built against a **synthetic fixture** ("Test Park", fictional), which is still in place as a regression case.
+
+Question: can we generate Loop Troupe park maps in the site's pixel-isometric style semi-automatically, with small animations (a train on its circuit) and click-to-zoom on a ride? The approach is **procedural from OpenStreetMap data**, where coaster track is mapped as ways tagged `roller_coaster=track`. We do not restyle map imagery with an image model.
 
 ## Run it
 
@@ -10,136 +20,135 @@ Serve the repository root with any static server, then open the spike page:
 
 ```sh
 python3 -m http.server 8000
-# http://localhost:8000/spikes/osm-park-map/
-# http://localhost:8000/spikes/osm-park-map/?park=cedar-point   (after fetching)
+# http://localhost:8000/spikes/osm-park-map/                     synthetic fixture
+# http://localhost:8000/spikes/osm-park-map/?park=cedar-point    real data
 ```
 
 | Command | What it does |
 | --- | --- |
-| `node spikes/osm-park-map/fetch.mjs --probe` | One tiny Overpass query: is the API reachable? |
-| `node spikes/osm-park-map/fetch.mjs --print cedar-point` | Print the exact queries, no network |
-| `node spikes/osm-park-map/fetch.mjs cedar-point` | Fetch one park into `data/cedar-point.json` |
-| `node spikes/osm-park-map/fetch.mjs --all` | Fetch every park in `parks.json` (5 s apart) |
-| `node spikes/osm-park-map/coverage.mjs --all` | Coverage report for every fetched park vs `js/data.js` |
-| `node spikes/osm-park-map/coverage.mjs synthetic-test-park --db data/synthetic-test-park.db.json` | Exercise the matcher on the fixture |
+| `node spikes/osm-park-map/fetch.mjs --source osm-api cedar-point` | Main OSM API: **one** `/map.json` request for the park's `bbox` in `parks.json`, converted to Overpass `out geom` shape |
+| `node spikes/osm-park-map/fetch.mjs --probe` | One tiny Overpass query: is Overpass reachable? |
+| `node spikes/osm-park-map/fetch.mjs --print cedar-point` | Print the exact Overpass queries, no network |
+| `node spikes/osm-park-map/fetch.mjs cedar-point` | Fetch one park through Overpass |
+| `node spikes/osm-park-map/coverage.mjs --all` | Coverage report for every fetched park vs `js/data.js` (uses the links files) |
+| `node spikes/osm-park-map/coverage.mjs <park> --draft-links` | Write `data/<park>.links.json.draft` for the curator to review |
 | `node spikes/osm-park-map/make-synthetic.mjs` | Regenerate the synthetic fixture |
 
-Behind an HTTPS proxy, Node's built-in `fetch` needs `NODE_USE_ENV_PROXY=1` (Node 22.21 or later), for example `NODE_USE_ENV_PROXY=1 node spikes/osm-park-map/fetch.mjs cedar-point`. The scripts use Node built-ins only and add no npm dependencies.
+Behind an HTTPS proxy, Node's built-in `fetch` needs `NODE_USE_ENV_PROXY=1` (Node 22.21 or later). The scripts use Node built-ins only and add no npm dependencies.
 
 ## Files
 
 | File | Role |
 | --- | --- |
-| `index.html`, `map.css` | Standalone prototype page. Reuses `../../css/style.css` tokens and components read-only; reads `../../js/data.js` to link coasters to the site's database. |
-| `page.mjs` | Page wiring: data picker, coaster key, status line, data notes. |
-| `model.mjs` | Overpass JSON → park model in local meters: polygons, paths, coaster assembly, names, height profiles. Shared by the browser and Node. |
-| `raster.mjs` | A tiny software rasterizer (scanline polygons, Bresenham lines, sprites) writing whole pixels into `ImageData`, plus an id buffer for hit-testing. |
-| `map.mjs` | Isometric projection, scene composition, trains, highlight, zoom/pan/rotate, pointer and keyboard input. |
-| `fetch.mjs` | Overpass fetcher → `data/<park-id>.json`. |
-| `coverage.mjs` | Coverage report: Loop Troupe coasters vs OSM features vs track. |
-| `parks.json` | Search hints for the five test parks (name pattern and an approximate point). |
-| `make-synthetic.mjs` | Generator for the synthetic fixture. |
-| `data/synthetic-test-park.json` | **Synthetic** fixture in Overpass `out geom` shape. Fictional park, negative ids, coordinates near 0°N 0°E. |
-| `data/synthetic-test-park.db.json` | **Synthetic** coaster list for exercising `coverage.mjs`. |
+| `index.html`, `map.css` | Standalone prototype page. Reuses `../../css/style.css` read-only, and reads `../../js/data.js` to link coasters to the site's database. |
+| `page.mjs` | Page wiring: data picker, ride-log colors, coaster key, status line, data notes. Reads `localStorage['coaster-credits.v1']` **read-only**. |
+| `model.mjs` | OSM JSON → park model in local meters. It builds the drawn region, polygons, roads and paths, open water from partial shorelines, coaster assembly (direction from `oneway`), names, curator links, and height profiles. Shared by the browser and Node. |
+| `raster.mjs` | A tiny software rasterizer: scanline polygons, Bresenham lines and sprites in whole pixels, with an id buffer for hit-testing and a depth buffer for occlusion. |
+| `map.mjs` | Isometric projection, scene composition, trains, highlight, numbered overview pins, zoom/pan/rotate, pointer and keyboard input. |
+| `fetch.mjs` | Fetcher for Overpass and the main OSM API (`--source osm-api`) → `data/<park-id>.json`. |
+| `coverage.mjs` | Coverage report and link drafting. |
+| `parks.json` | The five test parks: name pattern, search point, fetch bbox, and the `js/data.js` park id. |
+| `data/<park>.json` | Fetched OSM data (© OpenStreetMap contributors, ODbL). |
+| `data/<park>.links.json` | **Curated** OSM coaster → Loop Troupe coaster id table (see below). |
+| `data/cedar-point.overrides.json` | **Curated** per-coaster render fixes: peak heights, launch profile, wooden structure. |
+| `make-synthetic.mjs`, `data/synthetic-test-park*.json` | The **synthetic** fixture, its fake coaster list and overrides. Fictional park, negative ids, coordinates near 0°N 0°E. |
 
-## Pipeline
+## Getting the data
 
-1. **Find the park.** Look up the `tourism=theme_park` outline by name near a known point.
-2. **Fetch features** inside the outline's bounding box plus 120 m, with geometry clipped to that box.
-3. **Model** (`model.mjs`): project to local meters (equirectangular around the park center, fine at park scale), assemble multipolygons, chain track ways into circuits, infer names, and lay a height profile on each circuit.
-4. **Render** (`map.mjs`): 2:1 isometric, whole-pixel, drawn in our palette, shown at 2× with `image-rendering: pixelated`.
+### Main OSM API (what was used)
 
-### Overpass queries (exact)
+- One GET to `https://api.openstreetmap.org/api/0.6/map.json?bbox=W,S,E,N` per park.
+- A tight bbox from `parks.json`: 0.00014–0.00042 square degrees against the 0.25 limit.
+- Raw node counts: 4,724 (Knoebels) to 41,887 (Cedar Point), against the 50,000 limit.
+- Requests sent with a project User-Agent and 6 s apart.
+- The script stops on 429 or 509, never retries in a loop, and never runs at page runtime.
 
-Step 1, for Cedar Point (`fetch.mjs --print cedar-point`):
+The response is converted to the Overpass `out geom` shape the renderer already reads:
 
-```
-[out:json][timeout:60];
-nwr["tourism"="theme_park"]["name"~"^Cedar Point$",i](around:4000,41.4822,-82.6835);
-out geom;
-```
+- Way geometry is resolved from the response's nodes.
+- Multipolygon members carry their way geometry. Members outside the bbox are absent.
+- Only the tags the Overpass query would select are kept.
+- **Editing metadata (user names, uids, changesets, timestamps) is dropped.**
 
-Step 2. `S,W,N,E` is the step-1 outline's bounds plus 120 m:
+A `loopTroupe` block records the source, the bbox, the outline bbox with a 120 m buffer, the fetch time, raw counts and notes. The bbox is "refined" by recording the outline's own bounds and flagging when the outline touches the edge of the fetch. No second request is made. Kings Island and Knoebels touch the edge, but their outlines overrun into parking and campground only; all track lies inside the box.
 
-```
-[out:json][timeout:180][maxsize:268435456][bbox:S,W,N,E];
-(
-  nwr["roller_coaster"];
-  nwr["attraction"];
-  way["highway"~"^(footway|path|pedestrian|steps|living_street|service|cycleway|track)$"];
-  nwr["building"];
-  nwr["natural"~"^(water|wood|scrub|beach|sand|tree_row)$"];
-  nwr["water"];
-  node["natural"="tree"];
-  nwr["landuse"~"^(forest|grass|meadow|village_green|recreation_ground|flowerbed|basin|reservoir)$"];
-  nwr["leisure"~"^(garden|park|swimming_pool|water_park)$"];
-  nwr["amenity"="parking"];
-  way["railway"~"^(rail|narrow_gauge|miniature|monorail|light_rail)$"];
-);
-out geom(S,W,N,E);
-```
+### Overpass (built, still unreachable here)
 
-`out geom(bbox)` clips geometry so a huge lake or forest relation touching the park (Lake Erie, for example) does not dump its whole outline. Clipped coordinates can arrive as gaps; the model splits ways at gaps and skips rings that cannot close, with a warning. This clipping behavior is untested against the live server.
+The Overpass path makes two requests: one to find the outline by name near a point, and one for everything in its bbox plus 120 m, with geometry clipped to that box. Both queries are printed by `fetch.mjs --print <park>`. The selection is identical to the OSM API filter in `fetch.mjs` (`wanted()`).
 
-### Data shape
+## Model
 
-`data/<park-id>.json` is Overpass's own JSON (`version`, `generator`, `osm3s`, `elements[]`). With `out geom`, ways carry `nodes[]`, `geometry[{lat,lon}]`, `bounds` and `tags`; relations carry `members[{type,ref,role,geometry}]`. `fetch.mjs` adds a `loopTroupe` block: park id, matched outline element, bbox, fetch time, endpoint, both queries, and the attribution string. The fixture has the same shape, with `loopTroupe.synthetic: true`.
-
-### Coasters: assembly and names
-
-- Track ways sharing a node (or, as a fallback, identical coordinates) form one component. Spurs such as transfer and storage tracks are pruned; the remaining loop is walked, taking the straightest branch at junctions. If nothing loops, the track is treated as open (shuttle or launch) and the longest path is used.
-- Name, first match wins: the track way's `name`; a named `attraction=roller_coaster` area containing at least half of the track; a named `attraction=roller_coaster` point within 75 m; otherwise "Unnamed coaster n". Components with the same name are grouped, so dueling or racing coasters stay one coaster.
-- A named `attraction=roller_coaster` with no track is kept and drawn as a signpost, so coverage gaps stay visible.
-- Station: the nearest `roller_coaster=station` within 40 m of the track, otherwise the start of the way.
-- Wooden: `material=wood`, `roller_coaster:material=wood`, or `roller_coaster:type` containing "wood". Wooden tracks get lattice bents instead of cream steel columns.
-
-### Height heuristic (and its limits)
-
-OSM maps track in plan view only. There is no vertical geometry.
-
-- **Peak:** a `height` (or `roller_coaster:height`) tag on the track or its attraction, parsed for m, ft or `'`. Otherwise **estimated** as `0.055 × √(track length × footprint diagonal)`, clamped to 6–60 m. Open tracks use `0.2 × length`. As sanity checks against approximate public figures (not data): Blue Streak (~780 m long, ~330 m across) estimates 28 m against a real ~24 m; Magnum XL-200 hits the 60 m cap against ~62 m; Millennium Force also caps at 60 against ~94 m.
-- **Profile** along the circuit from the station, in the order of the OSM nodes: flat station, then a chain lift to the peak (about 1.8 × peak in length), a cosine first drop, hills tapering from ~72% to ~30% of the drop, and a brake run back into the station. Open tracks get a launch profile: flat launch, one top hat, run-out.
-- **Limits:** direction of travel is a coin flip (OSM way direction is arbitrary). There are no loops, inversions or helices. Mice, spinners and terrain coasters get the wrong shape. Terrain is flat, so hillside parks (Dollywood, Magic Mountain) will be wrong. Indoor coasters are drawn outdoors. **The profile is decorative and must never be presented as ride data**; ride stats are a product non-goal.
-- **Fix-ups:** an optional `data/<park-id>.overrides.json` keyed by coaster name takes `{ "reverse": true, "height": 94, "stationAt": 0.3, "wooden": true }`. Curated overrides are the realistic route to good-looking real parks.
+- **Region:** the outline's bounds plus 220 m of surroundings, clipped to the fetched bbox. Roads, parking, hotels, beaches and trees outside the park are drawn on muted grass. The park sits on bright checkered grass behind a fence line.
+- **Open water:** Lake Erie and similar lakes arrive as partial `natural=water` relations whose rings cannot close inside the box. Their shoreline ways are rasterized onto a 4 m grid and the rest is flood-filled into faces. A face that touches a shoreline and holds almost no land evidence (park outline, buildings, roads, parking) is water. Cells the shoreline crosses are resolved per point by which side of the nearest segment they fall on. Known risk: a featureless island would read as water.
+- **Coasters:** track ways sharing nodes form components. Spurs are pruned and the loop is walked.
+  - Direction of travel comes from `oneway` tags, weighted by length, when present (16 of 19 Cedar Point coasters). Otherwise it is a guess.
+  - Short unnamed open pieces, and open pieces of a coaster that also has a full circuit, are drawn flat as spur or storage track.
+  - Names come from the track way, a containing `attraction=roller_coaster` area, or a named feature within 75 m.
+- **Curator links** (`data/<park>.links.json`): each entry matches an OSM coaster by name, by any track way id, or by its feature.
+  - It sets a Loop Troupe `coasterId`, a `match` type (exact, fuzzy, manual, inferred, none) and a `confidence`, plus a note and a check date.
+  - Entries sharing an id merge. Kings Island's Racer is mapped as two tracks; Twisted Colossus is a named stub plus an unnamed circuit.
+  - `notCoaster: true` drops mis-tagged features: flume channels at Knoebels, White Water Canyon at Kings Island, and Pipe Scream at Cedar Point (a thrill ride per the guide).
+  - Fuzzy name matching is only a drafting aid. It proposed "Son of Beast" for The Beast and "Colossus" for Twisted Colossus until exact matches were given priority.
+- **Heights:**
+  - The peak comes from, in order: a curated override, an OSM `height` tag (only Maverick and two SFMM coasters have one), or an estimate of `0.055 × √(length × footprint)`, clamped to 6–60 m.
+  - A generic profile runs from the station: lift, cosine drop, tapering hills, brake run. `profile: "launch"` gives a flat launch, a near-vertical top hat and a run-out.
+  - The profile is **decorative** and must never be presented as ride data.
+  - Limits: no inversions or helices, flat terrain (wrong for Dollywood), and indoor coasters drawn outdoors.
 
 ## Rendering rules (from docs/design_guide.md)
 
-- 2:1 projection exactly as in `js/app.js`: a sub-unit moves 2 px across and 1 px down. A sub-unit is M meters, where M is the zoom step (16 m down to 0.5 m). Vertices snap to the sub-unit lattice, so edges stair-step cleanly. The canvas is drawn at native resolution by our own rasterizer (no canvas anti-aliasing) and displayed at an integer 2× with `pixelated` scaling.
-- Palette: the site's grass checker, dirt slab with a green lip, sand footpaths (the diorama path colors), water with shimmer pixels, cream walls with lit and shaded faces, muted roofs so coasters own the color. Coaster tracks use `TRACK_COLORS`. Linked parks use the coaster's index in `js/data.js`, so a coaster has the same color as on the rest of the site. Station roofs match the track color.
-- The ground is a slab shaped like the real park outline. Flat features are clipped to it.
-- Painter's algorithm by iso depth (u + v) for buildings, track segments, supports, trees and sprites.
-- Level of detail: tiny trees and no guests at overview; full trees (the site's sprites), windows, lift chains, guests and thicker rails when zoomed in.
-- Trains: cream cars stepping 10 times a second. They are slow on the lift and fast where the drop is deep (√(2gΔh)), and dwell in the station. With `prefers-reduced-motion: reduce` there is no animation: trains are parked in stations and zoom jumps instead of stepping.
-- Interaction: hover (mouse) or tap shows a wood plaque with the name and outlines the coaster. Click or tap zooms to it in five stepped frames. Drag pans, the wheel or two-finger pinch steps the zoom, and Rotate turns the view 90°. Keyboard: the map takes focus (arrows, + and −, 0, R, Esc), and the coaster key below the map is the accessible and phone-friendly way to reach every ride.
-- Attribution "Map data © OpenStreetMap contributors" sits on the map for real data. The synthetic fixture is labeled in the window title, a yellow banner, a ribbon on the map itself, and the data notes.
+- **Projection:** 2:1 exactly as in `js/app.js`. A sub-unit moves 2 px across and 1 px down and equals M meters (32 m down to 0.5 m). Vertices snap to the lattice. The canvas is drawn at native resolution by our own rasterizer and shown at an integer 2× with `pixelated`.
+- **Occlusion:** a per-pixel depth buffer. In this projection, u + v of the surface under a pixel is exactly its distance toward the viewer. Roofs take it from screen row plus roof height, walls interpolate along the wall, and track interpolates along each segment. Trains are drawn on an overlay but depth-tested against the base, so buildings, station roofs and nearer track hide them.
+- **Credits:** Loop Troupe's convention applies.
+  - A coaster takes its site color (its index in its `js/data.js` park) once it is in the rider's log, and is a gray ghost with gray supports and no train until then.
+  - "My credits" can be turned off to show all colors. It defaults to on when the rider has logged anything at this park.
+  - The hover/tap plaque reads "Steel Vengeance · ridden". The status line adds the first logged date and ride count. The rider's review text is never shown.
+- **Level of detail:**
+  - At overview (M of 8 or more): numbered pins in each coaster's color, matching the key list, at each coaster's peak, with simple collision nudging. No trains, no attraction sprites, and footpaths as 1 px lines.
+  - At middle zooms (M of 4–5.5): a small gate sprite, small trees, no carousel or stall.
+  - Close up: full tree sprites, windows, lift chains, guests and 3 px rails.
+- **Default view:** frames the coasters, not the outline (outlines often include lots and campgrounds), on whichever of the four rotations shows them largest. Rotate turns the view 90°. A straight launch coaster (Top Thrill 2) can line up with the view axis; rotate to see its top hat side-on.
+- **Motion:** trains step 10 times a second. Zoom steps through 5 frames. `prefers-reduced-motion` parks trains and jumps the zoom.
+- **Attribution:** "Map data © OpenStreetMap contributors" is linked in a strip directly under the map, at every width.
 
-Render time in Chromium on the build machine: 5–12 ms per frame for the fixture at 1360 px. With buildings, trees and paths multiplied ×10 it was also about 12 ms. A large real park has more geometry than that, so it needs measuring.
+Render time in Chromium on the build machine, Cedar Point at 1360 px: about 30–90 ms per frame depending on zoom (4,800 elements, 712 buildings, about 1,000 paths and trees). That is fine for stepped zoom; drag-panning runs at about 12–25 fps.
 
-## Network status
+## Coverage (OSM data fetched 2026-10-02)
 
-During this spike the environment's proxy refused `overpass-api.de` and `api.openstreetmap.org`. Later in the session `overpass-api.de` was let through the proxy but reset the connection mid-request (`ECONNRESET`). `api.openstreetmap.org` and the `overpass.kumi.systems` mirror began answering. We did not use either:
+Loop Troupe's lists include retired coasters, so "missing" mixes gaps in OSM with rides that no longer exist.
 
-- The brief made Phase B conditional on `overpass-api.de`.
-- The OSM editing API's usage policy is for editing, not bulk reads.
+| Park | In `js/data.js` | Named `attraction=roller_coaster` | `roller_coaster=track` ways → coasters | Linked to Loop Troupe |
+| --- | --- | --- | --- | --- |
+| Cedar Point | 23 | 19 | 185 → 18 (after dropping Pipe Scream) | 18; all 18 on the guide's 2026 operating list |
+| Kings Island | 20 | 3 | 110 → 18 | 14 (Flight of Fear inferred) |
+| Dollywood | 11 | 5 | 44 → 10 | 8 |
+| Six Flags Magic Mountain | 25 | 17 | 90 → 14 (+2 trackless) | 16 (Twisted Colossus partly inferred) |
+| Knoebels | 8 | 5 | 42 → 5 (after dropping 2 flume channels) | 5 |
 
-So no real park has been fetched. Retry with `fetch.mjs --probe`. A mirror can be used with `--endpoint URL` if the owner approves it.
+Run `node spikes/osm-park-map/coverage.mjs --all` for per-coaster tables.
 
-## Licensing notes (flag for product_manager and engineering_manager; not decided here)
+## Licensing and usage (flag for product_manager and engineering_manager; not decided here)
 
 Not legal advice. OSM data is © OpenStreetMap contributors under the **Open Database License (ODbL 1.0)**.
 
-- **Attribution is required** wherever the maps are shown publicly. A visible "© OpenStreetMap contributors" credit linking to https://www.openstreetmap.org/copyright must sit on or next to the map.
-- **Produced Work vs database.** A rendered map image is a "Produced Work" and may be published under terms we choose, with attribution. But if the work is made from a **Derivative Database** (OSM data we have modified, merged or extended), ODbL §4.6 requires us to offer that derivative database, or a way to recreate it, under the ODbL.
-- **Our static site would ship the data itself.** Serving `data/<park>.json` (or a simplified park JSON) to browsers is public distribution of a database derived from OSM. That file would have to be under the ODbL, carry attribution, and be available to anyone who receives it.
-- **Keep it out of `js/data.js`.** Merging OSM-derived fields (geometry, OSM ids, heights) into `js/data.js` risks making the combined database share-alike. Keeping a separate, clearly licensed map-data file that only links by coaster id is the safer pattern; see OSMF's community guidelines on Produced Works, Collective Databases and Horizontal Layers. Curated overrides layered onto OSM geometry would likely be part of the derivative database.
-- **Fetch at build time, never from riders' browsers.** The public Overpass instance has a fair-use policy (roughly 10,000 queries and 1 GB a day). Runtime calls would also send rider IPs to a third party, which conflicts with Loop Troupe's privacy stance (AGENTS.md).
-- The Isometric NYC approach relied on Google Maps imagery. Restyling third-party imagery raises separate terms-of-service problems this spike avoids.
+- **Attribution** is required wherever maps are shown publicly: "© OpenStreetMap contributors" linking to https://www.openstreetmap.org/copyright, on or next to the map.
+- **Rendered images** are Produced Works and can be published under terms we choose, with attribution. If they are made from a **Derivative Database** (OSM data we modified, merged or extended), ODbL §4.6 requires offering that database, or a way to recreate it, under the ODbL.
+- **This branch commits the data.** `data/<park>.json` (about 6.7 MB) are OSM extracts. The link and override files layer curated data onto them and are likely part of a derivative database. `.github/workflows/deploy.yml` publishes the whole repository, so **merging this branch to `main` would publicly distribute these files**. They would need to be ODbL-licensed and attributed, or excluded from the deploy.
+- **Keep OSM-derived fields out of `js/data.js`.** Merging geometry, OSM ids or heights into it risks pulling the coaster database under share-alike. A separate map-data file linked by coaster id is the safer pattern; see OSMF's community guidelines on Produced Works, Collective Databases and Horizontal Layers.
+- **The OSM editing API** (`api.openstreetmap.org`) is primarily for editing. Its usage policy tolerates light read use but not bulk or production data consumption. Five identified, spaced requests for a spike are within that spirit; a production pipeline should use Overpass, planet or regional extracts (for example Geofabrik), and never call OSM from riders' browsers. The same goes for Overpass's fair-use limits, and for privacy: no rider IPs should go to third parties.
+- **Mapper privacy:** user names and uids were stripped from the saved files.
+- **Imagery:** the Isometric NYC approach relied on Google Maps imagery. Restyling third-party imagery raises separate terms-of-service problems this spike avoids.
 
 ## What ship quality would take
 
-1. Real data: fetch the five test parks, read `coverage.mjs`, and render Cedar Point. Expect tagging variance (outlines as relations, split or unnamed tracks, missing stations).
-2. A curated OSM-to-coaster-id link table and per-coaster overrides (direction, station, peak), owned by the data curator. Do not rely on runtime name matching.
-3. Build-time generation into a small, simplified, ODbL-licensed park-map file per park, after the licensing decision.
-4. Surroundings: parking and water outside the outline (Cedar Point sits on a peninsula), a better background than sky.
-5. Art: per-type silhouettes (loops and inversions where tagged), better station and queue art, occlusion-aware trains, persistent labels at close zoom, and an overview that stays legible on phones.
-6. Reviews: product_designer (flows, accessibility), motion_ux_engineer (train and zoom stepping), web_performance_engineer (large parks, low-end phones).
+1. A licensing decision, then build-time generation of a small, simplified, ODbL-licensed park-map file per park, kept out of `js/data.js`.
+2. Curator work per park: confirm inferred links, fix OSM upstream (unnamed tracks, "Lighting Rod", flume channels tagged as track), add overrides (heights, launch profiles, wooden structures) with sources.
+3. Art:
+   - per-type silhouettes (inversions, helices, top hats where tagged);
+   - station and queue art;
+   - stronger ghost readability at overview;
+   - terrain for hillside parks;
+   - labels at close zoom;
+   - a hand-tuned default view per park.
+4. Performance: precompute ground layers per zoom level, or cache tiles, to make drag-panning smooth on phones.
+5. Reviews: product_designer (flows, accessibility of the pins and key), motion_ux_engineer (train and zoom stepping), web_performance_engineer (large parks, low-end phones), qa_engineer (ride-log reading).

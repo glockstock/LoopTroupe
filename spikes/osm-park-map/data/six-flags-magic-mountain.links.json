@@ -1,0 +1,231 @@
+{
+ "_comment": "Curated by coaster_data_curator (spike). Links OpenStreetMap coasters to Loop Troupe coaster ids in js/data.js. match: exact | fuzzy (name differs, same ride) | manual | inferred (location/length evidence, needs a team check) | none. notCoaster drops a mis-tagged feature from the map. OSM data (c) OpenStreetMap contributors, ODbL.",
+ "park": "six-flags-magic-mountain",
+ "checked": "2026-10-02",
+ "links": [
+  {
+   "osmName": "Revolution",
+   "osmWays": [
+    "way/106242514",
+    "way/106242569",
+    "way/106257579"
+   ],
+   "feature": "node/1223042672",
+   "coasterId": "six-flags-magic-mountain--new-revolution",
+   "match": "fuzzy",
+   "confidence": "confirmed",
+   "note": "Loop Troupe lists this ride as \"New Revolution\".",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Twisted Colossus",
+   "osmWays": [
+    "way/106242521"
+   ],
+   "feature": "node/1223042502",
+   "coasterId": "six-flags-magic-mountain--twisted-colossus",
+   "match": "exact",
+   "note": "Only a 19 m named piece; the circuit itself is unnamed (next entry).",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Scream!",
+   "osmWays": [
+    "way/106242523",
+    "way/106242547",
+    "way/635533733"
+   ],
+   "feature": "node/1223043009",
+   "coasterId": "six-flags-magic-mountain--scream",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Apocalypse: The Ride",
+   "osmWays": [
+    "way/106242527",
+    "way/106242532",
+    "way/106242564"
+   ],
+   "feature": "node/1223043142",
+   "coasterId": "six-flags-magic-mountain--apocalypse",
+   "match": "fuzzy",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "The Riddler's Revenge",
+   "osmWays": [
+    "way/106242559",
+    "way/635533752",
+    "way/635533754"
+   ],
+   "feature": "node/1223043134",
+   "coasterId": "six-flags-magic-mountain--the-riddler-s-revenge",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Gold Rusher",
+   "osmWays": [
+    "way/106242580",
+    "way/106242588",
+    "way/135126892"
+   ],
+   "feature": "way/472672803",
+   "coasterId": "six-flags-magic-mountain--goldrusher",
+   "match": "fuzzy",
+   "confidence": "confirmed",
+   "note": "Spelling differs: Loop Troupe uses \"Goldrusher\".",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "X2",
+   "osmWays": [
+    "way/106257576",
+    "way/106257577",
+    "way/106257598"
+   ],
+   "feature": "way/472671743",
+   "coasterId": "six-flags-magic-mountain--x2",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Viper",
+   "osmWays": [
+    "way/106257611",
+    "way/106257621"
+   ],
+   "feature": "node/1223071796",
+   "coasterId": "six-flags-magic-mountain--viper",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Batman: The Ride",
+   "osmWays": [
+    "way/135126930",
+    "way/674108373",
+    "way/674108374"
+   ],
+   "feature": "node/1484288463",
+   "coasterId": "six-flags-magic-mountain--batman-the-ride",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Full Throttle",
+   "osmWays": [
+    "way/288601467",
+    "way/603155792",
+    "way/603155793"
+   ],
+   "feature": "node/2921562164",
+   "coasterId": "six-flags-magic-mountain--full-throttle",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "West Coast Racers",
+   "osmWays": [
+    "way/1000691469",
+    "way/1000691471",
+    "way/1000691472"
+   ],
+   "feature": "node/9236918758",
+   "coasterId": "six-flags-magic-mountain--west-coast-racers",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Goliath",
+   "osmWays": [
+    "way/1272951092",
+    "way/1272951093",
+    "way/1272951094"
+   ],
+   "feature": "node/1223042893",
+   "coasterId": "six-flags-magic-mountain--goliath",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": null,
+   "osmWays": [
+    "way/1272951404",
+    "way/1272951405",
+    "way/1272951406"
+   ],
+   "feature": null,
+   "coasterId": "six-flags-magic-mountain--twisted-colossus",
+   "match": "inferred",
+   "confidence": "inferred",
+   "review": true,
+   "note": "Unnamed 1.4 km circuit starting 4 m from the Twisted Colossus feature; published length is about 1.5 km (figure not re-checked).",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Ninja",
+   "osmWays": [
+    "way/1272952050",
+    "way/1272952051",
+    "way/1272952052"
+   ],
+   "feature": "node/3667903821",
+   "coasterId": "six-flags-magic-mountain--ninja",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Wonder Woman: Flight of Courage",
+   "osmWays": [
+    "way/1293134006"
+   ],
+   "feature": "node/10127186690",
+   "coasterId": "six-flags-magic-mountain--wonder-woman-flight-of-courage",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Superman: Escape from Krypton",
+   "osmWays": [],
+   "feature": "node/1223042462",
+   "coasterId": "six-flags-magic-mountain--superman-escape-from-krypton",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Tatsu",
+   "osmWays": [],
+   "feature": "node/1223071564",
+   "coasterId": "six-flags-magic-mountain--tatsu",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Whistlestop Park",
+   "osmWays": [],
+   "feature": "node/3667902249",
+   "coasterId": null,
+   "match": "none",
+   "review": true,
+   "note": "A point tagged attraction=roller_coaster with no track; not in Loop Troupe's list. Check.",
+   "confidence": "open",
+   "checked": "2026-10-02"
+  }
+ ]
+}

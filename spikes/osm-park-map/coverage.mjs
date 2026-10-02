@@ -43,28 +43,67 @@ async function loadDb() {
   return new Function(src + '\nreturn COASTER_DB;')();
 }
 
-async function report(id, { dbFile, dbParkId, json }) {
+async function readJson(file) { try { return JSON.parse(await readFile(file, 'utf8')); } catch { return null; } }
+
+async function report(id, { dbFile, dbParkId, json, draft }) {
   const osm = JSON.parse(await readFile(join(HERE, 'data', `${id}.json`), 'utf8'));
-  const park = buildPark(osm);
-  let dbNames = [], dbLabel = 'none';
+  const linksFile = join(HERE, 'data', `${id}.links.json`);
+  const linkDoc = draft ? null : await readJson(linksFile);
+  const park = buildPark(osm, { links: linkDoc ? linkDoc.links : [] });
+  let dbNames = [], dbIds = [], dbLabel = 'none';
   if (dbFile) {
     const db = JSON.parse(await readFile(join(HERE, dbFile.replace(/^spikes\/osm-park-map\//, '')), 'utf8'));
     dbNames = db.coasters; dbLabel = `${dbFile} (${db.note || 'fixture'})`;
   } else if (dbParkId) {
     const db = await loadDb();
     const p = db.parks.find(x => x.id === dbParkId);
-    if (p) { dbNames = p.coasters.map(c => c.name); dbLabel = `js/data.js park "${p.id}"`; }
+    if (p) { dbNames = p.coasters.map(c => c.name); dbIds = p.coasters.map(c => c.id); dbLabel = `js/data.js park "${p.id}"`; }
   }
 
   const withTrack = park.coasters.filter(c => c.tracks.length);
   const osmNames = park.coasters.filter(c => c.nameSource !== 'none').map(c => c.name);
-  const rows = dbNames.map(n => {
-    const m = match(n, osmNames);
-    const c = m && park.coasters.find(x => x.name === m.name);
-    return { db: n, osm: m ? m.name : null, kind: m ? m.kind : 'missing', track: c ? c.tracks.length > 0 : false, nameSource: c ? c.nameSource : null };
+  // exact matches first, so a fuzzy containment ("Son of Beast" ~ "The Beast")
+  // can never claim a name that has an exact owner
+  const taken = new Set();
+  const rows = dbNames.map((n, i) => {
+    const linked = dbIds[i] && park.coasters.find(x => x.coasterId === dbIds[i]);
+    if (linked) { taken.add(linked.name); return { db: n, id: dbIds[i], osm: linked.osmNames.join(' + '), kind: 'linked' + (linked.link.confidence ? ` (${linked.link.confidence})` : ''), track: linked.tracks.length > 0, nameSource: linked.nameSource, group: linked }; }
+    return { db: n, id: dbIds[i] || null };
   });
-  const matched = new Set(rows.filter(r => r.osm).map(r => r.osm));
-  const osmOnly = park.coasters.filter(c => !matched.has(c.name));
+  for (const r of rows) if (!r.kind) {
+    const o = osmNames.find(x => !taken.has(x) && normName(x) === normName(r.db));
+    if (o) { taken.add(o); Object.assign(r, { osm: o, kind: 'exact' }); }
+  }
+  for (const r of rows) if (!r.kind) {
+    const m = match(r.db, osmNames.filter(x => !taken.has(x)));
+    if (m) { taken.add(m.name); Object.assign(r, { osm: m.name, kind: m.kind }); } else Object.assign(r, { osm: null, kind: 'missing' });
+  }
+  for (const r of rows) if (!r.group) {
+    const c = r.osm && park.coasters.find(x => x.name === r.osm);
+    Object.assign(r, { group: c || null, track: c ? c.tracks.length > 0 : false, nameSource: c ? c.nameSource : null });
+  }
+  const matchedGroups = new Set(rows.map(r => r.group).filter(Boolean));
+  const osmOnly = park.coasters.filter(c => !matchedGroups.has(c));
+  for (const r of rows) delete r.group;
+
+  if (draft) {
+    // a starting point for the curator: exact matches linked, everything else flagged for review
+    const links = park.coasters.map(c => {
+      const r = rows.find(x => x.osm === c.name);
+      return {
+        osmName: c.nameSource === 'none' ? null : c.name,
+        osmWays: c.osmWays.slice(0, 3),
+        feature: c.feature,
+        coasterId: r && r.kind === 'exact' ? r.id : null,
+        match: r ? r.kind : 'none',
+        ...(r && r.kind !== 'exact' ? { suggestion: r.id } : {}),
+        review: !(r && r.kind === 'exact'),
+      };
+    });
+    const { writeFile } = await import('node:fs/promises');
+    await writeFile(linksFile + '.draft', JSON.stringify({ park: id, links }, null, 1));
+    console.log(`draft written: data/${id}.links.json.draft`);
+  }
 
   const out = {
     park: id, synthetic: park.synthetic, db: dbLabel,
@@ -76,6 +115,7 @@ async function report(id, { dbFile, dbParkId, json }) {
       coastersWithTrack: withTrack.length,
       namedCoastersWithTrack: withTrack.filter(c => c.nameSource !== 'none').length,
       heightTagged: withTrack.filter(c => c.heightSource === 'OSM tag').length,
+      dbLinked: rows.filter(r => r.kind.startsWith('linked')).length,
       dbMatchedExact: rows.filter(r => r.kind === 'exact').length,
       dbMatchedFuzzy: rows.filter(r => r.kind === 'fuzzy').length,
       dbMatchedWithTrack: rows.filter(r => r.track).length,
@@ -90,9 +130,10 @@ async function report(id, { dbFile, dbParkId, json }) {
   const k = out.counts;
   console.log(`\n## ${id}${park.synthetic ? ' (SYNTHETIC FIXTURE, not a real park)' : ''}`);
   console.log(`DB: ${dbLabel}`);
+  if (park.dropped && park.dropped.length) console.log(`Dropped as not coasters (links file): ${park.dropped.map(d => d.name + ' (' + d.reason + ')').join('; ')}`);
   console.log(`DB coasters ${k.dbCoasters} | attraction=roller_coaster ${k.attractionRollerCoaster} (${k.namedAttractionRollerCoaster} named) | roller_coaster=track ways ${k.trackWays} -> ${k.coastersWithTrack} coasters with track (${k.namedCoastersWithTrack} named, ${k.heightTagged} with a height tag)`);
   if (dbNames.length) {
-    console.log(`DB matches: ${k.dbMatchedExact} exact, ${k.dbMatchedFuzzy} fuzzy (review), ${k.dbMissing} missing; ${k.dbMatchedWithTrack} of ${k.dbCoasters} have drawable track`);
+    console.log(`DB matches: ${k.dbLinked} via links file, ${k.dbMatchedExact} exact, ${k.dbMatchedFuzzy} fuzzy (review), ${k.dbMissing} missing; ${k.dbMatchedWithTrack} of ${k.dbCoasters} have drawable track`);
     console.log('\n| Loop Troupe coaster | OSM name | match | track geometry | OSM name from |\n| --- | --- | --- | --- | --- |');
     for (const r of rows) console.log(`| ${r.db} | ${r.osm || '—'} | ${r.kind} | ${r.track ? 'yes' : 'no'} | ${r.nameSource || '—'} |`);
   }
@@ -118,7 +159,7 @@ async function main() {
       console.log(`\n## ${id}: data/${id}.json not fetched yet (run fetch.mjs ${id})`);
       continue;
     }
-    await report(id, { dbFile: opt('--db'), dbParkId: opt('--db-park') || cfg.dbParkId, json });
+    await report(id, { dbFile: opt('--db'), dbParkId: opt('--db-park') || cfg.dbParkId, json, draft: args.includes('--draft-links') });
   }
 }
 

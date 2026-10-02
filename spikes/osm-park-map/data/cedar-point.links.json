@@ -1,0 +1,251 @@
+{
+ "_comment": "Curated by coaster_data_curator (spike). Links OpenStreetMap coasters to Loop Troupe coaster ids in js/data.js. match: exact | fuzzy (name differs, same ride) | manual | inferred (location/length evidence, needs a team check) | none. notCoaster drops a mis-tagged feature from the map. OSM data (c) OpenStreetMap contributors, ODbL.",
+ "park": "cedar-point",
+ "checked": "2026-10-02",
+ "links": [
+  {
+   "osmName": "Iron Dragon",
+   "osmWays": [
+    "way/106261974",
+    "way/106261991",
+    "way/651621748"
+   ],
+   "feature": "way/106261978",
+   "coasterId": "cedar-point--iron-dragon",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Millennium Force",
+   "osmWays": [
+    "way/106261980",
+    "way/106261989",
+    "way/106261990"
+   ],
+   "feature": "way/842877486",
+   "coasterId": "cedar-point--millennium-force",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Top Thrill 2",
+   "osmWays": [
+    "way/106261998"
+   ],
+   "feature": "way/845508169",
+   "coasterId": "cedar-point--top-thrill-2",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Gemini",
+   "osmWays": [
+    "way/106358218",
+    "way/106358222",
+    "way/106358225"
+   ],
+   "feature": "way/106358223",
+   "coasterId": "cedar-point--gemini",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Magnum XL-200",
+   "osmWays": [
+    "way/106358219",
+    "way/106358220",
+    "way/106358224"
+   ],
+   "feature": "way/106358228",
+   "coasterId": "cedar-point--magnum-xl-200",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Steel Vengeance",
+   "osmWays": [
+    "way/106358221",
+    "way/106358230",
+    "way/655447301"
+   ],
+   "feature": "way/842583873",
+   "coasterId": "cedar-point--steel-vengeance",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Corkscrew",
+   "osmWays": [
+    "way/106372945",
+    "way/843258222",
+    "way/843258691"
+   ],
+   "feature": "way/106372938",
+   "coasterId": "cedar-point--corkscrew",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Blue Streak",
+   "osmWays": [
+    "way/106506790",
+    "way/106506797"
+   ],
+   "feature": "way/846745437",
+   "coasterId": "cedar-point--blue-streak",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Raptor",
+   "osmWays": [
+    "way/106506796",
+    "way/107288924",
+    "way/655512922"
+   ],
+   "feature": "way/841971409",
+   "coasterId": "cedar-point--raptor",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Cedar Creek Mine Ride",
+   "osmWays": [
+    "way/106607475",
+    "way/107292137",
+    "way/107292140"
+   ],
+   "feature": "way/843321581",
+   "coasterId": "cedar-point--cedar-creek-mine-ride",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Rougarou",
+   "osmWays": [
+    "way/106610418",
+    "way/106610419",
+    "way/649248849"
+   ],
+   "feature": "way/844463815",
+   "coasterId": "cedar-point--rougarou",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Pipe Scream",
+   "osmWays": [
+    "way/651541078"
+   ],
+   "feature": "way/651541079",
+   "coasterId": null,
+   "notCoaster": true,
+   "match": "manual",
+   "confidence": "confirmed",
+   "note": "OSM tags it as a roller coaster; Loop Troupe's Cedar Point guide (credits-operating) and the park list Pipe Scream (Zamperla Disk'O) as a thrill ride, not a coaster credit.",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Valravn",
+   "osmWays": [
+    "way/681143969",
+    "way/688180793",
+    "way/688180794"
+   ],
+   "feature": "way/681173056",
+   "coasterId": "cedar-point--valravn",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Gatekeeper",
+   "osmWays": [
+    "way/681173028",
+    "way/688180797",
+    "way/688180799"
+   ],
+   "feature": "way/681173033",
+   "coasterId": "cedar-point--gatekeeper",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Maverick",
+   "osmWays": [
+    "way/842232095",
+    "way/842232099",
+    "way/842232100"
+   ],
+   "feature": "way/842232924",
+   "coasterId": "cedar-point--maverick",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Wilderness Run",
+   "osmWays": [
+    "way/842996114",
+    "way/842996115",
+    "way/842996116"
+   ],
+   "feature": "way/842925054",
+   "coasterId": "cedar-point--wilderness-run",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Woodstock Express",
+   "osmWays": [
+    "way/843711916",
+    "way/843711917",
+    "way/843711918"
+   ],
+   "feature": "way/107162424",
+   "coasterId": "cedar-point--woodstock-express",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Siren's Curse",
+   "osmWays": [
+    "way/1449464109",
+    "way/1449464110",
+    "way/1449464111"
+   ],
+   "feature": "way/1449439966",
+   "coasterId": "cedar-point--siren-s-curse",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Wild Mouse",
+   "osmWays": [
+    "way/1468567012",
+    "way/1468567013",
+    "way/1468567014"
+   ],
+   "feature": "way/1449439958",
+   "coasterId": "cedar-point--wild-mouse",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  }
+ ]
+}

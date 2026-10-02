@@ -1,0 +1,273 @@
+{
+ "_comment": "Curated by coaster_data_curator (spike). Links OpenStreetMap coasters to Loop Troupe coaster ids in js/data.js. match: exact | fuzzy (name differs, same ride) | manual | inferred (location/length evidence, needs a team check) | none. notCoaster drops a mis-tagged feature from the map. OSM data (c) OpenStreetMap contributors, ODbL.",
+ "park": "kings-island",
+ "checked": "2026-10-02",
+ "links": [
+  {
+   "osmName": "The Beast",
+   "osmWays": [
+    "way/96156685",
+    "way/326120568",
+    "way/326120570"
+   ],
+   "feature": null,
+   "coasterId": "kings-island--the-beast",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Diamondback",
+   "osmWays": [
+    "way/96156691",
+    "way/648841148",
+    "way/648841149"
+   ],
+   "feature": null,
+   "coasterId": "kings-island--diamondback",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Racer (Blue)",
+   "osmWays": [
+    "way/96156698",
+    "way/655712252",
+    "way/661922759"
+   ],
+   "feature": null,
+   "coasterId": "kings-island--racer",
+   "match": "manual",
+   "confidence": "confirmed",
+   "note": "Racing coaster mapped as two named tracks; Loop Troupe counts Racer once.",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Racer (Red)",
+   "osmWays": [
+    "way/96156706",
+    "way/655112940",
+    "way/661922760"
+   ],
+   "feature": null,
+   "coasterId": "kings-island--racer",
+   "match": "manual",
+   "confidence": "confirmed",
+   "note": "Racing coaster mapped as two named tracks; Loop Troupe counts Racer once.",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Adventure Express",
+   "osmWays": [
+    "way/96577038",
+    "way/648841139",
+    "way/648841140"
+   ],
+   "feature": null,
+   "coasterId": "kings-island--adventure-express",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "The Great Pumpkin Coaster",
+   "osmWays": [
+    "way/96577058",
+    "way/679161013"
+   ],
+   "feature": "way/661858577",
+   "coasterId": "kings-island--great-pumpkin-coaster",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "The Bat",
+   "osmWays": [
+    "way/96577060",
+    "way/656031853",
+    "way/656031854"
+   ],
+   "feature": null,
+   "coasterId": "kings-island--the-bat",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Invertigo",
+   "osmWays": [
+    "way/96577062",
+    "way/662207795",
+    "way/662207796"
+   ],
+   "feature": null,
+   "coasterId": "kings-island--invertigo",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Woodstock Express",
+   "osmWays": [
+    "way/96577066",
+    "way/655418743",
+    "way/655418745"
+   ],
+   "feature": null,
+   "coasterId": "kings-island--woodstock-express",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Surf Dog",
+   "osmWays": [
+    "way/189313175"
+   ],
+   "feature": "way/679290231",
+   "coasterId": null,
+   "match": "none",
+   "review": true,
+   "note": "Tagged roller_coaster=track in OSM but not in Loop Troupe's list; check whether it is a coaster.",
+   "confidence": "open",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Banshee",
+   "osmWays": [
+    "way/323766047",
+    "way/655418746",
+    "way/655418749"
+   ],
+   "feature": "way/334128944",
+   "coasterId": "kings-island--banshee",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Backlot Stunt Coaster",
+   "osmWays": [
+    "way/654610979",
+    "way/654610980",
+    "way/654610981"
+   ],
+   "feature": null,
+   "coasterId": "kings-island--backlot-stunt-coaster",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Woodstock's Air Rail",
+   "osmWays": [
+    "way/661871490",
+    "way/661871491",
+    "way/661871492"
+   ],
+   "feature": null,
+   "coasterId": null,
+   "match": "none",
+   "review": true,
+   "note": "Suspended family coaster; possibly the renamed Scooby's Ghoster Coaster (kings-island--scooby-s-ghoster-coaster), unconfirmed. Not linked: renames are a counting question for product_manager (docs/open_questions.md).",
+   "confidence": "open",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Mystic Timbers",
+   "osmWays": [
+    "way/662156047",
+    "way/662156053",
+    "way/662156062"
+   ],
+   "feature": null,
+   "coasterId": "kings-island--mystic-timbers",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": null,
+   "osmWays": [
+    "way/679297915"
+   ],
+   "feature": null,
+   "coasterId": null,
+   "match": "none",
+   "review": true,
+   "note": "Unnamed 143 m circuit next to Snoopy's Junction in Planet Snoopy. Candidate: Flying ACE Aerial Chase (unconfirmed).",
+   "confidence": "open",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "White Water Canyon",
+   "osmWays": [
+    "way/679396539"
+   ],
+   "feature": null,
+   "coasterId": null,
+   "notCoaster": true,
+   "match": "manual",
+   "confidence": "confirmed",
+   "note": "River rapids ride; one of its ways is tagged roller_coaster=track in OSM.",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": null,
+   "osmWays": [
+    "way/679580705",
+    "way/679580706",
+    "way/679580707"
+   ],
+   "feature": null,
+   "coasterId": "kings-island--flight-of-fear",
+   "match": "inferred",
+   "confidence": "inferred",
+   "review": true,
+   "note": "Unnamed track in OSM beside Orion (Area 72). Its 551 m length is close to Flight of Fear's published length of about 520 m (figure not re-checked). Confirm, then add name=Flight of Fear upstream in OSM.",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Orion",
+   "osmWays": [
+    "way/908278747",
+    "way/908278748",
+    "way/908278749"
+   ],
+   "feature": null,
+   "coasterId": "kings-island--orion",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Woodstock Whirlybirds",
+   "osmWays": [
+    "way/1044591318"
+   ],
+   "feature": null,
+   "coasterId": null,
+   "match": "none",
+   "review": true,
+   "note": "Not in Loop Troupe's list; probably not a coaster (unverified).",
+   "confidence": "open",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Soap Box Racers",
+   "osmWays": [
+    "way/1308489645",
+    "way/1308489646",
+    "way/1308491015"
+   ],
+   "feature": null,
+   "coasterId": "kings-island--snoopy-s-soap-box-racers",
+   "match": "fuzzy",
+   "confidence": "confirmed",
+   "note": "OSM uses the short name of Snoopy's Soap Box Racers.",
+   "checked": "2026-10-02"
+  }
+ ]
+}

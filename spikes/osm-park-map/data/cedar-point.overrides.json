@@ -1,0 +1,75 @@
+{
+ "_comment": "Per-coaster render overrides for Cedar Point, keyed by Loop Troupe coaster id. height is meters (heightFt as given). These shape the decorative track profile only and must never be shown as ride stats. profile \"launch\" = launch, top hat, run-out.",
+ "cedar-point--top-thrill-2": {
+  "height": 128.0,
+  "heightFt": 420,
+  "profile": "launch",
+  "source": "Supplied by the project coordinator (widely published figure); not re-checked against a primary source in this spike."
+ },
+ "cedar-point--millennium-force": {
+  "height": 94.5,
+  "heightFt": 310,
+  "source": "Supplied by the project coordinator (widely published figure); not re-checked against a primary source in this spike."
+ },
+ "cedar-point--magnum-xl-200": {
+  "height": 62.5,
+  "heightFt": 205,
+  "source": "Supplied by the project coordinator (widely published figure); not re-checked against a primary source in this spike."
+ },
+ "cedar-point--steel-vengeance": {
+  "height": 62.5,
+  "heightFt": 205,
+  "source": "Supplied by the project coordinator (widely published figure); not re-checked against a primary source in this spike.",
+  "wooden": true,
+  "woodenSource": "Wooden support structure: well-known fact (hybrid or wooden coaster), not re-checked in this spike. Drawn as lattice bents."
+ },
+ "cedar-point--valravn": {
+  "height": 68.0,
+  "heightFt": 223,
+  "source": "Supplied by the project coordinator (widely published figure); not re-checked against a primary source in this spike."
+ },
+ "cedar-point--gatekeeper": {
+  "height": 51.8,
+  "heightFt": 170,
+  "source": "UNCONFIRMED: recalled from widely published figures, not checked against a source. Decorative profile only; verify before relying on it."
+ },
+ "cedar-point--raptor": {
+  "height": 41.8,
+  "heightFt": 137,
+  "source": "UNCONFIRMED: recalled from widely published figures, not checked against a source. Decorative profile only; verify before relying on it."
+ },
+ "cedar-point--rougarou": {
+  "height": 44.2,
+  "heightFt": 145,
+  "source": "UNCONFIRMED: recalled from widely published figures, not checked against a source. Decorative profile only; verify before relying on it."
+ },
+ "cedar-point--gemini": {
+  "height": 38.1,
+  "heightFt": 125,
+  "source": "UNCONFIRMED: recalled from widely published figures, not checked against a source. Decorative profile only; verify before relying on it.",
+  "wooden": true,
+  "woodenSource": "Wooden support structure: well-known fact (hybrid or wooden coaster), not re-checked in this spike. Drawn as lattice bents."
+ },
+ "cedar-point--siren-s-curse": {
+  "height": 48.8,
+  "heightFt": 160,
+  "source": "UNCONFIRMED: recalled from widely published figures, not checked against a source. Decorative profile only; verify before relying on it."
+ },
+ "cedar-point--blue-streak": {
+  "height": 23.8,
+  "heightFt": 78,
+  "source": "UNCONFIRMED: recalled from widely published figures, not checked against a source. Decorative profile only; verify before relying on it.",
+  "wooden": true,
+  "woodenSource": "Wooden support structure: well-known fact (hybrid or wooden coaster), not re-checked in this spike. Drawn as lattice bents."
+ },
+ "cedar-point--corkscrew": {
+  "height": 25.9,
+  "heightFt": 85,
+  "source": "UNCONFIRMED: recalled from widely published figures, not checked against a source. Decorative profile only; verify before relying on it."
+ },
+ "cedar-point--iron-dragon": {
+  "height": 23.2,
+  "heightFt": 76,
+  "source": "UNCONFIRMED: recalled from widely published figures, not checked against a source. Decorative profile only; verify before relying on it."
+ }
+}

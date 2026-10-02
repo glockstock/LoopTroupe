@@ -1,10 +1,90 @@
 {
-  "_comment": "Search hints for fetch.mjs. 'near' is an approximate [lat, lon] used only to find the park's tourism=theme_park outline by name; 'dbParkId' links to js/data.js for coverage.mjs. If a hint is wrong the fetch reports zero matches; it never guesses.",
+  "_comment": "Search hints for fetch.mjs. 'near' is an approximate [lat, lon] used only to find the park's tourism=theme_park outline by name; 'dbParkId' links to js/data.js for coverage.mjs. If a hint is wrong the fetch reports zero matches; it never guesses. 'bbox' [south, west, north, east] is the single area requested from the main OSM API (--source osm-api); keep it tight (well under 0.25 square degrees and 50,000 nodes).",
   "parks": [
-    { "id": "cedar-point", "label": "Cedar Point", "nameRegex": "^Cedar Point$", "near": [41.4822, -82.6835], "radius": 4000, "dbParkId": "cedar-point" },
-    { "id": "kings-island", "label": "Kings Island", "nameRegex": "^Kings Island$", "near": [39.3447, -84.2686], "radius": 4000, "dbParkId": "kings-island" },
-    { "id": "dollywood", "label": "Dollywood", "nameRegex": "^Dollywood$", "near": [35.7954, -83.5307], "radius": 4000, "dbParkId": "dollywood" },
-    { "id": "six-flags-magic-mountain", "label": "Six Flags Magic Mountain", "nameRegex": "Magic Mountain", "near": [34.4253, -118.5972], "radius": 4000, "dbParkId": "six-flags-magic-mountain" },
-    { "id": "knoebels-amusement-park", "label": "Knoebels", "nameRegex": "Knoebels", "near": [40.8806, -76.5050], "radius": 4000, "dbParkId": "knoebels-amusement-park" }
+    {
+      "id": "cedar-point",
+      "label": "Cedar Point",
+      "nameRegex": "^Cedar Point$",
+      "near": [
+        41.4822,
+        -82.6835
+      ],
+      "radius": 4000,
+      "dbParkId": "cedar-point",
+      "bbox": [
+        41.475,
+        -82.6975,
+        41.491,
+        -82.6715
+      ]
+    },
+    {
+      "id": "kings-island",
+      "label": "Kings Island",
+      "nameRegex": "^Kings Island$",
+      "near": [
+        39.3447,
+        -84.2686
+      ],
+      "radius": 4000,
+      "dbParkId": "kings-island",
+      "bbox": [
+        39.336,
+        -84.28,
+        39.353,
+        -84.257
+      ]
+    },
+    {
+      "id": "dollywood",
+      "label": "Dollywood",
+      "nameRegex": "^Dollywood( Theme Park)?$",
+      "near": [
+        35.7954,
+        -83.5307
+      ],
+      "radius": 4000,
+      "dbParkId": "dollywood",
+      "bbox": [
+        35.788,
+        -83.542,
+        35.803,
+        -83.521
+      ]
+    },
+    {
+      "id": "six-flags-magic-mountain",
+      "label": "Six Flags Magic Mountain",
+      "nameRegex": "Magic Mountain",
+      "near": [
+        34.4253,
+        -118.5972
+      ],
+      "radius": 4000,
+      "dbParkId": "six-flags-magic-mountain",
+      "bbox": [
+        34.417,
+        -118.606,
+        34.432,
+        -118.588
+      ]
+    },
+    {
+      "id": "knoebels-amusement-park",
+      "label": "Knoebels",
+      "nameRegex": "Knoebels",
+      "near": [
+        40.8806,
+        -76.505
+      ],
+      "radius": 4000,
+      "dbParkId": "knoebels-amusement-park",
+      "bbox": [
+        40.876,
+        -76.512,
+        40.886,
+        -76.498
+      ]
+    }
   ]
 }

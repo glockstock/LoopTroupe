@@ -1,0 +1,148 @@
+{
+ "_comment": "Curated by coaster_data_curator (spike). Links OpenStreetMap coasters to Loop Troupe coaster ids in js/data.js. match: exact | fuzzy (name differs, same ride) | manual | inferred (location/length evidence, needs a team check) | none. notCoaster drops a mis-tagged feature from the map. OSM data (c) OpenStreetMap contributors, ODbL.",
+ "park": "dollywood",
+ "checked": "2026-10-02",
+ "links": [
+  {
+   "osmName": "Thunderhead",
+   "osmWays": [
+    "way/504947821",
+    "way/655709117",
+    "way/655709118"
+   ],
+   "feature": null,
+   "coasterId": "dollywood--thunderhead",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Tennessee Tornado",
+   "osmWays": [
+    "way/520134625",
+    "way/655415236",
+    "way/655415240"
+   ],
+   "feature": "way/501777295",
+   "coasterId": "dollywood--tennessee-tornado",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Lighting Rod",
+   "osmWays": [
+    "way/570572127",
+    "way/655415237",
+    "way/655415238"
+   ],
+   "feature": "way/837518468",
+   "coasterId": "dollywood--lightning-rod",
+   "match": "fuzzy",
+   "confidence": "confirmed",
+   "note": "OSM name is misspelled (\"Lighting Rod\"); worth fixing upstream.",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Dragonflier",
+   "osmWays": [
+    "way/964086278",
+    "way/1059108446",
+    "way/1059108447"
+   ],
+   "feature": null,
+   "coasterId": "dollywood--dragonflier",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": null,
+   "osmWays": [
+    "way/964086280",
+    "way/1269034899"
+   ],
+   "feature": "way/1001087351",
+   "coasterId": null,
+   "match": "none",
+   "review": true,
+   "note": "Unnamed 834 m circuit near Mystery Mine and Firechaser Express; not identified (Wild Eagle and Blazing Fury are also missing from the OSM names).",
+   "confidence": "open",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Big Bear Mountain",
+   "osmWays": [
+    "way/1268400478",
+    "way/1268400480"
+   ],
+   "feature": null,
+   "coasterId": "dollywood--big-bear-mountain",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Mystery Mine",
+   "osmWays": [
+    "way/1272396827"
+   ],
+   "feature": "way/500071767",
+   "coasterId": "dollywood--mystery-mine",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": null,
+   "osmWays": [
+    "way/1272396828",
+    "way/1411967866",
+    "way/1411967867"
+   ],
+   "feature": null,
+   "coasterId": null,
+   "match": "none",
+   "review": true,
+   "note": "Unnamed 167 m track beside Mystery Mine; possibly part of it. Not identified.",
+   "confidence": "open",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Firechaser Express",
+   "osmWays": [
+    "way/1272399599",
+    "way/1272399600",
+    "way/1272399601"
+   ],
+   "feature": "way/1001087342",
+   "coasterId": "dollywood--firechaser-express",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Whistle Punk Chaser",
+   "osmWays": [
+    "way/1272412787",
+    "way/1272412788"
+   ],
+   "feature": null,
+   "coasterId": "dollywood--whistle-punk-chaser",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Lucky 7 Mine",
+   "osmWays": [],
+   "feature": "way/1001087372",
+   "coasterId": null,
+   "match": "none",
+   "review": true,
+   "note": "A building tagged attraction=roller_coaster; not in Loop Troupe's list. Check.",
+   "confidence": "open",
+   "checked": "2026-10-02"
+  }
+ ]
+}

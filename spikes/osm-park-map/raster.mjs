@@ -21,13 +21,27 @@ export class PixelBuffer {
     this.px = new Uint32Array(this.img.data.buffer);
     this.ids = new Uint16Array(w * h);
     this.mask = null; // optional Uint8Array: ground fills only draw where mask is set
+    // Depth buffer: iso depth (u + v, in sub-units) of the visible surface at each
+    // pixel; larger is nearer the viewer. Ground stays at -Infinity. While `zf`
+    // is set ((x, y) => depth), writes only land where they are not behind.
+    this.z = new Float32Array(w * h);
+    this.zf = null;
   }
 
-  clear(c = 0) { this.px.fill(c); this.ids.fill(0); }
+  clear(c = 0) { this.px.fill(c); this.ids.fill(0); this.z.fill(-Infinity); this.zf = null; }
+
+  zok(i, x, y) {
+    if (!this.zf) return true;
+    const d = this.zf(x, y);
+    if (d < this.z[i] - 0.35) return false;
+    this.z[i] = d;
+    return true;
+  }
 
   pset(x, y, c, id = 0) {
     if (x < 0 || y < 0 || x >= this.w || y >= this.h) return;
     const i = y * this.w + x;
+    if (!this.zok(i, x, y)) return;
     this.px[i] = c;
     if (id) this.ids[i] = id;
   }
@@ -36,6 +50,15 @@ export class PixelBuffer {
     const x0 = Math.max(0, x), y0 = Math.max(0, y), x1 = Math.min(this.w, x + w), y1 = Math.min(this.h, y + h);
     // fully off-screen: also stops TypedArray.fill from reading a negative end as "from the end"
     if (x1 <= x0 || y1 <= y0) return;
+    if (this.zf) {
+      for (let yy = y0; yy < y1; yy++) for (let xx = x0; xx < x1; xx++) {
+        const i = yy * this.w + xx;
+        if (!this.zok(i, xx, yy)) continue;
+        this.px[i] = c;
+        if (id) this.ids[i] = id;
+      }
+      return;
+    }
     for (let yy = y0; yy < y1; yy++) {
       const row = yy * this.w;
       this.px.fill(c, row + x0, row + x1);
@@ -81,6 +104,7 @@ export class PixelBuffer {
         for (let x = xa; x <= xb; x++) {
           const i = row + x;
           if (useMask && this.mask && !this.mask[i]) continue;
+          if (this.zf && !this.zok(i, x, y)) continue;
           this.px[i] = fn ? color(x, y) : color;
           if (id) this.ids[i] = id;
           if (setMask && this.mask) this.mask[i] = 1;

@@ -1,0 +1,112 @@
+{
+ "_comment": "Curated by coaster_data_curator (spike). Links OpenStreetMap coasters to Loop Troupe coaster ids in js/data.js. match: exact | fuzzy (name differs, same ride) | manual | inferred (location/length evidence, needs a team check) | none. notCoaster drops a mis-tagged feature from the map. OSM data (c) OpenStreetMap contributors, ODbL.",
+ "park": "knoebels-amusement-park",
+ "checked": "2026-10-02",
+ "links": [
+  {
+   "osmName": "Flying Turns",
+   "osmWays": [
+    "way/366054960",
+    "way/1413606463",
+    "way/1413606464"
+   ],
+   "feature": "node/3700461445",
+   "coasterId": "knoebels-amusement-park--flying-turns",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Phoenix",
+   "osmWays": [
+    "way/618712504",
+    "way/618712505",
+    "way/618712506"
+   ],
+   "feature": "node/3700461514",
+   "coasterId": "knoebels-amusement-park--phoenix",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Twister",
+   "osmWays": [
+    "way/618715473",
+    "way/618715474",
+    "way/618715475"
+   ],
+   "feature": "node/3700461519",
+   "coasterId": "knoebels-amusement-park--twister",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Kosmo's Kurves",
+   "osmWays": [
+    "way/618929165",
+    "way/618929168",
+    "way/618929173"
+   ],
+   "feature": null,
+   "coasterId": "knoebels-amusement-park--kozmo-s-kurves",
+   "match": "fuzzy",
+   "confidence": "confirmed",
+   "note": "The OSM track is spelled \"Kosmo's\"; OSM's own attraction feature says \"Kozmo's\".",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Impulse",
+   "osmWays": [
+    "way/1279370321",
+    "way/1279370322",
+    "way/1279370323"
+   ],
+   "feature": "node/3700461509",
+   "coasterId": "knoebels-amusement-park--impulse",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": null,
+   "osmWays": [
+    "way/1413407258",
+    "way/1413407261",
+    "way/1413603031"
+   ],
+   "feature": null,
+   "coasterId": null,
+   "notCoaster": true,
+   "match": "inferred",
+   "confidence": "inferred",
+   "note": "Unnamed track running along the Sklooosh log flume; looks like a mis-tagged flume channel.",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": null,
+   "osmWays": [
+    "way/1413603018",
+    "way/1413603019",
+    "way/1413603020"
+   ],
+   "feature": null,
+   "coasterId": null,
+   "notCoaster": true,
+   "match": "inferred",
+   "confidence": "inferred",
+   "note": "Unnamed track running along the Giant Flume; looks like a mis-tagged flume channel.",
+   "checked": "2026-10-02"
+  },
+  {
+   "osmName": "Kozmo's Kurves",
+   "osmWays": [],
+   "feature": "node/4269192304",
+   "coasterId": "knoebels-amusement-park--kozmo-s-kurves",
+   "match": "exact",
+   "confidence": "confirmed",
+   "checked": "2026-10-02"
+  }
+ ]
+}
