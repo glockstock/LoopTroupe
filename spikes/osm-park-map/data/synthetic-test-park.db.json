@@ -1,0 +1,4 @@
+{
+  "note": "SYNTHETIC: a fictional coaster list for Test Park, used only to exercise coverage.mjs name matching. Not from js/data.js.",
+  "coasters": ["Demo Dragon", "Fixture Flyer", "Mock Mouse", "Null Island Express", "Placeholder Plunj", "Proto Launcher", "Retired Rocket", "The Testbed Twister"]
+}

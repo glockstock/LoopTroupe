@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Park map prototype (spike) · Loop Troupe</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400..700&family=VT323&display=swap" rel="stylesheet">
+<!-- Reuses the live design system read-only; the spike adds its own map.css. -->
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="map.css">
+</head>
+<body>
+<a class="skip-link" href="#map">Skip to the map</a>
+
+<main class="view spike" id="main">
+  <header class="sky page-head spike-head">
+    <span class="cloud" aria-hidden="true"></span>
+    <span class="cloud c2" aria-hidden="true"></span>
+    <p class="kicker">Spike · not part of the site</p>
+    <h1>Park map prototype</h1>
+    <p class="lede">Isometric pixel park maps built procedurally from OpenStreetMap data. Hover or tap a coaster to see its name; click it to zoom in.</p>
+  </header>
+
+  <section class="window map-window" aria-labelledby="mapTitle">
+    <div class="window-bar">
+      <h2 id="mapTitle">Loading map…</h2>
+      <span class="bar-meta" id="mapMeta"></span>
+    </div>
+
+    <p class="synthetic-banner" id="synthBanner" hidden>
+      <b>Synthetic test data.</b> Test Park is fictional: invented names, coordinates in the open ocean near 0°, 0°. It is not a real park and not OpenStreetMap data.
+    </p>
+
+    <div class="map-tools">
+      <label class="tool-field">
+        <span class="tool-label">Map data</span>
+        <select class="control" id="parkSelect" aria-label="Map data"></select>
+      </label>
+      <div class="tool-group" role="group" aria-label="Map view">
+        <button type="button" class="btn btn-small tool-btn" id="zoomIn" aria-label="Zoom in">+</button>
+        <button type="button" class="btn btn-small tool-btn" id="zoomOut" aria-label="Zoom out">−</button>
+        <button type="button" class="btn btn-small" id="fitBtn">Fit</button>
+        <button type="button" class="btn btn-small" id="rotateBtn">Rotate</button>
+        <button type="button" class="control-btn" id="trainsBtn" aria-pressed="true"><span class="tick" aria-hidden="true"></span>Trains</button>
+      </div>
+    </div>
+
+    <div class="map-frame" id="map" tabindex="0" role="region" aria-roledescription="interactive map"
+      aria-label="Isometric park map" aria-describedby="mapKeys">
+      <div class="map-tip" hidden></div>
+      <div class="map-ribbon" id="mapRibbon" hidden>Synthetic test park</div>
+      <div class="map-compass" aria-hidden="true">
+        <svg id="compassArrow" viewBox="0 0 16 10" width="32" height="20" shape-rendering="crispEdges">
+          <g fill="currentColor"><rect x="1" y="9" width="2" height="1"/><rect x="3" y="8" width="2" height="1"/><rect x="5" y="7" width="2" height="1"/><rect x="7" y="6" width="2" height="1"/><rect x="9" y="5" width="2" height="1"/><rect x="11" y="4" width="2" height="1"/><rect x="13" y="3" width="2" height="1"/><rect x="11" y="0" width="5" height="1"/><rect x="15" y="0" width="1" height="4"/><rect x="14" y="1" width="1" height="2"/><rect x="13" y="1" width="1" height="1"/></g>
+        </svg>
+        <span>N</span>
+      </div>
+      <p class="map-attrib" id="mapAttrib"></p>
+    </div>
+    <p class="map-keys" id="mapKeys"><span class="keys-fine">Drag to pan. Scroll, or use + and −, to zoom. Keys: arrows pan, + and − zoom, 0 fits, R rotates, Esc clears.</span><span class="keys-touch">Drag to pan. Pinch, or use + and −, to zoom. Tap a coaster to zoom to it.</span></p>
+    <p class="map-status" id="mapStatus" aria-live="polite"></p>
+  </section>
+
+  <section class="window" aria-labelledby="listTitle">
+    <div class="window-bar">
+      <h2 id="listTitle">Coasters on this map</h2>
+      <span class="bar-meta" id="coasterCount"></span>
+    </div>
+    <ul class="coaster-key" id="coasterList"></ul>
+  </section>
+
+  <section class="window" aria-labelledby="dataTitle">
+    <div class="window-bar"><h2 id="dataTitle">About this data</h2></div>
+    <div class="window-body data-notes" id="dataNotes"></div>
+  </section>
+</main>
+
+<footer class="spike-foot">
+  <p>Prototype under <code>spikes/osm-park-map/</code>. Real park maps use map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, available under the Open Database License.</p>
+</footer>
+
+<!-- The live coaster database, read-only: links OSM coasters to Loop Troupe coasters (colors, coverage). -->
+<script src="../../js/data.js"></script>
+<script type="module" src="page.mjs"></script>
+</body>
+</html>
