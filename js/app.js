@@ -31,11 +31,33 @@
 
   const STORE_KEY = 'coaster-credits.v1';
 
+  // Ride entries come from localStorage and imported backup files, so treat
+  // them as untrusted: coerce every field to its expected type before use.
+  function normalizeRide(r) {
+    if (!r || typeof r !== 'object') return null;
+    const date = typeof r.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(r.date) ? r.date : '';
+    const rating = Math.min(5, Math.max(0, Math.round(Number(r.rating)) || 0));
+    const count = Math.max(1, Math.round(Number(r.count)) || 1);
+    const review = typeof r.review === 'string' ? r.review : '';
+    const loggedAt = Number.isFinite(Number(r.loggedAt)) ? Number(r.loggedAt) : 0;
+    return { date, rating, review, count, loggedAt };
+  }
+
+  function normalizeRides(obj) {
+    const out = {};
+    if (!obj || typeof obj !== 'object') return out;
+    for (const [id, r] of Object.entries(obj)) {
+      const n = normalizeRide(r);
+      if (n) out[id] = n;
+    }
+    return out;
+  }
+
   function loadRides() {
     try {
       const raw = localStorage.getItem(STORE_KEY);
       const data = raw ? JSON.parse(raw) : null;
-      return (data && typeof data.rides === 'object' && data.rides) || {};
+      return normalizeRides(data && data.rides);
     } catch { return {}; }
   }
 
@@ -62,7 +84,7 @@
   function fmtDate(iso) {
     if (!iso) return '';
     const [y, m, d] = iso.split('-').map(Number);
-    if (!y || !m || !d) return iso;
+    if (!y || !m || !d) return esc(iso);
     return new Date(y, m - 1, d).toLocaleDateString(undefined,
       { year: 'numeric', month: 'short', day: 'numeric' });
   }
@@ -70,6 +92,7 @@
   const pxStar = on => `<svg class="px-star${on ? ' on' : ''}" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><use href="#px-star"/></svg>`;
 
   function stars(n) {
+    n = Math.min(5, Math.max(0, Math.round(Number(n)) || 0));
     if (!n) return '';
     let out = '';
     for (let i = 1; i <= 5; i++) out += pxStar(i <= n);
@@ -775,7 +798,7 @@
           ${sub}
           ${showPark ? `<a href="#/park/${c.park.id}">${esc(c.park.name)}</a><span>${c.park.state}</span>` : ''}
           ${r?.date ? `<span>Ridden ${fmtDate(r.date)}</span>` : ''}
-          ${r && (r.count || 1) > 1 ? `<span>×${r.count} rides</span>` : ''}
+          ${r && (r.count || 1) > 1 ? `<span>×${Number(r.count) | 0} rides</span>` : ''}
         </div>
         ${r?.rating ? stars(r.rating) : ''}
         ${r?.review ? `<div class="review-snippet">“${esc(r.review)}”</div>` : ''}
@@ -888,7 +911,7 @@
           <div class="credit-body">
             <div class="cname">${esc(e.c.name)}</div>
             <div class="csub">
-              <a href="#/park/${e.c.park.id}">${esc(e.c.park.name)}</a><span>${e.c.park.state}</span>${e.r.date ? `<span>${fmtDate(e.r.date)}</span>` : ''}${(e.r.count || 1) > 1 ? `<span>×${e.r.count} rides</span>` : ''}
+              <a href="#/park/${e.c.park.id}">${esc(e.c.park.name)}</a><span>${e.c.park.state}</span>${e.r.date ? `<span>${fmtDate(e.r.date)}</span>` : ''}${(e.r.count || 1) > 1 ? `<span>×${Number(e.r.count) | 0} rides</span>` : ''}
             </div>
             ${e.r.rating ? stars(e.r.rating) : ''}
             ${e.r.review ? `<div class="review-snippet long">“${esc(e.r.review)}”</div>` : ''}
@@ -953,7 +976,8 @@
         if (!data || typeof data.rides !== 'object') throw new Error('bad format');
         let added = 0;
         for (const [id, r] of Object.entries(data.rides)) {
-          if (coasterById.has(id)) { rides[id] = r; added++; }
+          const n = normalizeRide(r);
+          if (n && coasterById.has(id)) { rides[id] = n; added++; }
         }
         saveRides();
         renderCredits();
