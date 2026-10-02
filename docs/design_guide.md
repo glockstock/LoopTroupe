@@ -31,6 +31,7 @@ All shared values are CSS custom properties on `:root` in `css/style.css`. Reuse
 | Action | `--green-btn` | Primary button fill (white text passes 4.5:1) |
 | Ridden | `--ridden`, `--ridden-hover` | Background of ridden rows and visited passport stamps |
 | Small yellow on wood | `--gold-light` | Links/labels on wood; plain `--yellow` on wood is for large text only |
+| Claim states (guides) | `--draft-bg/-ink/-edge`, `--unconf-bg/-ink/-edge`, `--est-bg`, `--warn-bg` | Draft (preview only), Unconfirmed, Estimate badges; "Heads up" callouts. Always paired with a text label (section 8) |
 
 Track colors (`TRACK_COLORS` in `app.js`): red, blue, orange, purple, yellow, teal, pink, green, assigned by the coaster's index within its park. Ghost (unridden) track is `#a39d90` with `#cfc8b8` supports.
 
@@ -46,17 +47,20 @@ Track colors (`TRACK_COLORS` in `app.js`): red, blue, orange, purple, yellow, te
 | `--fs-body` | VT323 | 22px (21px on phones) | Body copy, ledes, inputs |
 | `--fs-meta` | VT323 | 20px | Meta lines, reviews, legends |
 | `--fs-small` | VT323 | 18px | Floor. Nothing in VT323 goes smaller. |
+| `--font-read`, `--fs-read` | system UI sans | 17px, line-height 1.5 | Long-form reading only: guide prose, answer lines (19px, 600), notes. No download. |
 
 Rules:
 - Press Start 2P is for display only: titles, numbers, single short words. Never paragraphs.
 - VT323 is narrow with a small x-height. Treat 18px as the minimum and 22px as body.
 - `font-variant-ligatures: none` is set globally. Pixelify Sans's "fi" ligature renders like an "A".
 - The fallbacks keep sizes sane if the Google Fonts request fails (see Q-005).
+- **Pixel fonts are for chrome, not paragraphs.** Anything a rider reads as prose (guide answers, paragraphs, ride notes, plan steps) uses `--font-read` inside a `.g-read` container. Headings, labels, badges, buttons, coaster rows, and meta lines keep the pixel fonts, which carry the look. Coaster rows inside `.g-read` reset to VT323 so they match every other page.
 
 ### Spacing and sizing
 
 - 4px grid: `--s1` 4, `--s2` 8, `--s3` 12, `--s4` 16, `--s5` 24, `--s6` 32, `--s7` 48.
 - `--tap` is 44px: the minimum for primary controls (buttons, inputs, ride toggles, stars). Secondary row buttons are at least 40px tall.
+- `--dock-h` (68px) is the phone guide dock's height; `--topbar-h` is measured from JS on guide pages so sticky elements and jump offsets clear the top bar.
 - Content column: `min(1120px, 100% - gutters)`; 12px gutters on phones.
 
 ### Bevels, edges, shadows
@@ -88,7 +92,10 @@ Rules:
 | Passport | `.passport-cell` | Parchment stamp. `.some` turns light green, `.done` is a solid green stamp. A bottom fill bar shows the fraction. |
 | Dialog | `.modal` | A window with a sticky title bar and close button. Stars are 48px pressable tiles. Date and count share a row. Actions: Remove (danger) left, Cancel and the primary on the right. On phones it docks to the bottom, with the primary full width on top. |
 | Empty state | `.empty-state.window` | A gray (unridden) coaster island illustration, one line of copy, and at most one primary action. |
-| Toast | `.toast` | Wood plaque, bottom center, announced via `role="status"`. |
+| Toast | `.toast` | Wood plaque, bottom center, announced via `role="status"`. Sits above the guide dock on phones. |
+| Guide card | `.guide-card.window` | On a park page, directly under the back link (above the park head, so it is visible without scrolling past the diorama): map icon in an inset well, "Park guide" kicker, title, one line, and a primary "Open the guide". Shown only when the guide is published, or with `?preview` (then with a Draft preview badge). |
+| Status badges | `.badge-draft`, `.badge-unconfirmed`, `.badge-estimate`, `.badge-new`, `.badge-ridden` | Extensions of `.badge`. Draft is dashed purple; Unconfirmed is orange with ink text; Estimate is pale blue; New credit is yellow; Ridden is green with a pixel check. |
+| Visually hidden | `.visually-hidden` | Screen-reader-only text (for example "Checklist:" on the dock, video titles on Play buttons). |
 
 ## 4. Pixel art and isometric scenes
 
@@ -116,7 +123,7 @@ Rules:
 
 ### Scenery and icons
 - Scenery (trees, pines, bushes, stall, flowers, balloon, gate) is front-facing pixel art anchored at its ground point.
-- UI icons are 12×12 pixel symbols (`#ico-coaster`, `#ico-gate`, `#ico-flag`, `#ico-star`) drawn in `currentColor` plus fixed accents, and shown at 3× or 4×.
+- UI icons are 12×12 pixel symbols (`#ico-coaster`, `#ico-gate`, `#ico-flag`, `#ico-star`, `#ico-map`, `#ico-food`) drawn in `currentColor` plus fixed accents, and shown at 2× to 4×. `map` marks park guides (red route); `food` marks food picks; `gate` marks gate picks; `flag` marks "Last verified" and other picks.
 - The brand mark is a 16×14 pixel loop with a train, drawn at 2×.
 
 ## 5. Motion
@@ -126,12 +133,14 @@ Rules:
 - Feedback: buttons press 2px. Cards lift 2px on hover (`steps(2)`). Progress fills step with `steps(10)`. Toasts step in and out with `steps(3)`.
 - Prefer `steps()` timing over smooth easing. Movement snaps like sprite animation.
 - `prefers-reduced-motion: reduce` stops the clouds (parked in fixed positions), removes transitions and animations, and turns off smooth scrolling.
+- In-page jumps (guide section menu, "Ride plan", "Credit checklist") are instant, never smooth: on a long guide a smooth scroll takes a second or more. Nothing in a guide animates while the reader scrolls.
 
 ## 6. Responsive behavior
 
 - Breakpoints: 960px (hero becomes two columns with copy left and diorama right), 760px (page heads show decorative coaster art on the right), 640px (phone layout), 360px (smallest phones).
 - Phone layout: centered brand above a 4-up nav row; full-width CTAs; stat cards in a 2×2 grid; one-column park cards in a compact horizontal format; toolbars wrap with full-width search; coaster rows keep toggle, info, and action on one line with tighter gaps; credit actions become a full-width pair; the dialog docks to the bottom.
 - There must be no horizontal page overflow at 320px or 390px. Long names wrap at word boundaries (`overflow-wrap: break-word`, `anywhere` only for h1).
+- Guides: below 960px the section index becomes a bottom sheet opened from a fixed wood dock (thumb reach); at 960px and up it is a sticky sidebar window. The guide head shows the operating-coaster diorama from 760px up; phones skip it so the answer lines come sooner.
 
 ## 7. Accessibility checklist
 
@@ -142,5 +151,45 @@ Run on every UI change (desktop 1360px, phones 390px and 320px):
 - **Keyboard:** the skip link comes first. The dialog takes focus on open, traps Tab, closes on Escape or the close button, and returns focus to the opener.
 - **Semantics:** nav has `aria-current`. Toggles have `aria-pressed`. Icon-like row buttons name their coaster ("Mark Blue Streak as ridden"). Stars and progress bars expose values. Decorative SVG and images use `aria-hidden` or empty `alt`.
 - **Targets:** at least 44px for primary controls and at least 40px for secondary row actions on phones.
-- **Escaping:** all user text (reviews) goes through `esc()` before rendering, including into `<title>` and `aria-label`.
+- **Escaping:** all user text (reviews) goes through `esc()` before rendering, including into `<title>` and `aria-label`. Guide content is treated the same way (section 8).
 - **Verify by rendering,** not from code. Check fonts actually loaded with `document.fonts` entries whose `status` is `loaded`. `document.fonts.check()` returns true when no face is registered at all, so it gives false positives.
+
+## 8. Park guides
+
+Guides (`#/guide/<park-id>[/<section-id>]`, contract in `docs/tech_spec.md`, "Park guides") are the most practical page on the site. They should feel like a Loop Troupe window, but **scanning beats decoration**: a rider in a queue should find "what do I ride next" in a couple of taps.
+
+### Page anatomy
+1. **Back link** to the park page (an ink plaque, same as elsewhere).
+2. **Preview banner** (`.g-preview`, `?preview` only): a hazard-striped construction sign with a "Draft preview" badge, "Not yet verified by the team", "k of n details checked", and a meter. Each section also shows a dashed "k of n checked" chip and a "Draft" badge in its title bar until it is signed off. None of this renders outside preview.
+3. **Guide head** (`.guide-head.sky`): kicker ("Park guide · <season> season"), outlined h1, location, a wood plaque with "X/Y operating coasters ridden", then two shortcuts: **Ride plan** (primary; opens and jumps to the first plan) and **Credit checklist**. From 760px a diorama of the operating coasters sits on the right, colored as they are ridden.
+4. **Sections** (`.g-section.window`): title bar with a number plaque; a meta strip with the flag icon and "Last verified <date>" (the oldest verified date among the section's claims, or "Not verified yet"); then the body.
+5. **Section menu**: sidebar index (wide) or dock plus bottom sheet (phones), described below.
+
+### Rules
+- **Answer first.** Every section body starts with `.g-answer`: an inset field card with a yellow stripe, larger and heavier than body text. Detail follows. If the answer itself is unconfirmed, an orange dashed notice comes before it.
+- **Status is text first, color second.** Draft (preview only), Unconfirmed, and Estimate are word badges after the claim. Unconfirmed claims also get a highlighted span with a dashed orange underline and the note "We haven't tried this yet: check before you go", so they can't pass for fact. Opinions ("takes") get no label; the voice carries them.
+- **Escape everything.** Guide strings are data. The renderer escapes first, then allows only `**bold**` and `[label](https://…)`. URLs in attributes must be https; YouTube IDs must match `^[A-Za-z0-9_-]{11}$`. Coaster references count only when they belong to the guide's park.
+- **Credits reuse the app's own rows.** Must-ride tiers, ride notes, and the checklist use `coasterRow()` and `bindRows()`, so the ride toggle, "Log ride", and the log modal behave exactly as on park pages. Rank (`#1`) and **New credit** badges go in the row's meta line. Plan steps show New credit or Ridden next to the ride name. Counts are always labeled **operating** (retired coasters are listed once, as legacy credits, and not counted).
+- **Redraw in place.** Logging a ride re-renders only the credit-dependent fragments (`[data-gdyn]`), keeps keyboard focus on the same control, and never resets an open video or an expanded plan.
+- **Works with no log.** An empty log shows the full operating list with an invitation ("Ridden some already? Tick them off"), never a reprimand.
+
+### Components
+| Component | Class | Notes |
+| --- | --- | --- |
+| Answer line | `.g-answer` | `--font-read` 19px/600 on `--field`, ink edge, hard shadow, 6px yellow stripe. |
+| Prose, lists | `.g-read`, `.g-list`, `.g-ol` | Reading font. Bullets are 8px green pixel squares; ordered lists use ink plaques with Press Start numbers. |
+| Callouts | `.g-callout.g-tip`, `.g-warning` | Labeled plaques "Tip" (green) and "Heads up" (dark red); the label is the cue, not the tint. |
+| Facts | `.g-facts` / `.g-fact` | Inset tiles: uppercase Pixelify label, value in reading font. Auto-fit grid. |
+| Picks | `.g-picks` / `.g-pick` | Raised field cards with a 36px icon (gate, food, flag), name, "location · Best for", text. |
+| Ride group | `.g-rides` / `.g-ride` | A window list; each item is a coaster row followed by labeled notes (`.g-note-label`), indented under the name on wide screens. |
+| Plan | `details.g-plan` | Collapsible; the first plan is open. Summary shows a pixel caret, the title, and the step count (44px target). Steps have ink number plaques (wood for non-ride steps) joined by a dotted footpath, a track-color swatch, the ride name, credit badge, and a time chip (ink) with an Estimate badge when the time is an estimate. |
+| Video | `.g-video` / `.g-screen` | A dark scanline "screen" with a Play button and "Loads from YouTube when you tap play". Tapping swaps in a `youtube-nocookie.com` iframe (titled); nothing is requested before. Non-YouTube picks show a "Watch on <host>" button; missing links show "Video link coming soon". |
+| Your credits | `.g-credits` | Inset field panel: wood fraction plaque, one line, meter, and "Still to ride" ghost chips, then "Open your checklist". |
+| Checklist | `#g-checklist` | Heading, operating progress, the coaster-row window list, a legacy-credits line, and the operating list's own claim in fine print. |
+| Sign-off, changelog | `.g-signoff`, `.g-changelog` | Freshness section: one row per section (signed off by/when, last verified) and dated entries with wood date chips. |
+| Section menu | `nav.g-index` | Sidebar window "In this guide" (sticky under the top bar). Current section is the pressed-yellow nav state with `aria-current="location"`. Links are 44px tall. |
+| Guide dock | `.g-dock`, `.g-dock-btn`, `.g-dock-check` | Phones and tablets: a fixed wood plank at the bottom. Left: "Section n of 9 / <title>" opens the index as a bottom sheet (`aria-expanded`, Escape and the scrim close it and return focus). Right: a green "N to ride" button jumps to the checklist (number only at 360px and below). |
+
+### Navigation behavior
+- Section links are real routes (`#/guide/<park>/<section>`), so every section is shareable. When the guide is already on screen, the router scrolls instead of re-rendering, puts the section heading 12px under the top bar, and focuses it (`tabindex="-1"`). Re-tapping the current section's link scrolls back to it.
+- In preview, every in-guide link and the back link keep `?preview`.

@@ -272,6 +272,16 @@
     flag: R(0, 11, 12, 1, '#4c9a3a') + R(2, 0, 1, 11, '#3b2f1c') + R(3, 1, 7, 2, 'currentColor') + R(3, 3, 5, 2, 'currentColor') +
       R(3, 5, 7, 1, 'currentColor') + R(1, 10, 3, 1, '#3b2f1c'),
     star: `<g transform="translate(1.5 1.5)">${PIXEL_STAR}</g>`,
+    // folded park map with a dotted route (park guides)
+    map: R(0, 1, 4, 10, '#f4ead0') + R(4, 0, 4, 10, '#e3d5b0') + R(8, 1, 4, 10, '#f4ead0') +
+      R(4, 0, 1, 10, '#b39a62') + R(8, 1, 1, 10, '#b39a62') + R(0, 11, 4, 1, '#8a7550') + R(4, 10, 4, 1, '#8a7550') +
+      R(8, 11, 4, 1, '#8a7550') + R(1, 3, 2, 2, '#5cad47') + R(5, 6, 2, 2, '#5cad47') + R(9, 7, 2, 3, '#5cad47') +
+      R(1, 9, 1, 1, 'currentColor') + R(2, 8, 1, 1, 'currentColor') + R(3, 7, 1, 1, 'currentColor') + R(5, 5, 1, 1, 'currentColor') +
+      R(6, 4, 1, 1, 'currentColor') + R(8, 4, 1, 1, 'currentColor') + R(9, 2, 2, 2, 'currentColor') + R(9, 4, 1, 1, '#3b2f1c'),
+    // ice-cream cone (food picks)
+    food: R(4, 0, 4, 1, 'currentColor') + R(3, 1, 6, 1, 'currentColor') + R(2, 2, 8, 3, 'currentColor') + R(3, 2, 2, 1, '#fff6e0') +
+      R(2, 5, 8, 1, '#a8742c') + R(3, 6, 6, 1, '#d9a050') + R(4, 7, 4, 2, '#d9a050') + R(5, 9, 2, 2, '#d9a050') +
+      R(4, 7, 1, 1, '#a8742c') + R(6, 8, 1, 1, '#a8742c') + R(5, 10, 1, 1, '#a8742c'),
   };
 
   const SPRITE_SRC = Object.fromEntries(SHAPES.map(sh => [sh, coasterSprite(SHAPE_SPECS[sh])]));
@@ -454,15 +464,27 @@
   function route() {
     const { parts, params } = parseHash();
     const page = parts[0] || 'home';
+    // a park guide is a park sub-page, so it highlights Parks
+    const navPage = page === 'park' || page === 'guide' ? 'parks' : page;
     document.querySelectorAll('.nav a').forEach(a => {
-      const on = a.dataset.route === (page === 'park' ? 'parks' : page);
+      const on = a.dataset.route === navPage;
       a.classList.toggle('active', on);
       if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
+    // Jumping between sections of the guide already on screen scrolls only, so
+    // an open video keeps playing.
+    if (page === 'guide' && guideCtx && guideCtx.id === parts[1] &&
+      guideCtx.preview === params.has('preview') && document.body.contains(guideCtx.root)) {
+      goToSection(parts[2]);
+      updateNavCount();
+      return;
+    }
+    teardownGuide();
     window.scrollTo({ top: 0, behavior: 'instant' });
     if (page === 'home') renderHome();
     else if (page === 'parks') renderParks(params);
-    else if (page === 'park' && parts[1]) renderPark(parts[1]);
+    else if (page === 'park' && parts[1]) renderPark(parts[1], params);
+    else if (page === 'guide' && parts[1]) renderGuide(parts[1], parts[2], params);
     else if (page === 'coasters') renderCoasters(params);
     else if (page === 'credits') renderCredits();
     else renderHome();
@@ -671,7 +693,7 @@
 
   // ---------- park detail ----------
 
-  function renderPark(id) {
+  function renderPark(id, params = new URLSearchParams()) {
     const park = parkById.get(id);
     if (!park) {
       view.innerHTML = `<div class="empty-state window">${spriteArt('looper', false)}<p>Park not found. <a href="#/parks">Back to parks</a></p></div>`;
@@ -680,8 +702,24 @@
     const { ridden, total } = parkStats(park);
     const pct = total ? ridden / total : 0;
 
+    // Park guide card: shown once the guide is published, or in ?preview.
+    const gEntry = guideEntry(park.id);
+    const gLive = !!gEntry && gEntry.published === true;
+    const gPv = params.has('preview') ? '?preview' : '';
+    const guideCard = gEntry && (gLive || gPv) ? `
+      <a class="guide-card window" href="#/guide/${park.id}${gPv}">
+        <span class="guide-card-art">${icon('map')}</span>
+        <span class="guide-card-copy">
+          <span class="guide-card-kicker">Park guide${gLive ? '' : ' <span class="badge badge-draft">Draft preview</span>'}</span>
+          <strong class="guide-card-title">The troupe's ${esc(park.name)} guide</strong>
+          <span class="guide-card-desc">When to go, which gate, the order we ride, and the credits you still need.</span>
+        </span>
+        <span class="btn btn-primary guide-card-cta" aria-hidden="true">Open the guide</span>
+      </a>` : '';
+
     view.innerHTML = `
       <a class="back-link" href="#/parks">← All parks</a>
+      ${guideCard}
       <section class="park-head sky">
         <span class="cloud" aria-hidden="true"></span>
         <span class="cloud c2" aria-hidden="true"></span>
@@ -713,7 +751,7 @@
 
     $('#coasterList').innerHTML = park.coasters.map(c => coasterRow(c.id)).join('');
     bindRows();
-    parkRedraw = () => renderPark(id);
+    parkRedraw = () => renderPark(id, params);
   }
 
   let parkRedraw = null;
@@ -721,7 +759,9 @@
   const CHECK_SVG = `<svg viewBox="0 0 11 10" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="${
     [[0, 4], [1, 5], [2, 6], [3, 5], [4, 4], [5, 3], [6, 2], [7, 1], [8, 0]].map(([x, y]) => `M${x + 1} ${y + 1}h2v3h-2z`).join('')}"/></svg>`;
 
-  function coasterRow(id, { showPark = false } = {}) {
+  // `sub` is extra markup (already escaped) shown first in the meta line, used by
+  // park guides for rank and "New credit" badges.
+  function coasterRow(id, { showPark = false, sub = '' } = {}) {
     const c = coasterById.get(id);
     const r = rides[id];
     const name = esc(c.name);
@@ -732,6 +772,7 @@
       <div class="coaster-info">
         <div class="cname">${name}</div>
         <div class="csub">
+          ${sub}
           ${showPark ? `<a href="#/park/${c.park.id}">${esc(c.park.name)}</a><span>${c.park.state}</span>` : ''}
           ${r?.date ? `<span>Ridden ${fmtDate(r.date)}</span>` : ''}
           ${r && (r.count || 1) > 1 ? `<span>×${r.count} rides</span>` : ''}
@@ -925,6 +966,593 @@
     e.target.value = '';
   }
 
+  // ---------- park guides ----------
+  // Contract: docs/tech_spec.md, "Park guides". Content is plain data in
+  // js/guides/<park-id>.js, lazy-loaded on #/guide/<park-id>[/<section-id>][?preview].
+  // Guide text is untrusted data: everything is escaped, then only **bold** and
+  // [label](https://…) become markup. Riders log from the guide with the same
+  // coasterRow()/bindRows() as everywhere else; the ride-log format is unchanged.
+
+  const guideIndex = () => window.GUIDE_INDEX || {};
+  const guideEntry = id => (Object.prototype.hasOwnProperty.call(guideIndex(), id) ? guideIndex()[id] : null);
+  const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+  const YT_RE = /^[A-Za-z0-9_-]{11}$/;
+  const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+  const CLAIM_STATUSES = ['draft', 'needs-check', 'verified'];
+  const httpsUrl = u => (typeof u === 'string' && /^https:\/\/[^\s"'<>]+$/.test(u) ? u : null);
+  const txt = v => (v == null ? '' : esc(v));
+  const inline = v => txt(v)
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\[([^\]]+)\]\((https:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+  const asList = v => (Array.isArray(v) ? v : []);
+  const isClaim = c => !!c && typeof c === 'object' && typeof c.text === 'string';
+  const dateText = d => (typeof d === 'string' && DATE_RE.test(d) ? esc(fmtDate(d)) : '');
+  const topbarH = () => $('.topbar').offsetHeight;
+  const setTopbarVar = () => document.documentElement.style.setProperty('--topbar-h', `${topbarH()}px`);
+
+  const PX = (w, h, body, cls = '') => `<svg${cls ? ` class="${cls}"` : ''} viewBox="0 0 ${w} ${h}" shape-rendering="crispEdges" aria-hidden="true">${body}</svg>`;
+  const CLOSE_SVG = PX(8, 8, [0, 1, 2, 3, 4, 5].map(k => R(k + 1, k + 1, 1, 1, 'currentColor') + R(6 - k, k + 1, 1, 1, 'currentColor')).join(''));
+  const MENU_SVG = PX(12, 12, R(1, 2, 10, 2, 'currentColor') + R(1, 5, 10, 2, 'currentColor') + R(1, 8, 10, 2, 'currentColor'));
+  const CARET_SVG = PX(8, 8, R(2, 0, 1, 8, 'currentColor') + R(3, 1, 1, 6, 'currentColor') + R(4, 2, 1, 4, 'currentColor') + R(5, 3, 1, 2, 'currentColor'), 'g-caret');
+  const PLAY_SVG = PX(8, 8, R(1, 0, 2, 8, 'currentColor') + R(3, 1, 1, 6, 'currentColor') + R(4, 2, 1, 4, 'currentColor') + R(5, 3, 2, 2, 'currentColor'));
+
+  const guideLoads = new Map();
+  function loadGuide(id) {
+    if (!guideLoads.has(id)) {
+      guideLoads.set(id, new Promise((resolve, reject) => {
+        const s = document.createElement('script');
+        s.src = guideEntry(id).src;
+        s.onload = () => resolve();
+        s.onerror = () => { s.remove(); guideLoads.delete(id); reject(new Error('guide failed to load')); };
+        document.head.appendChild(s);
+      }));
+    }
+    return guideLoads.get(id);
+  }
+
+  let guideCtx = null;     // the guide on screen: { id, preview, root, observer }
+  let guideRedraw = null;
+
+  function teardownGuide() {
+    if (guideCtx && guideCtx.observer) guideCtx.observer.disconnect();
+    guideCtx = null;
+    guideRedraw = null;
+  }
+
+  window.addEventListener('resize', () => { if (guideCtx) setTopbarVar(); });
+
+  function onGuideRoute(id, preview) {
+    const { parts, params } = parseHash();
+    return parts[0] === 'guide' && parts[1] === id && params.has('preview') === preview;
+  }
+
+  // Jumps are instant: on a long guide a smooth scroll takes a second or more,
+  // and nothing should slow a rider down.
+  function scrollToEl(el) {
+    const top = el.getBoundingClientRect().top + window.scrollY - topbarH() - 12;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'instant' });
+  }
+
+  // Scroll a section under the sticky top bar and put focus on its heading.
+  function goToSection(sectionId) {
+    const el = sectionId ? document.getElementById(`g-${sectionId}`) : null;
+    if (!el || !guideCtx || !guideCtx.root.contains(el)) {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      return;
+    }
+    scrollToEl(el);
+    const h = el.querySelector('.g-sec-title');
+    if (h) h.focus({ preventScroll: true });
+  }
+
+  function guideMessage(art, html) {
+    view.innerHTML = `<div class="empty-state window">${spriteArt(art, false)}${html}</div>`;
+  }
+
+  function renderGuide(id, sectionId, params) {
+    const preview = params.has('preview');
+    const park = parkById.get(id);
+    const entry = guideEntry(id);
+    if (!park || !entry || typeof entry.src !== 'string') {
+      guideMessage('mouse', `<p>Guide not found.</p>${park
+        ? `<a class="btn" href="#/park/${park.id}">Go to ${esc(park.name)}</a>`
+        : '<a class="btn" href="#/parks">Browse parks</a>'}`);
+      return;
+    }
+    if (entry.published !== true && !preview) {
+      // Not out yet: say so without downloading the draft.
+      view.innerHTML = `
+        <a class="back-link" href="#/park/${park.id}">← ${esc(park.name)}</a>
+        <div class="empty-state window g-soon">
+          ${spriteArt('launch', false)}
+          <p class="kicker">Park guide</p>
+          <h2>Our ${esc(park.name)} guide isn't out yet</h2>
+          <p>The troupe is still checking every detail. Your ${esc(park.name)} credits are on the park page.</p>
+          <a class="btn btn-primary" href="#/park/${park.id}">Go to ${esc(park.name)}</a>
+        </div>`;
+      return;
+    }
+    view.innerHTML = `<div class="empty-state window" role="status">${spriteArt('looper', false)}<p>Loading the ${esc(park.name)} guide…</p></div>`;
+    const failed = () => {
+      guideMessage('hyper', '<p>Couldn\'t load the guide. Check your signal and try again.</p><button class="btn btn-primary" type="button" id="guideRetry">Retry</button>');
+      $('#guideRetry').addEventListener('click', () => {
+        const now = parseHash();
+        renderGuide(id, now.parts[2], now.params);
+      });
+    };
+    loadGuide(id).then(() => {
+      if (!onGuideRoute(id, preview)) return; // the rider has moved on
+      const g = window.GUIDES && window.GUIDES[id];
+      if (!g || typeof g !== 'object' || g.schema !== 1) { failed(); return; }
+      drawGuide(g, park, preview, sectionId);
+    }, () => { if (onGuideRoute(id, preview)) failed(); });
+  }
+
+  function drawGuide(g, park, preview, sectionId) {
+    const id = park.id;
+    const pv = preview ? '?preview' : '';
+    const secHref = sid => `#/guide/${id}/${sid}${pv}`;
+
+    // Effective status: a verified claim checked before `staleBefore` is needs-check.
+    const eff = c => {
+      const st = CLAIM_STATUSES.includes(c.status) ? c.status : 'draft';
+      if (st === 'verified' && typeof g.staleBefore === 'string' &&
+        !(typeof c.lastVerified === 'string' && c.lastVerified >= g.staleBefore)) return 'needs-check';
+      return st;
+    };
+    // Drafts never render outside preview (the validator also blocks publishing them).
+    const shown = c => isClaim(c) && (preview || eff(c) !== 'draft');
+    const items = list => asList(list).filter(shown);
+
+    // Coaster references count only when they are this park's coasters.
+    const parkCoaster = cid => {
+      const c = typeof cid === 'string' ? coasterById.get(cid) : null;
+      return c && c.park.id === id ? c : null;
+    };
+    const credits = isClaim(g.credits) ? g.credits : null;
+    const creditsOn = !!credits && shown(credits) && Array.isArray(credits.operating);
+    const opIds = creditsOn ? [...new Set(credits.operating)].filter(parkCoaster) : [];
+
+    const sections = asList(g.sections).filter(s => s && typeof s === 'object')
+      .map((s, i) => ({ s, sid: SLUG_RE.test(s.id) ? s.id : `section-${i + 1}` }));
+
+    const blockClaims = b => {
+      if (!b || typeof b !== 'object') return [];
+      if (b.type === 'p') return [b];
+      if (b.type === 'plan') return asList(b.steps);
+      if (b.type === 'credits') return credits ? [credits] : [];
+      return asList(b.items);
+    };
+    const sectionClaims = s => [s.answer, ...asList(s.blocks).flatMap(blockClaims)].filter(isClaim);
+    const lastVerifiedOf = s => sectionClaims(s).filter(c => shown(c) && eff(c) === 'verified' &&
+      typeof c.lastVerified === 'string' && DATE_RE.test(c.lastVerified)).map(c => c.lastVerified).sort()[0] || null;
+
+    const allClaims = new Set(sections.flatMap(({ s }) => sectionClaims(s)));
+    if (credits) allClaims.add(credits);
+    const checkedCount = [...allClaims].filter(c => eff(c) === 'verified').length;
+
+    // Credit-dependent fragments are re-rendered in place after a ride is logged,
+    // so the page never jumps and an open video keeps playing.
+    const dynR = [];
+    const dyn = (render, tag = 'div') => `<${tag} class="g-dyn" data-gdyn="${dynR.push(render) - 1}">${render()}</${tag}>`;
+
+    // Status labels are words, never color alone.
+    const badges = (c, { est = true } = {}) => {
+      const st = eff(c);
+      let b = '';
+      if (st === 'draft') b += '<span class="badge badge-draft">Draft</span>';
+      if (st === 'needs-check') b += '<span class="badge badge-unconfirmed">Unconfirmed</span>';
+      if (est && c.kind === 'estimate') b += '<span class="badge badge-estimate">Estimate</span>';
+      return b ? ` <span class="g-badges">${b}</span>` : '';
+    };
+    const UNCONFIRMED_NOTE = 'We haven\'t tried this yet: check before you go.';
+    const claimText = (c, { est = true, note = true } = {}) => {
+      const body = inline(c.text) + badges(c, { est });
+      return eff(c) === 'needs-check'
+        ? `<span class="g-unconf">${body}${note ? ` <span class="g-unconf-note">${UNCONFIRMED_NOTE}</span>` : ''}</span>`
+        : body;
+    };
+    const newBadge = cid => (rides[cid] ? '' : '<span class="badge badge-new">New credit</span>');
+    const creditTag = cid => (rides[cid]
+      ? `<span class="badge badge-ridden">${CHECK_SVG}Ridden</span>`
+      : '<span class="badge badge-new">New credit</span>');
+    const subTitle = t => (t ? `<h3 class="g-sub">${txt(t)}</h3>` : '');
+
+    // Where the checklist and the first plan live, for shortcuts.
+    let checklistSec = null;
+    let planSec = null;
+    for (const { s, sid } of sections) {
+      for (const b of asList(s.blocks)) {
+        if (b && b.type === 'credits' && b.show === 'checklist' && !checklistSec && opIds.length) checklistSec = sid;
+        if (b && b.type === 'plan' && !planSec && items(b.steps).length) planSec = sid;
+      }
+    }
+
+    // ---- blocks ----
+
+    function pBlock(b) {
+      if (!shown(b)) return '';
+      if (b.tone === 'tip' || b.tone === 'warning') {
+        return `<div class="g-block g-callout g-${b.tone}"><span class="g-callout-label">${b.tone === 'tip' ? 'Tip' : 'Heads up'}</span><p>${claimText(b)}</p></div>`;
+      }
+      return `<div class="g-block"><p class="g-p">${claimText(b)}</p></div>`;
+    }
+
+    function listBlock(b) {
+      const its = items(b.items);
+      if (!its.length) return '';
+      const tag = b.ordered ? 'ol' : 'ul';
+      return `<div class="g-block">${subTitle(b.title)}<${tag} class="g-list${b.ordered ? ' g-ol' : ''}" role="list">${its.map(c => `<li>${claimText(c)}</li>`).join('')}</${tag}></div>`;
+    }
+
+    function factsBlock(b) {
+      const its = items(b.items);
+      if (!its.length) return '';
+      return `<div class="g-block">${subTitle(b.title)}<dl class="g-facts">${its.map(c => `<div class="g-fact"><dt>${txt(c.label)}</dt><dd>${claimText(c)}</dd></div>`).join('')}</dl></div>`;
+    }
+
+    function picksBlock(b) {
+      const its = items(b.items);
+      if (!its.length) return '';
+      const ico = b.kind === 'gate' ? 'gate' : b.kind === 'food' ? 'food' : 'flag';
+      return `<div class="g-block">${subTitle(b.title)}<ul class="g-picks" role="list">${its.map(c => `
+        <li class="g-pick g-pick-${ico}">${icon(ico)}<div class="g-pick-body">
+          <h4 class="g-pick-name">${txt(c.name)}</h4>
+          ${c.location || c.bestFor ? `<p class="g-pick-meta">${c.location ? `<span>${txt(c.location)}</span>` : ''}${c.bestFor ? `<span><b>Best for</b> ${txt(c.bestFor)}</span>` : ''}</p>` : ''}
+          <p>${claimText(c)}</p>
+        </div></li>`).join('')}</ul></div>`;
+    }
+
+    // Must-ride tiers and ride-by-ride notes: items grouped by coaster, each
+    // group headed by the standard coaster row (toggle + log button).
+    function ridesBlock(b) {
+      const groups = new Map();
+      for (const c of items(b.items)) {
+        const cid = c.coasterId;
+        if (!parkCoaster(cid)) continue;
+        if (!groups.has(cid)) groups.set(cid, []);
+        groups.get(cid).push(c);
+      }
+      if (!groups.size) return '';
+      const tag = b.ranked ? 'ol' : 'ul';
+      const lis = [...groups].map(([cid, cs], i) => {
+        const rank = b.ranked ? `<span class="g-rank">#${i + 1}</span>` : '';
+        const notes = cs.map(c => (c.label
+          ? `<div class="g-note"><span class="g-note-label">${txt(c.label)}</span><p>${claimText(c)}</p></div>`
+          : `<p class="g-note">${claimText(c)}</p>`)).join('');
+        return `<li class="g-ride">${dyn(() => coasterRow(cid, { sub: rank + newBadge(cid) }))}<div class="g-ride-notes">${notes}</div></li>`;
+      }).join('');
+      return `<div class="g-block">${subTitle(b.title)}<${tag} class="g-rides window-list" role="list">${lis}</${tag}></div>`;
+    }
+
+    let planCount = 0;
+    let firstPlanAnchor = null;
+    function planBlock(b) {
+      const steps = items(b.steps);
+      if (!steps.length) return '';
+      const n = planCount++;
+      const anchor = `g-plan-${typeof b.id === 'string' && SLUG_RE.test(b.id) ? b.id : n + 1}`;
+      if (!firstPlanAnchor) firstPlanAnchor = anchor;
+      return `<details class="g-block g-plan" id="${anchor}"${n === 0 ? ' open' : ''}>
+        <summary class="g-plan-head">${CARET_SVG}<span class="g-plan-title">${txt(b.title) || 'Ride plan'}</span><span class="g-plan-count">${steps.length} step${steps.length === 1 ? '' : 's'}</span></summary>
+        <ol class="g-steps" role="list">${steps.map((st, i) => stepHtml(st, i)).join('')}</ol>
+      </details>`;
+    }
+
+    function stepHtml(st, i) {
+      const c = parkCoaster(st.coasterId);
+      const est = st.kind === 'estimate' && st.time;
+      const head = st.time || c ? `<div class="g-step-head">
+          ${c ? `<span class="g-step-ride" style="--tc:${colorOf.get(c.id)}">${esc(c.name)}</span>${dyn(() => creditTag(c.id), 'span')}` : ''}
+          ${st.time ? `<span class="g-time">${txt(st.time)}</span>${est ? '<span class="badge badge-estimate">Estimate</span>' : ''}` : ''}
+        </div>` : '';
+      return `<li class="g-step${c ? ' is-ride' : ' is-note'}">
+        <span class="g-step-num" aria-hidden="true">${i + 1}</span>
+        <div class="g-step-body">${head}<p>${claimText(st, { est: !est })}</p></div>
+      </li>`;
+    }
+
+    function videoCard(v) {
+      const vid = typeof v.videoId === 'string' && YT_RE.test(v.videoId) ? v.videoId : null;
+      const url = httpsUrl(v.url);
+      const cUrl = httpsUrl(v.creatorUrl);
+      const c = parkCoaster(v.coasterId);
+      const title = txt(v.title) || 'Video pick';
+      const creator = v.creator ? (cUrl
+        ? `<a href="${esc(cUrl)}" target="_blank" rel="noopener noreferrer">${txt(v.creator)}</a>`
+        : txt(v.creator)) : '';
+      let host = '';
+      if (url) { try { host = new URL(url).hostname.replace(/^www\./, ''); } catch { host = ''; } }
+      const player = vid
+        ? `<div class="g-screen" data-vid="${vid}" data-title="${title}">
+            <button class="btn g-play" type="button">${PLAY_SVG}Play video<span class="visually-hidden">: ${title}</span></button>
+            <span class="g-screen-note">Loads from YouTube when you tap play</span>
+          </div>`
+        : url
+          ? `<div class="g-screen is-link"><a class="btn g-watch" href="${esc(url)}" target="_blank" rel="noopener noreferrer">Watch${host ? ` on ${esc(host)}` : ''}<span class="visually-hidden">: ${title} (opens in a new tab)</span></a></div>`
+          : '<div class="g-screen is-empty"><span class="g-screen-note">Video link coming soon</span></div>';
+      return `<li class="g-video">
+        ${player}
+        <div class="g-video-body">
+          <h4 class="g-video-title">${title}</h4>
+          ${creator || c ? `<p class="g-video-by">${creator ? `<span>by ${creator}</span>` : ''}${c ? `<span>${esc(c.name)}</span>` : ''}</p>` : ''}
+          <p>${claimText(v)}</p>
+        </div>
+      </li>`;
+    }
+
+    function videosBlock(b) {
+      const its = items(b.items);
+      if (!its.length) return '';
+      return `<div class="g-block">${subTitle(b.title)}<ul class="g-videos" role="list">${its.map(videoCard).join('')}</ul></div>`;
+    }
+
+    // "Your <park> credits": counts operating coasters only.
+    const summaryHtml = () => {
+      const need = opIds.filter(cid => !rides[cid]);
+      const done = opIds.length - need.length;
+      const line = done === 0
+        ? `None of the ${opIds.length} operating coasters here are in your log yet.`
+        : need.length === 0
+          ? `You've ridden all ${opIds.length} operating coasters here.`
+          : `You've ridden ${done} of ${opIds.length} operating coasters here.`;
+      return `<div class="g-credits">
+        <div class="g-credits-top">
+          <p class="park-frac" aria-hidden="true">${done}<span>/${opIds.length}</span></p>
+          <div class="g-credits-copy">
+            <h3 class="g-sub">Your ${esc(park.name)} credits</h3>
+            <p>${line}</p>
+            ${meter(done / opIds.length)}
+          </div>
+        </div>
+        ${need.length ? `<p class="g-todo-label">${done ? 'Still to ride' : 'Operating this season'} (${need.length})</p>
+          <ul class="g-todo" role="list">${need.map(cid => `<li>${esc(coasterById.get(cid).name)}</li>`).join('')}</ul>` : ''}
+        ${checklistSec ? `<p class="g-credits-cta">${done === 0 ? '<span>Ridden some already? Tick them off.</span>' : ''}<a class="btn btn-small" href="${secHref(checklistSec)}" data-gtarget="g-checklist">Open your checklist</a></p>` : ''}
+      </div>`;
+    };
+
+    let checklistDrawn = false;
+    function creditsBlock(b) {
+      if (!creditsOn || !opIds.length) return '';
+      if (b.show === 'summary') return `<div class="g-block">${dyn(summaryHtml)}</div>`;
+      if (b.show !== 'checklist' || checklistDrawn) return '';
+      checklistDrawn = true;
+      const legacy = park.coasters.filter(c => !opIds.includes(c.id));
+      return `<div class="g-block g-checklist" id="g-checklist">
+        <h3 class="g-sub" tabindex="-1">Your credit checklist</h3>
+        ${dyn(() => {
+          const done = opIds.filter(cid => rides[cid]).length;
+          return `<div class="progress-meta g-check-meta"><span><b>${done}</b> of ${opIds.length} operating coasters ridden</span><span>${Math.round(done / opIds.length * 100)}%</span></div>${meter(done / opIds.length)}`;
+        })}
+        ${dyn(() => `<div class="coaster-list window-list">${opIds.map(cid => coasterRow(cid)).join('')}</div>`)}
+        ${legacy.length ? dyn(() => `<p class="g-legacy"><b>Legacy credits</b>, no longer operating and not counted above: ${legacy.map(c => `${esc(c.name)}${rides[c.id] ? ' (ridden)' : ''}`).join(', ')}.</p>`) : ''}
+        <p class="g-fine">${claimText(credits)}</p>
+      </div>`;
+    }
+
+    function renderBlock(b) {
+      if (!b || typeof b !== 'object') return '';
+      switch (b.type) {
+        case 'p': return pBlock(b);
+        case 'list': return listBlock(b);
+        case 'facts': return factsBlock(b);
+        case 'picks': return picksBlock(b);
+        case 'rides': return ridesBlock(b);
+        case 'plan': return planBlock(b);
+        case 'videos': return videosBlock(b);
+        case 'credits': return creditsBlock(b);
+        default: return '';
+      }
+    }
+
+    // Sign-off table and changelog, appended to the freshness section.
+    function freshnessExtras() {
+      const rows = sections.map(({ s, sid }) => {
+        const signed = s.status === 'verified' && dateText(s.lastVerified);
+        const lv = lastVerifiedOf(s);
+        return `<li>
+          <a href="${secHref(sid)}" data-gsec="${sid}">${txt(s.title)}</a>
+          <span>${signed ? `Signed off ${signed}${s.verifiedBy ? ` by ${txt(s.verifiedBy)}` : ''}` : 'Not signed off yet'}</span>
+          <span>${lv ? `Last verified ${dateText(lv)}` : 'Not verified yet'}</span>
+        </li>`;
+      }).join('');
+      const log = asList(g.changelog).filter(e => e && typeof e === 'object' && typeof e.text === 'string');
+      return `<div class="g-block"><h3 class="g-sub">Section sign-off</h3><ul class="g-signoff window-list" role="list">${rows}</ul></div>
+        ${log.length ? `<div class="g-block"><h3 class="g-sub">Changelog</h3><ol class="g-changelog" role="list">${log.map(e => `
+          <li>${dateText(e.date) ? `<time datetime="${esc(e.date)}">${dateText(e.date)}</time>` : ''}<span>${txt(e.text)}</span></li>`).join('')}</ol></div>` : ''}`;
+    }
+
+    function sectionHtml({ s, sid }, idx) {
+      const claims = sectionClaims(s).filter(shown);
+      const checked = claims.filter(c => eff(c) === 'verified').length;
+      const lv = lastVerifiedOf(s);
+      const ans = shown(s.answer) ? s.answer : null;
+      const ansUnconfirmed = !!ans && eff(ans) === 'needs-check';
+      const body = asList(s.blocks).map(renderBlock).join('') + (s.id === 'freshness' ? freshnessExtras() : '');
+      return `<section class="window g-section" id="g-${sid}" aria-labelledby="gh-${sid}">
+        <div class="window-bar">
+          <h2 class="g-sec-title" id="gh-${sid}" tabindex="-1"><span class="g-sec-num" aria-hidden="true">${idx + 1}</span><span>${txt(s.title)}</span></h2>
+          ${preview && s.status !== 'verified' ? '<span class="badge badge-draft">Draft</span>' : ''}
+        </div>
+        <p class="g-sec-meta">${icon('flag')}<span>${lv ? `Last verified ${dateText(lv)}` : 'Not verified yet'}</span>${preview ? `<span class="g-checked">${checked} of ${claims.length} checked</span>` : ''}</p>
+        <div class="g-sec-body g-read">
+          ${ansUnconfirmed ? `<p class="g-notice"><span class="badge badge-unconfirmed">Unconfirmed</span> ${UNCONFIRMED_NOTE}</p>` : ''}
+          ${ans ? `<p class="g-answer">${claimText(ans, { note: !ansUnconfirmed })}</p>` : ''}
+          ${body}
+        </div>
+      </section>`;
+    }
+
+    const sectionsHtml = sections.map(sectionHtml).join('');
+
+    const heroFrac = () => {
+      const done = opIds.filter(cid => rides[cid]).length;
+      return `<p class="g-frac"><b class="g-frac-num">${done}<span>/${opIds.length}</span></b><span class="g-frac-label">operating coasters ridden</span></p>`;
+    };
+    const heroScene = () => isoScene(opIds.map(cid => ({ id: cid, name: coasterById.get(cid).name, ridden: !!rides[cid] })), {
+      seed: id,
+      label: `Map of ${park.name}'s operating coasters: ${opIds.filter(cid => rides[cid]).length} of ${opIds.length} ridden, shown in color`,
+    });
+    const dockCount = () => {
+      const need = opIds.filter(cid => !rides[cid]).length;
+      return `${CHECK_SVG}<span><span class="visually-hidden">Checklist: </span>${need ? `<b>${need}</b><span class="g-dock-more"> to ride</span>` : 'All ridden'}</span>`;
+    };
+
+    view.innerHTML = `<div class="guide" data-guide="${id}">
+      <a class="back-link" href="#/park/${id}${pv}">← ${esc(park.name)} park page</a>
+      ${preview ? `<div class="g-preview" role="note" aria-label="Draft preview">
+        <span class="badge badge-draft">Draft preview</span>
+        <p><b>Not yet verified by the team.</b> ${checkedCount} of ${allClaims.size} details checked.</p>
+        ${meter(allClaims.size ? checkedCount / allClaims.size : 0)}
+      </div>` : ''}
+      <section class="guide-head sky">
+        <span class="cloud" aria-hidden="true"></span>
+        <span class="cloud c2" aria-hidden="true"></span>
+        <div class="guide-head-main">
+          <p class="kicker">Park guide${g.season ? ` · ${txt(g.season)} season` : ''}</p>
+          <h1>${txt(g.title) || esc(park.name)}</h1>
+          <div class="meta"><span class="state-tag">${park.state}</span><span>${esc(park.city)}, ${esc(STATE_NAMES[park.state] || park.state)}</span></div>
+          ${opIds.length ? dyn(heroFrac) : ''}
+          ${firstPlanAnchor || checklistSec ? `<div class="cta-row guide-quick">
+            ${firstPlanAnchor ? `<a class="btn btn-primary" href="${secHref(planSec)}" data-gtarget="${firstPlanAnchor}">Ride plan</a>` : ''}
+            ${checklistSec ? `<a class="btn" href="${secHref(checklistSec)}" data-gtarget="g-checklist">Credit checklist</a>` : ''}
+          </div>` : ''}
+        </div>
+        ${opIds.length ? `<div class="iso-scene guide-scene">${dyn(heroScene)}</div>` : ''}
+      </section>
+      <div class="g-layout">
+        <nav class="g-index window" id="gIndex" aria-label="Guide sections">
+          <div class="window-bar"><h2>In this guide</h2><button class="bar-close g-index-close" type="button" aria-label="Close sections">${CLOSE_SVG}</button></div>
+          <ol class="g-index-list" role="list">${sections.map(({ s, sid }, i) => `<li><a href="${secHref(sid)}" data-gsec="${sid}"><span class="g-sec-num" aria-hidden="true">${i + 1}</span><span>${txt(s.title)}</span></a></li>`).join('')}</ol>
+        </nav>
+        <div class="g-sections">${sectionsHtml || '<div class="empty-state window"><p>Nothing in this guide yet.</p></div>'}</div>
+      </div>
+      <div class="g-dock">
+        <button class="g-dock-btn" type="button" aria-expanded="false" aria-controls="gIndex">
+          <span class="g-dock-ico">${MENU_SVG}</span>
+          <span class="g-dock-text"><small id="gDockPos">Sections</small><b id="gDockCur">Jump to a section</b></span>
+        </button>
+        ${checklistSec ? `<a class="g-dock-check" href="${secHref(checklistSec)}" data-gtarget="g-checklist">${dyn(dockCount, 'span')}</a>` : ''}
+      </div>
+      <div class="g-scrim"></div>
+    </div>`;
+
+    const root = view.querySelector('.guide');
+    const idx = root.querySelector('.g-index');
+    const dockBtn = root.querySelector('.g-dock-btn');
+    const scrim = root.querySelector('.g-scrim');
+    bindRows();
+    setTopbarVar();
+
+    // Section menu: a sticky index on wide screens, a bottom sheet on phones.
+    const setSheet = open => {
+      idx.classList.toggle('open', open);
+      scrim.classList.toggle('open', open);
+      dockBtn.setAttribute('aria-expanded', String(open));
+      if (open) (idx.querySelector('a[aria-current]') || idx.querySelector('a')).focus();
+    };
+    dockBtn.addEventListener('click', () => setSheet(!idx.classList.contains('open')));
+    scrim.addEventListener('click', () => setSheet(false));
+    root.querySelector('.g-index-close').addEventListener('click', () => { setSheet(false); dockBtn.focus(); });
+    root.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && idx.classList.contains('open')) { setSheet(false); dockBtn.focus(); }
+    });
+
+    root.addEventListener('click', e => {
+      const play = e.target.closest('.g-play');
+      if (play) {
+        // Tap-to-load: nothing is requested from YouTube until now.
+        const screen = play.closest('.g-screen');
+        const vid = screen.dataset.vid;
+        if (!YT_RE.test(vid || '')) return;
+        const f = document.createElement('iframe');
+        f.src = `https://www.youtube-nocookie.com/embed/${vid}?autoplay=1`;
+        f.title = screen.dataset.title || 'Video';
+        f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+        f.allowFullscreen = true;
+        f.referrerPolicy = 'strict-origin-when-cross-origin';
+        screen.replaceChildren(f);
+        screen.classList.add('is-playing');
+        f.focus();
+        return;
+      }
+      const jump = e.target.closest('a[data-gtarget]');
+      if (jump) {
+        const t = document.getElementById(jump.dataset.gtarget);
+        if (!t) return;
+        e.preventDefault();
+        setSheet(false);
+        if (t.tagName === 'DETAILS') t.open = true;
+        scrollToEl(t);
+        const f = t.tagName === 'DETAILS' ? t.querySelector('summary') : t.querySelector('[tabindex="-1"]');
+        if (f) f.focus({ preventScroll: true });
+        return;
+      }
+      const sec = e.target.closest('a[data-gsec]');
+      if (sec) {
+        setSheet(false);
+        // Same hash again (no hashchange): scroll ourselves.
+        if (sec.getAttribute('href') === location.hash) { e.preventDefault(); goToSection(sec.dataset.gsec); }
+      }
+    });
+
+    // Track the section being read, for the index highlight and the dock label.
+    const secEls = [...root.querySelectorAll('.g-section')];
+    const links = [...idx.querySelectorAll('a[data-gsec]')];
+    const setCurrent = el => {
+      const i = secEls.indexOf(el);
+      if (i < 0) return;
+      links.forEach((a, j) => { if (j === i) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current'); });
+      $('#gDockPos').textContent = `Section ${i + 1} of ${secEls.length}`;
+      $('#gDockCur').textContent = links[i] ? links[i].textContent.replace(/^\d+/, '').trim() : '';
+    };
+    if (secEls.length) setCurrent(secEls[0]);
+    let observer = null;
+    if ('IntersectionObserver' in window && secEls.length) {
+      const visible = new Set();
+      observer = new IntersectionObserver(entries => {
+        entries.forEach(en => (en.isIntersecting ? visible.add(en.target) : visible.delete(en.target)));
+        const cur = secEls.find(el => visible.has(el));
+        if (cur) setCurrent(cur);
+      }, { rootMargin: `-${topbarH() + 8}px 0px -55% 0px` });
+      secEls.forEach(el => observer.observe(el));
+    }
+
+    guideCtx = { id, preview, root, observer };
+    guideRedraw = () => {
+      if (!document.body.contains(root)) { teardownGuide(); route(); return; }
+      const keep = captureGuideFocus(root);
+      root.querySelectorAll('[data-gdyn]').forEach(el => { el.innerHTML = dynR[Number(el.dataset.gdyn)](); });
+      bindRows();
+      restoreGuideFocus(root, keep);
+    };
+
+    if (sectionId) goToSection(sectionId);
+  }
+
+  // Keep keyboard focus on the same control when a fragment is redrawn.
+  function captureGuideFocus(root) {
+    const a = document.activeElement;
+    const slot = a && a !== document.body && a.closest ? a.closest('[data-gdyn]') : null;
+    if (!slot || !root.contains(slot)) return null;
+    const row = a.closest('.coaster-row');
+    return {
+      k: slot.dataset.gdyn,
+      row: row ? row.dataset.id : null,
+      cls: ['ride-toggle', 'row-log'].find(c => a.classList.contains(c)) || null,
+      i: [...slot.querySelectorAll('a[href], button')].indexOf(a),
+    };
+  }
+
+  function restoreGuideFocus(root, f) {
+    if (!f) return;
+    const slot = root.querySelector(`[data-gdyn="${f.k}"]`);
+    if (!slot) return;
+    let el = f.row && f.cls ? slot.querySelector(`.coaster-row[data-id="${CSS.escape(f.row)}"] .${f.cls}`) : null;
+    if (!el && f.i >= 0) el = slot.querySelectorAll('a[href], button')[f.i];
+    if (el) el.focus({ preventScroll: true });
+  }
+
   // ---------- logging ----------
 
   function quickLog(id) {
@@ -940,6 +1568,7 @@
     const page = parts[0] || 'home';
     if (page === 'park' && parkRedraw) parkRedraw();
     else if (page === 'coasters' && coastersRedraw) coastersRedraw();
+    else if (page === 'guide' && guideRedraw) guideRedraw();
     else route();
   }
 
