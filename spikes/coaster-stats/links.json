@@ -1,10 +1,9 @@
 {
- "retrieved": "2026-10-02",
- "method": "Name (Wikidata label, en-Wikipedia title, or alias, normalized for case, accents, punctuation, and a leading \"The\") plus location evidence (park via P361/P276/P131, park aliases, article title, or description; else P131 city; else US state). Candidates contradicted by state or by another local park are dropped. Unique matches only; everything else is in ambiguous.json. RCDB IDs from Wikidata are shown as evidence only.",
- "confidence": {
-  "high": "Wikidata label or en-Wikipedia title matches, and the Wikidata park (or description) names the local park",
-  "medium": "matched through an alias, the park city, or the state alone (Wikidata gives no park and the name is unique in that state), or the item also matches another local coaster; see notes"
+ "retrieved": {
+  "wikidata": "2026-10-02",
+  "wikipedia": "2026-10-02"
  },
+ "method": "Wikidata: name (label, en-Wikipedia title, or alias) plus location evidence; see README. Wikipedia: the Wikidata item's English sitelink, using the infobox at this park; or, for coasters without one, an infobox whose location names this park exactly and whose name (or article title) equals this coaster's name, unique on both sides. Everything else is in ambiguous.json.",
  "links": {
   "adventure-city--rewind-racers": {
    "qid": "Q105443412",
@@ -19,6 +18,13 @@
     "rcdbId": [
      "10976"
     ]
+   },
+   "wikipedia": {
+    "title": "Rewind Racers",
+    "revid": 1367055657,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Rewind Racers",
+    "infoboxLocation": "Adventure City"
    }
   },
   "adventuredome--canyon-blaster": {
@@ -34,6 +40,13 @@
     "rcdbId": [
      "104"
     ]
+   },
+   "wikipedia": {
+    "title": "Canyon Blaster (Adventuredome)",
+    "revid": 1376385904,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Canyon Blaster",
+    "infoboxLocation": "Adventuredome"
    }
   },
   "adventuredome--el-loco": {
@@ -49,6 +62,13 @@
     "rcdbId": [
      "11450"
     ]
+   },
+   "wikipedia": {
+    "title": "El Loco (Adventuredome)",
+    "revid": 1376529903,
+    "via": "wikidata-sitelink",
+    "infoboxName": "El Loco",
+    "infoboxLocation": "Adventuredome"
    }
   },
   "adventureland-iowa--dragon": {
@@ -62,6 +82,13 @@
     "rcdbId": [
      "213"
     ]
+   },
+   "wikipedia": {
+    "title": "Dragon (Adventureland)",
+    "revid": 1313010711,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Dragon",
+    "infoboxLocation": "Adventureland (Iowa)"
    }
   },
   "adventureland-iowa--dragon-slayer": {
@@ -77,6 +104,13 @@
     "rcdbId": [
      "18398"
     ]
+   },
+   "wikipedia": {
+    "title": "Dragon Slayer (roller coaster)",
+    "revid": 1363251493,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Dragon Slayer",
+    "infoboxLocation": "Adventureland (Iowa)"
    }
   },
   "adventureland-iowa--the-monster": {
@@ -90,6 +124,13 @@
     "rcdbId": [
      "12896"
     ]
+   },
+   "wikipedia": {
+    "title": "The Monster (Adventureland)",
+    "revid": 1323661672,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Monster",
+    "infoboxLocation": "Adventureland (Iowa)"
    }
   },
   "adventureland-iowa--the-outlaw": {
@@ -106,7 +147,14 @@
    },
    "notes": [
     "Park matched by city (Altoona), not by park name."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Outlaw (roller coaster)",
+    "revid": 1377014754,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Outlaw",
+    "infoboxLocation": "Adventureland (Iowa)"
+   }
   },
   "adventureland-iowa--tornado": {
    "qid": "Q7825974",
@@ -121,6 +169,13 @@
     "rcdbId": [
      "212"
     ]
+   },
+   "wikipedia": {
+    "title": "Tornado (Adventureland)",
+    "revid": 1374953479,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Tornado",
+    "infoboxLocation": "Adventureland (Iowa)"
    }
   },
   "adventureland-iowa--underground": {
@@ -136,6 +191,13 @@
     "rcdbId": [
      "215"
     ]
+   },
+   "wikipedia": {
+    "title": "Underground (roller coaster)",
+    "revid": 1365349120,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Underground",
+    "infoboxLocation": "Adventureland (Iowa)"
    }
   },
   "adventureland-new-york--turbulence": {
@@ -148,6 +210,13 @@
     "wikidataPark": [
      "Adventureland"
     ]
+   },
+   "wikipedia": {
+    "title": "Turbulence (roller coaster)",
+    "revid": 1356432022,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Turbulence",
+    "infoboxLocation": "Adventureland (New York)"
    }
   },
   "alabama-adventure-splash-adventure--rampage": {
@@ -194,6 +263,13 @@
     "rcdbId": [
      "9088"
     ]
+   },
+   "wikipedia": {
+    "title": "Zippin Pippin",
+    "revid": 1375608983,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Zippin Pippin",
+    "infoboxLocation": "Bay Beach Amusement Park"
    }
   },
   "beech-bend-park--kentucky-rumbler": {
@@ -210,7 +286,14 @@
    },
    "notes": [
     "Location confirmed only to the state (KY); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Kentucky Rumbler",
+    "revid": 1365132803,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Kentucky Rumbler",
+    "infoboxLocation": "Beech Bend Park"
+   }
   },
   "beech-bend-park--wild-mouse": {
    "qid": "Q20710758",
@@ -223,6 +306,13 @@
     "rcdbId": [
      "2968"
     ]
+   },
+   "wikipedia": {
+    "title": "Wild Mouse (Beech Bend Park)",
+    "revid": 1313012643,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wild Mouse",
+    "infoboxLocation": "Beech Bend Park"
    }
   },
   "belmont-park--giant-dipper": {
@@ -236,6 +326,13 @@
     "rcdbId": [
      "203"
     ]
+   },
+   "wikipedia": {
+    "title": "Giant Dipper (Belmont Park)",
+    "revid": 1373300048,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Giant Dipper",
+    "infoboxLocation": "Belmont Park (San Diego)"
    }
   },
   "busch-gardens-tampa--air-grover": {
@@ -264,6 +361,13 @@
     "rcdbId": [
      "9456"
     ]
+   },
+   "wikipedia": {
+    "title": "Cheetah Hunt",
+    "revid": 1367534873,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Cheetah Hunt",
+    "infoboxLocation": "Busch Gardens Tampa Bay"
    }
   },
   "busch-gardens-tampa--cobra-s-curse": {
@@ -279,6 +383,13 @@
     "rcdbId": [
      "12781"
     ]
+   },
+   "wikipedia": {
+    "title": "Cobra's Curse",
+    "revid": 1357271909,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Cobra's Curse",
+    "infoboxLocation": "Busch Gardens Tampa Bay"
    }
   },
   "busch-gardens-tampa--iron-gwazi": {
@@ -294,6 +405,13 @@
     "rcdbId": [
      "16985"
     ]
+   },
+   "wikipedia": {
+    "title": "Iron Gwazi",
+    "revid": 1375695532,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Iron Gwazi",
+    "infoboxLocation": "Busch Gardens Tampa Bay"
    }
   },
   "busch-gardens-tampa--kumba": {
@@ -309,6 +427,13 @@
     "rcdbId": [
      "94"
     ]
+   },
+   "wikipedia": {
+    "title": "Kumba (roller coaster)",
+    "revid": 1376036740,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Kumba",
+    "infoboxLocation": "Busch Gardens Tampa Bay"
    }
   },
   "busch-gardens-tampa--montu": {
@@ -325,7 +450,14 @@
    },
    "notes": [
     "Location confirmed only to the state (FL); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Montu (roller coaster)",
+    "revid": 1378068149,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Montu",
+    "infoboxLocation": "Busch Gardens Tampa Bay"
+   }
   },
   "busch-gardens-tampa--python": {
    "qid": "Q7263917",
@@ -340,6 +472,13 @@
     "rcdbId": [
      "96"
     ]
+   },
+   "wikipedia": {
+    "title": "Python (Busch Gardens Tampa Bay)",
+    "revid": 1376048948,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Python",
+    "infoboxLocation": "Busch Gardens Tampa Bay"
    }
   },
   "busch-gardens-tampa--sand-serpent": {
@@ -356,7 +495,14 @@
    },
    "notes": [
     "Location confirmed only to the state (FL); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Sand Serpent",
+    "revid": 1360961112,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Sand Serpent",
+    "infoboxLocation": "Busch Gardens Tampa Bay"
+   }
   },
   "busch-gardens-tampa--scorpion": {
    "qid": "Q376984",
@@ -369,6 +515,13 @@
     "rcdbId": [
      "95"
     ]
+   },
+   "wikipedia": {
+    "title": "Scorpion (roller coaster)",
+    "revid": 1369187477,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Scorpion",
+    "infoboxLocation": "Busch Gardens Tampa Bay"
    }
   },
   "busch-gardens-tampa--sheikra": {
@@ -382,6 +535,13 @@
     "rcdbId": [
      "2662"
     ]
+   },
+   "wikipedia": {
+    "title": "SheiKra",
+    "revid": 1375498978,
+    "via": "wikidata-sitelink",
+    "infoboxName": "SheiKra",
+    "infoboxLocation": "Busch Gardens Tampa Bay"
    }
   },
   "busch-gardens-tampa--tigris": {
@@ -397,6 +557,13 @@
     "rcdbId": [
      "16607"
     ]
+   },
+   "wikipedia": {
+    "title": "Tigris (roller coaster)",
+    "revid": 1372245050,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Tigris",
+    "infoboxLocation": "Busch Gardens Tampa Bay"
    }
   },
   "busch-gardens-williamsburg--alpengeist": {
@@ -412,6 +579,13 @@
     "rcdbId": [
      "277"
     ]
+   },
+   "wikipedia": {
+    "title": "Alpengeist",
+    "revid": 1375613442,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Alpengeist",
+    "infoboxLocation": "Busch Gardens Williamsburg"
    }
   },
   "busch-gardens-williamsburg--apollo-s-chariot": {
@@ -427,6 +601,65 @@
     "rcdbId": [
      "531"
     ]
+   },
+   "wikipedia": {
+    "title": "Apollo's Chariot",
+    "revid": 1375610901,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Apollo's Chariot",
+    "infoboxLocation": "Busch Gardens Williamsburg"
+   }
+  },
+  "busch-gardens-williamsburg--big-bad-wolf": {
+   "qid": "Q590020",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Big Bad Wolf",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "111"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (VA); Wikidata gives no park. The name is unique among local coasters in that state."
+   ],
+   "wikipedia": {
+    "title": "Big Bad Wolf (roller coaster)",
+    "revid": 1367021182,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Big Bad Wolf",
+    "infoboxLocation": "Busch Gardens Williamsburg"
+   }
+  },
+  "busch-gardens-williamsburg--big-bad-wolf-the-wolf-s-revenge": {
+   "qid": "Q132452158",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Big Bad Wolf: The Wolf's Revenge",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Busch Gardens Williamsburg"
+    ]
+   },
+   "wikipedia": {
+    "title": "Big Bad Wolf: The Wolf's Revenge",
+    "revid": 1377550528,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Big Bad Wolf: The Wolf's Revenge",
+    "infoboxLocation": "Busch Gardens Williamsburg"
+   }
+  },
+  "busch-gardens-williamsburg--darkoaster-escape-the-storm": {
+   "wikipedia": {
+    "title": "DarKoaster: Escape The Storm",
+    "revid": 1338545399,
+    "via": "infobox-match",
+    "infoboxName": "DarKoaster",
+    "infoboxLocation": "Busch Gardens Williamsburg",
+    "confidence": "high"
    }
   },
   "busch-gardens-williamsburg--griffon": {
@@ -442,6 +675,13 @@
     "rcdbId": [
      "3631"
     ]
+   },
+   "wikipedia": {
+    "title": "Griffon (roller coaster)",
+    "revid": 1375083111,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Griffon",
+    "infoboxLocation": "Busch Gardens Williamsburg"
    }
   },
   "busch-gardens-williamsburg--grover-s-alpine-express": {
@@ -470,6 +710,13 @@
     "rcdbId": [
      "8027"
     ]
+   },
+   "wikipedia": {
+    "title": "InvadR",
+    "revid": 1331364155,
+    "via": "wikidata-sitelink",
+    "infoboxName": "InvadR",
+    "infoboxLocation": "Busch Gardens Williamsburg"
    }
   },
   "busch-gardens-williamsburg--loch-ness-monster": {
@@ -483,6 +730,13 @@
     "rcdbId": [
      "110"
     ]
+   },
+   "wikipedia": {
+    "title": "Loch Ness Monster (roller coaster)",
+    "revid": 1338344432,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Loch Ness Monster",
+    "infoboxLocation": "Busch Gardens Williamsburg"
    }
   },
   "busch-gardens-williamsburg--pantheon": {
@@ -496,6 +750,13 @@
     "rcdbId": [
      "16812"
     ]
+   },
+   "wikipedia": {
+    "title": "Pantheon (roller coaster)",
+    "revid": 1376318161,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Pantheon",
+    "infoboxLocation": "Busch Gardens Williamsburg"
    }
   },
   "busch-gardens-williamsburg--tempesto": {
@@ -511,6 +772,13 @@
     "rcdbId": [
      "12277"
     ]
+   },
+   "wikipedia": {
+    "title": "Tempesto",
+    "revid": 1357813685,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Tempesto",
+    "infoboxLocation": "Busch Gardens Williamsburg"
    }
   },
   "busch-gardens-williamsburg--verbolten": {
@@ -526,6 +794,13 @@
     "rcdbId": [
      "9463"
     ]
+   },
+   "wikipedia": {
+    "title": "Verbolten",
+    "revid": 1359415012,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Verbolten",
+    "infoboxLocation": "Busch Gardens Williamsburg"
    }
   },
   "california-s-great-america--demon": {
@@ -538,6 +813,15 @@
     "wikidataPark": [
      "California's Great America"
     ]
+   },
+   "wikipedia": {
+    "title": "Demon (roller coaster)",
+    "revid": 1377569575,
+    "via": "infobox-match",
+    "infoboxName": "Demon",
+    "infoboxLocation": "California's Great America",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
    }
   },
   "california-s-great-america--flight-deck": {
@@ -553,6 +837,13 @@
     "rcdbId": [
      "80"
     ]
+   },
+   "wikipedia": {
+    "title": "Flight Deck (California's Great America)",
+    "revid": 1377569643,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Flight Deck",
+    "infoboxLocation": "California's Great America"
    }
   },
   "california-s-great-america--gold-striker": {
@@ -568,6 +859,13 @@
     "rcdbId": [
      "10857"
     ]
+   },
+   "wikipedia": {
+    "title": "Gold Striker",
+    "revid": 1377569836,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Gold Striker",
+    "infoboxLocation": "California's Great America"
    }
   },
   "california-s-great-america--grizzly": {
@@ -583,6 +881,13 @@
     "rcdbId": [
      "77"
     ]
+   },
+   "wikipedia": {
+    "title": "The Grizzly",
+    "revid": 1377569804,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Grizzly",
+    "infoboxLocation": "California's Great America"
    }
   },
   "california-s-great-america--patriot": {
@@ -598,6 +903,13 @@
     "rcdbId": [
      "79"
     ]
+   },
+   "wikipedia": {
+    "title": "Patriot (California's Great America)",
+    "revid": 1377569696,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Patriot",
+    "infoboxLocation": "California's Great America"
    }
   },
   "california-s-great-america--railblazer": {
@@ -613,6 +925,13 @@
     "rcdbId": [
      "15412"
     ]
+   },
+   "wikipedia": {
+    "title": "RailBlazer",
+    "revid": 1377686207,
+    "via": "wikidata-sitelink",
+    "infoboxName": "RailBlazer",
+    "infoboxLocation": "California's Great America"
    }
   },
   "california-s-great-america--woodstock-s-express": {
@@ -628,6 +947,13 @@
     "rcdbId": [
      "78"
     ]
+   },
+   "wikipedia": {
+    "title": "Woodstock's Express (California's Great America)",
+    "revid": 1345766377,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Woodstock Express",
+    "infoboxLocation": "California's Great America"
    }
   },
   "camden-park--big-dipper": {
@@ -643,6 +969,23 @@
     "rcdbId": [
      "315"
     ]
+   },
+   "wikipedia": {
+    "title": "Big Dipper (Camden Park)",
+    "revid": 1352115705,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Big Dipper",
+    "infoboxLocation": "Camden Park (amusement park)"
+   }
+  },
+  "camden-park--thunderbolt-express": {
+   "wikipedia": {
+    "title": "Thunderbolt Express",
+    "revid": 1319075363,
+    "via": "infobox-match",
+    "infoboxName": "Thunderbolt Express",
+    "infoboxLocation": "Camden Park",
+    "confidence": "high"
    }
   },
   "canobie-lake-park--canobie-corkscrew": {
@@ -658,6 +1001,13 @@
     "rcdbId": [
      "296"
     ]
+   },
+   "wikipedia": {
+    "title": "Canobie Corkscrew",
+    "revid": 1346727616,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Canobie Corkscrew",
+    "infoboxLocation": "Canobie Lake Park"
    }
   },
   "canobie-lake-park--untamed": {
@@ -673,6 +1023,13 @@
     "rcdbId": [
      "9517"
     ]
+   },
+   "wikipedia": {
+    "title": "Untamed (Canobie Lake Park)",
+    "revid": 1313013359,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Untamed",
+    "infoboxLocation": "Canobie Lake Park"
    }
   },
   "canobie-lake-park--yankee-cannonball": {
@@ -688,6 +1045,13 @@
     "rcdbId": [
      "298"
     ]
+   },
+   "wikipedia": {
+    "title": "Yankee Cannonball",
+    "revid": 1367905739,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Yankee Cannonball",
+    "infoboxLocation": "Canobie Lake Park"
    }
   },
   "carowinds--afterburn": {
@@ -704,7 +1068,14 @@
    },
    "notes": [
     "Location confirmed only to the state (NC); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Afterburn (roller coaster)",
+    "revid": 1370301406,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Afterburn",
+    "infoboxLocation": "Carowinds"
+   }
   },
   "carowinds--carolina-cyclone": {
    "qid": "Q1044389",
@@ -720,7 +1091,14 @@
    },
    "notes": [
     "Location confirmed only to the state (NC); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Carolina Cyclone",
+    "revid": 1368686088,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Carolina Cyclone",
+    "infoboxLocation": "Carowinds"
+   }
   },
   "carowinds--carolina-goldrusher": {
    "qid": "Q5044835",
@@ -736,7 +1114,14 @@
    },
    "notes": [
     "Location confirmed only to the state (NC); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Carolina Goldrusher",
+    "revid": 1363763181,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Carolina Goldrusher",
+    "infoboxLocation": "Carowinds"
+   }
   },
   "carowinds--copperhead-strike": {
    "qid": "Q59563612",
@@ -751,6 +1136,13 @@
     "rcdbId": [
      "16349"
     ]
+   },
+   "wikipedia": {
+    "title": "Copperhead Strike",
+    "revid": 1357307714,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Copperhead Strike",
+    "infoboxLocation": "Carowinds"
    }
   },
   "carowinds--flying-cobras": {
@@ -767,6 +1159,13 @@
     "rcdbId": [
      "4269"
     ]
+   },
+   "wikipedia": {
+    "title": "The Flying Cobras",
+    "revid": 1377569647,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Flying Cobras",
+    "infoboxLocation": "Carowinds"
    }
   },
   "carowinds--flying-super-saturator": {
@@ -782,6 +1181,13 @@
     "rcdbId": [
      "598"
     ]
+   },
+   "wikipedia": {
+    "title": "Flying Super Saturator",
+    "revid": 1377677097,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Flying Super Saturator",
+    "infoboxLocation": "Carowinds"
    }
   },
   "carowinds--fury-325": {
@@ -797,6 +1203,23 @@
     "rcdbId": [
      "12273"
     ]
+   },
+   "wikipedia": {
+    "title": "Fury 325",
+    "revid": 1377660947,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Fury 325",
+    "infoboxLocation": "Carowinds"
+   }
+  },
+  "carowinds--hurler": {
+   "wikipedia": {
+    "title": "Hurler (roller coaster)",
+    "revid": 1377569561,
+    "via": "infobox-match",
+    "infoboxName": "Hurler",
+    "infoboxLocation": "Carowinds",
+    "confidence": "high"
    }
   },
   "carowinds--intimidator": {
@@ -828,7 +1251,14 @@
    },
    "notes": [
     "Location confirmed only to the state (NC); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Nighthawk (roller coaster)",
+    "revid": 1361772751,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Nighthawk",
+    "infoboxLocation": "Carowinds"
+   }
   },
   "carowinds--ricochet": {
    "qid": "Q7332308",
@@ -841,6 +1271,13 @@
     "rcdbId": [
      "1478"
     ]
+   },
+   "wikipedia": {
+    "title": "Ricochet (Carowinds)",
+    "revid": 1313012237,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Ricochet",
+    "infoboxLocation": "Carowinds"
    }
   },
   "carowinds--thunder-road": {
@@ -872,6 +1309,24 @@
     "rcdbId": [
      "86"
     ]
+   },
+   "wikipedia": {
+    "title": "Vortex (Carowinds)",
+    "revid": 1371985734,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Vortex",
+    "infoboxLocation": "Carowinds"
+   }
+  },
+  "carowinds--wilderness-run": {
+   "wikipedia": {
+    "title": "Wilderness Run (Carowinds)",
+    "revid": 1283381382,
+    "via": "infobox-match",
+    "infoboxName": "Wilderness Run",
+    "infoboxLocation": "Carowinds",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
    }
   },
   "carowinds--woodstock-express": {
@@ -885,6 +1340,13 @@
     "rcdbId": [
      "82"
     ]
+   },
+   "wikipedia": {
+    "title": "Woodstock Express (Carowinds)",
+    "revid": 1306593110,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Woodstock Express",
+    "infoboxLocation": "Carowinds"
    }
   },
   "casino-pier--hydrus": {
@@ -898,6 +1360,13 @@
     "rcdbId": [
      "14231"
     ]
+   },
+   "wikipedia": {
+    "title": "Hydrus (roller coaster)",
+    "revid": 1313013693,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Hydrus",
+    "infoboxLocation": "Casino Pier"
    }
   },
   "casino-pier--jet-star": {
@@ -911,6 +1380,13 @@
     "rcdbId": [
      "344"
     ]
+   },
+   "wikipedia": {
+    "title": "Jet Star (Casino Pier)",
+    "revid": 1376436405,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Jet Star",
+    "infoboxLocation": "Casino Pier"
    }
   },
   "casino-pier--star-jet": {
@@ -926,6 +1402,13 @@
     "rcdbId": [
      "1477"
     ]
+   },
+   "wikipedia": {
+    "title": "Star Jet",
+    "revid": 1348922587,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Star Jet",
+    "infoboxLocation": "Casino Pier"
    }
   },
   "castles-n-coasters--desert-storm": {
@@ -939,6 +1422,13 @@
     "rcdbId": [
      "350"
     ]
+   },
+   "wikipedia": {
+    "title": "Desert Storm (roller coaster)",
+    "revid": 1373270741,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Desert Storm",
+    "infoboxLocation": "Castles N' Coasters"
    }
   },
   "cedar-point--blue-streak": {
@@ -954,6 +1444,13 @@
     "rcdbId": [
      "12"
     ]
+   },
+   "wikipedia": {
+    "title": "Blue Streak (Cedar Point)",
+    "revid": 1377569532,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Blue Streak",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--cedar-creek-mine-ride": {
@@ -969,6 +1466,13 @@
     "rcdbId": [
      "18"
     ]
+   },
+   "wikipedia": {
+    "title": "Cedar Creek Mine Ride",
+    "revid": 1376772372,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Cedar Creek Mine Ride",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--corkscrew": {
@@ -985,6 +1489,13 @@
     "rcdbId": [
      "13"
     ]
+   },
+   "wikipedia": {
+    "title": "Corkscrew (Cedar Point)",
+    "revid": 1375453864,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Corkscrew",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--disaster-transport": {
@@ -998,6 +1509,13 @@
     "rcdbId": [
      "19"
     ]
+   },
+   "wikipedia": {
+    "title": "Disaster Transport",
+    "revid": 1377338716,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Disaster Transport",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--gatekeeper": {
@@ -1013,6 +1531,13 @@
     "rcdbId": [
      "10891"
     ]
+   },
+   "wikipedia": {
+    "title": "GateKeeper (roller coaster)",
+    "revid": 1377569510,
+    "via": "wikidata-sitelink",
+    "infoboxName": "GateKeeper",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--gemini": {
@@ -1043,6 +1568,13 @@
     "rcdbId": [
      "17"
     ]
+   },
+   "wikipedia": {
+    "title": "Iron Dragon (roller coaster)",
+    "revid": 1347588552,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Iron Dragon",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--magnum-xl-200": {
@@ -1058,6 +1590,13 @@
     "rcdbId": [
      "11"
     ]
+   },
+   "wikipedia": {
+    "title": "Magnum XL-200",
+    "revid": 1375612779,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Magnum XL-200",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--maverick": {
@@ -1073,6 +1612,13 @@
     "rcdbId": [
      "3570"
     ]
+   },
+   "wikipedia": {
+    "title": "Maverick (roller coaster)",
+    "revid": 1375610404,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Maverick",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--mean-streak": {
@@ -1103,6 +1649,13 @@
     "rcdbId": [
      "594"
     ]
+   },
+   "wikipedia": {
+    "title": "Millennium Force",
+    "revid": 1377521431,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Millennium Force",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--raptor": {
@@ -1118,6 +1671,13 @@
     "rcdbId": [
      "1"
     ]
+   },
+   "wikipedia": {
+    "title": "Raptor (Cedar Point)",
+    "revid": 1377569544,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Raptor",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--rougarou": {
@@ -1133,6 +1693,13 @@
     "rcdbId": [
      "7"
     ]
+   },
+   "wikipedia": {
+    "title": "Rougarou (roller coaster)",
+    "revid": 1366865528,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Rougarou",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--siren-s-curse": {
@@ -1148,6 +1715,13 @@
     "rcdbId": [
      "22124"
     ]
+   },
+   "wikipedia": {
+    "title": "Siren's Curse",
+    "revid": 1375613935,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Siren's Curse",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--steel-vengeance": {
@@ -1163,6 +1737,32 @@
     "rcdbId": [
      "15411"
     ]
+   },
+   "wikipedia": {
+    "title": "Steel Vengeance",
+    "revid": 1375609630,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Steel Vengeance",
+    "infoboxLocation": "Cedar Point",
+    "alsoCovers": [
+     "cedar-point--mean-streak"
+    ],
+    "alsoCoversNote": "The article also covers an earlier ride that js/data.js keeps as a separate credit. Its figures go only to this coaster, and footnoted or qualified values are dropped."
+   }
+  },
+  "cedar-point--top-thrill-2": {
+   "wikipedia": {
+    "title": "Top Thrill 2",
+    "revid": 1375695529,
+    "via": "infobox-match",
+    "infoboxName": "Top Thrill 2",
+    "infoboxLocation": "Cedar Point",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly.",
+    "alsoCovers": [
+     "cedar-point--top-thrill-dragster"
+    ],
+    "alsoCoversNote": "The article also covers an earlier ride that js/data.js keeps as a separate credit. Its figures go only to this coaster, and footnoted or qualified values are dropped."
    }
   },
   "cedar-point--valravn": {
@@ -1178,6 +1778,13 @@
     "rcdbId": [
      "13383"
     ]
+   },
+   "wikipedia": {
+    "title": "Valravn (roller coaster)",
+    "revid": 1368509279,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Valravn",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--wicked-twister": {
@@ -1193,6 +1800,13 @@
     "rcdbId": [
      "1571"
     ]
+   },
+   "wikipedia": {
+    "title": "Wicked Twister",
+    "revid": 1347589529,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wicked Twister",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--wildcat": {
@@ -1206,6 +1820,13 @@
     "rcdbId": [
      "20"
     ]
+   },
+   "wikipedia": {
+    "title": "WildCat (Cedar Point)",
+    "revid": 1374803640,
+    "via": "wikidata-sitelink",
+    "infoboxName": "WildCat",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--wilderness-run": {
@@ -1221,6 +1842,13 @@
     "rcdbId": [
      "15"
     ]
+   },
+   "wikipedia": {
+    "title": "Wilderness Run",
+    "revid": 1347591543,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wilderness Run",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "cedar-point--woodstock-express": {
@@ -1236,6 +1864,13 @@
     "rcdbId": [
      "553"
     ]
+   },
+   "wikipedia": {
+    "title": "Woodstock Express (Cedar Point)",
+    "revid": 1313011775,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Woodstock Express",
+    "infoboxLocation": "Cedar Point"
    }
   },
   "celebration-city--ozark-wildcat": {
@@ -1251,6 +1886,24 @@
     "rcdbId": [
      "1888"
     ]
+   },
+   "wikipedia": {
+    "title": "Ozark Wildcat",
+    "revid": 1358122696,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Ozark Wildcat",
+    "infoboxLocation": "Celebration City"
+   }
+  },
+  "clementon-park-splash-world--hell-cat": {
+   "wikipedia": {
+    "title": "Hellcat (roller coaster)",
+    "revid": 1374384386,
+    "via": "infobox-match",
+    "infoboxName": "Hellcat",
+    "infoboxLocation": "Clementon Park and Splash World",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
    }
   },
   "clementon-park-splash-world--jack-rabbit": {
@@ -1266,6 +1919,13 @@
     "rcdbId": [
      "221"
     ]
+   },
+   "wikipedia": {
+    "title": "Jack Rabbit (Clementon Park)",
+    "revid": 1376052163,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Jack Rabbit",
+    "infoboxLocation": "Clementon Park"
    }
   },
   "cliff-s-amusement-park--new-mexico-rattler": {
@@ -1281,6 +1941,13 @@
     "rcdbId": [
      "1659"
     ]
+   },
+   "wikipedia": {
+    "title": "New Mexico Rattler",
+    "revid": 1358277480,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The New Mexico Rattler",
+    "infoboxLocation": "Cliff's Amusement Park"
    }
   },
   "columbus-zoo-and-aquarium--sea-dragon": {
@@ -1309,6 +1976,13 @@
     "rcdbId": [
      "249"
     ]
+   },
+   "wikipedia": {
+    "title": "Blue Streak (Conneaut Lake)",
+    "revid": 1375401105,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Blue Streak",
+    "infoboxLocation": "Conneaut Lake Park"
    }
   },
   "conneaut-lake-park--little-dipper": {
@@ -1337,6 +2011,13 @@
     "rcdbId": [
      "751"
     ]
+   },
+   "wikipedia": {
+    "title": "Hoot N Holler",
+    "revid": 1313010188,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Hoot N Holler",
+    "infoboxLocation": "Six Flags Darien Lake"
    }
   },
   "darien-lake--motocoaster": {
@@ -1352,6 +2033,13 @@
     "rcdbId": [
      "4138"
     ]
+   },
+   "wikipedia": {
+    "title": "Moto Coaster (Six Flags Darien Lake)",
+    "revid": 1377569870,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Moto Coaster",
+    "infoboxLocation": "Six Flags Darien Lake"
    }
   },
   "darien-lake--predator": {
@@ -1367,6 +2055,13 @@
     "rcdbId": [
      "223"
     ]
+   },
+   "wikipedia": {
+    "title": "The Predator (roller coaster)",
+    "revid": 1377569840,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Predator",
+    "infoboxLocation": "Six Flags Darien Lake"
    }
   },
   "darien-lake--tantrum": {
@@ -1382,6 +2077,13 @@
     "rcdbId": [
      "15603"
     ]
+   },
+   "wikipedia": {
+    "title": "Tantrum (roller coaster)",
+    "revid": 1377569897,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Tantrum",
+    "infoboxLocation": "Six Flags Darien Lake"
    }
   },
   "darien-lake--viper": {
@@ -1397,6 +2099,13 @@
     "rcdbId": [
      "224"
     ]
+   },
+   "wikipedia": {
+    "title": "Viper (Six Flags Darien Lake)",
+    "revid": 1377569803,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Viper",
+    "infoboxLocation": "Six Flags Darien Lake"
    }
   },
   "disney-california-adventure--goofy-s-sky-school": {
@@ -1410,6 +2119,24 @@
     "rcdbId": [
      "732"
     ]
+   },
+   "wikipedia": {
+    "title": "Goofy's Sky School",
+    "revid": 1373401906,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Goofy's Sky School",
+    "infoboxLocation": "Disney California Adventure"
+   }
+  },
+  "disney-california-adventure--incrediocoaster": {
+   "wikipedia": {
+    "title": "Incredicoaster",
+    "revid": 1353887003,
+    "via": "infobox-match",
+    "infoboxName": "Incredicoaster",
+    "infoboxLocation": "Disney California Adventure",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
    }
   },
   "disney-s-animal-kingdom--expedition-everest": {
@@ -1426,6 +2153,13 @@
     "rcdbId": [
      "2389"
     ]
+   },
+   "wikipedia": {
+    "title": "Expedition Everest",
+    "revid": 1377527711,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Expedition Everest – Legend of the Forbidden Mountain",
+    "infoboxLocation": "Disney's Animal Kingdom"
    }
   },
   "disney-s-animal-kingdom--primeval-whirl": {
@@ -1443,6 +2177,13 @@
      "1868",
      "1566"
     ]
+   },
+   "wikipedia": {
+    "title": "Primeval Whirl",
+    "revid": 1369659292,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Primeval Whirl",
+    "infoboxLocation": "Disney's Animal Kingdom"
    }
   },
   "disney-s-hollywood-studios--rock-n-roller-coaster": {
@@ -1456,7 +2197,16 @@
    },
    "notes": [
     "Name matched a Wikidata alias (former or alternate name); the Wikidata label is \"Rock ’n’ Roller Coaster Starring The Muppets\"."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Rock 'n' Roller Coaster",
+    "revid": 1375409101,
+    "via": "infobox-match",
+    "infoboxName": "Rock 'n' Roller Coaster",
+    "infoboxLocation": "Disney's Hollywood Studios",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
+   }
   },
   "disney-s-hollywood-studios--slinky-dog-dash": {
    "qid": "Q35006966",
@@ -1472,6 +2222,13 @@
     "rcdbId": [
      "13377"
     ]
+   },
+   "wikipedia": {
+    "title": "Slinky Dog Dash",
+    "revid": 1369742958,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Slinky Dog Dash",
+    "infoboxLocation": "Disney's Hollywood Studios"
    }
   },
   "disney-s-magic-kingdom--big-thunder-mountain-railroad": {
@@ -1502,6 +2259,13 @@
      "9720",
      "11646"
     ]
+   },
+   "wikipedia": {
+    "title": "Seven Dwarfs Mine Train",
+    "revid": 1370063613,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Seven Dwarfs Mine Train",
+    "infoboxLocation": "Magic Kingdom"
    }
   },
   "disney-s-magic-kingdom--space-mountain": {
@@ -1532,6 +2296,13 @@
     "rcdbId": [
      "274"
     ]
+   },
+   "wikipedia": {
+    "title": "The Barnstormer",
+    "revid": 1373039466,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Barnstormer",
+    "infoboxLocation": "Magic Kingdom"
    }
   },
   "disney-s-magic-kingdom--tron-lightcycle-run": {
@@ -1594,6 +2365,13 @@
     "rcdbId": [
      "201"
     ]
+   },
+   "wikipedia": {
+    "title": "Space Mountain (Disneyland)",
+    "revid": 1377504700,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Space Mountain",
+    "infoboxLocation": "Disneyland"
    }
   },
   "dixie-landin-blue-bayou-waterpark--loco-loco": {
@@ -1622,6 +2400,13 @@
     "wikidataPark": [
      "Dollywood"
     ]
+   },
+   "wikipedia": {
+    "title": "Big Bear Mountain (roller coaster)",
+    "revid": 1377184016,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Big Bear Mountain",
+    "infoboxLocation": "Dollywood"
    }
   },
   "dollywood--blazing-fury": {
@@ -1652,6 +2437,13 @@
     "rcdbId": [
      "16124"
     ]
+   },
+   "wikipedia": {
+    "title": "Dragonflier",
+    "revid": 1340955948,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Dragonflier",
+    "infoboxLocation": "Dollywood"
    }
   },
   "dollywood--firechaser-express": {
@@ -1667,6 +2459,13 @@
     "rcdbId": [
      "6691"
     ]
+   },
+   "wikipedia": {
+    "title": "FireChaser Express",
+    "revid": 1377900843,
+    "via": "wikidata-sitelink",
+    "infoboxName": "FireChaser Express",
+    "infoboxLocation": "Dollywood"
    }
   },
   "dollywood--lightning-rod": {
@@ -1682,6 +2481,13 @@
     "rcdbId": [
      "13369"
     ]
+   },
+   "wikipedia": {
+    "title": "Lightning Rod (roller coaster)",
+    "revid": 1377563386,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Lightning Rod",
+    "infoboxLocation": "Dollywood"
    }
   },
   "dollywood--mystery-mine": {
@@ -1697,6 +2503,13 @@
     "rcdbId": [
      "3609"
     ]
+   },
+   "wikipedia": {
+    "title": "Mystery Mine",
+    "revid": 1368282678,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Mystery Mine",
+    "infoboxLocation": "Dollywood"
    }
   },
   "dollywood--tennessee-tornado": {
@@ -1712,6 +2525,13 @@
     "rcdbId": [
      "534"
     ]
+   },
+   "wikipedia": {
+    "title": "Tennessee Tornado",
+    "revid": 1355209579,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Tennessee Tornado",
+    "infoboxLocation": "Dollywood"
    }
   },
   "dollywood--thunderhead": {
@@ -1727,6 +2547,13 @@
     "rcdbId": [
      "2451"
     ]
+   },
+   "wikipedia": {
+    "title": "Thunderhead (roller coaster)",
+    "revid": 1377184569,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Thunderhead",
+    "infoboxLocation": "Dollywood"
    }
   },
   "dollywood--wild-eagle": {
@@ -1742,6 +2569,13 @@
     "rcdbId": [
      "10148"
     ]
+   },
+   "wikipedia": {
+    "title": "Wild Eagle",
+    "revid": 1373884234,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wild Eagle",
+    "infoboxLocation": "Dollywood"
    }
   },
   "dorney-park-wildwater-kingdom--hercules": {
@@ -1758,7 +2592,14 @@
    },
    "notes": [
     "Park matched by city (Allentown), not by park name."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Hercules (roller coaster)",
+    "revid": 1368562323,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Hercules",
+    "infoboxLocation": "Dorney Park & Wildwater Kingdom"
+   }
   },
   "dorney-park-wildwater-kingdom--hydra-the-revenge": {
    "qid": "Q1545220",
@@ -1773,6 +2614,23 @@
     "rcdbId": [
      "2528"
     ]
+   },
+   "wikipedia": {
+    "title": "Hydra the Revenge",
+    "revid": 1313012599,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Hydra the Revenge",
+    "infoboxLocation": "Dorney Park & Wildwater Kingdom"
+   }
+  },
+  "dorney-park-wildwater-kingdom--iron-menace": {
+   "wikipedia": {
+    "title": "Iron Menace",
+    "revid": 1368089598,
+    "via": "infobox-match",
+    "infoboxName": "Iron Menace",
+    "infoboxLocation": "Dorney Park & Wildwater Kingdom",
+    "confidence": "high"
    }
   },
   "dorney-park-wildwater-kingdom--possessed": {
@@ -1788,6 +2646,13 @@
     "rcdbId": [
      "4039"
     ]
+   },
+   "wikipedia": {
+    "title": "Possessed (roller coaster)",
+    "revid": 1377569490,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Possessed",
+    "infoboxLocation": "Dorney Park & Wildwater Kingdom"
    }
   },
   "dorney-park-wildwater-kingdom--steel-first": {
@@ -1804,7 +2669,14 @@
    },
    "notes": [
     "Location confirmed only to the state (PA); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Steel First",
+    "revid": 1234718608,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Steel First",
+    "infoboxLocation": "Dorney Park & Wildwater Kingdom"
+   }
   },
   "dorney-park-wildwater-kingdom--steel-force": {
    "qid": "Q2335777",
@@ -1819,6 +2691,13 @@
     "rcdbId": [
      "276"
     ]
+   },
+   "wikipedia": {
+    "title": "Steel Force",
+    "revid": 1367374592,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Steel Force",
+    "infoboxLocation": "Dorney Park & Wildwater Kingdom"
    }
   },
   "dorney-park-wildwater-kingdom--talon": {
@@ -1834,6 +2713,13 @@
     "rcdbId": [
      "735"
     ]
+   },
+   "wikipedia": {
+    "title": "Talon (roller coaster)",
+    "revid": 1377563868,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Talon",
+    "infoboxLocation": "Dorney Park & Wildwater Kingdom"
    }
   },
   "dorney-park-wildwater-kingdom--thunderhawk": {
@@ -1849,6 +2735,13 @@
     "rcdbId": [
      "239"
     ]
+   },
+   "wikipedia": {
+    "title": "Thunderhawk (Dorney Park)",
+    "revid": 1349572357,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Thunderhawk",
+    "infoboxLocation": "Dorney Park & Wildwater Kingdom"
    }
   },
   "dutch-wonderland--joust": {
@@ -1876,6 +2769,13 @@
     "rcdbId": [
      "251"
     ]
+   },
+   "wikipedia": {
+    "title": "Kingdom Coaster",
+    "revid": 1376906215,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Kingdom Coaster",
+    "infoboxLocation": "Dutch Wonderland"
    }
   },
   "dutch-wonderland--merlin-s-mayhem": {
@@ -1891,6 +2791,13 @@
     "rcdbId": [
      "14395"
     ]
+   },
+   "wikipedia": {
+    "title": "Merlin's Mayhem",
+    "revid": 1367549370,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Merlin's Mayhem",
+    "infoboxLocation": "Dutch Wonderland"
    }
   },
   "elitch-gardens--halfpipe": {
@@ -1921,6 +2828,13 @@
     "rcdbId": [
      "209"
     ]
+   },
+   "wikipedia": {
+    "title": "Sidewinder (Elitch Gardens)",
+    "revid": 1337191539,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Sidewinder",
+    "infoboxLocation": "Elitch Gardens"
    }
   },
   "elitch-gardens--twister-ii": {
@@ -1937,7 +2851,15 @@
    },
    "notes": [
     "Location confirmed only to the state (CO); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Twister III: Storm Chaser",
+    "revid": 1360863961,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Twister III: Storm Chaser",
+    "infoboxLocation": "Elitch Gardens",
+    "note": "Partial name match: infobox \"Twister III: Storm Chaser\", local \"Twister II\"."
+   }
   },
   "epcot--guardians-of-the-galaxy-cosmic-rewind": {
    "qid": "Q36259219",
@@ -1953,6 +2875,13 @@
     "rcdbId": [
      "15504"
     ]
+   },
+   "wikipedia": {
+    "title": "Guardians of the Galaxy: Cosmic Rewind",
+    "revid": 1377540749,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Guardians of the Galaxy: Cosmic Rewind",
+    "infoboxLocation": "Epcot"
    }
   },
   "family-kingdom-amusement-park--swamp-fox": {
@@ -1969,7 +2898,14 @@
    },
    "notes": [
     "Park matched by city (Myrtle Beach), not by park name."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Swamp Fox (roller coaster)",
+    "revid": 1313009623,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Swamp Fox",
+    "infoboxLocation": "Family Kingdom Amusement Park"
+   }
   },
   "freestyle-music-park--time-machine": {
    "qid": "Q2414672",
@@ -2000,6 +2936,13 @@
     "rcdbId": [
      "153"
     ]
+   },
+   "wikipedia": {
+    "title": "Silver Bullet (Frontier City)",
+    "revid": 1377569911,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Silver Bullet",
+    "infoboxLocation": "Frontier City"
    }
   },
   "frontier-city--steel-lasso": {
@@ -2015,6 +2958,23 @@
     "rcdbId": [
      "4191"
     ]
+   },
+   "wikipedia": {
+    "title": "Steel Lasso",
+    "revid": 1377569902,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Steel Lasso",
+    "infoboxLocation": "Frontier City"
+   }
+  },
+  "frontier-city--wild-kitty": {
+   "wikipedia": {
+    "title": "Wild Kitty",
+    "revid": 1313013493,
+    "via": "infobox-match",
+    "infoboxName": "Wild Kitty",
+    "infoboxLocation": "Frontier City",
+    "confidence": "high"
    }
   },
   "frontier-city--wildcat": {
@@ -2030,6 +2990,13 @@
     "rcdbId": [
      "155"
     ]
+   },
+   "wikipedia": {
+    "title": "Wildcat (Frontier City)",
+    "revid": 1377569916,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wildcat",
+    "infoboxLocation": "Frontier City"
    }
   },
   "fun-spot--afterburner": {
@@ -2045,6 +3012,13 @@
     "rcdbId": [
      "332"
     ]
+   },
+   "wikipedia": {
+    "title": "Afterburner (Fun Spot)",
+    "revid": 1374818227,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Afterburner",
+    "infoboxLocation": "Fun Spot Amusement Park & Zoo"
    }
   },
   "fun-spot-america-atlanta--arieforce-one": {
@@ -2060,6 +3034,13 @@
     "rcdbId": [
      "19332"
     ]
+   },
+   "wikipedia": {
+    "title": "ArieForce One",
+    "revid": 1378062280,
+    "via": "wikidata-sitelink",
+    "infoboxName": "ArieForce One",
+    "infoboxLocation": "Fun Spot America Theme Parks#Atlanta location"
    }
   },
   "fun-spot-america-orlando--freedom-flyer": {
@@ -2076,7 +3057,14 @@
    },
    "notes": [
     "Park matched by city (Orlando), not by park name."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Freedom Flyer",
+    "revid": 1349132633,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Freedom Flyer",
+    "infoboxLocation": "Fun Spot America"
+   }
   },
   "fun-spot-america-orlando--white-lightning": {
    "qid": "Q14686576",
@@ -2092,7 +3080,14 @@
    },
    "notes": [
     "Location confirmed only to the state (FL); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "White Lightning (roller coaster)",
+    "revid": 1375609304,
+    "via": "wikidata-sitelink",
+    "infoboxName": "White Lightning",
+    "infoboxLocation": "Fun Spot America"
+   }
   },
   "funtown-splashtown-usa--excalibur": {
    "qid": "Q1383421",
@@ -2105,6 +3100,13 @@
     "rcdbId": [
      "471"
     ]
+   },
+   "wikipedia": {
+    "title": "Excalibur (Funtown Splashtown USA)",
+    "revid": 1362600951,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Excalibur",
+    "infoboxLocation": "Funtown Splashtown USA"
    }
   },
   "galveston-island-pleasure-pier--iron-shark": {
@@ -2151,6 +3153,13 @@
     "rcdbId": [
      "236"
     ]
+   },
+   "wikipedia": {
+    "title": "Big Dipper (Geauga Lake)",
+    "revid": 1373603919,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Big Dipper",
+    "infoboxLocation": "Geauga Lake"
    }
   },
   "geauga-lake-s-wildwater-kingdom--double-loop": {
@@ -2164,6 +3173,13 @@
     "rcdbId": [
      "237"
     ]
+   },
+   "wikipedia": {
+    "title": "Double Loop (Geauga Lake)",
+    "revid": 1341920045,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Double Loop",
+    "infoboxLocation": "Geauga Lake"
    }
   },
   "geauga-lake-s-wildwater-kingdom--the-villain": {
@@ -2180,7 +3196,14 @@
    },
    "notes": [
     "Park matched by city (Aurora), not by park name."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Villain (roller coaster)",
+    "revid": 1306077812,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Villain",
+    "infoboxLocation": "Geauga Lake"
+   }
   },
   "glenwood-caverns-adventure-park--cliffhanger": {
    "qid": "Q5132836",
@@ -2196,7 +3219,14 @@
    },
    "notes": [
     "Location confirmed only to the state (CO); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Cliffhanger (Colorado roller coaster)",
+    "revid": 1349133398,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Cliffhanger",
+    "infoboxLocation": "Glenwood Caverns Adventure Park"
+   }
   },
   "glenwood-caverns-adventure-park--defiance": {
    "qid": "Q108166881",
@@ -2211,6 +3241,23 @@
     "rcdbId": [
      "19510"
     ]
+   },
+   "wikipedia": {
+    "title": "Defiance (roller coaster)",
+    "revid": 1240773258,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Defiance",
+    "infoboxLocation": "Glenwood Caverns Adventure Park"
+   }
+  },
+  "glenwood-caverns-adventure-park--wild-west-express": {
+   "wikipedia": {
+    "title": "Wild West Express Coaster",
+    "revid": 1348328872,
+    "via": "infobox-match",
+    "infoboxName": "Wild West Express Coaster",
+    "infoboxLocation": "Glenwood Caverns Adventure Park",
+    "confidence": "high"
    }
   },
   "hersheypark--candymonium": {
@@ -2226,6 +3273,13 @@
     "rcdbId": [
      "16682"
     ]
+   },
+   "wikipedia": {
+    "title": "Candymonium",
+    "revid": 1376653692,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Candymonium",
+    "infoboxLocation": "Hersheypark"
    }
   },
   "hersheypark--comet": {
@@ -2241,6 +3295,13 @@
     "rcdbId": [
      "106"
     ]
+   },
+   "wikipedia": {
+    "title": "Comet (Hersheypark)",
+    "revid": 1376265998,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Comet",
+    "infoboxLocation": "Hersheypark"
    }
   },
   "hersheypark--fahrenheit": {
@@ -2254,6 +3315,13 @@
     "rcdbId": [
      "4049"
     ]
+   },
+   "wikipedia": {
+    "title": "Fahrenheit (roller coaster)",
+    "revid": 1376653363,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Fahrenheit",
+    "infoboxLocation": "Hersheypark"
    }
   },
   "hersheypark--great-bear": {
@@ -2269,6 +3337,13 @@
     "rcdbId": [
      "468"
     ]
+   },
+   "wikipedia": {
+    "title": "Great Bear (roller coaster)",
+    "revid": 1334667324,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Great Bear",
+    "infoboxLocation": "Hersheypark"
    }
   },
   "hersheypark--laff-trakk": {
@@ -2284,6 +3359,13 @@
     "rcdbId": [
      "12270"
     ]
+   },
+   "wikipedia": {
+    "title": "Laff Trakk",
+    "revid": 1370849607,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Laff Trakk",
+    "infoboxLocation": "Hersheypark"
    }
   },
   "hersheypark--lightning-racer": {
@@ -2314,6 +3396,13 @@
     "rcdbId": [
      "1497"
     ]
+   },
+   "wikipedia": {
+    "title": "Roller Soaker",
+    "revid": 1377133309,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Roller Soaker",
+    "infoboxLocation": "Hersheypark"
    }
   },
   "hersheypark--sidewinder": {
@@ -2348,6 +3437,13 @@
     "rcdbId": [
      "10089"
     ]
+   },
+   "wikipedia": {
+    "title": "Skyrush",
+    "revid": 1376905642,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Skyrush",
+    "infoboxLocation": "Hersheypark"
    }
   },
   "hersheypark--sooperdooperlooper": {
@@ -2363,6 +3459,13 @@
     "rcdbId": [
      "108"
     ]
+   },
+   "wikipedia": {
+    "title": "SooperDooperLooper",
+    "revid": 1377247982,
+    "via": "wikidata-sitelink",
+    "infoboxName": "SooperDooperLooper",
+    "infoboxLocation": "Hersheypark"
    }
   },
   "hersheypark--storm-runner": {
@@ -2378,6 +3481,13 @@
     "rcdbId": [
      "2498"
     ]
+   },
+   "wikipedia": {
+    "title": "Storm Runner",
+    "revid": 1377562988,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Storm Runner",
+    "infoboxLocation": "Hersheypark"
    }
   },
   "hersheypark--trailblazer": {
@@ -2393,6 +3503,13 @@
     "rcdbId": [
      "107"
     ]
+   },
+   "wikipedia": {
+    "title": "Trailblazer (roller coaster)",
+    "revid": 1378066114,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Trailblazer",
+    "infoboxLocation": "Hersheypark"
    }
   },
   "hersheypark--wild-mouse": {
@@ -2408,6 +3525,24 @@
     "rcdbId": [
      "539"
     ]
+   },
+   "wikipedia": {
+    "title": "Wild Mouse (Hersheypark)",
+    "revid": 1377802403,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wild Mouse",
+    "infoboxLocation": "Hersheypark"
+   }
+  },
+  "hersheypark--wildcat": {
+   "wikipedia": {
+    "title": "Wild Cat (Hersheypark)",
+    "revid": 1372766118,
+    "via": "infobox-match",
+    "infoboxName": "The Wild Cat",
+    "infoboxLocation": "Hersheypark",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
    }
   },
   "hersheypark--wildcat-s-revenge": {
@@ -2423,6 +3558,17 @@
     "rcdbId": [
      "20462"
     ]
+   },
+   "wikipedia": {
+    "title": "Wildcat's Revenge",
+    "revid": 1375611219,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wildcat's Revenge",
+    "infoboxLocation": "Hersheypark",
+    "alsoCovers": [
+     "hersheypark--wildcat"
+    ],
+    "alsoCoversNote": "The article also covers an earlier ride that js/data.js keeps as a separate credit. Its figures go only to this coaster, and footnoted or qualified values are dropped."
    }
   },
   "holiday-world-splashin-safari--good-gravy": {
@@ -2436,6 +3582,13 @@
     "rcdbId": [
      "21070"
     ]
+   },
+   "wikipedia": {
+    "title": "Good Gravy! (roller coaster)",
+    "revid": 1357784082,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Good Gravy!",
+    "infoboxLocation": "Holiday World & Splashin' Safari"
    }
   },
   "holiday-world-splashin-safari--howler": {
@@ -2449,6 +3602,13 @@
     "rcdbId": [
      "555"
     ]
+   },
+   "wikipedia": {
+    "title": "The Howler",
+    "revid": 1348098041,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Howler",
+    "infoboxLocation": "Holiday World & Splashin' Safari"
    }
   },
   "holiday-world-splashin-safari--raven": {
@@ -2462,6 +3622,13 @@
     "rcdbId": [
      "136"
     ]
+   },
+   "wikipedia": {
+    "title": "Raven (roller coaster)",
+    "revid": 1375608460,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Raven",
+    "infoboxLocation": "Holiday World & Splashin' Safari"
    }
   },
   "holiday-world-splashin-safari--the-legend": {
@@ -2475,6 +3642,13 @@
     "rcdbId": [
      "582"
     ]
+   },
+   "wikipedia": {
+    "title": "The Legend (roller coaster)",
+    "revid": 1375607061,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Legend",
+    "infoboxLocation": "Holiday World & Splashin' Safari"
    }
   },
   "holiday-world-splashin-safari--the-voyage": {
@@ -2490,6 +3664,13 @@
     "rcdbId": [
      "3231"
     ]
+   },
+   "wikipedia": {
+    "title": "The Voyage (roller coaster)",
+    "revid": 1375277357,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Voyage",
+    "infoboxLocation": "Holiday World & Splashin' Safari"
    }
   },
   "holiday-world-splashin-safari--thunderbird": {
@@ -2505,6 +3686,13 @@
     "rcdbId": [
      "12260"
     ]
+   },
+   "wikipedia": {
+    "title": "Thunderbird (Holiday World)",
+    "revid": 1368562355,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Thunderbird",
+    "infoboxLocation": "Holiday World & Splashin' Safari"
    }
   },
   "idlewild-soak-zone--rollo-coaster": {
@@ -2521,7 +3709,14 @@
    },
    "notes": [
     "Location confirmed only to the state (PA); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Rollo Coaster",
+    "revid": 1378068065,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Rollo Coaster",
+    "infoboxLocation": "Idlewild and Soak Zone"
+   }
   },
   "idlewild-soak-zone--wild-mouse": {
    "qid": "Q3568116",
@@ -2534,6 +3729,23 @@
     "rcdbId": [
      "271"
     ]
+   },
+   "wikipedia": {
+    "title": "Wild Mouse (Idlewild)",
+    "revid": 1377335333,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wild Mouse",
+    "infoboxLocation": "Idlewild and Soak Zone"
+   }
+  },
+  "indiana-beach--all-american-triple-loop": {
+   "wikipedia": {
+    "title": "All American Triple Loop",
+    "revid": 1342297275,
+    "via": "infobox-match",
+    "infoboxName": "All American Triple Loop",
+    "infoboxLocation": "Indiana Beach",
+    "confidence": "high"
    }
   },
   "indiana-beach--cornball-express": {
@@ -2549,6 +3761,13 @@
     "rcdbId": [
      "741"
     ]
+   },
+   "wikipedia": {
+    "title": "Cornball Express",
+    "revid": 1375609255,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Cornball Express",
+    "infoboxLocation": "Indiana Beach"
    }
   },
   "indiana-beach--dragon-wagon": {
@@ -2562,6 +3781,13 @@
     "rcdbId": [
      "11898"
     ]
+   },
+   "wikipedia": {
+    "title": "Dragon Wagon (Indiana Beach)",
+    "revid": 1313013521,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Dragon Wagon",
+    "infoboxLocation": "Indiana Beach"
    }
   },
   "indiana-beach--hoosier-hurricane": {
@@ -2577,6 +3803,13 @@
     "rcdbId": [
      "270"
     ]
+   },
+   "wikipedia": {
+    "title": "Hoosier Hurricane",
+    "revid": 1362979272,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Hoosier Hurricane",
+    "infoboxLocation": "Indiana Beach"
    }
   },
   "indiana-beach--lost-coaster-of-superstition-mountain": {
@@ -2593,7 +3826,14 @@
    },
    "notes": [
     "Location confirmed only to the state (IN); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Lost Coaster of Superstition Mountain",
+    "revid": 1342289454,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Lost Coaster of Superstition Mountain",
+    "infoboxLocation": "Indiana Beach"
+   }
   },
   "indiana-beach--steel-hawg": {
    "qid": "Q3497779",
@@ -2608,6 +3848,13 @@
     "rcdbId": [
      "2722"
     ]
+   },
+   "wikipedia": {
+    "title": "Steel Hawg",
+    "revid": 1342292718,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Steel Hawg",
+    "infoboxLocation": "Indiana Beach"
    }
   },
   "indiana-beach--tig-rr-coaster": {
@@ -2623,6 +3870,13 @@
     "rcdbId": [
      "285"
     ]
+   },
+   "wikipedia": {
+    "title": "Tig'rr Coaster",
+    "revid": 1348146961,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Tig'rr Coaster",
+    "infoboxLocation": "Indiana Beach"
    }
   },
   "jolly-roger-amusement-park--wildcat": {
@@ -2638,6 +3892,13 @@
     "rcdbId": [
      "12205"
     ]
+   },
+   "wikipedia": {
+    "title": "Wildcat (Jolly Roger Amusement Park)",
+    "revid": 1250348312,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wildcat",
+    "infoboxLocation": "Jolly Roger Amusement Park"
    }
   },
   "kemah-boardwalk-amusements--boardwalk-bullet": {
@@ -2653,6 +3914,13 @@
     "rcdbId": [
      "3757"
     ]
+   },
+   "wikipedia": {
+    "title": "Boardwalk Bullet",
+    "revid": 1376982673,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Boardwalk Bullet",
+    "infoboxLocation": "Kemah Boardwalk"
    }
   },
   "kennywood--exterminator": {
@@ -2668,6 +3936,13 @@
     "rcdbId": [
      "538"
     ]
+   },
+   "wikipedia": {
+    "title": "The Exterminator (roller coaster)",
+    "revid": 1361789687,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Exterminator",
+    "infoboxLocation": "Kennywood"
    }
   },
   "kennywood--jack-rabbit": {
@@ -2683,6 +3958,13 @@
     "rcdbId": [
      "120"
     ]
+   },
+   "wikipedia": {
+    "title": "Jack Rabbit (Kennywood)",
+    "revid": 1375607448,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Jack Rabbit",
+    "infoboxLocation": "Kennywood"
    }
   },
   "kennywood--phantom-s-revenge": {
@@ -2698,6 +3980,17 @@
     "rcdbId": [
      "123"
     ]
+   },
+   "wikipedia": {
+    "title": "Phantom's Revenge",
+    "revid": 1375610645,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Phantom's Revenge",
+    "infoboxLocation": "Kennywood",
+    "alsoCovers": [
+     "kennywood--steel-phantom"
+    ],
+    "alsoCoversNote": "The article also covers an earlier ride that js/data.js keeps as a separate credit. Its figures go only to this coaster, and footnoted or qualified values are dropped."
    }
   },
   "kennywood--racer": {
@@ -2714,6 +4007,13 @@
     "rcdbId": [
      "121"
     ]
+   },
+   "wikipedia": {
+    "title": "Racer (Kennywood)",
+    "revid": 1375608947,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Racer",
+    "infoboxLocation": "Kennywood"
    }
   },
   "kennywood--sky-rocket": {
@@ -2729,6 +4029,13 @@
     "rcdbId": [
      "8612"
     ]
+   },
+   "wikipedia": {
+    "title": "Sky Rocket",
+    "revid": 1363884365,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Sky Rocket",
+    "infoboxLocation": "Kennywood"
    }
   },
   "kennywood--steel-curtain": {
@@ -2744,6 +4051,13 @@
     "rcdbId": [
      "16479"
     ]
+   },
+   "wikipedia": {
+    "title": "Steel Curtain (roller coaster)",
+    "revid": 1369085243,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Steel Curtain",
+    "infoboxLocation": "Kennywood"
    }
   },
   "kennywood--thunderbolt": {
@@ -2760,6 +4074,13 @@
     "rcdbId": [
      "122"
     ]
+   },
+   "wikipedia": {
+    "title": "Thunderbolt (Kennywood)",
+    "revid": 1377563710,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Thunderbolt",
+    "infoboxLocation": "Kennywood"
    }
   },
   "kentucky-kingdom--kentucky-flyer": {
@@ -2775,6 +4096,13 @@
     "rcdbId": [
      "16676"
     ]
+   },
+   "wikipedia": {
+    "title": "Kentucky Flyer",
+    "revid": 1340310368,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Kentucky Flyer",
+    "infoboxLocation": "Kentucky Kingdom"
    }
   },
   "kentucky-kingdom--lightning-run": {
@@ -2790,6 +4118,13 @@
     "rcdbId": [
      "7982"
     ]
+   },
+   "wikipedia": {
+    "title": "Lightning Run",
+    "revid": 1368269783,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Lightning Run",
+    "infoboxLocation": "Kentucky Kingdom"
    }
   },
   "kentucky-kingdom--roller-skater": {
@@ -2848,6 +4183,13 @@
     "rcdbId": [
      "92"
     ]
+   },
+   "wikipedia": {
+    "title": "Anaconda (Kings Dominion)",
+    "revid": 1327496864,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Anaconda",
+    "infoboxLocation": "Kings Dominion"
    }
   },
   "kings-dominion--avalanche": {
@@ -2896,6 +4238,13 @@
     "rcdbId": [
      "4079"
     ]
+   },
+   "wikipedia": {
+    "title": "Dominator (roller coaster)",
+    "revid": 1377569493,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Dominator",
+    "infoboxLocation": "Kings Dominion"
    }
   },
   "kings-dominion--grizzly": {
@@ -2911,6 +4260,13 @@
     "rcdbId": [
      "90"
     ]
+   },
+   "wikipedia": {
+    "title": "Grizzly (Kings Dominion)",
+    "revid": 1375607560,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Grizzly",
+    "infoboxLocation": "Kings Dominion"
    }
   },
   "kings-dominion--hurler": {
@@ -2942,6 +4298,13 @@
     "rcdbId": [
      "729"
     ]
+   },
+   "wikipedia": {
+    "title": "Hypersonic XLC",
+    "revid": 1319235414,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Hypersonic XLC",
+    "infoboxLocation": "Kings Dominion"
    }
   },
   "kings-dominion--intimidator-305": {
@@ -2960,7 +4323,24 @@
    },
    "notes": [
     "Name matched a Wikidata alias (former or alternate name); the Wikidata label is \"Pantherian\"."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Pantherian",
+    "revid": 1377569487,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Pantherian",
+    "infoboxLocation": "Kings Dominion"
+   }
+  },
+  "kings-dominion--rapterra": {
+   "wikipedia": {
+    "title": "Rapterra",
+    "revid": 1377569932,
+    "via": "infobox-match",
+    "infoboxName": "Rapterra (roller coaster)",
+    "infoboxLocation": "Kings Dominion",
+    "confidence": "high"
+   }
   },
   "kings-dominion--rebel-yell": {
    "qid": "Q7302076",
@@ -3003,6 +4383,35 @@
     "rcdbId": [
      "91"
     ]
+   },
+   "wikipedia": {
+    "title": "Shockwave (Kings Dominion)",
+    "revid": 1319118361,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Shockwave",
+    "infoboxLocation": "Kings Dominion"
+   }
+  },
+  "kings-dominion--tumbili": {
+   "qid": "Q108293346",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Tumbili",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Dominion"
+    ],
+    "rcdbId": [
+     "18846"
+    ]
+   },
+   "wikipedia": {
+    "title": "Tumbili",
+    "revid": 1377569826,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Tumbili",
+    "infoboxLocation": "Kings Dominion"
    }
   },
   "kings-dominion--twisted-timbers": {
@@ -3018,6 +4427,13 @@
     "rcdbId": [
      "15028"
     ]
+   },
+   "wikipedia": {
+    "title": "Twisted Timbers",
+    "revid": 1377569677,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Twisted Timbers",
+    "infoboxLocation": "Kings Dominion"
    }
   },
   "kings-dominion--volcano-the-blast-coaster": {
@@ -3033,6 +4449,13 @@
     "rcdbId": [
      "474"
     ]
+   },
+   "wikipedia": {
+    "title": "Volcano: The Blast Coaster",
+    "revid": 1376813592,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Volcano: The Blast Coaster",
+    "infoboxLocation": "Kings Dominion"
    }
   },
   "kings-dominion--woodstock-express": {
@@ -3048,6 +4471,13 @@
     "rcdbId": [
      "89"
     ]
+   },
+   "wikipedia": {
+    "title": "Woodstock Express (Kings Dominion)",
+    "revid": 1364770909,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Woodstock Express",
+    "infoboxLocation": "Kings Dominion"
    }
   },
   "kings-island--adventure-express": {
@@ -3063,6 +4493,13 @@
     "rcdbId": [
      "70"
     ]
+   },
+   "wikipedia": {
+    "title": "Adventure Express",
+    "revid": 1377569634,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Adventure Express",
+    "infoboxLocation": "Kings Island"
    }
   },
   "kings-island--backlot-stunt-coaster": {
@@ -3095,7 +4532,14 @@
    },
    "notes": [
     "Location confirmed only to the state (OH); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Banshee (roller coaster)",
+    "revid": 1377569527,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Banshee",
+    "infoboxLocation": "Kings Island"
+   }
   },
   "kings-island--diamondback": {
    "qid": "Q922374",
@@ -3110,6 +4554,13 @@
     "rcdbId": [
      "4253"
     ]
+   },
+   "wikipedia": {
+    "title": "Diamondback (Kings Island)",
+    "revid": 1377569538,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Diamondback",
+    "infoboxLocation": "Kings Island"
    }
   },
   "kings-island--firehawk": {
@@ -3125,6 +4576,23 @@
     "rcdbId": [
      "3793"
     ]
+   },
+   "wikipedia": {
+    "title": "Firehawk (roller coaster)",
+    "revid": 1368282665,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Firehawk",
+    "infoboxLocation": "Kings Island"
+   }
+  },
+  "kings-island--flight-of-fear": {
+   "wikipedia": {
+    "title": "Flight of Fear",
+    "revid": 1377907116,
+    "via": "infobox-match",
+    "infoboxName": "Flight of Fear",
+    "infoboxLocation": "Kings Island",
+    "confidence": "high"
    }
   },
   "kings-island--invertigo": {
@@ -3155,6 +4623,13 @@
     "rcdbId": [
      "68"
     ]
+   },
+   "wikipedia": {
+    "title": "King Cobra (roller coaster)",
+    "revid": 1377495220,
+    "via": "wikidata-sitelink",
+    "infoboxName": "King Cobra",
+    "infoboxLocation": "Kings Island"
    }
   },
   "kings-island--mystic-timbers": {
@@ -3170,6 +4645,13 @@
     "rcdbId": [
      "14116"
     ]
+   },
+   "wikipedia": {
+    "title": "Mystic Timbers",
+    "revid": 1377569580,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Mystic Timbers",
+    "infoboxLocation": "Kings Island"
    }
   },
   "kings-island--orion": {
@@ -3185,6 +4667,13 @@
     "rcdbId": [
      "11437"
     ]
+   },
+   "wikipedia": {
+    "title": "Orion (roller coaster)",
+    "revid": 1377569653,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Orion",
+    "infoboxLocation": "Kings Island"
    }
   },
   "kings-island--racer": {
@@ -3215,6 +4704,13 @@
     "rcdbId": [
      "505"
     ]
+   },
+   "wikipedia": {
+    "title": "Scooby's Ghoster Coaster",
+    "revid": 1377495721,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Scooby's Ghoster Coaster",
+    "infoboxLocation": "Kings Island"
    }
   },
   "kings-island--son-of-beast": {
@@ -3230,6 +4726,13 @@
     "rcdbId": [
      "584"
     ]
+   },
+   "wikipedia": {
+    "title": "Son of Beast",
+    "revid": 1377225798,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Son of Beast",
+    "infoboxLocation": "Kings Island"
    }
   },
   "kings-island--the-beast": {
@@ -3245,6 +4748,13 @@
     "rcdbId": [
      "67"
     ]
+   },
+   "wikipedia": {
+    "title": "The Beast (roller coaster)",
+    "revid": 1377660895,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Beast",
+    "infoboxLocation": "Kings Island"
    }
   },
   "kings-island--vortex": {
@@ -3260,6 +4770,13 @@
     "rcdbId": [
      "71"
     ]
+   },
+   "wikipedia": {
+    "title": "Vortex (Kings Island)",
+    "revid": 1334946764,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Vortex",
+    "infoboxLocation": "Kings Island"
    }
   },
   "kings-island--woodstock-express": {
@@ -3275,6 +4792,13 @@
     "rcdbId": [
      "72"
     ]
+   },
+   "wikipedia": {
+    "title": "Woodstock Express (Kings Island)",
+    "revid": 1278816366,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Woodstock Express",
+    "infoboxLocation": "Kings Island"
    }
   },
   "knoebels-amusement-park--black-diamond": {
@@ -3290,6 +4814,13 @@
     "rcdbId": [
      "4454"
     ]
+   },
+   "wikipedia": {
+    "title": "Black Diamond (roller coaster)",
+    "revid": 1342072592,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Black Diamond",
+    "infoboxLocation": "Knoebels Amusement Resort"
    }
   },
   "knoebels-amusement-park--flying-turns": {
@@ -3303,6 +4834,13 @@
     "rcdbId": [
      "3458"
     ]
+   },
+   "wikipedia": {
+    "title": "Flying Turns (Knoebels)",
+    "revid": 1375608399,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Flying Turns",
+    "infoboxLocation": "Knoebels Amusement Resort"
    }
   },
   "knoebels-amusement-park--high-speed-thrill-coaster": {
@@ -3318,6 +4856,13 @@
     "rcdbId": [
      "146"
     ]
+   },
+   "wikipedia": {
+    "title": "High Speed Thrill Coaster",
+    "revid": 1325722672,
+    "via": "wikidata-sitelink",
+    "infoboxName": "High Speed Thrill Coaster",
+    "infoboxLocation": "Knoebels Amusement Resort"
    }
   },
   "knoebels-amusement-park--impulse": {
@@ -3334,7 +4879,14 @@
    },
    "notes": [
     "Location confirmed only to the state (PA); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Impulse (roller coaster)",
+    "revid": 1308348391,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Impulse",
+    "infoboxLocation": "Knoebels Amusement Resort"
+   }
   },
   "knoebels-amusement-park--kozmo-s-kurves": {
    "qid": "Q6435353",
@@ -3366,7 +4918,14 @@
    },
    "notes": [
     "Park matched by city (Elysburg), not by park name."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Phoenix (roller coaster)",
+    "revid": 1375558733,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Phoenix",
+    "infoboxLocation": "Knoebels Amusement Resort"
+   }
   },
   "knoebels-amusement-park--twister": {
    "qid": "Q2462356",
@@ -3381,6 +4940,13 @@
     "rcdbId": [
      "546"
     ]
+   },
+   "wikipedia": {
+    "title": "Twister (Knoebels Amusement Resort)",
+    "revid": 1375614505,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Twister",
+    "infoboxLocation": "Knoebels Amusement Resort"
    }
   },
   "knott-s-berry-farm--coast-rider": {
@@ -3396,6 +4962,24 @@
     "rcdbId": [
      "11074"
     ]
+   },
+   "wikipedia": {
+    "title": "Coast Rider",
+    "revid": 1377569743,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Coast Rider",
+    "infoboxLocation": "Knott's Berry Farm"
+   }
+  },
+  "knott-s-berry-farm--ghostrider": {
+   "wikipedia": {
+    "title": "GhostRider (roller coaster)",
+    "revid": 1377569552,
+    "via": "infobox-match",
+    "infoboxName": "GhostRider",
+    "infoboxLocation": "Knott's Berry Farm",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
    }
   },
   "knott-s-berry-farm--hang-time": {
@@ -3411,6 +4995,13 @@
     "rcdbId": [
      "15413"
     ]
+   },
+   "wikipedia": {
+    "title": "HangTime (roller coaster)",
+    "revid": 1377569766,
+    "via": "wikidata-sitelink",
+    "infoboxName": "HangTime",
+    "infoboxLocation": "Knott's Berry Farm"
    }
   },
   "knott-s-berry-farm--jaguar": {
@@ -3424,6 +5015,13 @@
     "rcdbId": [
      "291"
     ]
+   },
+   "wikipedia": {
+    "title": "Jaguar!",
+    "revid": 1377569730,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Jaguar!",
+    "infoboxLocation": "Knott's Berry Farm"
    }
   },
   "knott-s-berry-farm--montezooma-s-revenge": {
@@ -3452,6 +5050,13 @@
     "rcdbId": [
      "4089"
     ]
+   },
+   "wikipedia": {
+    "title": "Pony Express (roller coaster)",
+    "revid": 1377569734,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Pony Express",
+    "infoboxLocation": "Knott's Berry Farm"
    }
   },
   "knott-s-berry-farm--sierra-sidewinder": {
@@ -3468,7 +5073,14 @@
    },
    "notes": [
     "Location confirmed only to the state (CA); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Sierra Sidewinder",
+    "revid": 1377569786,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Sierra Sidewinder",
+    "infoboxLocation": "Knott's Berry Farm"
+   }
   },
   "knott-s-berry-farm--silver-bullet": {
    "qid": "Q1784195",
@@ -3483,6 +5095,13 @@
     "rcdbId": [
      "2536"
     ]
+   },
+   "wikipedia": {
+    "title": "Silver Bullet (Knott's Berry Farm)",
+    "revid": 1377569716,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Silver Bullet",
+    "infoboxLocation": "Knott's Berry Farm"
    }
   },
   "knott-s-berry-farm--timberline-twister": {
@@ -3526,6 +5145,26 @@
     "Partial name match (sponsor prefix or subtitle): Wikidata \"Windjammer Surf Racers\", local \"Windjammer\"."
    ]
   },
+  "knott-s-berry-farm--xcelerator": {
+   "qid": "Q1477122",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Xcelerator",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "1574"
+    ]
+   },
+   "wikipedia": {
+    "title": "Xcelerator",
+    "revid": 1374555014,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Xcelerator",
+    "infoboxLocation": "Knott's Berry Farm"
+   }
+  },
   "lagoon--bat": {
    "qid": "Q4868452",
    "confidence": "high",
@@ -3539,6 +5178,13 @@
     "rcdbId": [
      "2954"
     ]
+   },
+   "wikipedia": {
+    "title": "Bat (Lagoon)",
+    "revid": 1217052707,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Bat",
+    "infoboxLocation": "Lagoon Amusement Park"
    }
   },
   "lagoon--bombora": {
@@ -3554,6 +5200,13 @@
     "rcdbId": [
      "9223"
     ]
+   },
+   "wikipedia": {
+    "title": "BomBora (Lagoon)",
+    "revid": 1302704745,
+    "via": "wikidata-sitelink",
+    "infoboxName": "BomBora",
+    "infoboxLocation": "Lagoon"
    }
   },
   "lagoon--cannibal": {
@@ -3569,6 +5222,13 @@
     "rcdbId": [
      "11579"
     ]
+   },
+   "wikipedia": {
+    "title": "Cannibal (roller coaster)",
+    "revid": 1370117543,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Cannibal",
+    "infoboxLocation": "Lagoon"
    }
   },
   "lagoon--colossus-the-fire-dragon": {
@@ -3584,6 +5244,13 @@
     "rcdbId": [
      "197"
     ]
+   },
+   "wikipedia": {
+    "title": "Colossus the Fire Dragon",
+    "revid": 1371922120,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Colossus the Fire Dragon",
+    "infoboxLocation": "Lagoon Amusement Park"
    }
   },
   "lagoon--jet-star-2": {
@@ -3597,6 +5264,23 @@
     "rcdbId": [
      "198"
     ]
+   },
+   "wikipedia": {
+    "title": "Jet Star 2 (Lagoon)",
+    "revid": 1338964023,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Jet Star 2",
+    "infoboxLocation": "Lagoon Amusement Park"
+   }
+  },
+  "lagoon--primordial": {
+   "wikipedia": {
+    "title": "Primordial (roller coaster)",
+    "revid": 1313014136,
+    "via": "infobox-match",
+    "infoboxName": "Primordial",
+    "infoboxLocation": "Lagoon",
+    "confidence": "high"
    }
   },
   "lagoon--roller-coaster": {
@@ -3612,6 +5296,13 @@
     "rcdbId": [
      "196"
     ]
+   },
+   "wikipedia": {
+    "title": "Roller Coaster (Lagoon)",
+    "revid": 1373807185,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Roller Coaster",
+    "infoboxLocation": "Lagoon Amusement Park"
    }
   },
   "lagoon--the-spider": {
@@ -3628,7 +5319,14 @@
    },
    "notes": [
     "Location confirmed only to the state (UT); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Spider (roller coaster)",
+    "revid": 1344311843,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Spider",
+    "infoboxLocation": "Lagoon"
+   }
   },
   "lagoon--wicked": {
    "qid": "Q201844",
@@ -3643,6 +5341,13 @@
     "rcdbId": [
      "3534"
     ]
+   },
+   "wikipedia": {
+    "title": "Wicked (roller coaster)",
+    "revid": 1325729382,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wicked",
+    "infoboxLocation": "Lagoon Amusement Park"
    }
   },
   "lagoon--wild-mouse": {
@@ -3656,6 +5361,13 @@
     "rcdbId": [
      "507"
     ]
+   },
+   "wikipedia": {
+    "title": "Wild Mouse (Lagoon)",
+    "revid": 1325729424,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wild Mouse",
+    "infoboxLocation": "Lagoon Amusement Park"
    }
   },
   "lake-compounce--boulder-dash": {
@@ -3671,6 +5383,13 @@
     "rcdbId": [
      "602"
     ]
+   },
+   "wikipedia": {
+    "title": "Boulder Dash (roller coaster)",
+    "revid": 1375606664,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Boulder Dash",
+    "infoboxLocation": "Lake Compounce"
    }
   },
   "lake-compounce--kiddie-coaster": {
@@ -3699,6 +5418,13 @@
     "rcdbId": [
      "420"
     ]
+   },
+   "wikipedia": {
+    "title": "Wildcat (Lake Compounce)",
+    "revid": 1373363965,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wildcat",
+    "infoboxLocation": "Lake Compounce"
    }
   },
   "lake-compounce--zoomerang": {
@@ -3714,6 +5440,13 @@
     "rcdbId": [
      "432"
     ]
+   },
+   "wikipedia": {
+    "title": "Zoomerang (Lake Compounce)",
+    "revid": 1315147861,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Zoomerang",
+    "infoboxLocation": "Lake Compounce"
    }
   },
   "lake-winnepesaukah--cannon-ball": {
@@ -3729,6 +5462,13 @@
     "rcdbId": [
      "348"
     ]
+   },
+   "wikipedia": {
+    "title": "Cannon Ball (roller coaster)",
+    "revid": 1377956320,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Cannon Ball",
+    "infoboxLocation": "Lake Winnepesaukah"
    }
   },
   "lakemont-park--leap-the-dips": {
@@ -3745,7 +5485,14 @@
    },
    "notes": [
     "Location confirmed only to the state (PA); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Leap-The-Dips",
+    "revid": 1378062343,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Leap-The-Dips",
+    "infoboxLocation": "Lakemont Park"
+   }
   },
   "lakemont-park--little-leaper": {
    "qid": "Q6650672",
@@ -3777,7 +5524,14 @@
    },
    "notes": [
     "Location confirmed only to the state (PA); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Skyliner (roller coaster)",
+    "revid": 1375402043,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Skyliner",
+    "infoboxLocation": "Lakemont Park"
+   }
   },
   "lakemont-park--toboggan": {
    "qid": "Q7811717",
@@ -3790,6 +5544,13 @@
     "rcdbId": [
      "247"
     ]
+   },
+   "wikipedia": {
+    "title": "Toboggan (Lakemont Park)",
+    "revid": 1377134967,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Toboggan",
+    "infoboxLocation": "Lakemont Park"
    }
   },
   "lakeside-amusement-park--cyclone": {
@@ -3805,6 +5566,13 @@
     "rcdbId": [
      "211"
     ]
+   },
+   "wikipedia": {
+    "title": "Cyclone (Lakeside Amusement Park)",
+    "revid": 1375432826,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Cyclone",
+    "infoboxLocation": "Lakeside Amusement Park"
    }
   },
   "legoland-florida--project-x": {
@@ -3817,6 +5585,25 @@
     "wikidataPark": [
      "Legoland Florida"
     ]
+   }
+  },
+  "lost-island-theme-park--fire-runner": {
+   "qid": "Q137739269",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Fire Runner",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Lost Island Theme Park"
+    ]
+   },
+   "wikipedia": {
+    "title": "Fire Runner (roller coaster)",
+    "revid": 1370200282,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Fire Runner",
+    "infoboxLocation": "Lost Island Theme Park"
    }
   },
   "lost-island-theme-park--matugani": {
@@ -3833,6 +5620,13 @@
     "rcdbId": [
      "18326"
     ]
+   },
+   "wikipedia": {
+    "title": "Matugani",
+    "revid": 1341136181,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Matugani",
+    "infoboxLocation": "Lost Island Theme Park"
    }
   },
   "lost-island-theme-park--nopuko-air-coaster": {
@@ -3867,7 +5661,15 @@
    "notes": [
     "Name matched a Wikidata alias (former or alternate name); the Wikidata label is \"Coney Island Cyclone\".",
     "Park matched by city (Brooklyn), not by park name."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Coney Island Cyclone",
+    "revid": 1376266600,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Coney Island Cyclone",
+    "infoboxLocation": "Coney Island",
+    "note": "Partial name match: infobox \"Coney Island Cyclone\", local \"Cyclone\"."
+   }
   },
   "luna-park--soarin-eagle": {
    "qid": "Q7549857",
@@ -3883,7 +5685,25 @@
    },
    "notes": [
     "Location confirmed only to the state (NY); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Soarin' Eagle",
+    "revid": 1364860471,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Soarin' Eagle",
+    "infoboxLocation": "Luna Park, Coney Island"
+   }
+  },
+  "luna-park--thunderbolt": {
+   "wikipedia": {
+    "title": "Thunderbolt (2014 roller coaster)",
+    "revid": 1376906430,
+    "via": "infobox-match",
+    "infoboxName": "Thunderbolt",
+    "infoboxLocation": "Luna Park",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
+   }
   },
   "magic-springs-crystal-falls--arkansas-twister": {
    "qid": "Q673114",
@@ -3898,6 +5718,13 @@
     "rcdbId": [
      "418"
     ]
+   },
+   "wikipedia": {
+    "title": "Arkansas Twister",
+    "revid": 1342535303,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Arkansas Twister",
+    "infoboxLocation": null
    }
   },
   "magic-springs-crystal-falls--gauntlet": {
@@ -3914,7 +5741,14 @@
    },
    "notes": [
     "Park matched by city (Hot Springs), not by park name."
-   ]
+   ],
+   "wikipedia": {
+    "title": "The Gauntlet (roller coaster)",
+    "revid": 1365695780,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Gauntlet",
+    "infoboxLocation": "Magic Springs"
+   }
   },
   "magic-springs-crystal-falls--x-coaster": {
    "qid": "Q8041435",
@@ -3929,6 +5763,13 @@
     "rcdbId": [
      "3312"
     ]
+   },
+   "wikipedia": {
+    "title": "X-Coaster",
+    "revid": 1359062219,
+    "via": "wikidata-sitelink",
+    "infoboxName": "X-Coaster",
+    "infoboxLocation": "Magic Springs and Crystal Falls"
    }
   },
   "memphis-kiddie-park--little-dipper": {
@@ -3943,6 +5784,13 @@
      "328",
      "635"
     ]
+   },
+   "wikipedia": {
+    "title": "Little Dipper (Memphis Kiddie Park)",
+    "revid": 1346930962,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Little Dipper",
+    "infoboxLocation": "Memphis Kiddie Park"
    }
   },
   "mgm-grand-adventures--lightning-bolt": {
@@ -3958,6 +5806,13 @@
     "rcdbId": [
      "105"
     ]
+   },
+   "wikipedia": {
+    "title": "Lightning Bolt (roller coaster)",
+    "revid": 1348092899,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Lightning Bolt",
+    "infoboxLocation": "MGM Grand Adventures Theme Park"
    }
   },
   "michigan-s-adventure--corkscrew": {
@@ -3974,6 +5829,13 @@
     "rcdbId": [
      "218"
     ]
+   },
+   "wikipedia": {
+    "title": "Corkscrew (Michigan's Adventure)",
+    "revid": 1367718452,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Corkscrew",
+    "infoboxLocation": "Michigan's Adventure"
    }
   },
   "michigan-s-adventure--mad-mouse": {
@@ -3987,6 +5849,13 @@
     "rcdbId": [
      "537"
     ]
+   },
+   "wikipedia": {
+    "title": "Mad Mouse (Michigan's Adventure)",
+    "revid": 1377569906,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Mad Mouse",
+    "infoboxLocation": "Michigan's Adventure"
    }
   },
   "michigan-s-adventure--shivering-timbers": {
@@ -4000,6 +5869,13 @@
     "rcdbId": [
      "478"
     ]
+   },
+   "wikipedia": {
+    "title": "Shivering Timbers",
+    "revid": 1375607521,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Shivering Timbers",
+    "infoboxLocation": "Michigan's Adventure"
    }
   },
   "michigan-s-adventure--thunderhawk": {
@@ -4013,6 +5889,13 @@
     "rcdbId": [
      "4053"
     ]
+   },
+   "wikipedia": {
+    "title": "Thunderhawk (Michigan's Adventure)",
+    "revid": 1377569757,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Thunderhawk",
+    "infoboxLocation": "Michigan's Adventure"
    }
   },
   "michigan-s-adventure--wolverine-wildcat": {
@@ -4026,6 +5909,24 @@
     "rcdbId": [
      "219"
     ]
+   },
+   "wikipedia": {
+    "title": "Wolverine Wildcat",
+    "revid": 1373031640,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wolverine Wildcat",
+    "infoboxLocation": "Michigan's Adventure"
+   }
+  },
+  "michigan-s-adventure--woodstock-express": {
+   "wikipedia": {
+    "title": "Woodstock Express (Michigan's Adventure)",
+    "revid": 1358476320,
+    "via": "infobox-match",
+    "infoboxName": "Woodstock Express",
+    "infoboxLocation": "Michigan's Adventure",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
    }
   },
   "michigan-s-adventure--zach-s-zoomer": {
@@ -4039,6 +5940,13 @@
     "rcdbId": [
      "415"
     ]
+   },
+   "wikipedia": {
+    "title": "Zach's Zoomer",
+    "revid": 1378022515,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Zach's Zoomer",
+    "infoboxLocation": "Michigan's Adventure"
    }
   },
   "morey-s-mariner-s-landing--rollie-s-coaster": {
@@ -4070,6 +5978,13 @@
     "rcdbId": [
      "161"
     ]
+   },
+   "wikipedia": {
+    "title": "Cyclops (roller coaster)",
+    "revid": 1372776499,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Cyclops",
+    "infoboxLocation": "Mt. Olympus Water & Theme Park Resort"
    }
   },
   "mt-olympus-water-theme-park--hades-360": {
@@ -4086,7 +6001,14 @@
    },
    "notes": [
     "Park matched by city (Wisconsin Dells), not by park name."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Hades 360",
+    "revid": 1375609211,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Hades 360",
+    "infoboxLocation": "Mt. Olympus Water & Theme Park Resort"
+   }
   },
   "mt-olympus-water-theme-park--opa": {
    "qid": "Q7095506",
@@ -4115,6 +6037,13 @@
     "rcdbId": [
      "279"
     ]
+   },
+   "wikipedia": {
+    "title": "Pegasus (Mt. Olympus Water & Theme Park Resort)",
+    "revid": 1372775221,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Pegasus",
+    "infoboxLocation": "Mt. Olympus Water & Theme Park Resort"
    }
   },
   "mt-olympus-water-theme-park--zeus": {
@@ -4130,6 +6059,13 @@
     "rcdbId": [
      "280"
     ]
+   },
+   "wikipedia": {
+    "title": "Zeus (roller coaster)",
+    "revid": 1372775967,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Zeus",
+    "infoboxLocation": "Mt. Olympus Water & Theme Park Resort"
    }
   },
   "myrtle-beach-pavilion-park--mad-mouse": {
@@ -4143,6 +6079,13 @@
     "rcdbId": [
      "503"
     ]
+   },
+   "wikipedia": {
+    "title": "Mad Mouse (Pavilion)",
+    "revid": 1346473468,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Mad Mouse",
+    "infoboxLocation": "Myrtle Beach Pavilion"
    }
   },
   "nascar-cafe--speed-the-ride": {
@@ -4174,6 +6117,13 @@
     "rcdbId": [
      "548"
     ]
+   },
+   "wikipedia": {
+    "title": "Silver Comet (roller coaster)",
+    "revid": 1377763207,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Silver Comet",
+    "infoboxLocation": "Niagara Amusement Park & Splash World"
    }
   },
   "nickelodeon-universe--avatar-airbender": {
@@ -4219,6 +6169,13 @@
     "rcdbId": [
      "2508"
     ]
+   },
+   "wikipedia": {
+    "title": "Fairly Odd Coaster",
+    "revid": 1345157909,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Fairly Odd Coaster",
+    "infoboxLocation": "Nickelodeon Universe"
    }
   },
   "nickelodeon-universe--orange-streak": {
@@ -4237,7 +6194,15 @@
    },
    "notes": [
     "Partial name match (sponsor prefix or subtitle): Wikidata \"Pepsi Orange Streak\", local \"Orange Streak\"."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Pepsi Orange Streak",
+    "revid": 1313010855,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Pepsi Orange Streak",
+    "infoboxLocation": "Nickelodeon Universe",
+    "note": "Partial name match: infobox \"Pepsi Orange Streak\", local \"Orange Streak\"."
+   }
   },
   "nickelodeon-universe--sponge-bob-squarepants-rock-bottom-plunge": {
    "qid": "Q1420749",
@@ -4252,6 +6217,92 @@
     "rcdbId": [
      "3727"
     ]
+   },
+   "wikipedia": {
+    "title": "SpongeBob SquarePants Rock Bottom Plunge",
+    "revid": 1361647840,
+    "via": "wikidata-sitelink",
+    "infoboxName": "SpongeBob SquarePants Rock Bottom Plunge",
+    "infoboxLocation": "Nickelodeon Universe"
+   }
+  },
+  "nickelodeon-universe-american-dream--nickelodeon-slime-streak": {
+   "qid": "Q87729769",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Nickelodeon Slime Streak",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "American Dream",
+     "Nickelodeon Universe"
+    ],
+    "rcdbId": [
+     "16775"
+    ]
+   },
+   "wikipedia": {
+    "title": "Nickelodeon Slime Streak",
+    "revid": 1371139291,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Nickelodeon Slime Streak",
+    "infoboxLocation": "Nickelodeon Universe"
+   }
+  },
+  "nickelodeon-universe-american-dream--sandy-s-blasting-bronco": {
+   "qid": "Q87721534",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Sandy's Blasting Bronco",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Nickelodeon Universe"
+    ],
+    "rcdbId": [
+     "16793"
+    ]
+   },
+   "wikipedia": {
+    "title": "Sandy's Blasting Bronco",
+    "revid": 1297763921,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Sandy's Blasting Bronco",
+    "infoboxLocation": "Nickelodeon Universe"
+   }
+  },
+  "nickelodeon-universe-american-dream--the-shredder": {
+   "qid": "Q87730001",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Shredder",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Nickelodeon Universe"
+    ]
+   }
+  },
+  "nickelodeon-universe-american-dream--tmnt-shellraiser": {
+   "qid": "Q74420101",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "TMNT Shellraiser",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Nickelodeon Universe"
+    ],
+    "rcdbId": [
+     "15594"
+    ]
+   },
+   "wikipedia": {
+    "title": "TMNT Shellraiser",
+    "revid": 1377712336,
+    "via": "wikidata-sitelink",
+    "infoboxName": "TMNT Shellraiser",
+    "infoboxLocation": "Nickelodeon Universe"
    }
   },
   "oaks-park--adrenaline-peak": {
@@ -4268,7 +6319,14 @@
    },
    "notes": [
     "Park matched by city (Portland), not by park name."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Adrenaline Peak",
+    "revid": 1376059304,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Adrenaline Peak",
+    "infoboxLocation": "Oaks Amusement Park"
+   }
   },
   "pacific-park--west-coaster": {
    "qid": "Q78209480",
@@ -4287,7 +6345,15 @@
    },
    "notes": [
     "Partial name match (sponsor prefix or subtitle): Wikidata \"Santa Monica West Coaster\", local \"West Coaster\"."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Santa Monica West Coaster",
+    "revid": 1315353988,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Santa Monica West Coaster",
+    "infoboxLocation": "Pacific Park",
+    "note": "Partial name match: infobox \"Santa Monica West Coaster\", local \"West Coaster\"."
+   }
   },
   "playland-rye--dragon": {
    "qid": "Q5305180",
@@ -4300,6 +6366,13 @@
     "rcdbId": [
      "231"
     ]
+   },
+   "wikipedia": {
+    "title": "Dragon Coaster (Playland)",
+    "revid": 1373997038,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Dragon Coaster",
+    "infoboxLocation": "Playland"
    }
   },
   "quassy-amusement-park--wooden-warrior": {
@@ -4315,6 +6388,13 @@
     "rcdbId": [
      "4495"
     ]
+   },
+   "wikipedia": {
+    "title": "Wooden Warrior",
+    "revid": 1376909338,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wooden Warrior",
+    "infoboxLocation": "Quassy Amusement Park"
    }
   },
   "santa-cruz-beach-boardwalk--giant-dipper": {
@@ -4330,6 +6410,13 @@
     "rcdbId": [
      "204"
     ]
+   },
+   "wikipedia": {
+    "title": "Giant Dipper (Santa Cruz Beach Boardwalk)",
+    "revid": 1375609413,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Giant Dipper",
+    "infoboxLocation": "Santa Cruz Beach Boardwalk"
    }
   },
   "santa-cruz-beach-boardwalk--undertow": {
@@ -4345,6 +6432,13 @@
     "rcdbId": [
      "10930"
     ]
+   },
+   "wikipedia": {
+    "title": "Undertow (roller coaster)",
+    "revid": 1308552210,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Undertow",
+    "infoboxLocation": "Santa Cruz Beach Boardwalk"
    }
   },
   "seabreeze-amusement-park--bobsleds": {
@@ -4360,6 +6454,13 @@
     "rcdbId": [
      "228"
     ]
+   },
+   "wikipedia": {
+    "title": "Bobsleds",
+    "revid": 1376907900,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Bobsleds",
+    "infoboxLocation": null
    }
   },
   "seabreeze-amusement-park--jack-rabbit": {
@@ -4375,6 +6476,13 @@
     "rcdbId": [
      "227"
     ]
+   },
+   "wikipedia": {
+    "title": "Jack Rabbit (Seabreeze)",
+    "revid": 1376907670,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Jack Rabbit",
+    "infoboxLocation": "Seabreeze Amusement Park"
    }
   },
   "seabreeze-amusement-park--whirlwind": {
@@ -4390,6 +6498,24 @@
     "rcdbId": [
      "2315"
     ]
+   },
+   "wikipedia": {
+    "title": "Whirlwind (Seabreeze)",
+    "revid": 1356247357,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Whirlwind",
+    "infoboxLocation": "Seabreeze Amusement Park"
+   }
+  },
+  "seaworld-orlando--ice-breaker": {
+   "wikipedia": {
+    "title": "Ice Breaker (roller coaster)",
+    "revid": 1364008996,
+    "via": "infobox-match",
+    "infoboxName": "Ice Breaker",
+    "infoboxLocation": "SeaWorld Orlando",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
    }
   },
   "seaworld-orlando--journey-to-atlantis": {
@@ -4407,6 +6533,17 @@
     ]
    }
   },
+  "seaworld-orlando--kraken": {
+   "wikipedia": {
+    "title": "Kraken (roller coaster)",
+    "revid": 1378009582,
+    "via": "infobox-match",
+    "infoboxName": "Kraken",
+    "infoboxLocation": "SeaWorld Orlando",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
+   }
+  },
   "seaworld-orlando--mako": {
    "qid": "Q22695524",
    "confidence": "high",
@@ -4421,6 +6558,13 @@
     "rcdbId": [
      "12758"
     ]
+   },
+   "wikipedia": {
+    "title": "Mako (roller coaster)",
+    "revid": 1375611369,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Mako",
+    "infoboxLocation": "SeaWorld Orlando"
    }
   },
   "seaworld-orlando--manta": {
@@ -4437,6 +6581,13 @@
     "rcdbId": [
      "4190"
     ]
+   },
+   "wikipedia": {
+    "title": "Manta (SeaWorld Orlando)",
+    "revid": 1365788581,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Manta",
+    "infoboxLocation": "SeaWorld Orlando"
    }
   },
   "seaworld-orlando--pipeline-the-surf-coaster": {
@@ -4452,6 +6603,13 @@
     "rcdbId": [
      "20042"
     ]
+   },
+   "wikipedia": {
+    "title": "Pipeline: The Surf Coaster",
+    "revid": 1363988754,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Pipeline: The Surf Coaster",
+    "infoboxLocation": "SeaWorld Orlando"
    }
   },
   "seaworld-san-antonio--great-white": {
@@ -4467,6 +6625,13 @@
     "rcdbId": [
      "278"
     ]
+   },
+   "wikipedia": {
+    "title": "The Great White (SeaWorld San Antonio)",
+    "revid": 1371338615,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Great White",
+    "infoboxLocation": "SeaWorld San Antonio"
    }
   },
   "seaworld-san-antonio--journey-to-atlantis": {
@@ -4494,6 +6659,13 @@
     "rcdbId": [
      "532"
     ]
+   },
+   "wikipedia": {
+    "title": "Steel Eel",
+    "revid": 1368282670,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Steel Eel",
+    "infoboxLocation": "SeaWorld San Antonio"
    }
   },
   "seaworld-san-antonio--texas-stingray": {
@@ -4507,6 +6679,13 @@
     "rcdbId": [
      "17278"
     ]
+   },
+   "wikipedia": {
+    "title": "Texas Stingray",
+    "revid": 1375607738,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Texas Stingray",
+    "infoboxLocation": "SeaWorld San Antonio"
    }
   },
   "seaworld-san-antonio--wave-breaker-the-rescue-coaster": {
@@ -4523,6 +6702,23 @@
     "rcdbId": [
      "14302"
     ]
+   },
+   "wikipedia": {
+    "title": "Wave Breaker: The Rescue Coaster",
+    "revid": 1368282695,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wave Breaker: The Rescue Coaster",
+    "infoboxLocation": "SeaWorld San Antonio"
+   }
+  },
+  "seaworld-san-diego--arctic-rescue": {
+   "wikipedia": {
+    "title": "Arctic Rescue",
+    "revid": 1377899153,
+    "via": "infobox-match",
+    "infoboxName": "Arctic Rescue",
+    "infoboxLocation": "SeaWorld San Diego",
+    "confidence": "high"
    }
   },
   "seaworld-san-diego--electric-eel": {
@@ -4538,6 +6734,24 @@
     "rcdbId": [
      "14683"
     ]
+   },
+   "wikipedia": {
+    "title": "Electric Eel (roller coaster)",
+    "revid": 1370836082,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Electric Eel",
+    "infoboxLocation": "SeaWorld San Diego"
+   }
+  },
+  "seaworld-san-diego--emperor": {
+   "wikipedia": {
+    "title": "Emperor (roller coaster)",
+    "revid": 1369147139,
+    "via": "infobox-match",
+    "infoboxName": "Emperor",
+    "infoboxLocation": "SeaWorld San Diego",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
    }
   },
   "seaworld-san-diego--journey-to-atlantis": {
@@ -4570,6 +6784,13 @@
     "rcdbId": [
      "9819"
     ]
+   },
+   "wikipedia": {
+    "title": "Manta (SeaWorld San Diego)",
+    "revid": 1346149058,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Manta",
+    "infoboxLocation": "SeaWorld San Diego"
    }
   },
   "sesame-place-philadelphia--oscar-s-wacky-taxi": {
@@ -4613,6 +6834,13 @@
     "rcdbId": [
      "3401"
     ]
+   },
+   "wikipedia": {
+    "title": "Grand Exposition Coaster",
+    "revid": 1348427581,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Grand Expostion Coaster",
+    "infoboxLocation": "Silver Dollar City"
    }
   },
   "silver-dollar-city--outlaw-run": {
@@ -4628,6 +6856,13 @@
     "rcdbId": [
      "10582"
     ]
+   },
+   "wikipedia": {
+    "title": "Outlaw Run",
+    "revid": 1375606575,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Outlaw Run",
+    "infoboxLocation": "Silver Dollar City"
    }
   },
   "silver-dollar-city--powder-keg": {
@@ -4646,7 +6881,18 @@
    },
    "notes": [
     "Partial name match (sponsor prefix or subtitle): Wikidata \"Powder Keg: A Blast into the Wilderness\", local \"Powder Keg\"."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Powder Keg: A Blast into the Wilderness",
+    "revid": 1370160639,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Powder Keg",
+    "infoboxLocation": "Silver Dollar City",
+    "alsoCovers": [
+     "silver-dollar-city--buzz-saw-falls"
+    ],
+    "alsoCoversNote": "The article also covers an earlier ride that js/data.js keeps as a separate credit. Its figures go only to this coaster, and footnoted or qualified values are dropped."
+   }
   },
   "silver-dollar-city--thunderation": {
    "qid": "Q7799067",
@@ -4661,6 +6907,13 @@
     "rcdbId": [
      "220"
     ]
+   },
+   "wikipedia": {
+    "title": "Thunderation",
+    "revid": 1362956539,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Thunderation",
+    "infoboxLocation": "Silver Dollar City"
    }
   },
   "silver-dollar-city--time-traveler": {
@@ -4677,6 +6930,13 @@
     "rcdbId": [
      "15168"
     ]
+   },
+   "wikipedia": {
+    "title": "Time Traveler (roller coaster)",
+    "revid": 1375612291,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Time Traveler",
+    "infoboxLocation": "Silver Dollar City"
    }
   },
   "silver-dollar-city--wildfire": {
@@ -4692,6 +6952,13 @@
     "rcdbId": [
      "720"
     ]
+   },
+   "wikipedia": {
+    "title": "Wildfire (Silver Dollar City)",
+    "revid": 1316010937,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wildfire",
+    "infoboxLocation": "Silver Dollar City"
    }
   },
   "silverwood-theme-park--stunt-pilot": {
@@ -4707,6 +6974,13 @@
     "rcdbId": [
      "18691"
     ]
+   },
+   "wikipedia": {
+    "title": "Stunt Pilot (roller coaster)",
+    "revid": 1313013988,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Stunt Pilot",
+    "infoboxLocation": "Silverwood Theme Park"
    }
   },
   "silverwood-theme-park--timber-terror": {
@@ -4722,6 +6996,13 @@
     "rcdbId": [
      "176"
     ]
+   },
+   "wikipedia": {
+    "title": "Timber Terror",
+    "revid": 1358396828,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Timber Terror",
+    "infoboxLocation": "Silverwood Theme Park"
    }
   },
   "silverwood-theme-park--tremors": {
@@ -4738,7 +7019,14 @@
    },
    "notes": [
     "Location confirmed only to the state (ID); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Tremors (roller coaster)",
+    "revid": 1364896363,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Tremors",
+    "infoboxLocation": "Silverwood Theme Park"
+   }
   },
   "six-flags-america--batwing": {
    "qid": "Q581586",
@@ -4753,6 +7041,24 @@
     "rcdbId": [
      "1089"
     ]
+   },
+   "wikipedia": {
+    "title": "Batwing (roller coaster)",
+    "revid": 1370510497,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Batwing",
+    "infoboxLocation": "Six Flags America"
+   }
+  },
+  "six-flags-america--firebird": {
+   "wikipedia": {
+    "title": "Firebird (roller coaster)",
+    "revid": 1335860560,
+    "via": "infobox-match",
+    "infoboxName": "Firebird",
+    "infoboxLocation": "Six Flags America",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
    }
   },
   "six-flags-america--joker-s-jinx": {
@@ -4769,6 +7075,24 @@
     "rcdbId": [
      "544"
     ]
+   },
+   "wikipedia": {
+    "title": "The Joker's Jinx",
+    "revid": 1347950842,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Joker's Jinx",
+    "infoboxLocation": "Six Flags America"
+   }
+  },
+  "six-flags-america--roar": {
+   "wikipedia": {
+    "title": "Roar (roller coaster)",
+    "revid": 1342292475,
+    "via": "infobox-match",
+    "infoboxName": "Roar",
+    "infoboxLocation": "Six Flags America",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
    }
   },
   "six-flags-america--the-great-chase": {
@@ -4797,6 +7121,13 @@
     "rcdbId": [
      "148"
     ]
+   },
+   "wikipedia": {
+    "title": "The Wild One (roller coaster)",
+    "revid": 1365157073,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Wild One",
+    "infoboxLocation": "Six Flags America"
    }
   },
   "six-flags-astroworld--batman-the-escape": {
@@ -4813,6 +7144,13 @@
      "53",
      "3472"
     ]
+   },
+   "wikipedia": {
+    "title": "Batman The Escape",
+    "revid": 1368282701,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Batman The Escape",
+    "infoboxLocation": "Six Flags AstroWorld"
    }
   },
   "six-flags-astroworld--serpent": {
@@ -4826,6 +7164,13 @@
     "rcdbId": [
      "135"
     ]
+   },
+   "wikipedia": {
+    "title": "Serpent (roller coaster)",
+    "revid": 1319119163,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Serpent",
+    "infoboxLocation": "Six Flags AstroWorld"
    }
   },
   "six-flags-astroworld--texas-cyclone": {
@@ -4842,7 +7187,24 @@
    },
    "notes": [
     "Location confirmed only to the state (TX); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Texas Cyclone",
+    "revid": 1319119645,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Texas Cyclone",
+    "infoboxLocation": "Six Flags AstroWorld"
+   }
+  },
+  "six-flags-astroworld--ultra-twister": {
+   "wikipedia": {
+    "title": "Ultra Twister (Six Flags)",
+    "revid": 1329177306,
+    "via": "infobox-match",
+    "infoboxName": "Ultra Twister",
+    "infoboxLocation": "Six Flags AstroWorld",
+    "confidence": "high"
+   }
   },
   "six-flags-astroworld--viper": {
    "qid": "Q14711399",
@@ -4855,6 +7217,13 @@
     "rcdbId": [
      "50"
     ]
+   },
+   "wikipedia": {
+    "title": "Viper (Six Flags AstroWorld)",
+    "revid": 1371663930,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Viper",
+    "infoboxLocation": "Six Flags AstroWorld"
    }
   },
   "six-flags-astroworld--xlr-8": {
@@ -4868,6 +7237,13 @@
     "rcdbId": [
      "134"
     ]
+   },
+   "wikipedia": {
+    "title": "XLR-8",
+    "revid": 1377678153,
+    "via": "wikidata-sitelink",
+    "infoboxName": "XLR-8",
+    "infoboxLocation": "Six Flags AstroWorld"
    }
   },
   "six-flags-discovery-kingdom--cobra": {
@@ -4893,6 +7269,13 @@
     "rcdbId": [
      "13422"
     ]
+   },
+   "wikipedia": {
+    "title": "The Joker (Six Flags Discovery Kingdom)",
+    "revid": 1336557468,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Joker",
+    "infoboxLocation": "Six Flags Discovery Kingdom"
    }
   },
   "six-flags-discovery-kingdom--kong": {
@@ -4906,6 +7289,13 @@
     "rcdbId": [
      "163"
     ]
+   },
+   "wikipedia": {
+    "title": "Kong (roller coaster)",
+    "revid": 1367359818,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Kong",
+    "infoboxLocation": "Six Flags Discovery Kingdom"
    }
   },
   "six-flags-discovery-kingdom--medusa": {
@@ -4919,6 +7309,13 @@
     "rcdbId": [
      "617"
     ]
+   },
+   "wikipedia": {
+    "title": "Medusa (Six Flags Discovery Kingdom)",
+    "revid": 1330154722,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Medusa",
+    "infoboxLocation": "Six Flags Discovery Kingdom"
    }
   },
   "six-flags-discovery-kingdom--road-runner-express": {
@@ -4947,25 +7344,14 @@
     "rcdbId": [
      "10139"
     ]
-   }
-  },
-  "six-flags-discovery-kingdom--v2-vertical-velocity": {
-   "qid": "Q1627160",
-   "confidence": "medium",
-   "evidence": {
-    "wikidataLabel": "The Flash: Vertical Velocity",
-    "nameVia": "partial",
-    "locationVia": "park",
-    "wikidataPark": [
-     "Six Flags Discovery Kingdom"
-    ],
-    "rcdbId": [
-     "1143"
-    ]
    },
-   "notes": [
-    "Partial name match (sponsor prefix or subtitle): Wikidata \"The Flash: Vertical Velocity\", local \"V2 Vertical Velocity\"."
-   ]
+   "wikipedia": {
+    "title": "Superman: Ultimate Flight (Six Flags Discovery Kingdom)",
+    "revid": 1321495079,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Superman: Ultimate Flight",
+    "infoboxLocation": "Six Flags Discovery Kingdom"
+   }
   },
   "six-flags-fiesta-texas--batman-the-ride": {
    "qid": "Q17985775",
@@ -4980,6 +7366,13 @@
     "rcdbId": [
      "12283"
     ]
+   },
+   "wikipedia": {
+    "title": "Batman: The Ride (S&S Free Spin)",
+    "revid": 1321493857,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Batman: The Ride",
+    "infoboxLocation": null
    }
   },
   "six-flags-fiesta-texas--dr-diabolicals-cliffhanger": {
@@ -4995,6 +7388,13 @@
     "rcdbId": [
      "19495"
     ]
+   },
+   "wikipedia": {
+    "title": "Dr. Diabolical's Cliffhanger",
+    "revid": 1341583482,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Dr. Diabolical's Cliffhanger",
+    "infoboxLocation": "Six Flags Fiesta Texas"
    }
   },
   "six-flags-fiesta-texas--goliath": {
@@ -5026,6 +7426,13 @@
     "rcdbId": [
      "11663"
     ]
+   },
+   "wikipedia": {
+    "title": "Iron Rattler",
+    "revid": 1376498674,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Iron Rattler",
+    "infoboxLocation": "Six Flags Fiesta Texas"
    }
   },
   "six-flags-fiesta-texas--poltergeist": {
@@ -5041,6 +7448,13 @@
     "rcdbId": [
      "528"
     ]
+   },
+   "wikipedia": {
+    "title": "Poltergeist (roller coaster)",
+    "revid": 1323614918,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Poltergeist",
+    "infoboxLocation": "Six Flags Fiesta Texas"
    }
   },
   "six-flags-fiesta-texas--road-runner-express": {
@@ -5054,6 +7468,13 @@
     "rcdbId": [
      "265"
     ]
+   },
+   "wikipedia": {
+    "title": "Road Runner Express (Six Flags Fiesta Texas)",
+    "revid": 1376866906,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Road Runner Express",
+    "infoboxLocation": "Six Flags Fiesta Texas"
    }
   },
   "six-flags-fiesta-texas--superman-krypton-coaster": {
@@ -5070,6 +7491,13 @@
     "rcdbId": [
      "605"
     ]
+   },
+   "wikipedia": {
+    "title": "Superman: Krypton Coaster",
+    "revid": 1321493753,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Superman: Krypton Coaster",
+    "infoboxLocation": "Six Flags Fiesta Texas"
    }
   },
   "six-flags-fiesta-texas--the-rattler": {
@@ -5098,6 +7526,13 @@
     "rcdbId": [
      "15368"
     ]
+   },
+   "wikipedia": {
+    "title": "Wonder Woman Golden Lasso Coaster",
+    "revid": 1366550195,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wonder Woman Golden Lasso Coaster",
+    "infoboxLocation": "Six Flags Fiesta Texas"
    }
   },
   "six-flags-great-adventure--bizarro": {
@@ -5129,6 +7564,13 @@
     "rcdbId": [
      "3183"
     ]
+   },
+   "wikipedia": {
+    "title": "El Toro (Six Flags Great Adventure)",
+    "revid": 1375606275,
+    "via": "wikidata-sitelink",
+    "infoboxName": "El Toro",
+    "infoboxLocation": "Six Flags Great Adventure"
    }
   },
   "six-flags-great-adventure--great-american-scream-machine": {
@@ -5144,6 +7586,13 @@
     "rcdbId": [
      "34"
     ]
+   },
+   "wikipedia": {
+    "title": "Great American Scream Machine (Six Flags Great Adventure)",
+    "revid": 1376335694,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Great American Scream Machine",
+    "infoboxLocation": "Six Flags Great Adventure"
    }
   },
   "six-flags-great-adventure--green-lantern": {
@@ -5160,6 +7609,13 @@
      "275",
      "8932"
     ]
+   },
+   "wikipedia": {
+    "title": "Green Lantern (Six Flags Great Adventure)",
+    "revid": 1375804265,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Green Lantern",
+    "infoboxLocation": "Six Flags Great Adventure"
    }
   },
   "six-flags-great-adventure--harley-quinn-crazy-train": {
@@ -5175,6 +7631,13 @@
     "rcdbId": [
      "567"
     ]
+   },
+   "wikipedia": {
+    "title": "Harley Quinn Crazy Train",
+    "revid": 1378066546,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Harley Quinn Crazy Train",
+    "infoboxLocation": "Six Flags Great Adventure"
    }
   },
   "six-flags-great-adventure--jersey-devil-coaster": {
@@ -5190,6 +7653,13 @@
     "rcdbId": [
      "17658"
     ]
+   },
+   "wikipedia": {
+    "title": "Jersey Devil Coaster",
+    "revid": 1331353800,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Jersey Devil Coaster",
+    "infoboxLocation": "Six Flags Great Adventure"
    }
   },
   "six-flags-great-adventure--kingda-ka": {
@@ -5206,7 +7676,14 @@
    },
    "notes": [
     "Park matched by city (Jackson), not by park name."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Kingda Ka",
+    "revid": 1377114922,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Kingda Ka",
+    "infoboxLocation": "Six Flags Great Adventure"
+   }
   },
   "six-flags-great-adventure--nitro": {
    "qid": "Q662497",
@@ -5219,6 +7696,13 @@
     "rcdbId": [
      "1106"
     ]
+   },
+   "wikipedia": {
+    "title": "Nitro (Six Flags Great Adventure)",
+    "revid": 1375612138,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Nitro",
+    "infoboxLocation": "Six Flags Great Adventure"
    }
   },
   "six-flags-great-adventure--road-runner-railway": {
@@ -5276,6 +7760,44 @@
     "rcdbId": [
      "35"
     ]
+   },
+   "wikipedia": {
+    "title": "Skull Mountain",
+    "revid": 1362238351,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Skull Mountain",
+    "infoboxLocation": "Six Flags Great Adventure"
+   }
+  },
+  "six-flags-great-adventure--the-dark-knight": {
+   "wikipedia": {
+    "title": "The Dark Knight Coaster",
+    "revid": 1362609048,
+    "via": "infobox-match",
+    "infoboxName": "The Dark Knight Coaster",
+    "infoboxLocation": "Six Flags Great Adventure",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
+   }
+  },
+  "six-flags-great-adventure--the-flash-vertical-velocity": {
+   "qid": "Q122574064",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Flash: Vertical Velocity",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "21088"
+    ]
+   },
+   "wikipedia": {
+    "title": "The Flash: Vertical Velocity (Six Flags Great Adventure)",
+    "revid": 1377235794,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Flash: Vertical Velocity",
+    "infoboxLocation": "Six Flags Great Adventure"
    }
   },
   "six-flags-great-adventure--viper": {
@@ -5289,6 +7811,13 @@
     "rcdbId": [
      "33"
     ]
+   },
+   "wikipedia": {
+    "title": "Viper (Six Flags Great Adventure)",
+    "revid": 1371341253,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Viper",
+    "infoboxLocation": "Six Flags Great Adventure"
    }
   },
   "six-flags-great-america--american-eagle": {
@@ -5317,6 +7846,13 @@
     "rcdbId": [
      "9972"
     ]
+   },
+   "wikipedia": {
+    "title": "Goliath (Six Flags Great America)",
+    "revid": 1377569604,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Goliath",
+    "infoboxLocation": "Six Flags Great America"
    }
   },
   "six-flags-great-america--little-dipper": {
@@ -5330,6 +7866,13 @@
     "rcdbId": [
      "8985"
     ]
+   },
+   "wikipedia": {
+    "title": "Little Dipper (Six Flags Great America)",
+    "revid": 1339509390,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Little Dipper",
+    "infoboxLocation": "Six Flags Great America"
    }
   },
   "six-flags-great-america--maxx-force": {
@@ -5345,6 +7888,13 @@
     "rcdbId": [
      "16586"
     ]
+   },
+   "wikipedia": {
+    "title": "Maxx Force",
+    "revid": 1372975622,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Maxx Force",
+    "infoboxLocation": "Six Flags Great America"
    }
   },
   "six-flags-great-america--raging-bull": {
@@ -5361,6 +7911,13 @@
     "rcdbId": [
      "535"
     ]
+   },
+   "wikipedia": {
+    "title": "Raging Bull (roller coaster)",
+    "revid": 1377569661,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Raging Bull",
+    "infoboxLocation": "Six Flags Great America"
    }
   },
   "six-flags-great-america--shockwave": {
@@ -5376,6 +7933,13 @@
     "rcdbId": [
      "4"
     ]
+   },
+   "wikipedia": {
+    "title": "Shockwave (Six Flags Great America)",
+    "revid": 1375312357,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Shockwave",
+    "infoboxLocation": "Six Flags Great America"
    }
   },
   "six-flags-great-america--spacely-s-sprocket-rockets": {
@@ -5391,22 +7955,6 @@
     ]
    }
   },
-  "six-flags-great-america--v2-vertical-velocity": {
-   "qid": "Q846024",
-   "confidence": "medium",
-   "evidence": {
-    "wikidataLabel": "The Flash: Vertical Velocity",
-    "nameVia": "partial",
-    "locationVia": "park",
-    "wikidataPark": [],
-    "rcdbId": [
-     "747"
-    ]
-   },
-   "notes": [
-    "Partial name match (sponsor prefix or subtitle): Wikidata \"The Flash: Vertical Velocity\", local \"V2 Vertical Velocity\"."
-   ]
-  },
   "six-flags-great-america--viper": {
    "qid": "Q917156",
    "confidence": "high",
@@ -5421,6 +7969,13 @@
     "rcdbId": [
      "10"
     ]
+   },
+   "wikipedia": {
+    "title": "Viper (Six Flags Great America)",
+    "revid": 1377569675,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Viper",
+    "infoboxLocation": "Six Flags Great America"
    }
   },
   "six-flags-great-america--whizzer": {
@@ -5436,6 +7991,13 @@
     "rcdbId": [
      "113"
     ]
+   },
+   "wikipedia": {
+    "title": "Whizzer (roller coaster)",
+    "revid": 1377569564,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Whizzer",
+    "infoboxLocation": "Six Flags Great America"
    }
   },
   "six-flags-great-america--wrath-of-rakshasa": {
@@ -5452,6 +8014,13 @@
     "rcdbId": [
      "22031"
     ]
+   },
+   "wikipedia": {
+    "title": "Wrath of Rakshasa",
+    "revid": 1368626396,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wrath of Rakshasa",
+    "infoboxLocation": "Six Flags Great America"
    }
   },
   "six-flags-great-america--x-flight": {
@@ -5467,6 +8036,13 @@
     "rcdbId": [
      "10137"
     ]
+   },
+   "wikipedia": {
+    "title": "X-Flight",
+    "revid": 1377569578,
+    "via": "wikidata-sitelink",
+    "infoboxName": "X-Flight",
+    "infoboxLocation": "Six Flags Great America"
    }
   },
   "six-flags-magic-mountain--apocalypse": {
@@ -5483,6 +8059,14 @@
     "rcdbId": [
      "4173"
     ]
+   },
+   "wikipedia": {
+    "title": "Apocalypse: The Ride",
+    "revid": 1366858697,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Apocalypse: The Ride",
+    "infoboxLocation": "Six Flags Magic Mountain",
+    "note": "Partial name match: infobox \"Apocalypse: The Ride\", local \"Apocalypse\"."
    }
   },
   "six-flags-magic-mountain--canyon-blaster": {
@@ -5528,6 +8112,13 @@
     "rcdbId": [
      "128"
     ]
+   },
+   "wikipedia": {
+    "title": "Flashback (Six Flags Magic Mountain)",
+    "revid": 1365135046,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Flashback",
+    "infoboxLocation": "Six Flags Magic Mountain"
    }
   },
   "six-flags-magic-mountain--full-throttle": {
@@ -5543,6 +8134,13 @@
     "rcdbId": [
      "10948"
     ]
+   },
+   "wikipedia": {
+    "title": "Full Throttle (roller coaster)",
+    "revid": 1365858801,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Full Throttle",
+    "infoboxLocation": "Six Flags Magic Mountain"
    }
   },
   "six-flags-magic-mountain--goldrusher": {
@@ -5556,6 +8154,13 @@
     "rcdbId": [
      "266"
     ]
+   },
+   "wikipedia": {
+    "title": "Gold Rusher",
+    "revid": 1347264297,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Gold Rusher",
+    "infoboxLocation": "Six Flags Magic Mountain"
    }
   },
   "six-flags-magic-mountain--goliath": {
@@ -5569,6 +8174,24 @@
     "rcdbId": [
      "615"
     ]
+   },
+   "wikipedia": {
+    "title": "Goliath (Six Flags Magic Mountain)",
+    "revid": 1362378084,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Goliath",
+    "infoboxLocation": "Six Flags Magic Mountain"
+   }
+  },
+  "six-flags-magic-mountain--green-lantern-first-flight": {
+   "wikipedia": {
+    "title": "Green Lantern: First Flight (roller coaster)",
+    "revid": 1339633765,
+    "via": "infobox-match",
+    "infoboxName": "Green Lantern: First Flight",
+    "infoboxLocation": "Six Flags Magic Mountain",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
    }
   },
   "six-flags-magic-mountain--magic-flyer": {
@@ -5582,6 +8205,13 @@
     "rcdbId": [
      "749"
     ]
+   },
+   "wikipedia": {
+    "title": "Magic Flyer",
+    "revid": 1369250271,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Magic Flyer",
+    "infoboxLocation": "Six Flags Magic Mountain"
    }
   },
   "six-flags-magic-mountain--new-revolution": {
@@ -5612,6 +8242,13 @@
     "rcdbId": [
      "129"
     ]
+   },
+   "wikipedia": {
+    "title": "Ninja (Six Flags Magic Mountain)",
+    "revid": 1345295663,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Ninja",
+    "infoboxLocation": "Six Flags Magic Mountain"
    }
   },
   "six-flags-magic-mountain--psyclone": {
@@ -5627,6 +8264,13 @@
     "rcdbId": [
      "27"
     ]
+   },
+   "wikipedia": {
+    "title": "Psyclone (roller coaster)",
+    "revid": 1341800163,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Psyclone",
+    "infoboxLocation": "Six Flags Magic Mountain"
    }
   },
   "six-flags-magic-mountain--road-runner-express": {
@@ -5643,6 +8287,13 @@
      "591",
      "4346"
     ]
+   },
+   "wikipedia": {
+    "title": "Road Runner Express (Six Flags Magic Mountain)",
+    "revid": 1313151480,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Road Runner Express",
+    "infoboxLocation": "Six Flags Magic Mountain"
    }
   },
   "six-flags-magic-mountain--scream": {
@@ -5658,6 +8309,13 @@
     "rcdbId": [
      "2169"
     ]
+   },
+   "wikipedia": {
+    "title": "Scream (roller coaster)",
+    "revid": 1321495798,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Scream",
+    "infoboxLocation": "Six Flags Magic Mountain"
    }
   },
   "six-flags-magic-mountain--superman-escape-from-krypton": {
@@ -5671,6 +8329,13 @@
     "rcdbId": [
      "140"
     ]
+   },
+   "wikipedia": {
+    "title": "Superman: Escape from Krypton",
+    "revid": 1377837879,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Superman: Escape from Krypton",
+    "infoboxLocation": "Six Flags Magic Mountain"
    }
   },
   "six-flags-magic-mountain--tatsu": {
@@ -5687,7 +8352,14 @@
    },
    "notes": [
     "Location confirmed only to the state (CA); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Tatsu",
+    "revid": 1376012192,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Tatsu",
+    "infoboxLocation": "Six Flags Magic Mountain"
+   }
   },
   "six-flags-magic-mountain--the-riddler-s-revenge": {
    "qid": "Q130266",
@@ -5702,6 +8374,13 @@
     "rcdbId": [
      "470"
     ]
+   },
+   "wikipedia": {
+    "title": "The Riddler's Revenge",
+    "revid": 1321495734,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Riddler's Revenge",
+    "infoboxLocation": "Six Flags Magic Mountain"
    }
   },
   "six-flags-magic-mountain--twisted-colossus": {
@@ -5717,6 +8396,17 @@
     "rcdbId": [
      "12282"
     ]
+   },
+   "wikipedia": {
+    "title": "Twisted Colossus",
+    "revid": 1375613273,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Twisted Colossus",
+    "infoboxLocation": "Six Flags Magic Mountain",
+    "alsoCovers": [
+     "six-flags-magic-mountain--colossus"
+    ],
+    "alsoCoversNote": "The article also covers an earlier ride that js/data.js keeps as a separate credit. Its figures go only to this coaster, and footnoted or qualified values are dropped."
    }
   },
   "six-flags-magic-mountain--viper": {
@@ -5732,6 +8422,13 @@
     "rcdbId": [
      "25"
     ]
+   },
+   "wikipedia": {
+    "title": "Viper (Six Flags Magic Mountain)",
+    "revid": 1365905572,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Viper",
+    "infoboxLocation": "Six Flags Magic Mountain"
    }
   },
   "six-flags-magic-mountain--west-coast-racers": {
@@ -5747,6 +8444,13 @@
     "rcdbId": [
      "16588"
     ]
+   },
+   "wikipedia": {
+    "title": "West Coast Racers",
+    "revid": 1359311466,
+    "via": "wikidata-sitelink",
+    "infoboxName": "West Coast Racers",
+    "infoboxLocation": "Six Flags Magic Mountain"
    }
   },
   "six-flags-magic-mountain--wonder-woman-flight-of-courage": {
@@ -5763,6 +8467,13 @@
     "rcdbId": [
      "19515"
     ]
+   },
+   "wikipedia": {
+    "title": "Wonder Woman Flight of Courage",
+    "revid": 1321496031,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wonder Woman Flight of Courage",
+    "infoboxLocation": "Six Flags Magic Mountain"
    }
   },
   "six-flags-magic-mountain--x2": {
@@ -5778,6 +8489,13 @@
     "rcdbId": [
      "750"
     ]
+   },
+   "wikipedia": {
+    "title": "X2 (roller coaster)",
+    "revid": 1378089273,
+    "via": "wikidata-sitelink",
+    "infoboxName": "X2",
+    "infoboxLocation": "Six Flags Magic Mountain"
    }
   },
   "six-flags-new-england--catwoman-s-whip": {
@@ -5822,6 +8540,13 @@
     "rcdbId": [
      "629"
     ]
+   },
+   "wikipedia": {
+    "title": "Flashback (Six Flags New England)",
+    "revid": 1373766534,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Flashback",
+    "infoboxLocation": "Six Flags New England"
    }
   },
   "six-flags-new-england--goliath": {
@@ -5838,6 +8563,13 @@
     "rcdbId": [
      "10138"
     ]
+   },
+   "wikipedia": {
+    "title": "Goliath (Six Flags New England)",
+    "revid": 1359310416,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Goliath",
+    "infoboxLocation": "Six Flags New England"
    }
   },
   "six-flags-new-england--gotham-city-gauntlet-escape": {
@@ -5856,7 +8588,15 @@
    },
    "notes": [
     "Partial name match (sponsor prefix or subtitle): Wikidata \"Gotham City Gauntlet: Escape from Arkham Asylum\", local \"Gotham City Gauntlet Escape\"."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Gotham City Gauntlet: Escape from Arkham Asylum",
+    "revid": 1327043486,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Gotham City Gauntlet: Escape from Arkham Asylum",
+    "infoboxLocation": "Six Flags New England",
+    "note": "Partial name match: infobox \"Gotham City Gauntlet: Escape from Arkham Asylum\", local \"Gotham City Gauntlet Escape\"."
+   }
   },
   "six-flags-new-england--pandemonium": {
    "qid": "Q3098940",
@@ -5870,6 +8610,36 @@
     ]
    }
   },
+  "six-flags-new-england--quantum-accelerator": {
+   "qid": "Q130198418",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Quantum Accelerator",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags New England"
+    ]
+   },
+   "wikipedia": {
+    "title": "Quantum Accelerator (roller coaster)",
+    "revid": 1373299555,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Quantum Accelerator",
+    "infoboxLocation": "Six Flags New England"
+   }
+  },
+  "six-flags-new-england--superman-the-ride": {
+   "wikipedia": {
+    "title": "Superman The Ride",
+    "revid": 1375610688,
+    "via": "infobox-match",
+    "infoboxName": "Superman The Ride",
+    "infoboxLocation": "Six Flags New England",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
+   }
+  },
   "six-flags-new-england--thunderbolt": {
    "qid": "Q1127968",
    "confidence": "high",
@@ -5881,6 +8651,17 @@
     "rcdbId": [
      "182"
     ]
+   },
+   "wikipedia": {
+    "title": "Thunderbolt (Six Flags New England)",
+    "revid": 1360882251,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Thunderbolt",
+    "infoboxLocation": "Six Flags New England",
+    "alsoCovers": [
+     "six-flags-new-england--cyclone"
+    ],
+    "alsoCoversNote": "The article also covers an earlier ride that js/data.js keeps as a separate credit. Its figures go only to this coaster, and footnoted or qualified values are dropped."
    }
   },
   "six-flags-new-england--wicked-cyclone": {
@@ -5896,6 +8677,13 @@
     "rcdbId": [
      "1981"
     ]
+   },
+   "wikipedia": {
+    "title": "Wicked Cyclone",
+    "revid": 1350916760,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wicked Cyclone",
+    "infoboxLocation": "Six Flags New England"
    }
   },
   "six-flags-over-georgia--dahlonega-mine-train": {
@@ -5909,6 +8697,13 @@
     "rcdbId": [
      "42"
     ]
+   },
+   "wikipedia": {
+    "title": "Dahlonega Mine Train",
+    "revid": 1377569780,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Dahlonega Mine Train",
+    "infoboxLocation": "Six Flags Over Georgia"
    }
   },
   "six-flags-over-georgia--dare-devil-dive": {
@@ -5922,6 +8717,13 @@
     "rcdbId": [
      "9430"
     ]
+   },
+   "wikipedia": {
+    "title": "Dare Devil Dive",
+    "revid": 1377569740,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Dare Devil Dive",
+    "infoboxLocation": "Six Flags Over Georgia"
    }
   },
   "six-flags-over-georgia--deja-vu": {
@@ -5953,7 +8755,14 @@
    },
    "notes": [
     "Location confirmed only to the state (GA); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Georgia Scorcher",
+    "revid": 1377569745,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Georgia Scorcher",
+    "infoboxLocation": "Six Flags Over Georgia"
+   }
   },
   "six-flags-over-georgia--goliath": {
    "qid": "Q689054",
@@ -5966,6 +8775,13 @@
     "rcdbId": [
      "3290"
     ]
+   },
+   "wikipedia": {
+    "title": "Goliath (Six Flags Over Georgia)",
+    "revid": 1377569588,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Goliath",
+    "infoboxLocation": "Six Flags Over Georgia"
    }
   },
   "six-flags-over-georgia--great-american-scream-machine": {
@@ -5979,6 +8795,24 @@
     "rcdbId": [
      "41"
     ]
+   },
+   "wikipedia": {
+    "title": "Great American Scream Machine (Six Flags Over Georgia)",
+    "revid": 1377569708,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Great American Scream Machine",
+    "infoboxLocation": "Six Flags Over Georgia"
+   }
+  },
+  "six-flags-over-georgia--joker-funhouse-coaster": {
+   "wikipedia": {
+    "title": "The Joker Funhouse Coaster",
+    "revid": 1377569534,
+    "via": "infobox-match",
+    "infoboxName": "The Joker Funhouse Coaster",
+    "infoboxLocation": "Six Flags Over Georgia",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
    }
   },
   "six-flags-over-georgia--superman-ultimate-flight": {
@@ -5997,7 +8831,29 @@
    },
    "notes": [
     "Location confirmed only to the state (GA); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Superman: Ultimate Flight",
+    "revid": 1368622448,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Superman: Ultimate Flight",
+    "infoboxLocation": "Six Flags Over Georgia"
+   }
+  },
+  "six-flags-over-georgia--twisted-cyclone": {
+   "wikipedia": {
+    "title": "Twisted Cyclone",
+    "revid": 1377569679,
+    "via": "infobox-match",
+    "infoboxName": "Twisted Cyclone",
+    "infoboxLocation": "Six Flags Over Georgia",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly.",
+    "alsoCovers": [
+     "six-flags-over-georgia--georgia-cyclone"
+    ],
+    "alsoCoversNote": "The article also covers an earlier ride that js/data.js keeps as a separate credit. Its figures go only to this coaster, and footnoted or qualified values are dropped."
+   }
   },
   "six-flags-over-texas--aquaman-power-wave": {
    "qid": "Q97671294",
@@ -6012,6 +8868,13 @@
     "rcdbId": [
      "17653"
     ]
+   },
+   "wikipedia": {
+    "title": "Aquaman: Power Wave",
+    "revid": 1321493058,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Aquaman: Power Wave",
+    "infoboxLocation": "Six Flags Over Texas"
    }
   },
   "six-flags-over-texas--judge-roy-scream": {
@@ -6028,7 +8891,14 @@
    },
    "notes": [
     "Location confirmed only to the state (TX); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Judge Roy Scream",
+    "revid": 1372737130,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Judge Roy Scream",
+    "infoboxLocation": "Six Flags Over Texas"
+   }
   },
   "six-flags-over-texas--la-vibora": {
    "qid": "Q751483",
@@ -6044,7 +8914,14 @@
    },
    "notes": [
     "Location confirmed only to the state (TX); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "La Vibora",
+    "revid": 1370771861,
+    "via": "wikidata-sitelink",
+    "infoboxName": "La Vibora",
+    "infoboxLocation": "Six Flags Over Texas"
+   }
   },
   "six-flags-over-texas--new-texas-giant": {
    "qid": "Q1353100",
@@ -6059,6 +8936,17 @@
     "rcdbId": [
      "11662"
     ]
+   },
+   "wikipedia": {
+    "title": "New Texas Giant",
+    "revid": 1370747626,
+    "via": "wikidata-sitelink",
+    "infoboxName": "New Texas Giant",
+    "infoboxLocation": "Six Flags Over Texas",
+    "alsoCovers": [
+     "six-flags-over-texas--texas-giant"
+    ],
+    "alsoCoversNote": "The article also covers an earlier ride that js/data.js keeps as a separate credit. Its figures go only to this coaster, and footnoted or qualified values are dropped."
    }
   },
   "six-flags-over-texas--runaway-mine-train": {
@@ -6072,6 +8960,13 @@
     "rcdbId": [
      "30"
     ]
+   },
+   "wikipedia": {
+    "title": "Runaway Mine Train (Six Flags Over Texas)",
+    "revid": 1375398974,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Runaway Mine Train",
+    "infoboxLocation": "Six Flags Over Texas"
    }
   },
   "six-flags-over-texas--runaway-mountain": {
@@ -6098,6 +8993,13 @@
     "rcdbId": [
      "28"
     ]
+   },
+   "wikipedia": {
+    "title": "Shock Wave (Six Flags Over Texas)",
+    "revid": 1377185099,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Shock Wave",
+    "infoboxLocation": "Six Flags Over Texas"
    }
   },
   "six-flags-over-texas--texas-giant": {
@@ -6126,6 +9028,32 @@
     "rcdbId": [
      "742"
     ]
+   },
+   "wikipedia": {
+    "title": "Titan (Six Flags Over Texas)",
+    "revid": 1368019635,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Titan",
+    "infoboxLocation": "Six Flags Over Texas"
+   }
+  },
+  "six-flags-over-texas--tormenta-rampaging-run": {
+   "qid": "Q136469159",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Tormenta Rampaging Run",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Over Texas"
+    ]
+   },
+   "wikipedia": {
+    "title": "Tormenta Rampaging Run",
+    "revid": 1377569929,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Tormenta Rampaging Run",
+    "infoboxLocation": "Six Flags Over Texas"
    }
   },
   "six-flags-over-texas--wile-e-coyote-s-grand-canyon-blaster": {
@@ -6244,6 +9172,13 @@
     "rcdbId": [
      "141"
     ]
+   },
+   "wikipedia": {
+    "title": "High Roller (Stratosphere)",
+    "revid": 1335290849,
+    "via": "wikidata-sitelink",
+    "infoboxName": "High Roller",
+    "infoboxLocation": "Stratosphere Tower"
    }
   },
   "the-great-escape-splashwater-kingdom--canyon-blaster": {
@@ -6259,6 +9194,13 @@
     "rcdbId": [
      "2214"
     ]
+   },
+   "wikipedia": {
+    "title": "Canyon Blaster (Great Escape)",
+    "revid": 1377569850,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Canyon Blaster",
+    "infoboxLocation": "Great Escape"
    }
   },
   "the-great-escape-splashwater-kingdom--comet": {
@@ -6274,6 +9216,13 @@
     "rcdbId": [
      "262"
     ]
+   },
+   "wikipedia": {
+    "title": "The Comet (Great Escape)",
+    "revid": 1377569664,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Comet",
+    "infoboxLocation": "Great Escape"
    }
   },
   "the-great-escape-splashwater-kingdom--frankie-s-mine-train": {
@@ -6290,7 +9239,14 @@
    },
    "notes": [
     "Location confirmed only to the state (NY); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Frankie's Mine Train",
+    "revid": 1364726509,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Frankie’s Mine Train",
+    "infoboxLocation": "Great Escape by Enchanted Parks"
+   }
   },
   "the-great-escape-splashwater-kingdom--nightmare-at-crackaxle-canyon": {
    "qid": "Q2314615",
@@ -6306,7 +9262,14 @@
    },
    "notes": [
     "Location confirmed only to the state (NY); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Nightmare at Crack Axle Canyon",
+    "revid": 1352081476,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Nightmare at Crack Axle Canyon",
+    "infoboxLocation": "Great Escape"
+   }
   },
   "the-great-escape-splashwater-kingdom--steamin-demon": {
    "qid": "Q7605471",
@@ -6319,6 +9282,13 @@
     "rcdbId": [
      "264"
     ]
+   },
+   "wikipedia": {
+    "title": "Steamin' Demon",
+    "revid": 1377569890,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Steamin' Demon",
+    "infoboxLocation": "Great Escape"
    }
   },
   "universal-epic-universe--stardust-racers": {
@@ -6352,7 +9322,14 @@
    },
    "notes": [
     "Location confirmed only to the state (FL); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Flight of the Hippogriff",
+    "revid": 1370837854,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Flight of the Hippogriff",
+    "infoboxLocation": "Universal Islands of Adventure"
+   }
   },
   "universal-s-islands-of-adventure--hagrid-s-magical-creatures-motorbike-adventure": {
    "qid": "Q48740959",
@@ -6367,6 +9344,13 @@
     "rcdbId": [
      "15330"
     ]
+   },
+   "wikipedia": {
+    "title": "Hagrid's Magical Creatures Motorbike Adventure",
+    "revid": 1372460142,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Hagrid’s Magical Creatures Motorbike Adventure",
+    "infoboxLocation": "Universal Islands of Adventure"
    }
   },
   "universal-s-islands-of-adventure--incredible-hulk": {
@@ -6382,6 +9366,13 @@
     "rcdbId": [
      "557"
     ]
+   },
+   "wikipedia": {
+    "title": "The Incredible Hulk Coaster",
+    "revid": 1377352006,
+    "via": "wikidata-sitelink",
+    "infoboxName": "The Incredible Hulk Coaster",
+    "infoboxLocation": "Universal Islands of Adventure"
    }
   },
   "universal-s-islands-of-adventure--jurassic-world-velocicoaster": {
@@ -6400,7 +9391,14 @@
    },
    "notes": [
     "Name matched a Wikidata alias (former or alternate name); the Wikidata label is \"VelociCoaster\"."
-   ]
+   ],
+   "wikipedia": {
+    "title": "VelociCoaster",
+    "revid": 1366624118,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Jurassic World VelociCoaster",
+    "infoboxLocation": "Universal Islands of Adventure"
+   }
   },
   "universal-studios-florida--harry-potter-and-the-escape-from-gringotts": {
    "qid": "Q16201762",
@@ -6416,6 +9414,13 @@
     "rcdbId": [
      "11887"
     ]
+   },
+   "wikipedia": {
+    "title": "Harry Potter and the Escape from Gringotts",
+    "revid": 1331231036,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Harry Potter and the Escape from Gringotts",
+    "infoboxLocation": "Universal Studios Florida"
    }
   },
   "universal-studios-florida--hollywood-rip-ride-rockit": {
@@ -6432,7 +9437,25 @@
    },
    "notes": [
     "Location confirmed only to the state (FL); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Hollywood Rip Ride Rockit",
+    "revid": 1371099174,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Hollywood Rip Ride Rockit",
+    "infoboxLocation": "Universal Studios Florida"
+   }
+  },
+  "universal-studios-florida--revenge-of-the-mummy": {
+   "wikipedia": {
+    "title": "Revenge of the Mummy",
+    "revid": 1375120072,
+    "via": "infobox-match",
+    "infoboxName": "Revenge of the Mummy: The Ride",
+    "infoboxLocation": "Universal Studios Florida",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
+   }
   },
   "universal-studios-florida--woody-woodpecker-s-nuthouse-coaster": {
    "qid": "Q3569870",
@@ -6448,7 +9471,14 @@
    },
    "notes": [
     "Location confirmed only to the state (FL); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Woody Woodpecker's Nuthouse Coaster",
+    "revid": 1370766604,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Woody Woodpecker's Nuthouse Coaster",
+    "infoboxLocation": "Universal Studios Florida"
+   }
   },
   "valleyfair--corkscrew": {
    "qid": "Q570734",
@@ -6474,6 +9504,13 @@
     "rcdbId": [
      "9837"
     ]
+   },
+   "wikipedia": {
+    "title": "Cosmic Coaster (Valleyfair)",
+    "revid": 1361960823,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Cosmic Coaster",
+    "infoboxLocation": "Valleyfair"
    }
   },
   "valleyfair--excalibur": {
@@ -6487,6 +9524,13 @@
     "rcdbId": [
      "119"
     ]
+   },
+   "wikipedia": {
+    "title": "Excalibur (Valleyfair)",
+    "revid": 1377569854,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Excalibur",
+    "infoboxLocation": "Valleyfair"
    }
   },
   "valleyfair--high-roller": {
@@ -6500,6 +9544,13 @@
     "rcdbId": [
      "117"
     ]
+   },
+   "wikipedia": {
+    "title": "High Roller (Valleyfair)",
+    "revid": 1377569779,
+    "via": "wikidata-sitelink",
+    "infoboxName": "High Roller",
+    "infoboxLocation": "Valleyfair"
    }
   },
   "valleyfair--mad-mouse": {
@@ -6513,6 +9564,13 @@
     "rcdbId": [
      "547"
     ]
+   },
+   "wikipedia": {
+    "title": "Mad Mouse (Valleyfair)",
+    "revid": 1283665676,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Mad Mouse",
+    "infoboxLocation": "Valleyfair"
    }
   },
   "valleyfair--mild-thing": {
@@ -6529,7 +9587,14 @@
    },
    "notes": [
     "Location confirmed only to the state (MN); Wikidata gives no park. The name is unique among local coasters in that state."
-   ]
+   ],
+   "wikipedia": {
+    "title": "Mild Thing",
+    "revid": 1329310627,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Mild Thing",
+    "infoboxLocation": "Valleyfair"
+   }
   },
   "valleyfair--renegade": {
    "qid": "Q1760009",
@@ -6544,6 +9609,13 @@
     "rcdbId": [
      "3660"
     ]
+   },
+   "wikipedia": {
+    "title": "Renegade (roller coaster)",
+    "revid": 1376329687,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Renegade",
+    "infoboxLocation": "Valleyfair"
    }
   },
   "valleyfair--steel-venom": {
@@ -6557,6 +9629,13 @@
     "rcdbId": [
      "1920"
     ]
+   },
+   "wikipedia": {
+    "title": "Steel Venom (Valleyfair)",
+    "revid": 1342410109,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Steel Venom",
+    "infoboxLocation": "Valleyfair"
    }
   },
   "valleyfair--wild-thing": {
@@ -6572,6 +9651,13 @@
     "rcdbId": [
      "137"
     ]
+   },
+   "wikipedia": {
+    "title": "Wild Thing (Valleyfair)",
+    "revid": 1350053923,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Wild Thing",
+    "infoboxLocation": "Valleyfair"
    }
   },
   "waldameer-park--comet": {
@@ -6587,6 +9673,13 @@
     "rcdbId": [
      "377"
     ]
+   },
+   "wikipedia": {
+    "title": "Comet (Waldameer)",
+    "revid": 1377728042,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Comet",
+    "infoboxLocation": "Waldameer & Water World"
    }
   },
   "waldameer-park--ravine-flyer-ii": {
@@ -6600,6 +9693,13 @@
     "rcdbId": [
      "3917"
     ]
+   },
+   "wikipedia": {
+    "title": "Ravine Flyer II",
+    "revid": 1376318114,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Ravine Flyer II",
+    "infoboxLocation": "Waldameer & Water World"
    }
   },
   "waldameer-park--steel-dragon": {
@@ -6615,6 +9715,13 @@
     "rcdbId": [
      "2657"
     ]
+   },
+   "wikipedia": {
+    "title": "Steel Dragon (Waldameer)",
+    "revid": 1359791022,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Steel Dragon",
+    "infoboxLocation": "Waldameer & Water World"
    }
   },
   "waterville-usa--cannonball-run": {
@@ -6631,6 +9738,13 @@
      "360",
      "12571"
     ]
+   },
+   "wikipedia": {
+    "title": "Cannonball Run (roller coaster)",
+    "revid": 1313011107,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Cannonball Run",
+    "infoboxLocation": "Waterville USA"
    }
   },
   "whalom-park--flyer-comet": {
@@ -6644,6 +9758,13 @@
     "rcdbId": [
      "217"
     ]
+   },
+   "wikipedia": {
+    "title": "Flyer Comet (Whalom Park)",
+    "revid": 1229138171,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Flyer Comet",
+    "infoboxLocation": "Whalom Park"
    }
   },
   "wild-adventures--cheetah": {
@@ -6659,6 +9780,13 @@
     "rcdbId": [
      "1044"
     ]
+   },
+   "wikipedia": {
+    "title": "Cheetah (Wild Adventures)",
+    "revid": 1340594161,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Cheetah",
+    "infoboxLocation": "Wild Adventures"
    }
   },
   "wild-adventures--swamp-thing": {
@@ -6687,6 +9815,13 @@
     "rcdbId": [
      "561"
     ]
+   },
+   "wikipedia": {
+    "title": "Twisted Typhoon",
+    "revid": 1275988785,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Twisted Typhoon",
+    "infoboxLocation": "Wild Adventures"
    }
   },
   "wild-adventures--viking-voyage": {
@@ -6702,6 +9837,17 @@
     ]
    }
   },
+  "wonderland-park--hornet": {
+   "wikipedia": {
+    "title": "Hornet (roller coaster)",
+    "revid": 1312911256,
+    "via": "infobox-match",
+    "infoboxName": "Hornet",
+    "infoboxLocation": "Wonderland Park (Texas)",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
+   }
+  },
   "wonderland-park--texas-tornado": {
    "qid": "Q7708177",
    "confidence": "high",
@@ -6715,6 +9861,13 @@
     "rcdbId": [
      "254"
     ]
+   },
+   "wikipedia": {
+    "title": "Texas Tornado (roller coaster)",
+    "revid": 1326288256,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Texas Tornado",
+    "infoboxLocation": "Wonderland Park (Texas)"
    }
   },
   "worlds-of-fun--boomerang": {
@@ -6732,6 +9885,17 @@
     ]
    }
   },
+  "worlds-of-fun--cosmic-coaster": {
+   "wikipedia": {
+    "title": "Cosmic Coaster (Worlds of Fun)",
+    "revid": 1363523119,
+    "via": "infobox-match",
+    "infoboxName": "Cosmic Coaster",
+    "infoboxLocation": "Worlds of Fun",
+    "confidence": "high",
+    "note": "Wikidata was ambiguous for this coaster; the Wikipedia infobox name and park match it exactly."
+   }
+  },
   "worlds-of-fun--mamba": {
    "qid": "Q1888144",
    "confidence": "high",
@@ -6745,6 +9909,13 @@
     "rcdbId": [
      "469"
     ]
+   },
+   "wikipedia": {
+    "title": "Mamba (roller coaster)",
+    "revid": 1363899493,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Mamba",
+    "infoboxLocation": "Worlds of Fun"
    }
   },
   "worlds-of-fun--orient-express": {
@@ -6760,6 +9931,13 @@
     "rcdbId": [
      "21"
     ]
+   },
+   "wikipedia": {
+    "title": "Orient Express (roller coaster)",
+    "revid": 1368282686,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Orient Express",
+    "infoboxLocation": "Worlds of Fun"
    }
   },
   "worlds-of-fun--patriot": {
@@ -6775,6 +9953,13 @@
     "rcdbId": [
      "3244"
     ]
+   },
+   "wikipedia": {
+    "title": "Patriot (Worlds of Fun)",
+    "revid": 1372787198,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Patriot",
+    "infoboxLocation": "Worlds of Fun"
    }
   },
   "worlds-of-fun--prowler": {
@@ -6790,6 +9975,13 @@
     "rcdbId": [
      "4296"
     ]
+   },
+   "wikipedia": {
+    "title": "Prowler (roller coaster)",
+    "revid": 1377564165,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Prowler",
+    "infoboxLocation": "Worlds of Fun"
    }
   },
   "worlds-of-fun--spinning-dragons": {
@@ -6805,6 +9997,13 @@
     "rcdbId": [
      "2572"
     ]
+   },
+   "wikipedia": {
+    "title": "Spinning Dragons",
+    "revid": 1351099461,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Spinning Dragons",
+    "infoboxLocation": "Worlds of Fun"
    }
   },
   "worlds-of-fun--timber-wolf": {
@@ -6820,6 +10019,13 @@
     "rcdbId": [
      "22"
     ]
+   },
+   "wikipedia": {
+    "title": "Timber Wolf (roller coaster)",
+    "revid": 1351099614,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Timber Wolf",
+    "infoboxLocation": "Worlds of Fun"
    }
   },
   "worlds-of-fun--zambezi-zinger": {
@@ -6835,6 +10041,13 @@
     "rcdbId": [
      "20340"
     ]
+   },
+   "wikipedia": {
+    "title": "Zambezi Zinger (2023)",
+    "revid": 1357914212,
+    "via": "wikidata-sitelink",
+    "infoboxName": "Zambezi Zinger",
+    "infoboxLocation": "Worlds of Fun"
    }
   },
   "zdt-s-amusement-park--switchback": {

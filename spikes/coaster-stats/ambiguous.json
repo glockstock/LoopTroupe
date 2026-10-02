@@ -1,8 +1,16 @@
 {
- "retrieved": "2026-10-02",
- "count": 56,
+ "retrieved": {
+  "wikidata": "2026-10-02",
+  "wikipedia": "2026-10-02"
+ },
+ "count": 102,
+ "bySource": {
+  "wikidata": 56,
+  "wikipedia": 46
+ },
  "items": [
   {
+   "source": "wikidata",
    "qid": "Q1688486",
    "wikidataLabel": "Jumbo Jet",
    "wikidataDescription": "Steel roller coaster at Chelyuskintsev Park in Minsk, Belarus",
@@ -24,6 +32,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q4501501",
    "wikidataLabel": "Excalibur",
    "wikidataDescription": "roller coaster in the US theme park Frontier City",
@@ -52,6 +61,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q618765",
    "wikidataLabel": "Apocalypse",
    "wikidataDescription": "steel stand-up roller coaster located at Six Flags America in Prince George's County, Maryland",
@@ -81,6 +91,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q642425",
    "wikidataLabel": "Batman: The Ride",
    "wikidataDescription": "amusement ride",
@@ -181,6 +192,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q859406",
    "wikidataLabel": "Big Thunder Mountain Railroad",
    "wikidataDescription": "indoor/outdoor mine train roller coaster type located in Frontierland at several Disneyland-style Disney Parks worldwide",
@@ -209,6 +221,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q61945038",
    "wikidataLabel": "Mako",
    "wikidataDescription": "dive steel roller coaster in San Diego",
@@ -233,6 +246,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q1159776",
    "wikidataLabel": "Dania Beach Hurricane",
    "wikidataDescription": "amusement ride",
@@ -257,6 +271,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q1521853",
    "wikidataLabel": "GhostRider",
    "wikidataDescription": "roller coaster",
@@ -278,6 +293,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q1602595",
    "wikidataLabel": "Avalanche",
    "wikidataDescription": "defunct wooden roller coaster",
@@ -299,6 +315,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q1602603",
    "wikidataLabel": "Hell Cat",
    "wikidataDescription": "amusement ride",
@@ -329,6 +346,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q2127262",
    "wikidataLabel": "Raging Wolf Bobs",
    "wikidataDescription": "Defunct wooden roller coaster",
@@ -348,6 +366,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q2411758",
    "wikidataLabel": "The Great White",
    "wikidataDescription": "wooden/steel roller coaster at Morey's Piers",
@@ -378,6 +397,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q75060",
    "wikidataLabel": "Dragon Challenge",
    "wikidataDescription": "two intertwined roller coasters at Islands of Adventure",
@@ -415,6 +435,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q167509",
    "wikidataLabel": "Batman & Robin: The Chiller",
    "wikidataDescription": "defunct roller coaster at Six Flags Great Adventure",
@@ -443,6 +464,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q839200",
    "wikidataLabel": "Superman – Ride of Steel",
    "wikidataDescription": "Steel roller coaster various Six Flags parks",
@@ -471,6 +493,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q839404",
    "wikidataLabel": "Bizarro",
    "wikidataDescription": "Roller coaster at Six Flags New England",
@@ -494,6 +517,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q1670601",
    "wikidataLabel": "The Roller Coaster",
    "wikidataDescription": "roller coaster in Las Vegas, Nevada",
@@ -520,6 +544,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q2798331",
    "wikidataLabel": "Roar",
    "wikidataDescription": "former wooden roller coaster",
@@ -550,6 +575,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q15047489",
    "wikidataLabel": "Cyclone (Revere Beach)",
    "wikidataDescription": "former roller coaster",
@@ -607,6 +633,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q59587184",
    "wikidataLabel": "Mine Blower",
    "wikidataDescription": "roller coaster in Florida",
@@ -631,6 +658,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q583463",
    "wikidataLabel": "The Dark Knight Coaster",
    "wikidataDescription": "Series of roller coasters at Six Flags parks",
@@ -659,6 +687,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q654876",
    "wikidataLabel": "Alpine Bobsled",
    "wikidataDescription": "roller coaster",
@@ -696,6 +725,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q683601",
    "wikidataLabel": "Kraken Unleashed",
    "wikidataDescription": "roller coaster at SeaWorld Orlando",
@@ -723,6 +753,27 @@
    ]
   },
   {
+   "source": "wikidata",
+   "qid": "Q1026847",
+   "wikidataLabel": "Incredicoaster",
+   "wikidataDescription": "attraction at Disney's California's Adventure",
+   "wikidataPlaces": [],
+   "wikidataStates": [],
+   "reason": "Name matches, but Wikidata gives no park, city, or state to confirm it.",
+   "candidates": [
+    {
+     "coasterId": "disney-california-adventure--incrediocoaster",
+     "name": "Incredicoaster",
+     "park": "Disney California Adventure",
+     "city": "Anaheim",
+     "state": "CA",
+     "nameVia": "label",
+     "locationVia": null
+    }
+   ]
+  },
+  {
+   "source": "wikidata",
    "qid": "Q1186433",
    "wikidataLabel": "Demon",
    "wikidataDescription": "multi-looping roller coaster at Six Flags Great America",
@@ -753,6 +804,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q1434526",
    "wikidataLabel": "Fly – The Great Nor'easter",
    "wikidataDescription": "amusement ride",
@@ -772,6 +824,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q1502476",
    "wikidataLabel": "Rock 'n' Roller Coaster Starring Aerosmith",
    "wikidataDescription": "roller coaster at two Disney parks",
@@ -800,6 +853,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q2112754",
    "wikidataLabel": "Mayan Mindbender",
    "wikidataDescription": "steel roller coaster in Texas",
@@ -830,6 +884,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q2146774",
    "wikidataLabel": "Revenge of the Mummy",
    "wikidataDescription": "enclosed steel roller coasters at Universal Parks",
@@ -858,6 +913,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q2169285",
    "wikidataLabel": "Tsunami",
    "wikidataDescription": "roller coaster",
@@ -879,6 +935,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q2241984",
    "wikidataLabel": "Wile E. Coyote Canyon Blaster",
    "wikidataDescription": "steel roller coaster",
@@ -902,6 +959,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q2379803",
    "wikidataLabel": "Vipère (roller coaster)",
    "wikidataDescription": "4th Dimension roller coaster at Six Flags Magic Mountain in Valencia, California, United States",
@@ -926,6 +984,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q3521876",
    "wikidataLabel": "Mind Eraser",
    "wikidataDescription": "roller coaster model",
@@ -963,6 +1022,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q4905579",
    "wikidataLabel": "Big Dipper",
    "wikidataDescription": "roller coaster in Michigan",
@@ -988,6 +1048,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q5296958",
    "wikidataLabel": "Doo Wopper",
    "wikidataDescription": "roller coaster in United States",
@@ -1016,6 +1077,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q5451597",
    "wikidataLabel": "Fire on the Mountain",
    "wikidataDescription": "three story steel-enclosed roller coaster at Silver Dollar City in Branson, Missouri, United States",
@@ -1040,6 +1102,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q5459774",
    "wikidataLabel": "Flitzer",
    "wikidataDescription": "roller coaster at Morey's Piers",
@@ -1081,6 +1144,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q6698139",
    "wikidataLabel": "Lucy's Crabbie Cabbie",
    "wikidataDescription": "Steel roller coaster at Carowinds in Charlotte, North Carolina",
@@ -1105,6 +1169,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q7275993",
    "wikidataLabel": "RC-48",
    "wikidataDescription": "model of roller coaster built by Pinfari",
@@ -1124,6 +1189,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q7296753",
    "wikidataLabel": "Ravine Flyer III",
    "wikidataDescription": null,
@@ -1147,6 +1213,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q7355331",
    "wikidataLabel": "Rockin' Roller",
    "wikidataDescription": "Steel roller coaster",
@@ -1166,6 +1233,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q7439993",
    "wikidataLabel": "Sea Serpent",
    "wikidataDescription": "steel roller coaster",
@@ -1250,6 +1318,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q8564121",
    "wikidataLabel": "Flying Ace Aerial Chase",
    "wikidataDescription": "roller coaster",
@@ -1269,6 +1338,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q15139137",
    "wikidataLabel": "Aftershock",
    "wikidataDescription": "steel roller coaster installment",
@@ -1288,6 +1358,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q28563538",
    "wikidataLabel": "Dragon's Run",
    "wikidataDescription": "steel coaster",
@@ -1321,6 +1392,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q30597760",
    "wikidataLabel": "The Joker",
    "wikidataDescription": "Series of roller coasters at Six Flags parks",
@@ -1378,6 +1450,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q96381897",
    "wikidataLabel": "Ice Breaker",
    "wikidataDescription": "Launched roller coaster",
@@ -1399,6 +1472,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q109278483",
    "wikidataLabel": "Roller Coaster",
    "wikidataDescription": "steel roller coaster first in the US, then in France",
@@ -1521,6 +1595,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q971592",
    "wikidataLabel": "Storm Chaser",
    "wikidataDescription": "amusement ride",
@@ -1555,6 +1630,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q1189847",
    "wikidataLabel": "Top Thrill 2",
    "wikidataDescription": "steel accelerator roller coaster at Cedar Point",
@@ -1592,6 +1668,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q47203974",
    "wikidataLabel": "Stinger",
    "wikidataDescription": "former roller coaster at Dorney Park and California's Great America",
@@ -1626,6 +1703,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q5174059",
    "wikidataLabel": "Cosmic Coaster",
    "wikidataDescription": "roller coaster at Worlds of Fun amusement park in Kansas City, Missouri",
@@ -1660,6 +1738,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "coasterId": "luna-park--thunderbolt",
    "name": "Thunderbolt",
    "park": "Luna Park",
@@ -1682,6 +1761,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "qid": "Q1509287",
    "wikidataLabel": "Twisted Cyclone",
    "wikidataDescription": "steel roller coaster at Six Flags Over Georgia",
@@ -1710,6 +1790,7 @@
    ]
   },
   {
+   "source": "wikidata",
    "coasterId": "hersheypark--wildcat",
    "name": "Wildcat",
    "park": "Hersheypark",
@@ -1732,28 +1813,7 @@
    ]
   },
   {
-   "coasterId": "busch-gardens-williamsburg--big-bad-wolf",
-   "name": "Big Bad Wolf",
-   "park": "Busch Gardens Williamsburg",
-   "reason": "Several Wikidata items match this coaster (duplicates, or rebuilt/relocated rides with separate items).",
-   "candidates": [
-    {
-     "qid": "Q590020",
-     "wikidataLabel": "Big Bad Wolf",
-     "rcdbId": "111",
-     "opened": null,
-     "closed": null
-    },
-    {
-     "qid": "Q132452158",
-     "wikidataLabel": "Big Bad Wolf: The Wolf's Revenge",
-     "rcdbId": null,
-     "opened": "2025-05",
-     "closed": null
-    }
-   ]
-  },
-  {
+   "source": "wikidata",
    "coasterId": "kings-island--the-bat",
    "name": "The Bat",
    "park": "Kings Island",
@@ -1772,6 +1832,675 @@
      "rcdbId": "627",
      "opened": "1981-04-26",
      "closed": "1983"
+    }
+   ]
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "alabama-adventure-splash-adventure--rampage",
+   "name": "Rampage",
+   "park": "Alabama Adventure & Splash Adventure",
+   "qid": "Q7290001",
+   "article": "Rampage (roller coaster)",
+   "revid": 1375609499,
+   "infoboxName": "Rampage",
+   "infoboxLocation": "Alabama Splash Adventure",
+   "previousNames": [],
+   "reason": "The infobox location (Alabama Splash Adventure) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "alabama-adventure-splash-adventure--zoomerang",
+   "name": "Zoomerang",
+   "park": "Alabama Adventure & Splash Adventure",
+   "qid": "Q8074180",
+   "article": "Recoil (Wonderla Hyderabad)",
+   "revid": 1315743898,
+   "infoboxName": "Recoil",
+   "infoboxLocation": "Wonderla",
+   "previousNames": [
+    "Zoomerang at Alabama Adventure",
+    "Demon at Wonderland Sydney",
+    "Titan at World Expo Park"
+   ],
+   "reason": "The infobox location (Wonderla) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "carowinds--intimidator",
+   "name": "Intimidator",
+   "park": "Carowinds",
+   "qid": "Q1671491",
+   "article": "Thunder Striker",
+   "revid": 1375365018,
+   "infoboxName": "Thunder Striker",
+   "infoboxLocation": "Carowinds",
+   "previousNames": [
+    "Intimidator"
+   ],
+   "reason": "This coaster matches only a previous name in the infobox (a rename or a rebuild). Decide whether the current figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "columbus-zoo-and-aquarium--sea-dragon",
+   "name": "Sea Dragon",
+   "park": "Columbus Zoo and Aquarium",
+   "qid": "Q7439875",
+   "article": "Sea Dragon (roller coaster)",
+   "revid": 1376386584,
+   "infoboxName": "Sea Dragon",
+   "infoboxLocation": "Rides At Adventure Cove",
+   "previousNames": [],
+   "reason": "The infobox location (Rides At Adventure Cove) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "disneyland-park--gadget-s-go-coaster",
+   "name": "Gadget's Go Coaster",
+   "park": "Disneyland Park",
+   "qid": "Q3094227",
+   "article": "Chip 'n' Dale's Gadgetcoaster",
+   "revid": 1352947855,
+   "infoboxName": "Chip 'n' Dale's GADGETcoaster",
+   "infoboxLocation": "Disneyland",
+   "previousNames": [],
+   "reason": "The infobox name does not match this coaster."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "elitch-gardens--halfpipe",
+   "name": "Halfpipe",
+   "park": "Elitch Gardens",
+   "qid": "Q1135493",
+   "article": "Half Pipe (roller coaster)",
+   "revid": 1348316927,
+   "infoboxName": "Half Pipe",
+   "infoboxLocation": "Särkänniemi",
+   "previousNames": [],
+   "reason": "The infobox location (Särkänniemi) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "freestyle-music-park--time-machine",
+   "name": "Time Machine",
+   "park": "Freestyle Music Park",
+   "qid": "Q2414672",
+   "article": "Dragon's Run",
+   "revid": 1377677673,
+   "infoboxName": "Dragon's Run",
+   "infoboxLocation": "Dragon Park Ha Long",
+   "previousNames": [
+    "Time Machine and Led Zeppelin: The Ride"
+   ],
+   "reason": "The infobox location (Dragon Park Ha Long) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "galveston-island-pleasure-pier--iron-shark",
+   "name": "Iron Shark",
+   "park": "Galveston Island Pleasure Pier",
+   "qid": "Q15047519",
+   "article": "Iron Shark",
+   "revid": 1376530269,
+   "infoboxName": "Iron Shark",
+   "infoboxLocation": "Galveston Island Historic Pleasure Pier",
+   "previousNames": [],
+   "reason": "The infobox location (Galveston Island Historic Pleasure Pier) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "geauga-lake-s-wildwater-kingdom--beaver-land-mine-ride",
+   "name": "Beaver Land Mine Ride",
+   "park": "Geauga Lake's Wildwater Kingdom",
+   "qid": "Q4878126",
+   "article": "Roller Coaster (Papéa Parc)",
+   "revid": 1359468876,
+   "infoboxName": "Roller Coaster",
+   "infoboxLocation": "Papéa Parc",
+   "previousNames": [
+    "Road Runner Express at Six Flags Ohio/Six Flags Worlds of Adventure",
+    "Beaver Land Mine Train at Geauga Lake"
+   ],
+   "reason": "The infobox location (Papéa Parc) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "hersheypark--sidewinder",
+   "name": "Sidewinder",
+   "park": "Hersheypark",
+   "qid": "Q7508554",
+   "article": "Jolly Rancher Remix",
+   "revid": 1377802858,
+   "infoboxName": "Jolly Rancher Remix",
+   "infoboxLocation": "Hersheypark",
+   "previousNames": [
+    "Sidewinder"
+   ],
+   "reason": "This coaster matches only a previous name in the infobox (a rename or a rebuild). Decide whether the current figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "kentucky-kingdom--roller-skater",
+   "name": "Roller Skater",
+   "park": "Kentucky Kingdom",
+   "qid": "Q7361042",
+   "article": "Hollyhock and Roll",
+   "revid": 1298928102,
+   "infoboxName": "Hollyhock and Roll",
+   "infoboxLocation": "Kentucky Kingdom",
+   "previousNames": [
+    "Roller Skater"
+   ],
+   "reason": "This coaster matches only a previous name in the infobox (a rename or a rebuild). Decide whether the current figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "kentucky-kingdom--t3",
+   "name": "T3",
+   "park": "Kentucky Kingdom",
+   "qid": "Q2183558",
+   "article": "Garuda Glide",
+   "revid": 1373299863,
+   "infoboxName": "Garuda Glide",
+   "infoboxLocation": "Wonderla",
+   "previousNames": [],
+   "reason": "The infobox location (Wonderla) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "kentucky-kingdom--thunder-run",
+   "name": "Thunder Run",
+   "park": "Kentucky Kingdom",
+   "qid": "Q2085501",
+   "article": "Woodland Run",
+   "revid": 1313010750,
+   "infoboxName": "Woodland Run",
+   "infoboxLocation": "Kentucky Kingdom",
+   "previousNames": [
+    "Thunder Run"
+   ],
+   "reason": "This coaster matches only a previous name in the infobox (a rename or a rebuild). Decide whether the current figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "kings-dominion--avalanche",
+   "name": "Avalanche",
+   "park": "Kings Dominion",
+   "qid": "Q4827461",
+   "article": "Reptilian (ride)",
+   "revid": 1376388877,
+   "infoboxName": "Reptilian",
+   "infoboxLocation": "Kings Dominion",
+   "previousNames": [
+    "Avalanche"
+   ],
+   "reason": "This coaster matches only a previous name in the infobox (a rename or a rebuild). Decide whether the current figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "kings-dominion--backlot-stunt-coaster",
+   "name": "Backlot Stunt Coaster",
+   "park": "Kings Dominion",
+   "qid": "Q798461",
+   "article": "Backlot Stunt Coaster",
+   "revid": 1377569505,
+   "infoboxName": "Backlot Stunt Coaster",
+   "infoboxLocation": "Canada's Wonderland",
+   "previousNames": [
+    "Italian Job: Stunt Track",
+    "Italian Job: Turbo Coaster"
+   ],
+   "reason": "The infobox location (Canada's Wonderland) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "kings-dominion--hurler",
+   "name": "Hurler",
+   "park": "Kings Dominion",
+   "qid": "Q1619573",
+   "article": "Hurler (roller coaster)",
+   "revid": 1377569561,
+   "infoboxName": "Hurler",
+   "infoboxLocation": "Carowinds",
+   "previousNames": [],
+   "reason": "The infobox location (Carowinds) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "kings-dominion--ricochet",
+   "name": "Ricochet",
+   "park": "Kings Dominion",
+   "qid": "Q16968585",
+   "article": "Apple Zapple (Kings Dominion)",
+   "revid": 1360498880,
+   "infoboxName": "Apple Zapple",
+   "infoboxLocation": "Kings Dominion",
+   "previousNames": [
+    "Ricochet"
+   ],
+   "reason": "This coaster matches only a previous name in the infobox (a rename or a rebuild). Decide whether the current figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "knott-s-berry-farm--montezooma-s-revenge",
+   "name": "Montezooma's Revenge",
+   "park": "Knott's Berry Farm",
+   "qid": "Q3322684",
+   "article": "MonteZOOMa: The Forbidden Fortress",
+   "revid": 1377569570,
+   "infoboxName": "MonteZOOMa: The Forbidden Fortress",
+   "infoboxLocation": "Knott's Berry Farm",
+   "previousNames": [
+    "Montezooma's Revenge"
+   ],
+   "reason": "This coaster matches only a previous name in the infobox (a rename or a rebuild). Decide whether the current figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "nascar-cafe--speed-the-ride",
+   "name": "Speed The Ride",
+   "park": "NASCAR Cafe",
+   "qid": "Q2308436",
+   "article": "Speed – The Ride",
+   "revid": 1313013559,
+   "infoboxName": "Speed – The Ride",
+   "infoboxLocation": "Las Vegas Strip",
+   "previousNames": [],
+   "reason": "The infobox location (Las Vegas Strip) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-fiesta-texas--goliath",
+   "name": "Goliath",
+   "park": "Six Flags Fiesta Texas",
+   "qid": "Q2796656",
+   "article": "Chupacabra (roller coaster)",
+   "revid": 1342074946,
+   "infoboxName": "Chupacabra",
+   "infoboxLocation": "Six Flags Fiesta Texas",
+   "previousNames": [
+    "Gambit at Thrill Valley",
+    "Batman: The Ride at Six Flags New Orleans",
+    "Goliath at Six Flags Fiesta Texas"
+   ],
+   "reason": "The infobox name does not match this coaster."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-great-adventure--bizarro",
+   "name": "Bizarro",
+   "park": "Six Flags Great Adventure",
+   "qid": "Q764887",
+   "article": "Medusa (Six Flags Great Adventure)",
+   "revid": 1365344798,
+   "infoboxName": "Medusa",
+   "infoboxLocation": "Six Flags Great Adventure",
+   "previousNames": [
+    "Bizarro"
+   ],
+   "reason": "This coaster matches only a previous name in the infobox (a rename or a rebuild). Decide whether the current figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-great-adventure--road-runner-railway",
+   "name": "Road Runner Railway",
+   "park": "Six Flags Great Adventure",
+   "qid": "Q2200640",
+   "article": "Lil' Devil Coaster",
+   "revid": 1355531072,
+   "infoboxName": "Lil' Devil Coaster",
+   "infoboxLocation": "Six Flags Great Adventure",
+   "previousNames": [
+    "Road Runner Railway"
+   ],
+   "reason": "This coaster matches only a previous name in the infobox (a rename or a rebuild). Decide whether the current figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-magic-mountain--new-revolution",
+   "name": "New Revolution",
+   "park": "Six Flags Magic Mountain",
+   "qid": "Q1501370",
+   "article": "The Great American Revolution",
+   "revid": 1367025760,
+   "infoboxName": "The Great American Revolution",
+   "infoboxLocation": "Six Flags Magic Mountain",
+   "previousNames": [
+    "New Revolution",
+    "Revolution",
+    "La Revolución",
+    "Great American Revolution"
+   ],
+   "reason": "This coaster matches only a previous name in the infobox (a rename or a rebuild). Decide whether the current figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-st-louis--american-thunder",
+   "name": "American Thunder",
+   "park": "Six Flags St. Louis",
+   "qid": "Q467059",
+   "article": "American Thunder (roller coaster)",
+   "revid": 1371658470,
+   "infoboxName": "American Thunder",
+   "infoboxLocation": "Mid America Adventure",
+   "previousNames": [
+    "Evel Knievel"
+   ],
+   "reason": "The infobox location (Mid America Adventure) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-st-louis--boomerang",
+   "name": "Boomerang",
+   "park": "Six Flags St. Louis",
+   "qid": "Q7887822",
+   "article": "Boomerang (Mid America Adventure)",
+   "revid": 1371658956,
+   "infoboxName": "Boomerang",
+   "infoboxLocation": "Mid America Adventure",
+   "previousNames": [],
+   "reason": "The infobox location (Mid America Adventure) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-st-louis--ninja",
+   "name": "Ninja",
+   "park": "Six Flags St. Louis",
+   "qid": "Q1432350",
+   "article": "Ninja (Mid America Adventure)",
+   "revid": 1372172635,
+   "infoboxName": "Ninja",
+   "infoboxLocation": "Mid America Adventure",
+   "previousNames": [
+    "Scream Machine at Expo '86"
+   ],
+   "reason": "The infobox location (Mid America Adventure) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-st-louis--screamin-eagle",
+   "name": "Screamin' Eagle",
+   "park": "Six Flags St. Louis",
+   "qid": "Q824821",
+   "article": "Screamin' Eagle",
+   "revid": 1371661723,
+   "infoboxName": "Screamin’ Eagle",
+   "infoboxLocation": "Mid America Adventure",
+   "previousNames": [],
+   "reason": "The infobox location (Mid America Adventure) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-st-louis--the-boss",
+   "name": "The Boss",
+   "park": "Six Flags St. Louis",
+   "qid": "Q1502567",
+   "article": "The Boss (roller coaster)",
+   "revid": 1377301646,
+   "infoboxName": "The Boss",
+   "infoboxLocation": "Mid America Adventure",
+   "previousNames": [],
+   "reason": "The infobox location (Mid America Adventure) does not name this park."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "the-great-escape-splashwater-kingdom--alpine-bobsled",
+   "name": "Alpine Bobsled",
+   "park": "The Great Escape & Splashwater Kingdom",
+   "article": "Alpine Bobsled",
+   "revid": 1376783855,
+   "infoboxName": "Alpine Bobsled",
+   "infoboxLocation": "Six Flags Great Escape and Hurricane Harbor",
+   "previousNames": [
+    "Sarajevo Bobsled at Six Flags Great Adventure",
+    "Rolling Thunder at Six Flags Great America"
+   ],
+   "reason": "The infobox location (\"Six Flags Great Escape and Hurricane Harbor\") only loosely matches the park name \"The Great Escape & Splashwater Kingdom\"."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-new-england--batman-the-ride",
+   "name": "Batman The Ride",
+   "park": "Six Flags New England",
+   "article": "Batman: The Dark Knight (roller coaster)",
+   "revid": 1323264476,
+   "infoboxName": "Batman: The Dark Knight",
+   "infoboxLocation": "Six Flags New England",
+   "previousNames": [
+    "Batman: The Ride"
+   ],
+   "reason": "Matches only a previous name in the infobox (a rename, rebuild, or relocation). A person decides whether the figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-over-georgia--ninja",
+   "name": "Ninja",
+   "park": "Six Flags Over Georgia",
+   "article": "Blue Hawk (roller coaster)",
+   "revid": 1377569770,
+   "infoboxName": "Blue Hawk",
+   "infoboxLocation": "Six Flags Over Georgia",
+   "previousNames": [
+    "Ninja",
+    "Kamikaze"
+   ],
+   "reason": "Matches only a previous name in the infobox (a rename, rebuild, or relocation). A person decides whether the figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "silverwood-theme-park--gravity-defying-corkscrew",
+   "name": "Gravity Defying Corkscrew",
+   "park": "Silverwood Theme Park",
+   "article": "Corkscrew (Silverwood)",
+   "revid": 1348245442,
+   "infoboxName": "Corkscrew",
+   "infoboxLocation": "Silverwood Theme Park",
+   "previousNames": [],
+   "reason": "Name matches only in part (sponsor prefix, subtitle, or a different ride with a similar name)."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "boomers-dania-beach--dania-beach-hurricane",
+   "name": "Dania Beach Hurricane",
+   "park": "Boomers! Dania Beach",
+   "article": "Dania Beach Hurricane",
+   "revid": 1313004445,
+   "infoboxName": "Dania Beach Hurricane",
+   "infoboxLocation": "Boomers!",
+   "previousNames": [],
+   "reason": "The infobox location (\"Boomers!\") only loosely matches the park name \"Boomers! Dania Beach\"."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "myrtle-beach-pavilion-park--hurricane",
+   "name": "Hurricane",
+   "park": "Myrtle Beach Pavilion Park",
+   "article": "Hurricane: Category 5",
+   "revid": 1340594114,
+   "infoboxName": "Hurricane: Category 5",
+   "infoboxLocation": "Myrtle Beach Pavilion",
+   "previousNames": [],
+   "reason": "Name matches only in part (sponsor prefix, subtitle, or a different ride with a similar name)."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-over-texas--mr-freeze-reverse-blast",
+   "name": "Mr. Freeze Reverse Blast",
+   "park": "Six Flags Over Texas",
+   "article": "Mr. Freeze (roller coaster)",
+   "revid": 1377304120,
+   "infoboxName": "Mr. Freeze",
+   "infoboxLocation": "Six Flags Over Texas",
+   "previousNames": [
+    "Mr. Freeze",
+    "Mr. Freeze Reverse Blast"
+   ],
+   "reason": "Matches only a previous name in the infobox (a rename, rebuild, or relocation). A person decides whether the figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "fun-spot-america-kissimmee--mine-blower",
+   "name": "Mine Blower",
+   "park": "Fun Spot America Kissimmee",
+   "article": "Mine Blower",
+   "revid": 1342034560,
+   "infoboxName": "Mine Blower",
+   "infoboxLocation": "Fun Spot America (Kissimmee)",
+   "previousNames": [],
+   "reason": "The infobox location (\"Fun Spot America (Kissimmee)\") only loosely matches the park name \"Fun Spot America Kissimmee\"."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "geauga-lake-s-wildwater-kingdom--raging-wolf-bobs",
+   "name": "Raging Wolf Bobs",
+   "park": "Geauga Lake's Wildwater Kingdom",
+   "article": "Raging Wolf Bobs",
+   "revid": 1341703036,
+   "infoboxName": "Raging Wolf Bobs",
+   "infoboxLocation": "Geauga Lake",
+   "previousNames": [],
+   "reason": "The infobox location (\"Geauga Lake\") only loosely matches the park name \"Geauga Lake's Wildwater Kingdom\"."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "coney-island--pepsi-python",
+   "name": "Pepsi Python",
+   "park": "Coney Island",
+   "article": "Python (Coney Island, Cincinnati)",
+   "revid": 1374573527,
+   "infoboxName": "Python",
+   "infoboxLocation": "Coney Island",
+   "previousNames": [],
+   "reason": "Name matches only in part (sponsor prefix, subtitle, or a different ride with a similar name)."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-america--superman-ride-of-steel",
+   "name": "Superman Ride Of Steel",
+   "park": "Six Flags America",
+   "article": "Ride of Steel",
+   "revid": 1377569554,
+   "infoboxName": "Ride of Steel",
+   "infoboxLocation": "Six Flags America",
+   "previousNames": [],
+   "reason": "Name matches only in part (sponsor prefix, subtitle, or a different ride with a similar name)."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-discovery-kingdom--v2-vertical-velocity",
+   "name": "V2 Vertical Velocity",
+   "park": "Six Flags Discovery Kingdom",
+   "article": "The Flash: Vertical Velocity (Six Flags Discovery Kingdom)",
+   "revid": 1337851001,
+   "infoboxName": "The Flash: Vertical Velocity",
+   "infoboxLocation": "Six Flags Discovery Kingdom",
+   "previousNames": [
+    "V2: Vertical Velocity"
+   ],
+   "reason": "Matches only a previous name in the infobox (a rename, rebuild, or relocation). A person decides whether the figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-over-georgia--mind-bender",
+   "name": "Mind Bender",
+   "park": "Six Flags Over Georgia",
+   "article": "The Riddler Mindbender",
+   "revid": 1377569548,
+   "infoboxName": "The Riddler Mindbender",
+   "infoboxLocation": "Six Flags Over Georgia",
+   "previousNames": [
+    "Mindbender"
+   ],
+   "reason": "Matches only a previous name in the infobox (a rename, rebuild, or relocation). A person decides whether the figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "cedar-point--top-thrill-dragster",
+   "name": "Top Thrill Dragster",
+   "park": "Cedar Point",
+   "article": "Top Thrill 2",
+   "revid": 1375695529,
+   "infoboxName": "Top Thrill 2",
+   "infoboxLocation": "Cedar Point",
+   "previousNames": [
+    "Top Thrill Dragster"
+   ],
+   "reason": "Only a previous name in the infobox of Top Thrill 2 (cedar-point--top-thrill-2), which js/data.js keeps as a separate credit; its figures are not used for this coaster."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "six-flags-over-georgia--georgia-cyclone",
+   "name": "Georgia Cyclone",
+   "park": "Six Flags Over Georgia",
+   "article": "Twisted Cyclone",
+   "revid": 1377569679,
+   "infoboxName": "Twisted Cyclone",
+   "infoboxLocation": "Six Flags Over Georgia",
+   "previousNames": [
+    "Georgia Cyclone"
+   ],
+   "reason": "Only a previous name in the infobox of Twisted Cyclone (six-flags-over-georgia--twisted-cyclone), which js/data.js keeps as a separate credit; its figures are not used for this coaster."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "kings-island--flying-ace-aerial-chase",
+   "name": "Flying ACE Aerial Chase",
+   "park": "Kings Island",
+   "article": "Woodstock's Air Rail",
+   "revid": 1377569582,
+   "infoboxName": "Woodstock’s Air Rail",
+   "infoboxLocation": "Kings Island",
+   "previousNames": [
+    "Rugrats Runaway Reptar",
+    "Flying Ace Aerial Chase"
+   ],
+   "reason": "Matches only a previous name in the infobox (a rename, rebuild, or relocation). A person decides whether the figures describe this credit."
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "silver-dollar-city--fire-in-the-hole",
+   "name": "Fire In The Hole",
+   "park": "Silver Dollar City",
+   "reason": "Several Wikipedia infoboxes match this coaster.",
+   "candidates": [
+    {
+     "article": "Fire in the Hole (1972 roller coaster)",
+     "revid": 1363878288,
+     "infoboxName": "Fire in the Hole",
+     "infoboxLocation": "Silver Dollar City",
+     "previousNames": []
+    },
+    {
+     "article": "Fire in the Hole (2024 roller coaster)",
+     "revid": 1370101681,
+     "infoboxName": "Fire in the Hole",
+     "infoboxLocation": "Silver Dollar City",
+     "previousNames": []
+    }
+   ]
+  },
+  {
+   "source": "wikipedia",
+   "coasterId": "kings-island--the-bat",
+   "name": "The Bat",
+   "park": "Kings Island",
+   "reason": "Several Wikipedia infoboxes match this coaster.",
+   "candidates": [
+    {
+     "article": "The Bat (Kings Island; opened 1981)",
+     "revid": 1319119498,
+     "infoboxName": "The Bat",
+     "infoboxLocation": "Kings Island",
+     "previousNames": []
+    },
+    {
+     "article": "The Bat (Kings Island; opened 1993)",
+     "revid": 1314082789,
+     "infoboxName": "The Bat",
+     "infoboxLocation": "Kings Island",
+     "previousNames": [
+      "Top Gun  and Flight Deck"
+     ]
     }
    ]
   }

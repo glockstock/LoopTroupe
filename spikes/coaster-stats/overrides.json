@@ -1,0 +1,4 @@
+{
+ "note": "Choices where Wikidata and Wikipedia disagree (review.json lists the conflicts). Pick the source whose value matches the primary source either one cites, and record that primary source. Without an entry here, a conflicting field is left out of stats.json. Shape: choices[coasterId][field] = { src: 'wd' | 'wp', basis: '<primary source URL>', decidedBy: '<who>', date: 'YYYY-MM-DD' }.",
+ "choices": {}
+}

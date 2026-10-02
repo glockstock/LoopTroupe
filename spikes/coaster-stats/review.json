@@ -1,0 +1,3838 @@
+{
+ "note": "Not shipped. conflicts: Wikidata and Wikipedia disagree beyond rounding, so neither value is in stats.json until overrides.json records a choice. unparsed: values left out because they did not parse cleanly or failed a check. extraFields: infobox values outside the contract (max vertical angle, status), kept for a decision on adding fields.",
+ "conflicts": [
+  {
+   "coasterId": "bay-beach--zippin-pippin",
+   "name": "Zippin' Pippin",
+   "field": "manufacturer",
+   "wd": {
+    "qid": "Q8072661",
+    "v": "The Gravity Group",
+    "raw": "The Gravity Group"
+   },
+   "wp": {
+    "article": "Zippin Pippin",
+    "revid": 1375608983,
+    "param": "manufacturer",
+    "v": "Martin & Vleminckx",
+    "raw": "Martin & Vleminckx"
+   }
+  },
+  {
+   "coasterId": "busch-gardens-tampa--iron-gwazi",
+   "name": "Iron Gwazi",
+   "field": "material",
+   "wd": {
+    "qid": "Q966471",
+    "v": "hybrid",
+    "raw": "hybrid roller coaster"
+   },
+   "wp": {
+    "article": "Iron Gwazi",
+    "revid": 1375695532,
+    "param": "type",
+    "v": "steel",
+    "raw": "Steel"
+   }
+  },
+  {
+   "coasterId": "california-s-great-america--flight-deck",
+   "name": "Flight Deck",
+   "field": "opened",
+   "wd": {
+    "qid": "Q1428707",
+    "v": "1993-03-19",
+    "raw": "1993-03-19T00:00:00Z precision 11 (P580)"
+   },
+   "wp": {
+    "article": "Flight Deck (California's Great America)",
+    "revid": 1377569643,
+    "param": "opened",
+    "v": "1993-03-20",
+    "raw": "{{Start date|1993|03|20}}"
+   }
+  },
+  {
+   "coasterId": "cedar-point--disaster-transport",
+   "name": "Disaster Transport",
+   "field": "closed",
+   "wd": {
+    "qid": "Q1228345",
+    "v": "2013-07-29",
+    "raw": "2013-07-29T00:00:00Z precision 11 (P582)"
+   },
+   "wp": {
+    "article": "Disaster Transport",
+    "revid": 1377338716,
+    "param": "closed",
+    "v": "2012-07-29",
+    "raw": "{{end date|2012|7|29}}"
+   }
+  },
+  {
+   "coasterId": "cedar-point--wicked-twister",
+   "name": "Wicked Twister",
+   "field": "length",
+   "wd": {
+    "qid": "Q648978",
+    "v": 210.007,
+    "pub": [
+     689,
+     "ft"
+    ],
+    "raw": "689 foot (P2043, preferred rank)"
+   },
+   "wp": {
+    "article": "Wicked Twister",
+    "revid": 1347589529,
+    "param": "length_ft",
+    "v": 205.74,
+    "pub": [
+     675,
+     "ft"
+    ],
+    "raw": "675"
+   }
+  },
+  {
+   "coasterId": "cedar-point--wicked-twister",
+   "name": "Wicked Twister",
+   "field": "closed",
+   "wd": {
+    "qid": "Q648978",
+    "v": "2021-09-06",
+    "raw": "2021-09-06T00:00:00Z precision 11 (P3999)"
+   },
+   "wp": {
+    "article": "Wicked Twister",
+    "revid": 1347589529,
+    "param": "closed",
+    "v": "2021-09-07",
+    "raw": "{{Start date|2021|09|07}}"
+   }
+  },
+  {
+   "coasterId": "disney-s-animal-kingdom--expedition-everest",
+   "name": "Expedition Everest",
+   "field": "length",
+   "wd": {
+    "qid": "Q1341067",
+    "v": 1183.996,
+    "pub": [
+     3884.5,
+     "ft"
+    ],
+    "raw": "3884.5 foot (P2043, normal rank)"
+   },
+   "wp": {
+    "article": "Expedition Everest",
+    "revid": 1377527711,
+    "param": "length_ft",
+    "v": 1253.338,
+    "pub": [
+     4112,
+     "ft"
+    ],
+    "raw": "4112"
+   }
+  },
+  {
+   "coasterId": "disney-s-animal-kingdom--primeval-whirl",
+   "name": "Primeval Whirl",
+   "field": "opened",
+   "wd": {
+    "qid": "Q3403239",
+    "v": "2002-04-18",
+    "raw": "2002-04-18T00:00:00Z precision 11 (P1619)"
+   },
+   "wp": {
+    "article": "Primeval Whirl",
+    "revid": 1369659292,
+    "param": "opened",
+    "v": "2002-03-31",
+    "raw": "March 31, 2002"
+   }
+  },
+  {
+   "coasterId": "disney-s-animal-kingdom--primeval-whirl",
+   "name": "Primeval Whirl",
+   "field": "closed",
+   "wd": {
+    "qid": "Q3403239",
+    "v": "2020-03-15",
+    "raw": "2020-03-15T00:00:00Z precision 11 (P3999)"
+   },
+   "wp": {
+    "article": "Primeval Whirl",
+    "revid": 1369659292,
+    "param": "closed",
+    "v": "2020-03-12",
+    "raw": "March 12, 2020"
+   }
+  },
+  {
+   "coasterId": "dollywood--lightning-rod",
+   "name": "Lightning Rod",
+   "field": "material",
+   "wd": {
+    "qid": "Q22073205",
+    "v": "wood",
+    "raw": "wooden roller coaster; launched roller coaster"
+   },
+   "wp": {
+    "article": "Lightning Rod (roller coaster)",
+    "revid": 1377563386,
+    "param": "type",
+    "v": "steel",
+    "raw": "Steel"
+   }
+  },
+  {
+   "coasterId": "frontier-city--steel-lasso",
+   "name": "Steel Lasso",
+   "field": "manufacturer",
+   "wd": {
+    "qid": "Q7605686",
+    "v": "Vekoma Rides Manufacturing B.V.",
+    "raw": "Vekoma Rides Manufacturing B.V."
+   },
+   "wp": {
+    "article": "Steel Lasso",
+    "revid": 1377569902,
+    "param": "manufacturer",
+    "v": "Chance Morgan",
+    "raw": "Chance Morgan"
+   }
+  },
+  {
+   "coasterId": "fun-spot-america-orlando--freedom-flyer",
+   "name": "Freedom Flyer",
+   "field": "opened",
+   "wd": {
+    "qid": "Q18748989",
+    "v": "2013-05",
+    "raw": "2013-05-01T00:00:00Z precision 10 (P571)"
+   },
+   "wp": {
+    "article": "Freedom Flyer",
+    "revid": 1349132633,
+    "param": "opened",
+    "v": "2013-06-08",
+    "raw": "{{Start date|2013|6|8}}"
+   }
+  },
+  {
+   "coasterId": "geauga-lake-s-wildwater-kingdom--big-dipper",
+   "name": "Big Dipper",
+   "field": "closed",
+   "wd": {
+    "qid": "Q858766",
+    "v": "2016-10-17",
+    "raw": "2016-10-17T00:00:00Z precision 11 (P576)"
+   },
+   "wp": {
+    "article": "Big Dipper (Geauga Lake)",
+    "revid": 1373603919,
+    "param": "closed",
+    "v": "2007-09-16",
+    "raw": "{{End date|2007|09|16}}"
+   }
+  },
+  {
+   "coasterId": "glenwood-caverns-adventure-park--defiance",
+   "name": "Defiance",
+   "field": "opened",
+   "wd": {
+    "qid": "Q108166881",
+    "v": "2022-07-01",
+    "raw": "2022-07-01T00:00:00Z precision 11 (P1619)"
+   },
+   "wp": {
+    "article": "Defiance (roller coaster)",
+    "revid": 1240773258,
+    "param": "opened",
+    "v": "2022-07-09",
+    "raw": "July 9, 2022"
+   }
+  },
+  {
+   "coasterId": "kings-dominion--twisted-timbers",
+   "name": "Twisted Timbers",
+   "field": "material",
+   "wd": {
+    "qid": "Q39048402",
+    "v": "hybrid",
+    "raw": "hybrid roller coaster"
+   },
+   "wp": {
+    "article": "Twisted Timbers",
+    "revid": 1377569677,
+    "param": "type",
+    "v": "steel",
+    "raw": "Steel"
+   }
+  },
+  {
+   "coasterId": "nickelodeon-universe-american-dream--tmnt-shellraiser",
+   "name": "TMNT Shellraiser",
+   "field": "height",
+   "wd": {
+    "qid": "Q74420101",
+    "v": 43.586,
+    "pub": [
+     143,
+     "ft"
+    ],
+    "raw": "143 foot (P2048, normal rank)"
+   },
+   "wp": {
+    "article": "TMNT Shellraiser",
+    "revid": 1377712336,
+    "param": "height_ft",
+    "v": 42.977,
+    "pub": [
+     141,
+     "ft"
+    ],
+    "raw": "141"
+   }
+  },
+  {
+   "coasterId": "santa-cruz-beach-boardwalk--giant-dipper",
+   "name": "Giant Dipper",
+   "field": "designer",
+   "wd": {
+    "qid": "Q1522718",
+    "v": "Charles I. D. Looff",
+    "raw": "Charles I. D. Looff"
+   },
+   "wp": {
+    "article": "Giant Dipper (Santa Cruz Beach Boardwalk)",
+    "revid": 1375609413,
+    "param": "designer",
+    "v": "Frank Prior, Frederick Church",
+    "raw": "Frank Prior, [[Frederick Church (engineer)|Frederick Church]]"
+   }
+  },
+  {
+   "coasterId": "seabreeze-amusement-park--bobsleds",
+   "name": "Bobsleds",
+   "field": "material",
+   "wd": {
+    "qid": "Q108795077",
+    "v": "hybrid",
+    "raw": "hybrid roller coaster"
+   },
+   "wp": {
+    "article": "Bobsleds",
+    "revid": 1376907900,
+    "param": "type",
+    "v": "steel",
+    "raw": "Steel"
+   }
+  },
+  {
+   "coasterId": "silverwood-theme-park--tremors",
+   "name": "Tremors",
+   "field": "material",
+   "wd": {
+    "qid": "Q2451377",
+    "v": "wood",
+    "raw": "wooden roller coaster"
+   },
+   "wp": {
+    "article": "Tremors (roller coaster)",
+    "revid": 1364896363,
+    "param": "type",
+    "v": "steel",
+    "raw": "Steel"
+   }
+  },
+  {
+   "coasterId": "six-flags-america--wild-one",
+   "name": "Wild One",
+   "field": "manufacturer",
+   "wd": {
+    "qid": "Q689070",
+    "v": "Dinn Corporation",
+    "raw": "Dinn Corporation"
+   },
+   "wp": {
+    "article": "The Wild One (roller coaster)",
+    "revid": 1365157073,
+    "param": "manufacturer",
+    "v": "Philadelphia Toboggan Coasters",
+    "raw": "Philadelphia Toboggan Coasters"
+   }
+  },
+  {
+   "coasterId": "six-flags-fiesta-texas--iron-rattler",
+   "name": "Iron Rattler",
+   "field": "material",
+   "wd": {
+    "qid": "Q928467",
+    "v": "hybrid",
+    "raw": "hybrid roller coaster"
+   },
+   "wp": {
+    "article": "Iron Rattler",
+    "revid": 1376498674,
+    "param": "type",
+    "v": "steel",
+    "raw": "Steel"
+   }
+  },
+  {
+   "coasterId": "six-flags-great-america--x-flight",
+   "name": "X-Flight",
+   "field": "duration",
+   "wd": {
+    "qid": "Q2597318",
+    "v": 69,
+    "pub": [
+     69,
+     "s"
+    ],
+    "raw": "1.15 minute (P2047, normal rank)"
+   },
+   "wp": {
+    "article": "X-Flight",
+    "revid": 1377569578,
+    "param": "duration",
+    "v": 75,
+    "pub": [
+     75,
+     "s"
+    ],
+    "raw": "1:15"
+   }
+  },
+  {
+   "coasterId": "six-flags-magic-mountain--full-throttle",
+   "name": "Full Throttle",
+   "field": "height",
+   "wd": {
+    "qid": "Q3090780",
+    "v": 49,
+    "pub": [
+     49,
+     "m"
+    ],
+    "raw": "49 metre (P2048, normal rank)"
+   },
+   "wp": {
+    "article": "Full Throttle (roller coaster)",
+    "revid": 1365858801,
+    "param": "height_ft",
+    "v": 49.987,
+    "pub": [
+     164,
+     "ft"
+    ],
+    "raw": "164"
+   }
+  },
+  {
+   "coasterId": "six-flags-magic-mountain--magic-flyer",
+   "name": "Magic Flyer",
+   "field": "material",
+   "wd": {
+    "qid": "Q2626856",
+    "v": "wood",
+    "raw": "wooden roller coaster"
+   },
+   "wp": {
+    "article": "Magic Flyer",
+    "revid": 1369250271,
+    "param": "type",
+    "v": "steel",
+    "raw": "Steel"
+   }
+  },
+  {
+   "coasterId": "six-flags-magic-mountain--twisted-colossus",
+   "name": "Twisted Colossus",
+   "field": "material",
+   "wd": {
+    "qid": "Q75099048",
+    "v": "hybrid",
+    "raw": "hybrid roller coaster"
+   },
+   "wp": {
+    "article": "Twisted Colossus",
+    "revid": 1375613273,
+    "param": "type",
+    "v": "steel",
+    "raw": "Steel"
+   }
+  },
+  {
+   "coasterId": "six-flags-new-england--wicked-cyclone",
+   "name": "Wicked Cyclone",
+   "field": "material",
+   "wd": {
+    "qid": "Q20925120",
+    "v": "hybrid",
+    "raw": "hybrid roller coaster"
+   },
+   "wp": {
+    "article": "Wicked Cyclone",
+    "revid": 1350916760,
+    "param": "type",
+    "v": "steel",
+    "raw": "Steel"
+   }
+  },
+  {
+   "coasterId": "worlds-of-fun--zambezi-zinger",
+   "name": "Zambezi Zinger",
+   "field": "length",
+   "wd": {
+    "qid": "Q113499145",
+    "v": 756.514,
+    "pub": [
+     2482,
+     "ft"
+    ],
+    "raw": "2482 foot (P2043, normal rank)"
+   },
+   "wp": {
+    "article": "Zambezi Zinger (2023)",
+    "revid": 1357914212,
+    "param": "length_ft",
+    "v": 740.054,
+    "pub": [
+     2428,
+     "ft"
+    ],
+    "raw": "2428"
+   }
+  }
+ ],
+ "unparsed": [
+  {
+   "coasterId": "busch-gardens-williamsburg--invadr",
+   "source": "wp",
+   "article": "InvadR",
+   "revid": 1331364155,
+   "field": "designer",
+   "param": "designer",
+   "raw": "Jeff Pike<br />Skyline Design, LLC",
+   "reason": "several values"
+  },
+  {
+   "coasterId": "busch-gardens-williamsburg--verbolten",
+   "source": "wp",
+   "article": "Verbolten",
+   "revid": 1359415012,
+   "field": "material",
+   "param": "type",
+   "raw": "Coaster, [[Haunted attraction (simulated)|Haunted attraction]]",
+   "reason": "not Steel or Wood"
+  },
+  {
+   "coasterId": "canobie-lake-park--canobie-corkscrew",
+   "source": "wp",
+   "article": "Canobie Corkscrew",
+   "revid": 1346727616,
+   "field": "opened",
+   "param": "opened",
+   "raw": "1975 (Old Chicago), 1982 (Alabama State Fairgrounds), 1990 (Canobie Lake Park)",
+   "reason": "not a single date"
+  },
+  {
+   "coasterId": "carowinds--flying-cobras",
+   "source": "wp",
+   "article": "The Flying Cobras",
+   "revid": 1377569647,
+   "field": "inversions",
+   "param": "inversions",
+   "raw": "3 (each traversed twice)",
+   "reason": "not a whole number"
+  },
+  {
+   "coasterId": "cedar-point--blue-streak",
+   "source": "wp",
+   "article": "Blue Streak (Cedar Point)",
+   "revid": 1377569532,
+   "field": "designer",
+   "param": "designer",
+   "raw": "{{ubl|Frank F. Hoover|[[John C. Allen]]}}",
+   "reason": "several values"
+  },
+  {
+   "coasterId": "cedar-point--cedar-creek-mine-ride",
+   "source": "wd",
+   "qid": "Q2943776",
+   "field": "material",
+   "raw": "wood; steel",
+   "reason": "Wikidata gives several materials"
+  },
+  {
+   "coasterId": "cedar-point--gemini",
+   "source": "wd",
+   "qid": "Q1501093",
+   "field": "material",
+   "raw": "wood; steel",
+   "reason": "Wikidata gives several materials"
+  },
+  {
+   "coasterId": "cedar-point--steel-vengeance",
+   "source": "wd",
+   "qid": "Q1787446",
+   "field": "material",
+   "raw": "wood; steel; hybrid",
+   "reason": "Wikidata gives several materials"
+  },
+  {
+   "coasterId": "cedar-point--top-thrill-2",
+   "source": "wp",
+   "article": "Top Thrill 2",
+   "revid": 1375695529,
+   "field": "designer",
+   "param": "designer",
+   "raw": "[[Werner Stengel]]{{efn|name=TTD-2003}}",
+   "reason": "the article also covers an earlier ride, and this value is footnoted or qualified; it may describe the earlier ride"
+  },
+  {
+   "coasterId": "disney-california-adventure--goofy-s-sky-school",
+   "source": "wp",
+   "article": "Goofy's Sky School",
+   "revid": 1373401906,
+   "field": "opened",
+   "param": "opened",
+   "raw": "{{Start date|2001|2|8}}<br/><small>(as '''Mullholland Madness''')</small><br>{{Start date|2011|7|1}}<br/><small>(as '''Goofy's Sky School''')</small>",
+   "reason": "not a single date"
+  },
+  {
+   "coasterId": "disney-california-adventure--goofy-s-sky-school",
+   "source": "wp",
+   "article": "Goofy's Sky School",
+   "revid": 1373401906,
+   "field": "closed",
+   "param": "closed",
+   "raw": "October 12, 2010<br>(as '''Mulholland Madness''')",
+   "reason": "not a single date"
+  },
+  {
+   "coasterId": "disney-california-adventure--incrediocoaster",
+   "source": "wp",
+   "article": "Incredicoaster",
+   "revid": 1353887003,
+   "field": "opened",
+   "param": "opened",
+   "raw": "{{Start date|2001|02|08}} (as California Screamin')<br> {{Start date|2018|06|23}} (as Incredicoaster)",
+   "reason": "not a single date"
+  },
+  {
+   "coasterId": "disney-california-adventure--incrediocoaster",
+   "source": "wp",
+   "article": "Incredicoaster",
+   "revid": 1353887003,
+   "field": "closed",
+   "param": "closed",
+   "raw": "{{End date|2018|01|07}} (as California Screamin')",
+   "reason": "not a single date"
+  },
+  {
+   "coasterId": "disney-s-hollywood-studios--rock-n-roller-coaster",
+   "source": "wp",
+   "article": "Rock 'n' Roller Coaster",
+   "revid": 1375409101,
+   "field": "opened",
+   "param": "opened",
+   "raw": "{{Start date|1999|7|29}} {{small|(Starring Aerosmith)}}<br>{{Start date|2026|5|26}} {{small|(Starring The Muppets)}}",
+   "reason": "not a single date"
+  },
+  {
+   "coasterId": "disney-s-hollywood-studios--rock-n-roller-coaster",
+   "source": "wp",
+   "article": "Rock 'n' Roller Coaster",
+   "revid": 1375409101,
+   "field": "closed",
+   "param": "closed",
+   "raw": "{{End date|2026|3|2}} {{small|(Starring Aerosmith)}}",
+   "reason": "not a single date"
+  },
+  {
+   "coasterId": "disney-s-magic-kingdom--the-barnstormer",
+   "source": "wp",
+   "article": "The Barnstormer",
+   "revid": 1373039466,
+   "field": "opened",
+   "param": "opened",
+   "raw": "October 1, 1996 (original)<br/>March 12, 2012 (relaunch)",
+   "reason": "not a single date"
+  },
+  {
+   "coasterId": "disney-s-magic-kingdom--the-barnstormer",
+   "source": "wp",
+   "article": "The Barnstormer",
+   "revid": 1373039466,
+   "field": "closed",
+   "param": "closed",
+   "raw": "February 12, 2011 (original)",
+   "reason": "not a single date"
+  },
+  {
+   "coasterId": "disney-s-magic-kingdom--tron-lightcycle-run",
+   "source": "wd",
+   "qid": "Q123594444",
+   "field": "designer",
+   "raw": "Vekoma Rides Manufacturing B.V.; Walt Disney Imagineering; Grace Design Studio",
+   "reason": "several values"
+  },
+  {
+   "coasterId": "elitch-gardens--halfpipe",
+   "source": "wd",
+   "qid": "Q1135493",
+   "field": "opened",
+   "raw": "2003-04-30; 2004-05-27",
+   "reason": "Wikidata holds conflicting values"
+  },
+  {
+   "coasterId": "elitch-gardens--sidewinder",
+   "source": "wp",
+   "article": "Sidewinder (Elitch Gardens)",
+   "revid": 1337191539,
+   "field": "inversions",
+   "param": "inversions",
+   "raw": "1 (traversed twice)",
+   "reason": "not a whole number"
+  },
+  {
+   "coasterId": "frontier-city--wildcat",
+   "source": "wp",
+   "article": "Wildcat (Frontier City)",
+   "revid": 1377569916,
+   "field": "designer",
+   "param": "designer",
+   "raw": "Aurel Vaszin<br/>Edward Leis",
+   "reason": "several values"
+  },
+  {
+   "coasterId": "hersheypark--wildcat-s-revenge",
+   "source": "wd",
+   "qid": "Q2570460",
+   "field": "material",
+   "raw": "steel; hybrid",
+   "reason": "Wikidata gives several materials"
+  },
+  {
+   "coasterId": "kennywood--exterminator",
+   "source": "wp",
+   "article": "The Exterminator (roller coaster)",
+   "revid": 1361789687,
+   "field": "duration",
+   "param": "duration",
+   "raw": "1:48 (2:30 including start/stop)",
+   "reason": "not a single duration"
+  },
+  {
+   "coasterId": "kennywood--phantom-s-revenge",
+   "source": "wd",
+   "qid": "Q666461",
+   "field": "manufacturer",
+   "raw": "Arrow Dynamics; D. H. Morgan Manufacturing",
+   "reason": "several values"
+  },
+  {
+   "coasterId": "kennywood--phantom-s-revenge",
+   "source": "wp",
+   "article": "Phantom's Revenge",
+   "revid": 1375610645,
+   "field": "inversions",
+   "param": "inversions",
+   "raw": "0 (4 as Steel Phantom)",
+   "reason": "not a whole number"
+  },
+  {
+   "coasterId": "kennywood--steel-curtain",
+   "source": "wp",
+   "article": "Steel Curtain (roller coaster)",
+   "revid": 1369085243,
+   "field": "inversions",
+   "param": "inversions",
+   "raw": "8 or 9{{Efn|name=inversions}}",
+   "reason": "not a whole number"
+  },
+  {
+   "coasterId": "kennywood--thunderbolt",
+   "source": "wp",
+   "article": "Thunderbolt (Kennywood)",
+   "revid": 1377563710,
+   "field": "designer",
+   "param": "designer",
+   "raw": "{{Unbulleted list|Andy Vettel (1968)|[[John A. Miller]] (1924)}}",
+   "reason": "several values"
+  },
+  {
+   "coasterId": "kings-dominion--grizzly",
+   "source": "wp",
+   "article": "Grizzly (Kings Dominion)",
+   "revid": 1375607560,
+   "field": "manufacturer",
+   "param": "manufacturer",
+   "raw": "Taft Broadcasting Company {{!}} Taft Attractions Group",
+   "reason": "contains markup the parser does not handle"
+  },
+  {
+   "coasterId": "kings-island--son-of-beast",
+   "source": "wp",
+   "article": "Son of Beast",
+   "revid": 1377225798,
+   "field": "inversions",
+   "param": "inversions",
+   "raw": "1 (2000–2006)<br />0 (2007–2009)",
+   "reason": "not a whole number"
+  },
+  {
+   "coasterId": "kings-island--the-beast",
+   "source": "wp",
+   "article": "The Beast (roller coaster)",
+   "revid": 1377660895,
+   "field": "designer",
+   "param": "designer",
+   "raw": "{{unbulleted list|Al Collins|Jeff Gramke}}",
+   "reason": "several values"
+  },
+  {
+   "coasterId": "knoebels-amusement-park--twister",
+   "source": "wp",
+   "article": "Twister (Knoebels Amusement Resort)",
+   "revid": 1375614505,
+   "field": "designer",
+   "param": "designer",
+   "raw": "John Fetterman, 1999; <br />From [[John C. Allen|John Allen]]'s 1964 <br />Mister Twister design",
+   "reason": "several values"
+  },
+  {
+   "coasterId": "lagoon--colossus-the-fire-dragon",
+   "source": "wp",
+   "article": "Colossus the Fire Dragon",
+   "revid": 1371922120,
+   "field": "gforce",
+   "param": "gforce",
+   "raw": "4.9 (Back Seat)<br>4.0 (Front Seat)",
+   "reason": "not a single figure in g (a range, negative and positive values, or a note)"
+  },
+  {
+   "coasterId": "lagoon--primordial",
+   "source": "wp",
+   "article": "Primordial (roller coaster)",
+   "revid": 1313014136,
+   "field": "duration",
+   "param": "duration",
+   "raw": "< 5:00",
+   "reason": "not a single duration"
+  },
+  {
+   "coasterId": "lake-compounce--boulder-dash",
+   "source": "wp",
+   "article": "Boulder Dash (roller coaster)",
+   "revid": 1375606664,
+   "field": "designer",
+   "param": "designer",
+   "raw": "Dennis McNulty<br />Larry Bill",
+   "reason": "several values"
+  },
+  {
+   "coasterId": "lakemont-park--leap-the-dips",
+   "source": "wp",
+   "article": "Leap-The-Dips",
+   "revid": 1378062343,
+   "field": "opened",
+   "param": "opened",
+   "raw": "{{Start date|1902|06|02}} <br/> ({{age|1902|06|02}} years ago)",
+   "reason": "not a single date"
+  },
+  {
+   "coasterId": "mgm-grand-adventures--lightning-bolt",
+   "source": "wp",
+   "article": "Lightning Bolt (roller coaster)",
+   "revid": 1348092899,
+   "field": "material",
+   "param": "type",
+   "raw": "Family",
+   "reason": "not Steel or Wood"
+  },
+  {
+   "coasterId": "mt-olympus-water-theme-park--hades-360",
+   "source": "wp",
+   "article": "Hades 360",
+   "revid": 1375609211,
+   "field": "inversions",
+   "param": "inversions",
+   "raw": "0 (2005–2012)<br />1 (2013–present)",
+   "reason": "not a whole number"
+  },
+  {
+   "coasterId": "seaworld-san-diego--manta",
+   "source": "wp",
+   "article": "Manta (SeaWorld San Diego)",
+   "revid": 1346149058,
+   "field": "gforce",
+   "param": "gforce",
+   "raw": "Between 3 and 4 Gs",
+   "reason": "not a single figure in g (a range, negative and positive values, or a note)"
+  },
+  {
+   "coasterId": "silver-dollar-city--time-traveler",
+   "source": "wd",
+   "qid": "Q39073930",
+   "field": "opened",
+   "raw": "2018-03-01; 2018-03-14",
+   "reason": "Wikidata holds conflicting values"
+  },
+  {
+   "coasterId": "six-flags-america--wild-one",
+   "source": "wp",
+   "article": "The Wild One (roller coaster)",
+   "revid": 1365157073,
+   "field": "designer",
+   "param": "designer",
+   "raw": "[[John Miller (entrepreneur)|John A. Miller]]<br/>[[Herbert Schmeck]]",
+   "reason": "several values"
+  },
+  {
+   "coasterId": "six-flags-america--wild-one",
+   "source": "wp",
+   "article": "The Wild One (roller coaster)",
+   "revid": 1365157073,
+   "field": "closed",
+   "param": "closed",
+   "raw": "{{End date|2025|11|02}} {{Infobox roller coaster/extend | location = Paragon Park | coordinates = {{Coords|42|16|05.6|N|70|51|16.6|W}} | opened = {{Start date|1917}} | closed = {{End date|1984}} | status = Relocated to Six Flags America }}",
+   "reason": "not a single date"
+  },
+  {
+   "coasterId": "six-flags-astroworld--texas-cyclone",
+   "source": "wp",
+   "article": "Texas Cyclone",
+   "revid": 1319119645,
+   "field": "manufacturer",
+   "param": "manufacturer",
+   "raw": "William Cobb (designer){{!}} Frontier Construction Company",
+   "reason": "contains markup the parser does not handle"
+  },
+  {
+   "coasterId": "six-flags-fiesta-texas--batman-the-ride",
+   "source": "wp",
+   "article": "Batman: The Ride (S&S Free Spin)",
+   "revid": 1321493857,
+   "field": "inversions",
+   "param": "inversions",
+   "raw": "6 (2 track inversions)",
+   "reason": "not a whole number"
+  },
+  {
+   "coasterId": "six-flags-great-adventure--the-flash-vertical-velocity",
+   "source": "wp",
+   "article": "The Flash: Vertical Velocity (Six Flags Great Adventure)",
+   "revid": 1377235794,
+   "field": "inversions",
+   "param": "inversions",
+   "raw": "4 [2 on track, but each run traverses the track twice]",
+   "reason": "not a whole number"
+  },
+  {
+   "coasterId": "six-flags-great-america--goliath",
+   "source": "wp",
+   "article": "Goliath (Six Flags Great America)",
+   "revid": 1377569604,
+   "field": "material",
+   "param": "type",
+   "raw": "Wood steel",
+   "reason": "not Steel or Wood"
+  },
+  {
+   "coasterId": "six-flags-great-america--maxx-force",
+   "source": "wp",
+   "article": "Maxx Force",
+   "revid": 1372975622,
+   "field": "inversions",
+   "param": "inversions",
+   "raw": "4 or 5{{Efn|name=inversions|The [[Roller Coaster DataBase]] lists the ride as having four inversions,<ref name=\"RCDB\">…</ref> since the Maxx Dive Loop is counted as one inversion.<ref>…</ref> Other sources list the ride as having five inversions, with the Maxx Dive Loop counted as two.<ref>…</ref><ref>…</ref>}}",
+   "reason": "not a whole number"
+  },
+  {
+   "coasterId": "six-flags-over-georgia--superman-ultimate-flight",
+   "source": "wp",
+   "article": "Superman: Ultimate Flight",
+   "revid": 1368622448,
+   "field": "length",
+   "param": "length_ft",
+   "raw": "2759-2798",
+   "reason": "not a single plain figure"
+  },
+  {
+   "coasterId": "six-flags-over-georgia--superman-ultimate-flight",
+   "source": "wp",
+   "article": "Superman: Ultimate Flight",
+   "revid": 1368622448,
+   "field": "inversions",
+   "param": "inversions",
+   "raw": "2 (1 non-vertical)",
+   "reason": "not a whole number"
+  },
+  {
+   "coasterId": "six-flags-over-texas--new-texas-giant",
+   "source": "wd",
+   "qid": "Q1353100",
+   "field": "material",
+   "raw": "steel; hybrid",
+   "reason": "Wikidata gives several materials"
+  },
+  {
+   "coasterId": "the-great-escape-splashwater-kingdom--comet",
+   "source": "wp",
+   "article": "The Comet (Great Escape)",
+   "revid": 1377569664,
+   "field": "opened",
+   "param": "opened",
+   "raw": "1948 (Crystal Beach Park); June 25, 1994 (relocation to Six Flags Great Escape and Hurricane Harbor)",
+   "reason": "not a single date"
+  },
+  {
+   "coasterId": "universal-s-islands-of-adventure--flight-of-the-hippogriff",
+   "source": "wp",
+   "article": "Flight of the Hippogriff",
+   "revid": 1370837854,
+   "field": "manufacturer",
+   "param": "manufacturer",
+   "raw": "Vekoma{{!}}Vekoma (Orlando, Japan){{))!}}<br/>{{!((}}Mack Rides{{!}}Mack Rides (Hollywood, Beijing)",
+   "reason": "several values"
+  },
+  {
+   "coasterId": "universal-s-islands-of-adventure--flight-of-the-hippogriff",
+   "source": "wp",
+   "article": "Flight of the Hippogriff",
+   "revid": 1370837854,
+   "field": "model",
+   "param": "model",
+   "raw": "Junior Coaster (335m) (Japan/Florida) <br> <ref name=\"RCDB\"/> Youngstar Coaster (Custom) (Hollywood, Beijing) <ref name=\"RCDB\"/>",
+   "reason": "several values"
+  },
+  {
+   "coasterId": "worlds-of-fun--zambezi-zinger",
+   "source": "wd",
+   "qid": "Q113499145",
+   "field": "material",
+   "raw": "wood; steel; hybrid",
+   "reason": "Wikidata gives several materials"
+  }
+ ],
+ "extraFields": {
+  "adventure-city--rewind-racers": {
+   "article": "Rewind Racers",
+   "revid": 1367055657,
+   "status": "Operating"
+  },
+  "adventuredome--canyon-blaster": {
+   "article": "Canyon Blaster (Adventuredome)",
+   "revid": 1376385904,
+   "angle": {
+    "v": 53,
+    "raw": "53"
+   },
+   "status": "Operating"
+  },
+  "adventuredome--el-loco": {
+   "article": "El Loco (Adventuredome)",
+   "revid": 1376529903,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "adventureland-iowa--dragon": {
+   "article": "Dragon (Adventureland)",
+   "revid": 1313010711,
+   "angle": {
+    "v": 45,
+    "raw": "45"
+   },
+   "status": "Removed"
+  },
+  "adventureland-iowa--dragon-slayer": {
+   "article": "Dragon Slayer (roller coaster)",
+   "revid": 1363251493,
+   "status": "Operating"
+  },
+  "adventureland-iowa--the-monster": {
+   "article": "The Monster (Adventureland)",
+   "revid": 1323661672,
+   "angle": {
+    "v": 101,
+    "raw": "101"
+   },
+   "status": "Open"
+  },
+  "adventureland-iowa--the-outlaw": {
+   "article": "Outlaw (roller coaster)",
+   "revid": 1377014754,
+   "status": "Open"
+  },
+  "adventureland-iowa--tornado": {
+   "article": "Tornado (Adventureland)",
+   "revid": 1374953479,
+   "status": "Open"
+  },
+  "adventureland-iowa--underground": {
+   "article": "Underground (roller coaster)",
+   "revid": 1365349120,
+   "status": "Operating"
+  },
+  "adventureland-new-york--turbulence": {
+   "article": "Turbulence (roller coaster)",
+   "revid": 1356432022,
+   "status": "Operating"
+  },
+  "bay-beach--zippin-pippin": {
+   "article": "Zippin Pippin",
+   "revid": 1375608983,
+   "angle": {
+    "v": 50.6,
+    "raw": "50.6"
+   },
+   "status": "Open"
+  },
+  "beech-bend-park--kentucky-rumbler": {
+   "article": "Kentucky Rumbler",
+   "revid": 1365132803,
+   "status": "Open"
+  },
+  "beech-bend-park--wild-mouse": {
+   "article": "Wild Mouse (Beech Bend Park)",
+   "revid": 1313012643,
+   "status": "Open"
+  },
+  "belmont-park--giant-dipper": {
+   "article": "Giant Dipper (Belmont Park)",
+   "revid": 1373300048,
+   "angle": {
+    "v": null,
+    "raw": "40 degrees at bottom of first drop",
+    "reason": "not a single angle"
+   },
+   "status": "Open"
+  },
+  "busch-gardens-tampa--cheetah-hunt": {
+   "article": "Cheetah Hunt",
+   "revid": 1367534873,
+   "status": "Operating"
+  },
+  "busch-gardens-tampa--cobra-s-curse": {
+   "article": "Cobra's Curse",
+   "revid": 1357271909,
+   "status": "Operating"
+  },
+  "busch-gardens-tampa--iron-gwazi": {
+   "article": "Iron Gwazi",
+   "revid": 1375695532,
+   "angle": {
+    "v": 91,
+    "raw": "91"
+   },
+   "status": "Operating"
+  },
+  "busch-gardens-tampa--kumba": {
+   "article": "Kumba (roller coaster)",
+   "revid": 1376036740,
+   "status": "Closed"
+  },
+  "busch-gardens-tampa--montu": {
+   "article": "Montu (roller coaster)",
+   "revid": 1378068149,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Operating"
+  },
+  "busch-gardens-tampa--python": {
+   "article": "Python (Busch Gardens Tampa Bay)",
+   "revid": 1376048948,
+   "status": "Removed"
+  },
+  "busch-gardens-tampa--sand-serpent": {
+   "article": "Sand Serpent",
+   "revid": 1360961112,
+   "status": "Removed"
+  },
+  "busch-gardens-tampa--scorpion": {
+   "article": "Scorpion (roller coaster)",
+   "revid": 1369187477,
+   "status": "Removed"
+  },
+  "busch-gardens-tampa--sheikra": {
+   "article": "SheiKra",
+   "revid": 1375498978,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "busch-gardens-tampa--tigris": {
+   "article": "Tigris (roller coaster)",
+   "revid": 1372245050,
+   "status": "Operating"
+  },
+  "busch-gardens-williamsburg--alpengeist": {
+   "article": "Alpengeist",
+   "revid": 1375613442,
+   "angle": {
+    "v": 79,
+    "raw": "79"
+   },
+   "status": "Operating"
+  },
+  "busch-gardens-williamsburg--apollo-s-chariot": {
+   "article": "Apollo's Chariot",
+   "revid": 1375610901,
+   "angle": {
+    "v": 65,
+    "raw": "65"
+   },
+   "status": "Operating"
+  },
+  "busch-gardens-williamsburg--big-bad-wolf": {
+   "article": "Big Bad Wolf (roller coaster)",
+   "revid": 1367021182,
+   "status": "Removed"
+  },
+  "busch-gardens-williamsburg--big-bad-wolf-the-wolf-s-revenge": {
+   "article": "Big Bad Wolf: The Wolf's Revenge",
+   "revid": 1377550528,
+   "status": "Operating"
+  },
+  "busch-gardens-williamsburg--darkoaster-escape-the-storm": {
+   "article": "DarKoaster: Escape The Storm",
+   "revid": 1338545399,
+   "status": "Operating"
+  },
+  "busch-gardens-williamsburg--griffon": {
+   "article": "Griffon (roller coaster)",
+   "revid": 1375083111,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "busch-gardens-williamsburg--invadr": {
+   "article": "InvadR",
+   "revid": 1331364155,
+   "status": "Operating"
+  },
+  "busch-gardens-williamsburg--loch-ness-monster": {
+   "article": "Loch Ness Monster (roller coaster)",
+   "revid": 1338344432,
+   "angle": {
+    "v": 55,
+    "raw": "55"
+   },
+   "status": "Operating"
+  },
+  "busch-gardens-williamsburg--pantheon": {
+   "article": "Pantheon (roller coaster)",
+   "revid": 1376318161,
+   "angle": {
+    "v": 95,
+    "raw": "95"
+   },
+   "status": "Operating"
+  },
+  "busch-gardens-williamsburg--tempesto": {
+   "article": "Tempesto",
+   "revid": 1357813685,
+   "status": "Operating"
+  },
+  "busch-gardens-williamsburg--verbolten": {
+   "article": "Verbolten",
+   "revid": 1359415012,
+   "status": "Operating"
+  },
+  "california-s-great-america--demon": {
+   "article": "Demon (roller coaster)",
+   "revid": 1377569575,
+   "angle": {
+    "v": 54,
+    "raw": "54"
+   },
+   "status": "Operating"
+  },
+  "california-s-great-america--flight-deck": {
+   "article": "Flight Deck (California's Great America)",
+   "revid": 1377569643,
+   "status": "Operating"
+  },
+  "california-s-great-america--gold-striker": {
+   "article": "Gold Striker",
+   "revid": 1377569836,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Operating"
+  },
+  "california-s-great-america--grizzly": {
+   "article": "The Grizzly",
+   "revid": 1377569804,
+   "status": "Operating"
+  },
+  "california-s-great-america--patriot": {
+   "article": "Patriot (California's Great America)",
+   "revid": 1377569696,
+   "status": "Operating"
+  },
+  "california-s-great-america--railblazer": {
+   "article": "RailBlazer",
+   "revid": 1377686207,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Open"
+  },
+  "california-s-great-america--woodstock-s-express": {
+   "article": "Woodstock's Express (California's Great America)",
+   "revid": 1345766377,
+   "status": "Operating"
+  },
+  "camden-park--big-dipper": {
+   "article": "Big Dipper (Camden Park)",
+   "revid": 1352115705,
+   "status": "Operating"
+  },
+  "camden-park--thunderbolt-express": {
+   "article": "Thunderbolt Express",
+   "revid": 1319075363,
+   "status": "Removed"
+  },
+  "canobie-lake-park--canobie-corkscrew": {
+   "article": "Canobie Corkscrew",
+   "revid": 1346727616,
+   "status": "Removed"
+  },
+  "canobie-lake-park--untamed": {
+   "article": "Untamed (Canobie Lake Park)",
+   "revid": 1313013359,
+   "angle": {
+    "v": 97,
+    "raw": "97"
+   },
+   "status": "Operating"
+  },
+  "canobie-lake-park--yankee-cannonball": {
+   "article": "Yankee Cannonball",
+   "revid": 1367905739,
+   "status": "Open"
+  },
+  "carowinds--afterburn": {
+   "article": "Afterburn (roller coaster)",
+   "revid": 1370301406,
+   "status": "Operating"
+  },
+  "carowinds--carolina-cyclone": {
+   "article": "Carolina Cyclone",
+   "revid": 1368686088,
+   "angle": {
+    "v": 53,
+    "raw": "53"
+   },
+   "status": "Operating"
+  },
+  "carowinds--carolina-goldrusher": {
+   "article": "Carolina Goldrusher",
+   "revid": 1363763181,
+   "status": "Open"
+  },
+  "carowinds--copperhead-strike": {
+   "article": "Copperhead Strike",
+   "revid": 1357307714,
+   "status": "Operating"
+  },
+  "carowinds--flying-cobras": {
+   "article": "The Flying Cobras",
+   "revid": 1377569647,
+   "angle": {
+    "v": 65,
+    "raw": "65"
+   },
+   "status": "Operating"
+  },
+  "carowinds--flying-super-saturator": {
+   "article": "Flying Super Saturator",
+   "revid": 1377677097,
+   "status": "Removed"
+  },
+  "carowinds--fury-325": {
+   "article": "Fury 325",
+   "revid": 1377660947,
+   "angle": {
+    "v": 81,
+    "raw": "81"
+   },
+   "status": "Operating"
+  },
+  "carowinds--hurler": {
+   "article": "Hurler (roller coaster)",
+   "revid": 1377569561,
+   "status": "Operating"
+  },
+  "carowinds--nighthawk": {
+   "article": "Nighthawk (roller coaster)",
+   "revid": 1361772751,
+   "angle": {
+    "v": 53,
+    "raw": "53"
+   },
+   "status": "Removed"
+  },
+  "carowinds--ricochet": {
+   "article": "Ricochet (Carowinds)",
+   "revid": 1313012237,
+   "status": "Open"
+  },
+  "carowinds--vortex": {
+   "article": "Vortex (Carowinds)",
+   "revid": 1371985734,
+   "status": "Operating"
+  },
+  "carowinds--wilderness-run": {
+   "article": "Wilderness Run (Carowinds)",
+   "revid": 1283381382,
+   "status": "Operating"
+  },
+  "carowinds--woodstock-express": {
+   "article": "Woodstock Express (Carowinds)",
+   "revid": 1306593110,
+   "status": "Operating"
+  },
+  "casino-pier--hydrus": {
+   "article": "Hydrus (roller coaster)",
+   "revid": 1313013693,
+   "angle": {
+    "v": 97,
+    "raw": "97"
+   },
+   "status": "Operating"
+  },
+  "casino-pier--jet-star": {
+   "article": "Jet Star (Casino Pier)",
+   "revid": 1376436405,
+   "status": "Removed"
+  },
+  "casino-pier--star-jet": {
+   "article": "Star Jet",
+   "revid": 1348922587,
+   "status": "Removed"
+  },
+  "castles-n-coasters--desert-storm": {
+   "article": "Desert Storm (roller coaster)",
+   "revid": 1373270741,
+   "status": "Operating"
+  },
+  "cedar-point--blue-streak": {
+   "article": "Blue Streak (Cedar Point)",
+   "revid": 1377569532,
+   "angle": {
+    "v": 45,
+    "raw": "45"
+   },
+   "status": "Operating"
+  },
+  "cedar-point--cedar-creek-mine-ride": {
+   "article": "Cedar Creek Mine Ride",
+   "revid": 1376772372,
+   "status": "Operating"
+  },
+  "cedar-point--corkscrew": {
+   "article": "Corkscrew (Cedar Point)",
+   "revid": 1375453864,
+   "angle": {
+    "v": 45,
+    "raw": "45"
+   },
+   "status": "Operating"
+  },
+  "cedar-point--disaster-transport": {
+   "article": "Disaster Transport",
+   "revid": 1377338716,
+   "angle": {
+    "v": 27,
+    "raw": "27"
+   },
+   "status": "Removed"
+  },
+  "cedar-point--gatekeeper": {
+   "article": "GateKeeper (roller coaster)",
+   "revid": 1377569510,
+   "status": "Operating"
+  },
+  "cedar-point--iron-dragon": {
+   "article": "Iron Dragon (roller coaster)",
+   "revid": 1347588552,
+   "status": "Operating"
+  },
+  "cedar-point--magnum-xl-200": {
+   "article": "Magnum XL-200",
+   "revid": 1375612779,
+   "angle": {
+    "v": 60,
+    "raw": "60"
+   },
+   "status": "Operating"
+  },
+  "cedar-point--maverick": {
+   "article": "Maverick (roller coaster)",
+   "revid": 1375610404,
+   "angle": {
+    "v": 95,
+    "raw": "95"
+   },
+   "status": "Operating"
+  },
+  "cedar-point--millennium-force": {
+   "article": "Millennium Force",
+   "revid": 1377521431,
+   "angle": {
+    "v": 80,
+    "raw": "80"
+   },
+   "status": "Operating"
+  },
+  "cedar-point--raptor": {
+   "article": "Raptor (Cedar Point)",
+   "revid": 1377569544,
+   "angle": {
+    "v": 45,
+    "raw": "45"
+   },
+   "status": "Operating"
+  },
+  "cedar-point--rougarou": {
+   "article": "Rougarou (roller coaster)",
+   "revid": 1366865528,
+   "angle": {
+    "v": 52,
+    "raw": "52"
+   },
+   "status": "Operating"
+  },
+  "cedar-point--siren-s-curse": {
+   "article": "Siren's Curse",
+   "revid": 1375613935,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "cedar-point--steel-vengeance": {
+   "article": "Steel Vengeance",
+   "revid": 1375609630,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "cedar-point--top-thrill-2": {
+   "article": "Top Thrill 2",
+   "revid": 1375695529,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "cedar-point--valravn": {
+   "article": "Valravn (roller coaster)",
+   "revid": 1368509279,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "cedar-point--wicked-twister": {
+   "article": "Wicked Twister",
+   "revid": 1347589529,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Removed"
+  },
+  "cedar-point--wildcat": {
+   "article": "WildCat (Cedar Point)",
+   "revid": 1374803640,
+   "status": "Removed"
+  },
+  "cedar-point--wilderness-run": {
+   "article": "Wilderness Run",
+   "revid": 1347591543,
+   "status": "Open"
+  },
+  "cedar-point--woodstock-express": {
+   "article": "Woodstock Express (Cedar Point)",
+   "revid": 1313011775,
+   "status": "Open"
+  },
+  "celebration-city--ozark-wildcat": {
+   "article": "Ozark Wildcat",
+   "revid": 1358122696,
+   "status": "Removed"
+  },
+  "clementon-park-splash-world--hell-cat": {
+   "article": "Hellcat (roller coaster)",
+   "revid": 1374384386,
+   "angle": {
+    "v": 62,
+    "raw": "62"
+   },
+   "status": "Closed"
+  },
+  "clementon-park-splash-world--jack-rabbit": {
+   "article": "Jack Rabbit (Clementon Park)",
+   "revid": 1376052163,
+   "status": "Removed"
+  },
+  "cliff-s-amusement-park--new-mexico-rattler": {
+   "article": "New Mexico Rattler",
+   "revid": 1358277480,
+   "angle": {
+    "v": 52,
+    "raw": "52"
+   },
+   "status": "Operating"
+  },
+  "conneaut-lake-park--blue-streak": {
+   "article": "Blue Streak (Conneaut Lake)",
+   "revid": 1375401105,
+   "status": "Removed"
+  },
+  "darien-lake--hoot-n-holler": {
+   "article": "Hoot N Holler",
+   "revid": 1313010188,
+   "status": "Open"
+  },
+  "darien-lake--motocoaster": {
+   "article": "Moto Coaster (Six Flags Darien Lake)",
+   "revid": 1377569870,
+   "status": "Operating"
+  },
+  "darien-lake--predator": {
+   "article": "The Predator (roller coaster)",
+   "revid": 1377569840,
+   "status": "Operating"
+  },
+  "darien-lake--tantrum": {
+   "article": "Tantrum (roller coaster)",
+   "revid": 1377569897,
+   "angle": {
+    "v": 97,
+    "raw": "97"
+   },
+   "status": "Operating"
+  },
+  "darien-lake--viper": {
+   "article": "Viper (Six Flags Darien Lake)",
+   "revid": 1377569803,
+   "status": "Operating"
+  },
+  "disney-california-adventure--goofy-s-sky-school": {
+   "article": "Goofy's Sky School",
+   "revid": 1373401906,
+   "status": "Operating"
+  },
+  "disney-california-adventure--incrediocoaster": {
+   "article": "Incredicoaster",
+   "revid": 1353887003,
+   "status": "Operating"
+  },
+  "disney-s-animal-kingdom--expedition-everest": {
+   "article": "Expedition Everest",
+   "revid": 1377527711,
+   "status": "Operating"
+  },
+  "disney-s-animal-kingdom--primeval-whirl": {
+   "article": "Primeval Whirl",
+   "revid": 1369659292,
+   "status": "Removed"
+  },
+  "disney-s-hollywood-studios--rock-n-roller-coaster": {
+   "article": "Rock 'n' Roller Coaster",
+   "revid": 1375409101,
+   "status": "Operating"
+  },
+  "disney-s-hollywood-studios--slinky-dog-dash": {
+   "article": "Slinky Dog Dash",
+   "revid": 1369742958,
+   "status": "Operating"
+  },
+  "disney-s-magic-kingdom--seven-dwarfs-mine-train": {
+   "article": "Seven Dwarfs Mine Train",
+   "revid": 1370063613,
+   "status": "open"
+  },
+  "disney-s-magic-kingdom--the-barnstormer": {
+   "article": "The Barnstormer",
+   "revid": 1373039466,
+   "status": "Open"
+  },
+  "disneyland-park--space-mountain": {
+   "article": "Space Mountain (Disneyland)",
+   "revid": 1377504700,
+   "status": "Operating"
+  },
+  "dollywood--big-bear-mountain": {
+   "article": "Big Bear Mountain (roller coaster)",
+   "revid": 1377184016,
+   "status": "Operating"
+  },
+  "dollywood--dragonflier": {
+   "article": "Dragonflier",
+   "revid": 1340955948,
+   "status": "Operating"
+  },
+  "dollywood--firechaser-express": {
+   "article": "FireChaser Express",
+   "revid": 1377900843,
+   "status": "Operating"
+  },
+  "dollywood--lightning-rod": {
+   "article": "Lightning Rod (roller coaster)",
+   "revid": 1377563386,
+   "angle": {
+    "v": 73,
+    "raw": "73"
+   },
+   "status": "Operating"
+  },
+  "dollywood--mystery-mine": {
+   "article": "Mystery Mine",
+   "revid": 1368282678,
+   "angle": {
+    "v": 95,
+    "raw": "95"
+   },
+   "status": "Operating"
+  },
+  "dollywood--tennessee-tornado": {
+   "article": "Tennessee Tornado",
+   "revid": 1355209579,
+   "status": "Open"
+  },
+  "dollywood--thunderhead": {
+   "article": "Thunderhead (roller coaster)",
+   "revid": 1377184569,
+   "angle": {
+    "v": 60,
+    "raw": "60"
+   },
+   "status": "Operating"
+  },
+  "dollywood--wild-eagle": {
+   "article": "Wild Eagle",
+   "revid": 1373884234,
+   "status": "Operating"
+  },
+  "dorney-park-wildwater-kingdom--hercules": {
+   "article": "Hercules (roller coaster)",
+   "revid": 1368562323,
+   "angle": {
+    "v": 47,
+    "raw": "47"
+   },
+   "status": "Removed"
+  },
+  "dorney-park-wildwater-kingdom--hydra-the-revenge": {
+   "article": "Hydra the Revenge",
+   "revid": 1313012599,
+   "angle": {
+    "v": 68,
+    "raw": "68"
+   },
+   "status": "Operating"
+  },
+  "dorney-park-wildwater-kingdom--iron-menace": {
+   "article": "Iron Menace",
+   "revid": 1368089598,
+   "angle": {
+    "v": 95,
+    "raw": "95"
+   },
+   "status": "Operating"
+  },
+  "dorney-park-wildwater-kingdom--possessed": {
+   "article": "Possessed (roller coaster)",
+   "revid": 1377569490,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "dorney-park-wildwater-kingdom--steel-first": {
+   "article": "Steel First",
+   "revid": 1234718608,
+   "status": "Removed"
+  },
+  "dorney-park-wildwater-kingdom--steel-force": {
+   "article": "Steel Force",
+   "revid": 1367374592,
+   "angle": {
+    "v": 61,
+    "raw": "61"
+   },
+   "status": "Open"
+  },
+  "dorney-park-wildwater-kingdom--talon": {
+   "article": "Talon (roller coaster)",
+   "revid": 1377563868,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Operating"
+  },
+  "dorney-park-wildwater-kingdom--thunderhawk": {
+   "article": "Thunderhawk (Dorney Park)",
+   "revid": 1349572357,
+   "angle": {
+    "v": 45,
+    "raw": "45"
+   },
+   "status": "Operating"
+  },
+  "dutch-wonderland--kingdom-coaster": {
+   "article": "Kingdom Coaster",
+   "revid": 1376906215,
+   "status": "Operating"
+  },
+  "dutch-wonderland--merlin-s-mayhem": {
+   "article": "Merlin's Mayhem",
+   "revid": 1367549370,
+   "status": "Operating"
+  },
+  "elitch-gardens--sidewinder": {
+   "article": "Sidewinder (Elitch Gardens)",
+   "revid": 1337191539,
+   "angle": {
+    "v": 47,
+    "raw": "47"
+   },
+   "status": "Operating"
+  },
+  "elitch-gardens--twister-ii": {
+   "article": "Twister III: Storm Chaser",
+   "revid": 1360863961,
+   "angle": {
+    "v": 56,
+    "raw": "56"
+   },
+   "status": "Open"
+  },
+  "epcot--guardians-of-the-galaxy-cosmic-rewind": {
+   "article": "Guardians of the Galaxy: Cosmic Rewind",
+   "revid": 1377540749,
+   "status": "Operating"
+  },
+  "family-kingdom-amusement-park--swamp-fox": {
+   "article": "Swamp Fox (roller coaster)",
+   "revid": 1313009623,
+   "status": "Operating"
+  },
+  "frontier-city--silver-bullet": {
+   "article": "Silver Bullet (Frontier City)",
+   "revid": 1377569911,
+   "status": "Operating"
+  },
+  "frontier-city--steel-lasso": {
+   "article": "Steel Lasso",
+   "revid": 1377569902,
+   "status": "Operating"
+  },
+  "frontier-city--wild-kitty": {
+   "article": "Wild Kitty",
+   "revid": 1313013493,
+   "status": "Removed"
+  },
+  "frontier-city--wildcat": {
+   "article": "Wildcat (Frontier City)",
+   "revid": 1377569916,
+   "status": "Operating"
+  },
+  "fun-spot--afterburner": {
+   "article": "Afterburner (Fun Spot)",
+   "revid": 1374818227,
+   "status": "Removed"
+  },
+  "fun-spot-america-atlanta--arieforce-one": {
+   "article": "ArieForce One",
+   "revid": 1378062280,
+   "angle": {
+    "v": 83,
+    "raw": "83"
+   },
+   "status": "Closed"
+  },
+  "fun-spot-america-orlando--freedom-flyer": {
+   "article": "Freedom Flyer",
+   "revid": 1349132633,
+   "status": "Open"
+  },
+  "fun-spot-america-orlando--white-lightning": {
+   "article": "White Lightning (roller coaster)",
+   "revid": 1375609304,
+   "angle": {
+    "v": 58,
+    "raw": "58"
+   },
+   "status": "Operating"
+  },
+  "funtown-splashtown-usa--excalibur": {
+   "article": "Excalibur (Funtown Splashtown USA)",
+   "revid": 1362600951,
+   "status": "Open"
+  },
+  "geauga-lake-s-wildwater-kingdom--big-dipper": {
+   "article": "Big Dipper (Geauga Lake)",
+   "revid": 1373603919,
+   "status": "Removed"
+  },
+  "geauga-lake-s-wildwater-kingdom--double-loop": {
+   "article": "Double Loop (Geauga Lake)",
+   "revid": 1341920045,
+   "angle": {
+    "v": 45,
+    "raw": "45"
+   },
+   "status": "Removed"
+  },
+  "geauga-lake-s-wildwater-kingdom--the-villain": {
+   "article": "Villain (roller coaster)",
+   "revid": 1306077812,
+   "status": "Removed"
+  },
+  "glenwood-caverns-adventure-park--cliffhanger": {
+   "article": "Cliffhanger (Colorado roller coaster)",
+   "revid": 1349133398,
+   "status": "Operating"
+  },
+  "glenwood-caverns-adventure-park--defiance": {
+   "article": "Defiance (roller coaster)",
+   "revid": 1240773258,
+   "angle": {
+    "v": 102.3,
+    "raw": "102.3"
+   },
+   "status": "Operating"
+  },
+  "glenwood-caverns-adventure-park--wild-west-express": {
+   "article": "Wild West Express Coaster",
+   "revid": 1348328872,
+   "status": "Operating"
+  },
+  "hersheypark--candymonium": {
+   "article": "Candymonium",
+   "revid": 1376653692,
+   "angle": {
+    "v": 77.3,
+    "raw": "77.3"
+   },
+   "status": "operating"
+  },
+  "hersheypark--comet": {
+   "article": "Comet (Hersheypark)",
+   "revid": 1376265998,
+   "angle": {
+    "v": 47,
+    "raw": "47"
+   },
+   "status": "Open"
+  },
+  "hersheypark--fahrenheit": {
+   "article": "Fahrenheit (roller coaster)",
+   "revid": 1376653363,
+   "angle": {
+    "v": 97,
+    "raw": "97"
+   },
+   "status": "Operating"
+  },
+  "hersheypark--great-bear": {
+   "article": "Great Bear (roller coaster)",
+   "revid": 1334667324,
+   "status": "Operating"
+  },
+  "hersheypark--laff-trakk": {
+   "article": "Laff Trakk",
+   "revid": 1370849607,
+   "status": "Open"
+  },
+  "hersheypark--roller-soaker": {
+   "article": "Roller Soaker",
+   "revid": 1377133309,
+   "status": "Removed"
+  },
+  "hersheypark--skyrush": {
+   "article": "Skyrush",
+   "revid": 1376905642,
+   "angle": {
+    "v": 85,
+    "raw": "85"
+   },
+   "status": "Operating"
+  },
+  "hersheypark--sooperdooperlooper": {
+   "article": "SooperDooperLooper",
+   "revid": 1377247982,
+   "status": "Open"
+  },
+  "hersheypark--storm-runner": {
+   "article": "Storm Runner",
+   "revid": 1377562988,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "hersheypark--trailblazer": {
+   "article": "Trailblazer (roller coaster)",
+   "revid": 1378066114,
+   "status": "Operating"
+  },
+  "hersheypark--wild-mouse": {
+   "article": "Wild Mouse (Hersheypark)",
+   "revid": 1377802403,
+   "status": "Open"
+  },
+  "hersheypark--wildcat": {
+   "article": "Wild Cat (Hersheypark)",
+   "revid": 1372766118,
+   "status": "Removed"
+  },
+  "hersheypark--wildcat-s-revenge": {
+   "article": "Wildcat's Revenge",
+   "revid": 1375611219,
+   "angle": {
+    "v": 82,
+    "raw": "82"
+   },
+   "status": "Operating"
+  },
+  "holiday-world-splashin-safari--good-gravy": {
+   "article": "Good Gravy! (roller coaster)",
+   "revid": 1357784082,
+   "status": "Open"
+  },
+  "holiday-world-splashin-safari--howler": {
+   "article": "The Howler",
+   "revid": 1348098041,
+   "status": "Open"
+  },
+  "holiday-world-splashin-safari--raven": {
+   "article": "Raven (roller coaster)",
+   "revid": 1375608460,
+   "status": "Open"
+  },
+  "holiday-world-splashin-safari--the-legend": {
+   "article": "The Legend (roller coaster)",
+   "revid": 1375607061,
+   "status": "Open"
+  },
+  "holiday-world-splashin-safari--the-voyage": {
+   "article": "The Voyage (roller coaster)",
+   "revid": 1375277357,
+   "angle": {
+    "v": 66,
+    "raw": "66"
+   },
+   "status": "Operating"
+  },
+  "holiday-world-splashin-safari--thunderbird": {
+   "article": "Thunderbird (Holiday World)",
+   "revid": 1368562355,
+   "status": "Operating"
+  },
+  "idlewild-soak-zone--rollo-coaster": {
+   "article": "Rollo Coaster",
+   "revid": 1378068065,
+   "status": "Operating"
+  },
+  "idlewild-soak-zone--wild-mouse": {
+   "article": "Wild Mouse (Idlewild)",
+   "revid": 1377335333,
+   "status": "Operating"
+  },
+  "indiana-beach--all-american-triple-loop": {
+   "article": "All American Triple Loop",
+   "revid": 1342297275,
+   "status": "operating"
+  },
+  "indiana-beach--cornball-express": {
+   "article": "Cornball Express",
+   "revid": 1375609255,
+   "status": "Operating"
+  },
+  "indiana-beach--dragon-wagon": {
+   "article": "Dragon Wagon (Indiana Beach)",
+   "revid": 1313013521,
+   "status": "Removed"
+  },
+  "indiana-beach--hoosier-hurricane": {
+   "article": "Hoosier Hurricane",
+   "revid": 1362979272,
+   "status": "Operating"
+  },
+  "indiana-beach--lost-coaster-of-superstition-mountain": {
+   "article": "Lost Coaster of Superstition Mountain",
+   "revid": 1342289454,
+   "status": "Operating"
+  },
+  "indiana-beach--steel-hawg": {
+   "article": "Steel Hawg",
+   "revid": 1342292718,
+   "angle": {
+    "v": 111,
+    "raw": "111"
+   },
+   "status": "Operating"
+  },
+  "indiana-beach--tig-rr-coaster": {
+   "article": "Tig'rr Coaster",
+   "revid": 1348146961,
+   "status": "Operating"
+  },
+  "jolly-roger-amusement-park--wildcat": {
+   "article": "Wildcat (Jolly Roger Amusement Park)",
+   "revid": 1250348312,
+   "status": "Operating"
+  },
+  "kemah-boardwalk-amusements--boardwalk-bullet": {
+   "article": "Boardwalk Bullet",
+   "revid": 1376982673,
+   "angle": {
+    "v": 55,
+    "raw": "55"
+   },
+   "status": "Open"
+  },
+  "kennywood--exterminator": {
+   "article": "The Exterminator (roller coaster)",
+   "revid": 1361789687,
+   "status": "Open"
+  },
+  "kennywood--jack-rabbit": {
+   "article": "Jack Rabbit (Kennywood)",
+   "revid": 1375607448,
+   "angle": {
+    "v": 45,
+    "raw": "45"
+   },
+   "status": "Operating"
+  },
+  "kennywood--phantom-s-revenge": {
+   "article": "Phantom's Revenge",
+   "revid": 1375610645,
+   "angle": {
+    "v": 52,
+    "raw": "52"
+   },
+   "status": "Operating"
+  },
+  "kennywood--racer": {
+   "article": "Racer (Kennywood)",
+   "revid": 1375608947,
+   "status": "Operating"
+  },
+  "kennywood--sky-rocket": {
+   "article": "Sky Rocket",
+   "revid": 1363884365,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "kennywood--steel-curtain": {
+   "article": "Steel Curtain (roller coaster)",
+   "revid": 1369085243,
+   "status": "Operating"
+  },
+  "kennywood--thunderbolt": {
+   "article": "Thunderbolt (Kennywood)",
+   "revid": 1377563710,
+   "status": "Operating"
+  },
+  "kentucky-kingdom--kentucky-flyer": {
+   "article": "Kentucky Flyer",
+   "revid": 1340310368,
+   "angle": {
+    "v": 52,
+    "raw": "52"
+   },
+   "status": "Operating"
+  },
+  "kentucky-kingdom--lightning-run": {
+   "article": "Lightning Run",
+   "revid": 1368269783,
+   "angle": {
+    "v": 80,
+    "raw": "80"
+   },
+   "status": "Operating"
+  },
+  "kings-dominion--anaconda": {
+   "article": "Anaconda (Kings Dominion)",
+   "revid": 1327496864,
+   "status": "Removed"
+  },
+  "kings-dominion--dominator": {
+   "article": "Dominator (roller coaster)",
+   "revid": 1377569493,
+   "angle": {
+    "v": 57,
+    "raw": "57"
+   },
+   "status": "Operating"
+  },
+  "kings-dominion--grizzly": {
+   "article": "Grizzly (Kings Dominion)",
+   "revid": 1375607560,
+   "angle": {
+    "v": 55,
+    "raw": "55"
+   },
+   "status": "Operating"
+  },
+  "kings-dominion--hypersonic-xlc": {
+   "article": "Hypersonic XLC",
+   "revid": 1319235414,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Removed"
+  },
+  "kings-dominion--intimidator-305": {
+   "article": "Pantherian",
+   "revid": 1377569487,
+   "angle": {
+    "v": 85,
+    "raw": "85"
+   },
+   "status": "Operating"
+  },
+  "kings-dominion--rapterra": {
+   "article": "Rapterra",
+   "revid": 1377569932,
+   "status": "Operating"
+  },
+  "kings-dominion--shockwave": {
+   "article": "Shockwave (Kings Dominion)",
+   "revid": 1319118361,
+   "angle": {
+    "v": 52,
+    "raw": "52"
+   },
+   "status": "Removed"
+  },
+  "kings-dominion--tumbili": {
+   "article": "Tumbili",
+   "revid": 1377569826,
+   "status": "Operating"
+  },
+  "kings-dominion--twisted-timbers": {
+   "article": "Twisted Timbers",
+   "revid": 1377569677,
+   "status": "Operating"
+  },
+  "kings-dominion--volcano-the-blast-coaster": {
+   "article": "Volcano: The Blast Coaster",
+   "revid": 1376813592,
+   "status": "Removed"
+  },
+  "kings-dominion--woodstock-express": {
+   "article": "Woodstock Express (Kings Dominion)",
+   "revid": 1364770909,
+   "status": "Operating"
+  },
+  "kings-island--adventure-express": {
+   "article": "Adventure Express",
+   "revid": 1377569634,
+   "status": "Operating"
+  },
+  "kings-island--banshee": {
+   "article": "Banshee (roller coaster)",
+   "revid": 1377569527,
+   "status": "Operating"
+  },
+  "kings-island--diamondback": {
+   "article": "Diamondback (Kings Island)",
+   "revid": 1377569538,
+   "angle": {
+    "v": 74,
+    "raw": "74"
+   },
+   "status": "Operating"
+  },
+  "kings-island--firehawk": {
+   "article": "Firehawk (roller coaster)",
+   "revid": 1368282665,
+   "angle": {
+    "v": 33,
+    "raw": "33"
+   },
+   "status": "Removed"
+  },
+  "kings-island--flight-of-fear": {
+   "article": "Flight of Fear",
+   "revid": 1377907116,
+   "status": "Operating"
+  },
+  "kings-island--king-cobra": {
+   "article": "King Cobra (roller coaster)",
+   "revid": 1377495220,
+   "angle": {
+    "v": 53,
+    "raw": "53"
+   },
+   "status": "Removed"
+  },
+  "kings-island--mystic-timbers": {
+   "article": "Mystic Timbers",
+   "revid": 1377569580,
+   "status": "Operating"
+  },
+  "kings-island--orion": {
+   "article": "Orion (roller coaster)",
+   "revid": 1377569653,
+   "angle": {
+    "v": 85,
+    "raw": "85"
+   },
+   "status": "Operating"
+  },
+  "kings-island--scooby-s-ghoster-coaster": {
+   "article": "Scooby's Ghoster Coaster",
+   "revid": 1377495721,
+   "status": "Removed"
+  },
+  "kings-island--son-of-beast": {
+   "article": "Son of Beast",
+   "revid": 1377225798,
+   "angle": {
+    "v": 55.7,
+    "raw": "55.7"
+   },
+   "status": "Removed"
+  },
+  "kings-island--the-beast": {
+   "article": "The Beast (roller coaster)",
+   "revid": 1377660895,
+   "angle": {
+    "v": 53,
+    "raw": "53"
+   },
+   "status": "Operating"
+  },
+  "kings-island--vortex": {
+   "article": "Vortex (Kings Island)",
+   "revid": 1334946764,
+   "angle": {
+    "v": 55,
+    "raw": "55"
+   },
+   "status": "Removed"
+  },
+  "kings-island--woodstock-express": {
+   "article": "Woodstock Express (Kings Island)",
+   "revid": 1278816366,
+   "status": "Operating"
+  },
+  "knoebels-amusement-park--black-diamond": {
+   "article": "Black Diamond (roller coaster)",
+   "revid": 1342072592,
+   "status": "Operating"
+  },
+  "knoebels-amusement-park--flying-turns": {
+   "article": "Flying Turns (Knoebels)",
+   "revid": 1375608399,
+   "status": "Operating"
+  },
+  "knoebels-amusement-park--high-speed-thrill-coaster": {
+   "article": "High Speed Thrill Coaster",
+   "revid": 1325722672,
+   "status": "Removed"
+  },
+  "knoebels-amusement-park--impulse": {
+   "article": "Impulse (roller coaster)",
+   "revid": 1308348391,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "knoebels-amusement-park--phoenix": {
+   "article": "Phoenix (roller coaster)",
+   "revid": 1375558733,
+   "status": "Operating"
+  },
+  "knoebels-amusement-park--twister": {
+   "article": "Twister (Knoebels Amusement Resort)",
+   "revid": 1375614505,
+   "status": "Open"
+  },
+  "knott-s-berry-farm--coast-rider": {
+   "article": "Coast Rider",
+   "revid": 1377569743,
+   "status": "Operating"
+  },
+  "knott-s-berry-farm--ghostrider": {
+   "article": "GhostRider (roller coaster)",
+   "revid": 1377569552,
+   "angle": {
+    "v": 51,
+    "raw": "51"
+   },
+   "status": "Operating"
+  },
+  "knott-s-berry-farm--hang-time": {
+   "article": "HangTime (roller coaster)",
+   "revid": 1377569766,
+   "angle": {
+    "v": 96,
+    "raw": "96"
+   },
+   "status": "Operating"
+  },
+  "knott-s-berry-farm--jaguar": {
+   "article": "Jaguar!",
+   "revid": 1377569730,
+   "angle": {
+    "v": 25,
+    "raw": "25"
+   },
+   "status": "Operating"
+  },
+  "knott-s-berry-farm--pony-express": {
+   "article": "Pony Express (roller coaster)",
+   "revid": 1377569734,
+   "status": "Open"
+  },
+  "knott-s-berry-farm--sierra-sidewinder": {
+   "article": "Sierra Sidewinder",
+   "revid": 1377569786,
+   "status": "Open"
+  },
+  "knott-s-berry-farm--silver-bullet": {
+   "article": "Silver Bullet (Knott's Berry Farm)",
+   "revid": 1377569716,
+   "angle": {
+    "v": 40,
+    "raw": "40"
+   },
+   "status": "Open"
+  },
+  "knott-s-berry-farm--xcelerator": {
+   "article": "Xcelerator",
+   "revid": 1374555014,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "lagoon--bat": {
+   "article": "Bat (Lagoon)",
+   "revid": 1217052707,
+   "status": "Operating"
+  },
+  "lagoon--bombora": {
+   "article": "BomBora (Lagoon)",
+   "revid": 1302704745,
+   "status": "Operating"
+  },
+  "lagoon--cannibal": {
+   "article": "Cannibal (roller coaster)",
+   "revid": 1370117543,
+   "angle": {
+    "v": 116,
+    "raw": "116"
+   },
+   "status": "Operating"
+  },
+  "lagoon--colossus-the-fire-dragon": {
+   "article": "Colossus the Fire Dragon",
+   "revid": 1371922120,
+   "angle": {
+    "v": 60,
+    "raw": "60"
+   },
+   "status": "Open"
+  },
+  "lagoon--jet-star-2": {
+   "article": "Jet Star 2 (Lagoon)",
+   "revid": 1338964023,
+   "status": "Removed"
+  },
+  "lagoon--primordial": {
+   "article": "Primordial (roller coaster)",
+   "revid": 1313014136,
+   "status": "Operating"
+  },
+  "lagoon--roller-coaster": {
+   "article": "Roller Coaster (Lagoon)",
+   "revid": 1373807185,
+   "status": "Operating"
+  },
+  "lagoon--the-spider": {
+   "article": "Spider (roller coaster)",
+   "revid": 1344311843,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Open"
+  },
+  "lagoon--wicked": {
+   "article": "Wicked (roller coaster)",
+   "revid": 1325729382,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "lagoon--wild-mouse": {
+   "article": "Wild Mouse (Lagoon)",
+   "revid": 1325729424,
+   "angle": {
+    "v": 46,
+    "raw": "46"
+   },
+   "status": "Operating"
+  },
+  "lake-compounce--boulder-dash": {
+   "article": "Boulder Dash (roller coaster)",
+   "revid": 1375606664,
+   "angle": {
+    "v": 59,
+    "raw": "59"
+   },
+   "status": "Operating"
+  },
+  "lake-compounce--wildcat": {
+   "article": "Wildcat (Lake Compounce)",
+   "revid": 1373363965,
+   "status": "Operating"
+  },
+  "lake-compounce--zoomerang": {
+   "article": "Zoomerang (Lake Compounce)",
+   "revid": 1315147861,
+   "status": "Open"
+  },
+  "lake-winnepesaukah--cannon-ball": {
+   "article": "Cannon Ball (roller coaster)",
+   "revid": 1377956320,
+   "angle": {
+    "v": 45,
+    "raw": "45"
+   },
+   "status": "Operating"
+  },
+  "lakemont-park--leap-the-dips": {
+   "article": "Leap-The-Dips",
+   "revid": 1378062343,
+   "angle": {
+    "v": 25,
+    "raw": "25"
+   },
+   "status": "Closed"
+  },
+  "lakemont-park--skyliner": {
+   "article": "Skyliner (roller coaster)",
+   "revid": 1375402043,
+   "angle": {
+    "v": 52,
+    "raw": "52"
+   },
+   "status": "SBNO"
+  },
+  "lakemont-park--toboggan": {
+   "article": "Toboggan (Lakemont Park)",
+   "revid": 1377134967,
+   "status": "Removed"
+  },
+  "lakeside-amusement-park--cyclone": {
+   "article": "Cyclone (Lakeside Amusement Park)",
+   "revid": 1375432826,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Standing but not operating (SBNO)"
+  },
+  "lost-island-theme-park--fire-runner": {
+   "article": "Fire Runner (roller coaster)",
+   "revid": 1370200282,
+   "status": "Operating"
+  },
+  "lost-island-theme-park--matugani": {
+   "article": "Matugani",
+   "revid": 1341136181,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Open"
+  },
+  "luna-park--cyclone": {
+   "article": "Coney Island Cyclone",
+   "revid": 1376266600,
+   "angle": {
+    "v": 58.1,
+    "raw": "58.1"
+   },
+   "status": "Operating"
+  },
+  "luna-park--soarin-eagle": {
+   "article": "Soarin' Eagle",
+   "revid": 1364860471,
+   "angle": {
+    "v": 31,
+    "raw": "31"
+   },
+   "status": "Operating"
+  },
+  "luna-park--thunderbolt": {
+   "article": "Thunderbolt (2014 roller coaster)",
+   "revid": 1376906430,
+   "status": "Open"
+  },
+  "magic-springs-crystal-falls--arkansas-twister": {
+   "article": "Arkansas Twister",
+   "revid": 1342535303,
+   "angle": {
+    "v": 45,
+    "raw": "45"
+   }
+  },
+  "magic-springs-crystal-falls--gauntlet": {
+   "article": "The Gauntlet (roller coaster)",
+   "revid": 1365695780,
+   "status": "Operating"
+  },
+  "magic-springs-crystal-falls--x-coaster": {
+   "article": "X-Coaster",
+   "revid": 1359062219,
+   "status": "Operating"
+  },
+  "memphis-kiddie-park--little-dipper": {
+   "article": "Little Dipper (Memphis Kiddie Park)",
+   "revid": 1346930962,
+   "status": "Open"
+  },
+  "mgm-grand-adventures--lightning-bolt": {
+   "article": "Lightning Bolt (roller coaster)",
+   "revid": 1348092899,
+   "status": "Removed"
+  },
+  "michigan-s-adventure--corkscrew": {
+   "article": "Corkscrew (Michigan's Adventure)",
+   "revid": 1367718452,
+   "angle": {
+    "v": 42,
+    "raw": "42"
+   },
+   "status": "Open"
+  },
+  "michigan-s-adventure--mad-mouse": {
+   "article": "Mad Mouse (Michigan's Adventure)",
+   "revid": 1377569906,
+   "status": "Open"
+  },
+  "michigan-s-adventure--shivering-timbers": {
+   "article": "Shivering Timbers",
+   "revid": 1375607521,
+   "angle": {
+    "v": 53.3,
+    "raw": "53.3"
+   },
+   "status": "Operating"
+  },
+  "michigan-s-adventure--thunderhawk": {
+   "article": "Thunderhawk (Michigan's Adventure)",
+   "revid": 1377569757,
+   "status": "Operating"
+  },
+  "michigan-s-adventure--wolverine-wildcat": {
+   "article": "Wolverine Wildcat",
+   "revid": 1373031640,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Open"
+  },
+  "michigan-s-adventure--woodstock-express": {
+   "article": "Woodstock Express (Michigan's Adventure)",
+   "revid": 1358476320,
+   "status": "Open"
+  },
+  "michigan-s-adventure--zach-s-zoomer": {
+   "article": "Zach's Zoomer",
+   "revid": 1378022515,
+   "angle": {
+    "v": 40,
+    "raw": "40"
+   },
+   "status": "Open"
+  },
+  "mt-olympus-water-theme-park--cyclops": {
+   "article": "Cyclops (roller coaster)",
+   "revid": 1372776499,
+   "angle": {
+    "v": 52,
+    "raw": "52"
+   },
+   "status": "Open"
+  },
+  "mt-olympus-water-theme-park--hades-360": {
+   "article": "Hades 360",
+   "revid": 1375609211,
+   "angle": {
+    "v": 65,
+    "raw": "65"
+   },
+   "status": "Operating"
+  },
+  "mt-olympus-water-theme-park--pegasus": {
+   "article": "Pegasus (Mt. Olympus Water & Theme Park Resort)",
+   "revid": 1372775221,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Open"
+  },
+  "mt-olympus-water-theme-park--zeus": {
+   "article": "Zeus (roller coaster)",
+   "revid": 1372775967,
+   "status": "Open"
+  },
+  "myrtle-beach-pavilion-park--mad-mouse": {
+   "article": "Mad Mouse (Pavilion)",
+   "revid": 1346473468,
+   "status": "Removed"
+  },
+  "niagara-amusement-park-splash-world--silver-comet": {
+   "article": "Silver Comet (roller coaster)",
+   "revid": 1377763207,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Closed"
+  },
+  "nickelodeon-universe--fairly-odd-coaster": {
+   "article": "Fairly Odd Coaster",
+   "revid": 1345157909,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Operating"
+  },
+  "nickelodeon-universe--orange-streak": {
+   "article": "Pepsi Orange Streak",
+   "revid": 1313010855,
+   "status": "Open"
+  },
+  "nickelodeon-universe--sponge-bob-squarepants-rock-bottom-plunge": {
+   "article": "SpongeBob SquarePants Rock Bottom Plunge",
+   "revid": 1361647840,
+   "angle": {
+    "v": 97,
+    "raw": "97"
+   },
+   "status": "Operating"
+  },
+  "nickelodeon-universe-american-dream--nickelodeon-slime-streak": {
+   "article": "Nickelodeon Slime Streak",
+   "revid": 1371139291,
+   "status": "Operating"
+  },
+  "nickelodeon-universe-american-dream--sandy-s-blasting-bronco": {
+   "article": "Sandy's Blasting Bronco",
+   "revid": 1297763921,
+   "status": "Operating"
+  },
+  "nickelodeon-universe-american-dream--tmnt-shellraiser": {
+   "article": "TMNT Shellraiser",
+   "revid": 1377712336,
+   "angle": {
+    "v": 121.5,
+    "raw": "121.5"
+   },
+   "status": "Open"
+  },
+  "oaks-park--adrenaline-peak": {
+   "article": "Adrenaline Peak",
+   "revid": 1376059304,
+   "angle": {
+    "v": 97,
+    "raw": "97"
+   },
+   "status": "Operating"
+  },
+  "pacific-park--west-coaster": {
+   "article": "Santa Monica West Coaster",
+   "revid": 1315353988,
+   "status": "Operating"
+  },
+  "playland-rye--dragon": {
+   "article": "Dragon Coaster (Playland)",
+   "revid": 1373997038,
+   "status": "Open"
+  },
+  "quassy-amusement-park--wooden-warrior": {
+   "article": "Wooden Warrior",
+   "revid": 1376909338,
+   "angle": {
+    "v": 48.5,
+    "raw": "48.5"
+   },
+   "status": "Open"
+  },
+  "santa-cruz-beach-boardwalk--giant-dipper": {
+   "article": "Giant Dipper (Santa Cruz Beach Boardwalk)",
+   "revid": 1375609413,
+   "status": "Open"
+  },
+  "santa-cruz-beach-boardwalk--undertow": {
+   "article": "Undertow (roller coaster)",
+   "revid": 1308552210,
+   "status": "Operating"
+  },
+  "seabreeze-amusement-park--bobsleds": {
+   "article": "Bobsleds",
+   "revid": 1376907900,
+   "status": "Open"
+  },
+  "seabreeze-amusement-park--jack-rabbit": {
+   "article": "Jack Rabbit (Seabreeze)",
+   "revid": 1376907670,
+   "angle": {
+    "v": 52,
+    "raw": "52"
+   },
+   "status": "Operating"
+  },
+  "seabreeze-amusement-park--whirlwind": {
+   "article": "Whirlwind (Seabreeze)",
+   "revid": 1356247357,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Open"
+  },
+  "seaworld-orlando--ice-breaker": {
+   "article": "Ice Breaker (roller coaster)",
+   "revid": 1364008996,
+   "angle": {
+    "v": 100,
+    "raw": "100"
+   },
+   "status": "Operating"
+  },
+  "seaworld-orlando--kraken": {
+   "article": "Kraken (roller coaster)",
+   "revid": 1378009582,
+   "status": "Operating"
+  },
+  "seaworld-orlando--mako": {
+   "article": "Mako (roller coaster)",
+   "revid": 1375611369,
+   "status": "Operating"
+  },
+  "seaworld-orlando--manta": {
+   "article": "Manta (SeaWorld Orlando)",
+   "revid": 1365788581,
+   "status": "Operating"
+  },
+  "seaworld-orlando--pipeline-the-surf-coaster": {
+   "article": "Pipeline: The Surf Coaster",
+   "revid": 1363988754,
+   "status": "Operating"
+  },
+  "seaworld-san-antonio--great-white": {
+   "article": "The Great White (SeaWorld San Antonio)",
+   "revid": 1371338615,
+   "status": "Operating"
+  },
+  "seaworld-san-antonio--steel-eel": {
+   "article": "Steel Eel",
+   "revid": 1368282670,
+   "angle": {
+    "v": 60,
+    "raw": "60"
+   },
+   "status": "Operating"
+  },
+  "seaworld-san-antonio--texas-stingray": {
+   "article": "Texas Stingray",
+   "revid": 1375607738,
+   "status": "Operating"
+  },
+  "seaworld-san-antonio--wave-breaker-the-rescue-coaster": {
+   "article": "Wave Breaker: The Rescue Coaster",
+   "revid": 1368282695,
+   "status": "Operating"
+  },
+  "seaworld-san-diego--arctic-rescue": {
+   "article": "Arctic Rescue",
+   "revid": 1377899153,
+   "status": "Operating"
+  },
+  "seaworld-san-diego--electric-eel": {
+   "article": "Electric Eel (roller coaster)",
+   "revid": 1370836082,
+   "status": "Open"
+  },
+  "seaworld-san-diego--emperor": {
+   "article": "Emperor (roller coaster)",
+   "revid": 1369147139,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "seaworld-san-diego--manta": {
+   "article": "Manta (SeaWorld San Diego)",
+   "revid": 1346149058,
+   "status": "Operating"
+  },
+  "silver-dollar-city--grand-exposition-coaster": {
+   "article": "Grand Exposition Coaster",
+   "revid": 1348427581,
+   "status": "Operating"
+  },
+  "silver-dollar-city--outlaw-run": {
+   "article": "Outlaw Run",
+   "revid": 1375606575,
+   "angle": {
+    "v": 81,
+    "raw": "81"
+   },
+   "status": "Operating"
+  },
+  "silver-dollar-city--powder-keg": {
+   "article": "Powder Keg: A Blast into the Wilderness",
+   "revid": 1370160639,
+   "angle": {
+    "v": 76,
+    "raw": "76"
+   },
+   "status": "Operating"
+  },
+  "silver-dollar-city--thunderation": {
+   "article": "Thunderation",
+   "revid": 1362956539,
+   "status": "Operating"
+  },
+  "silver-dollar-city--time-traveler": {
+   "article": "Time Traveler (roller coaster)",
+   "revid": 1375612291,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "silver-dollar-city--wildfire": {
+   "article": "Wildfire (Silver Dollar City)",
+   "revid": 1316010937,
+   "status": "Operating"
+  },
+  "silverwood-theme-park--stunt-pilot": {
+   "article": "Stunt Pilot (roller coaster)",
+   "revid": 1313013988,
+   "angle": {
+    "v": 87,
+    "raw": "87"
+   },
+   "status": "Operating"
+  },
+  "silverwood-theme-park--timber-terror": {
+   "article": "Timber Terror",
+   "revid": 1358396828,
+   "status": "Open"
+  },
+  "silverwood-theme-park--tremors": {
+   "article": "Tremors (roller coaster)",
+   "revid": 1364896363,
+   "status": "Operating"
+  },
+  "six-flags-america--batwing": {
+   "article": "Batwing (roller coaster)",
+   "revid": 1370510497,
+   "angle": {
+    "v": 33,
+    "raw": "33"
+   },
+   "status": "Closed"
+  },
+  "six-flags-america--firebird": {
+   "article": "Firebird (roller coaster)",
+   "revid": 1335860560,
+   "status": "Closed"
+  },
+  "six-flags-america--joker-s-jinx": {
+   "article": "The Joker's Jinx",
+   "revid": 1347950842,
+   "status": "Closed"
+  },
+  "six-flags-america--roar": {
+   "article": "Roar (roller coaster)",
+   "revid": 1342292475,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Closed"
+  },
+  "six-flags-america--wild-one": {
+   "article": "The Wild One (roller coaster)",
+   "revid": 1365157073,
+   "status": "Standing But Not Operating"
+  },
+  "six-flags-astroworld--batman-the-escape": {
+   "article": "Batman The Escape",
+   "revid": 1368282701,
+   "status": "Removed"
+  },
+  "six-flags-astroworld--serpent": {
+   "article": "Serpent (roller coaster)",
+   "revid": 1319119163,
+   "status": "Removed"
+  },
+  "six-flags-astroworld--texas-cyclone": {
+   "article": "Texas Cyclone",
+   "revid": 1319119645,
+   "angle": {
+    "v": 53,
+    "raw": "53"
+   },
+   "status": "Removed"
+  },
+  "six-flags-astroworld--ultra-twister": {
+   "article": "Ultra Twister (Six Flags)",
+   "revid": 1329177306,
+   "angle": {
+    "v": 85,
+    "raw": "85"
+   },
+   "status": "Removed"
+  },
+  "six-flags-astroworld--viper": {
+   "article": "Viper (Six Flags AstroWorld)",
+   "revid": 1371663930,
+   "status": "Removed"
+  },
+  "six-flags-astroworld--xlr-8": {
+   "article": "XLR-8",
+   "revid": 1377678153,
+   "status": "Removed"
+  },
+  "six-flags-discovery-kingdom--joker": {
+   "article": "The Joker (Six Flags Discovery Kingdom)",
+   "revid": 1336557468,
+   "angle": {
+    "v": 78,
+    "raw": "78"
+   },
+   "status": "Operating"
+  },
+  "six-flags-discovery-kingdom--kong": {
+   "article": "Kong (roller coaster)",
+   "revid": 1367359818,
+   "angle": {
+    "v": 71,
+    "raw": "71"
+   },
+   "status": "Open"
+  },
+  "six-flags-discovery-kingdom--medusa": {
+   "article": "Medusa (Six Flags Discovery Kingdom)",
+   "revid": 1330154722,
+   "status": "Open"
+  },
+  "six-flags-discovery-kingdom--superman-ultimate-flight": {
+   "article": "Superman: Ultimate Flight (Six Flags Discovery Kingdom)",
+   "revid": 1321495079,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "six-flags-fiesta-texas--dr-diabolicals-cliffhanger": {
+   "article": "Dr. Diabolical's Cliffhanger",
+   "revid": 1341583482,
+   "angle": {
+    "v": 95,
+    "raw": "95"
+   },
+   "status": "Operating"
+  },
+  "six-flags-fiesta-texas--iron-rattler": {
+   "article": "Iron Rattler",
+   "revid": 1376498674,
+   "angle": {
+    "v": 81,
+    "raw": "81"
+   },
+   "status": "Operating"
+  },
+  "six-flags-fiesta-texas--poltergeist": {
+   "article": "Poltergeist (roller coaster)",
+   "revid": 1323614918,
+   "status": "Operating"
+  },
+  "six-flags-fiesta-texas--road-runner-express": {
+   "article": "Road Runner Express (Six Flags Fiesta Texas)",
+   "revid": 1376866906,
+   "angle": {
+    "v": 27,
+    "raw": "27"
+   },
+   "status": "Operating"
+  },
+  "six-flags-fiesta-texas--superman-krypton-coaster": {
+   "article": "Superman: Krypton Coaster",
+   "revid": 1321493753,
+   "angle": {
+    "v": 58,
+    "raw": "58{{Citation needed|date=November 2021}}"
+   },
+   "status": "Operating"
+  },
+  "six-flags-fiesta-texas--wonder-woman-golden-lasso": {
+   "article": "Wonder Woman Golden Lasso Coaster",
+   "revid": 1366550195,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Open"
+  },
+  "six-flags-great-adventure--el-toro": {
+   "article": "El Toro (Six Flags Great Adventure)",
+   "revid": 1375606275,
+   "angle": {
+    "v": 76,
+    "raw": "76"
+   },
+   "status": "Open"
+  },
+  "six-flags-great-adventure--great-american-scream-machine": {
+   "article": "Great American Scream Machine (Six Flags Great Adventure)",
+   "revid": 1376335694,
+   "status": "Removed"
+  },
+  "six-flags-great-adventure--green-lantern": {
+   "article": "Green Lantern (Six Flags Great Adventure)",
+   "revid": 1375804265,
+   "angle": {
+    "v": 45,
+    "raw": "45"
+   },
+   "status": "Removed"
+  },
+  "six-flags-great-adventure--harley-quinn-crazy-train": {
+   "article": "Harley Quinn Crazy Train",
+   "revid": 1378066546,
+   "status": "Open"
+  },
+  "six-flags-great-adventure--jersey-devil-coaster": {
+   "article": "Jersey Devil Coaster",
+   "revid": 1331353800,
+   "angle": {
+    "v": 87,
+    "raw": "87"
+   },
+   "status": "Operating"
+  },
+  "six-flags-great-adventure--kingda-ka": {
+   "article": "Kingda Ka",
+   "revid": 1377114922,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Removed"
+  },
+  "six-flags-great-adventure--nitro": {
+   "article": "Nitro (Six Flags Great Adventure)",
+   "revid": 1375612138,
+   "angle": {
+    "v": 68,
+    "raw": "68"
+   },
+   "status": "Operating"
+  },
+  "six-flags-great-adventure--skull-mountain": {
+   "article": "Skull Mountain",
+   "revid": 1362238351,
+   "status": "Operating"
+  },
+  "six-flags-great-adventure--the-dark-knight": {
+   "article": "The Dark Knight Coaster",
+   "revid": 1362609048,
+   "status": "Operating"
+  },
+  "six-flags-great-adventure--the-flash-vertical-velocity": {
+   "article": "The Flash: Vertical Velocity (Six Flags Great Adventure)",
+   "revid": 1377235794,
+   "status": "Operating"
+  },
+  "six-flags-great-adventure--viper": {
+   "article": "Viper (Six Flags Great Adventure)",
+   "revid": 1371341253,
+   "status": "Removed"
+  },
+  "six-flags-great-america--goliath": {
+   "article": "Goliath (Six Flags Great America)",
+   "revid": 1377569604,
+   "angle": {
+    "v": 85,
+    "raw": "85"
+   },
+   "status": "Operating"
+  },
+  "six-flags-great-america--little-dipper": {
+   "article": "Little Dipper (Six Flags Great America)",
+   "revid": 1339509390,
+   "status": "Operating"
+  },
+  "six-flags-great-america--maxx-force": {
+   "article": "Maxx Force",
+   "revid": 1372975622,
+   "status": "Operating"
+  },
+  "six-flags-great-america--raging-bull": {
+   "article": "Raging Bull (roller coaster)",
+   "revid": 1377569661,
+   "angle": {
+    "v": 65,
+    "raw": "65"
+   },
+   "status": "Operating"
+  },
+  "six-flags-great-america--shockwave": {
+   "article": "Shockwave (Six Flags Great America)",
+   "revid": 1375312357,
+   "status": "Removed"
+  },
+  "six-flags-great-america--viper": {
+   "article": "Viper (Six Flags Great America)",
+   "revid": 1377569675,
+   "angle": {
+    "v": 53,
+    "raw": "53"
+   },
+   "status": "Open"
+  },
+  "six-flags-great-america--whizzer": {
+   "article": "Whizzer (roller coaster)",
+   "revid": 1377569564,
+   "status": "Operating"
+  },
+  "six-flags-great-america--wrath-of-rakshasa": {
+   "article": "Wrath of Rakshasa",
+   "revid": 1368626396,
+   "angle": {
+    "v": 96,
+    "raw": "96"
+   },
+   "status": "Operating"
+  },
+  "six-flags-great-america--x-flight": {
+   "article": "X-Flight",
+   "revid": 1377569578,
+   "status": "Operating"
+  },
+  "six-flags-magic-mountain--apocalypse": {
+   "article": "Apocalypse: The Ride",
+   "revid": 1366858697,
+   "status": "Operating"
+  },
+  "six-flags-magic-mountain--flashback": {
+   "article": "Flashback (Six Flags Magic Mountain)",
+   "revid": 1365135046,
+   "angle": {
+    "v": 89,
+    "raw": "89"
+   },
+   "status": "Removed"
+  },
+  "six-flags-magic-mountain--full-throttle": {
+   "article": "Full Throttle (roller coaster)",
+   "revid": 1365858801,
+   "status": "Operating"
+  },
+  "six-flags-magic-mountain--goldrusher": {
+   "article": "Gold Rusher",
+   "revid": 1347264297,
+   "status": "Operating"
+  },
+  "six-flags-magic-mountain--goliath": {
+   "article": "Goliath (Six Flags Magic Mountain)",
+   "revid": 1362378084,
+   "angle": {
+    "v": 61,
+    "raw": "61"
+   },
+   "status": "Operating"
+  },
+  "six-flags-magic-mountain--green-lantern-first-flight": {
+   "article": "Green Lantern: First Flight (roller coaster)",
+   "revid": 1339633765,
+   "status": "Removed"
+  },
+  "six-flags-magic-mountain--magic-flyer": {
+   "article": "Magic Flyer",
+   "revid": 1369250271,
+   "angle": {
+    "v": 1,
+    "raw": "1"
+   },
+   "status": "Removed"
+  },
+  "six-flags-magic-mountain--ninja": {
+   "article": "Ninja (Six Flags Magic Mountain)",
+   "revid": 1345295663,
+   "angle": {
+    "v": 36,
+    "raw": "36"
+   },
+   "status": "Operating"
+  },
+  "six-flags-magic-mountain--psyclone": {
+   "article": "Psyclone (roller coaster)",
+   "revid": 1341800163,
+   "angle": {
+    "v": 53,
+    "raw": "53"
+   },
+   "status": "Removed"
+  },
+  "six-flags-magic-mountain--road-runner-express": {
+   "article": "Road Runner Express (Six Flags Magic Mountain)",
+   "revid": 1313151480,
+   "status": "Operating"
+  },
+  "six-flags-magic-mountain--scream": {
+   "article": "Scream (roller coaster)",
+   "revid": 1321495798,
+   "status": "Operating"
+  },
+  "six-flags-magic-mountain--superman-escape-from-krypton": {
+   "article": "Superman: Escape from Krypton",
+   "revid": 1377837879,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Closed"
+  },
+  "six-flags-magic-mountain--tatsu": {
+   "article": "Tatsu",
+   "revid": 1376012192,
+   "status": "Operating"
+  },
+  "six-flags-magic-mountain--the-riddler-s-revenge": {
+   "article": "The Riddler's Revenge",
+   "revid": 1321495734,
+   "status": "Operating"
+  },
+  "six-flags-magic-mountain--twisted-colossus": {
+   "article": "Twisted Colossus",
+   "revid": 1375613273,
+   "angle": {
+    "v": 80,
+    "raw": "80"
+   },
+   "status": "Operating"
+  },
+  "six-flags-magic-mountain--viper": {
+   "article": "Viper (Six Flags Magic Mountain)",
+   "revid": 1365905572,
+   "status": "Operating"
+  },
+  "six-flags-magic-mountain--west-coast-racers": {
+   "article": "West Coast Racers",
+   "revid": 1359311466,
+   "status": "Operating"
+  },
+  "six-flags-magic-mountain--wonder-woman-flight-of-courage": {
+   "article": "Wonder Woman Flight of Courage",
+   "revid": 1321496031,
+   "angle": {
+    "v": 87,
+    "raw": "87"
+   },
+   "status": "Operating"
+  },
+  "six-flags-magic-mountain--x2": {
+   "article": "X2 (roller coaster)",
+   "revid": 1378089273,
+   "angle": {
+    "v": 88.5,
+    "raw": "88.5"
+   },
+   "status": "Closed"
+  },
+  "six-flags-new-england--flashback": {
+   "article": "Flashback (Six Flags New England)",
+   "revid": 1373766534,
+   "status": "Operating"
+  },
+  "six-flags-new-england--goliath": {
+   "article": "Goliath (Six Flags New England)",
+   "revid": 1359310416,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Removed"
+  },
+  "six-flags-new-england--gotham-city-gauntlet-escape": {
+   "article": "Gotham City Gauntlet: Escape from Arkham Asylum",
+   "revid": 1327043486,
+   "angle": {
+    "v": 46,
+    "raw": "46"
+   },
+   "status": "Operating"
+  },
+  "six-flags-new-england--quantum-accelerator": {
+   "article": "Quantum Accelerator (roller coaster)",
+   "revid": 1373299555,
+   "status": "Operating"
+  },
+  "six-flags-new-england--superman-the-ride": {
+   "article": "Superman The Ride",
+   "revid": 1375610688,
+   "angle": {
+    "v": 72,
+    "raw": "72"
+   },
+   "status": "Operating"
+  },
+  "six-flags-new-england--thunderbolt": {
+   "article": "Thunderbolt (Six Flags New England)",
+   "revid": 1360882251,
+   "status": "Open"
+  },
+  "six-flags-new-england--wicked-cyclone": {
+   "article": "Wicked Cyclone",
+   "revid": 1350916760,
+   "angle": {
+    "v": 78,
+    "raw": "78"
+   },
+   "status": "Operating"
+  },
+  "six-flags-over-georgia--dahlonega-mine-train": {
+   "article": "Dahlonega Mine Train",
+   "revid": 1377569780,
+   "angle": {
+    "v": 45,
+    "raw": "45"
+   },
+   "status": "Operating"
+  },
+  "six-flags-over-georgia--dare-devil-dive": {
+   "article": "Dare Devil Dive",
+   "revid": 1377569740,
+   "angle": {
+    "v": 95,
+    "raw": "95"
+   },
+   "status": "Operating"
+  },
+  "six-flags-over-georgia--georgia-scorcher": {
+   "article": "Georgia Scorcher",
+   "revid": 1377569745,
+   "angle": {
+    "v": 52,
+    "raw": "52"
+   },
+   "status": "Operating"
+  },
+  "six-flags-over-georgia--goliath": {
+   "article": "Goliath (Six Flags Over Georgia)",
+   "revid": 1377569588,
+   "angle": {
+    "v": 59,
+    "raw": "59"
+   },
+   "status": "Operating"
+  },
+  "six-flags-over-georgia--great-american-scream-machine": {
+   "article": "Great American Scream Machine (Six Flags Over Georgia)",
+   "revid": 1377569708,
+   "angle": {
+    "v": 45,
+    "raw": "45"
+   },
+   "status": "Operating"
+  },
+  "six-flags-over-georgia--joker-funhouse-coaster": {
+   "article": "The Joker Funhouse Coaster",
+   "revid": 1377569534,
+   "status": "Operating"
+  },
+  "six-flags-over-georgia--superman-ultimate-flight": {
+   "article": "Superman: Ultimate Flight",
+   "revid": 1368622448,
+   "status": "Operating"
+  },
+  "six-flags-over-georgia--twisted-cyclone": {
+   "article": "Twisted Cyclone",
+   "revid": 1377569679,
+   "angle": {
+    "v": 75,
+    "raw": "75"
+   },
+   "status": "Operating"
+  },
+  "six-flags-over-texas--aquaman-power-wave": {
+   "article": "Aquaman: Power Wave",
+   "revid": 1321493058,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "six-flags-over-texas--judge-roy-scream": {
+   "article": "Judge Roy Scream",
+   "revid": 1372737130,
+   "angle": {
+    "v": 42,
+    "raw": "42"
+   },
+   "status": "Open"
+  },
+  "six-flags-over-texas--la-vibora": {
+   "article": "La Vibora",
+   "revid": 1370771861,
+   "status": "Removed"
+  },
+  "six-flags-over-texas--new-texas-giant": {
+   "article": "New Texas Giant",
+   "revid": 1370747626,
+   "angle": {
+    "v": 79,
+    "raw": "79"
+   },
+   "status": "Operating"
+  },
+  "six-flags-over-texas--runaway-mine-train": {
+   "article": "Runaway Mine Train (Six Flags Over Texas)",
+   "revid": 1375398974,
+   "status": "Open"
+  },
+  "six-flags-over-texas--shockwave": {
+   "article": "Shock Wave (Six Flags Over Texas)",
+   "revid": 1377185099,
+   "status": "SBNO (Standing But Not Operating)"
+  },
+  "six-flags-over-texas--titan": {
+   "article": "Titan (Six Flags Over Texas)",
+   "revid": 1368019635,
+   "status": "Operating"
+  },
+  "six-flags-over-texas--tormenta-rampaging-run": {
+   "article": "Tormenta Rampaging Run",
+   "revid": 1377569929,
+   "angle": {
+    "v": 95,
+    "raw": "95"
+   },
+   "status": "Operating"
+  },
+  "stratosphere-tower-hotel-casino--high-roller": {
+   "article": "High Roller (Stratosphere)",
+   "revid": 1335290849,
+   "angle": {
+    "v": 13,
+    "raw": "13"
+   },
+   "status": "Defunct"
+  },
+  "the-great-escape-splashwater-kingdom--canyon-blaster": {
+   "article": "Canyon Blaster (Great Escape)",
+   "revid": 1377569850,
+   "status": "Operating"
+  },
+  "the-great-escape-splashwater-kingdom--comet": {
+   "article": "The Comet (Great Escape)",
+   "revid": 1377569664,
+   "status": "Operating"
+  },
+  "the-great-escape-splashwater-kingdom--frankie-s-mine-train": {
+   "article": "Frankie's Mine Train",
+   "revid": 1364726509,
+   "status": "Operating"
+  },
+  "the-great-escape-splashwater-kingdom--nightmare-at-crackaxle-canyon": {
+   "article": "Nightmare at Crack Axle Canyon",
+   "revid": 1352081476,
+   "status": "Removed"
+  },
+  "the-great-escape-splashwater-kingdom--steamin-demon": {
+   "article": "Steamin' Demon",
+   "revid": 1377569890,
+   "status": "Operating"
+  },
+  "universal-s-islands-of-adventure--flight-of-the-hippogriff": {
+   "article": "Flight of the Hippogriff",
+   "revid": 1370837854,
+   "status": "Operating"
+  },
+  "universal-s-islands-of-adventure--hagrid-s-magical-creatures-motorbike-adventure": {
+   "article": "Hagrid's Magical Creatures Motorbike Adventure",
+   "revid": 1372460142,
+   "angle": {
+    "v": 70,
+    "raw": "70"
+   },
+   "status": "Operating"
+  },
+  "universal-s-islands-of-adventure--incredible-hulk": {
+   "article": "The Incredible Hulk Coaster",
+   "revid": 1377352006,
+   "status": "Operating"
+  },
+  "universal-s-islands-of-adventure--jurassic-world-velocicoaster": {
+   "article": "VelociCoaster",
+   "revid": 1366624118,
+   "angle": {
+    "v": 80,
+    "raw": "80"
+   },
+   "status": "Operating"
+  },
+  "universal-studios-florida--harry-potter-and-the-escape-from-gringotts": {
+   "article": "Harry Potter and the Escape from Gringotts",
+   "revid": 1331231036,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Operating"
+  },
+  "universal-studios-florida--hollywood-rip-ride-rockit": {
+   "article": "Hollywood Rip Ride Rockit",
+   "revid": 1371099174,
+   "status": "Removed"
+  },
+  "universal-studios-florida--revenge-of-the-mummy": {
+   "article": "Revenge of the Mummy",
+   "revid": 1375120072,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Operating"
+  },
+  "universal-studios-florida--woody-woodpecker-s-nuthouse-coaster": {
+   "article": "Woody Woodpecker's Nuthouse Coaster",
+   "revid": 1370766604,
+   "status": "Closed"
+  },
+  "valleyfair--cosmic-coaster": {
+   "article": "Cosmic Coaster (Valleyfair)",
+   "revid": 1361960823,
+   "status": "Operating"
+  },
+  "valleyfair--excalibur": {
+   "article": "Excalibur (Valleyfair)",
+   "revid": 1377569854,
+   "angle": {
+    "v": 60,
+    "raw": "60"
+   },
+   "status": "Open"
+  },
+  "valleyfair--high-roller": {
+   "article": "High Roller (Valleyfair)",
+   "revid": 1377569779,
+   "angle": {
+    "v": 52,
+    "raw": "52"
+   },
+   "status": "Open"
+  },
+  "valleyfair--mad-mouse": {
+   "article": "Mad Mouse (Valleyfair)",
+   "revid": 1283665676,
+   "status": "Open"
+  },
+  "valleyfair--mild-thing": {
+   "article": "Mild Thing",
+   "revid": 1329310627,
+   "status": "Removed"
+  },
+  "valleyfair--renegade": {
+   "article": "Renegade (roller coaster)",
+   "revid": 1376329687,
+   "angle": {
+    "v": 66,
+    "raw": "66"
+   },
+   "status": "Open"
+  },
+  "valleyfair--steel-venom": {
+   "article": "Steel Venom (Valleyfair)",
+   "revid": 1342410109,
+   "angle": {
+    "v": 90,
+    "raw": "90"
+   },
+   "status": "Operating"
+  },
+  "valleyfair--wild-thing": {
+   "article": "Wild Thing (Valleyfair)",
+   "revid": 1350053923,
+   "angle": {
+    "v": 60,
+    "raw": "60"
+   },
+   "status": "Operating"
+  },
+  "waldameer-park--comet": {
+   "article": "Comet (Waldameer)",
+   "revid": 1377728042,
+   "status": "Open"
+  },
+  "waldameer-park--ravine-flyer-ii": {
+   "article": "Ravine Flyer II",
+   "revid": 1376318114,
+   "angle": {
+    "v": 60,
+    "raw": "60"
+   },
+   "status": "Open"
+  },
+  "waldameer-park--steel-dragon": {
+   "article": "Steel Dragon (Waldameer)",
+   "revid": 1359791022,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Operating"
+  },
+  "waterville-usa--cannonball-run": {
+   "article": "Cannonball Run (roller coaster)",
+   "revid": 1313011107,
+   "status": "Removed"
+  },
+  "whalom-park--flyer-comet": {
+   "article": "Flyer Comet (Whalom Park)",
+   "revid": 1229138171,
+   "status": "Removed"
+  },
+  "wild-adventures--cheetah": {
+   "article": "Cheetah (Wild Adventures)",
+   "revid": 1340594161,
+   "status": "Removed"
+  },
+  "wild-adventures--twisted-typhoon": {
+   "article": "Twisted Typhoon",
+   "revid": 1275988785,
+   "angle": {
+    "v": 59,
+    "raw": "59"
+   },
+   "status": "Operating"
+  },
+  "wonderland-park--hornet": {
+   "article": "Hornet (roller coaster)",
+   "revid": 1312911256,
+   "status": "Operating"
+  },
+  "wonderland-park--texas-tornado": {
+   "article": "Texas Tornado (roller coaster)",
+   "revid": 1326288256,
+   "status": "Open"
+  },
+  "worlds-of-fun--cosmic-coaster": {
+   "article": "Cosmic Coaster (Worlds of Fun)",
+   "revid": 1363523119,
+   "status": "Removed"
+  },
+  "worlds-of-fun--mamba": {
+   "article": "Mamba (roller coaster)",
+   "revid": 1363899493,
+   "angle": {
+    "v": 66,
+    "raw": "66"
+   },
+   "status": "Operating"
+  },
+  "worlds-of-fun--orient-express": {
+   "article": "Orient Express (roller coaster)",
+   "revid": 1368282686,
+   "angle": {
+    "v": 55,
+    "raw": "55"
+   },
+   "status": "Removed"
+  },
+  "worlds-of-fun--patriot": {
+   "article": "Patriot (Worlds of Fun)",
+   "revid": 1372787198,
+   "status": "Operating"
+  },
+  "worlds-of-fun--prowler": {
+   "article": "Prowler (roller coaster)",
+   "revid": 1377564165,
+   "status": "Operating"
+  },
+  "worlds-of-fun--spinning-dragons": {
+   "article": "Spinning Dragons",
+   "revid": 1351099461,
+   "angle": {
+    "v": 50,
+    "raw": "50"
+   },
+   "status": "Open"
+  },
+  "worlds-of-fun--timber-wolf": {
+   "article": "Timber Wolf (roller coaster)",
+   "revid": 1351099614,
+   "status": "Operating"
+  },
+  "worlds-of-fun--zambezi-zinger": {
+   "article": "Zambezi Zinger (2023)",
+   "revid": 1357914212,
+   "status": "Operating"
+  }
+ }
+}

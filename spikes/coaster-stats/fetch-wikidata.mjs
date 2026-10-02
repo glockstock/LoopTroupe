@@ -1,19 +1,20 @@
 #!/usr/bin/env node
-// Spike: fetch open (CC0) roller coaster stats from Wikidata and match them to
+// Spike: fetch open (CC0) roller coaster data from Wikidata and match items to
 // Loop Troupe coaster IDs in js/data.js. Node 18+ (22.21+ behind a proxy), built-ins only.
 //
-//   node spikes/coaster-stats/fetch-wikidata.mjs            fetch from Wikidata, then build
-//   node spikes/coaster-stats/fetch-wikidata.mjs --offline  rebuild from wikidata-raw.json
+//   node spikes/coaster-stats/fetch-wikidata.mjs     fetch from Wikidata into raw/wikidata-raw.json
+//   node spikes/coaster-stats/fetch-wikipedia.mjs    then fetch Wikipedia and build every output
 //
 // Behind an HTTPS proxy, run with NODE_USE_ENV_PROXY=1 (Node's fetch ignores
 // HTTPS_PROXY otherwise).
 //
-// Outputs (next to this file): wikidata-raw.json, stats.json, links.json,
-// ambiguous.json, coverage.md. Reads js/data.js and js/guides/cedar-point.js only; never invents IDs.
-// Source policy: Wikidata only (CC0). RCDB IDs (P2751) found on Wikidata are used as
+// This file is also a module: fetch-wikipedia.mjs imports matchWikidata() and the
+// name/park helpers, so the Wikidata match and the Wikipedia merge run as one build.
+// Reads js/data.js and js/guides/cedar-point.js only; never invents IDs.
+// Source policy: Wikidata (CC0). RCDB IDs (P2751) found on Wikidata are used as
 // a matching aid and nothing else; nothing is fetched from RCDB.
 
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
@@ -21,7 +22,9 @@ import vm from 'node:vm';
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, '..', '..');
 const OUT = (f) => path.join(HERE, f);
-const RAW_FILE = OUT('wikidata-raw.json');
+// Raw API responses are not committed (stats contract: raw/ is gitignored).
+export const RAW_DIR = OUT('raw');
+export const RAW_FILE = path.join(RAW_DIR, 'wikidata-raw.json');
 const ENDPOINT = 'https://query.wikidata.org/sparql';
 const USER_AGENT = 'LoopTroupe-data/0.1 (https://github.com/glockstock/LoopTroupe)';
 // WDQS asks clients to stay well under its limits; during incidents it has
@@ -182,6 +185,7 @@ async function fetchAll() {
     queries: { items: Q_ITEMS, claims: qClaims('…'), values: qValues('…'), labels: qLabels('…'), context: qContext('…') },
     items, claims, values: vals, labels, context,
   };
+  mkdirSync(RAW_DIR, { recursive: true });
   writeFileSync(RAW_FILE, JSON.stringify(raw, null, 1) + '\n');
   console.log(`wrote ${path.relative(ROOT, RAW_FILE)}`);
   return raw;
@@ -191,14 +195,14 @@ async function fetchAll() {
 // Local data (read-only)
 // ---------------------------------------------------------------------------
 
-function loadDb() {
+export function loadDb() {
   const ctx = { window: {} };
   vm.createContext(ctx);
   vm.runInContext(readFileSync(path.join(ROOT, 'js/data.js'), 'utf8') + '\n;this.__DB = COASTER_DB;', ctx);
   return ctx.__DB;
 }
 
-function loadCedarPointOperating() {
+export function loadCedarPointOperating() {
   const file = path.join(ROOT, 'js/guides/cedar-point.js');
   if (!existsSync(file)) return [];
   const ctx = { window: {} };
@@ -213,7 +217,7 @@ function loadCedarPointOperating() {
 
 // Lowercase, strip accents and apostrophes, '&' -> 'and', drop a leading "the",
 // collapse punctuation to spaces.
-function norm(s) {
+export function norm(s) {
   return String(s || '')
     .normalize('NFKD').replace(/[̀-ͯ]/g, '')
     .toLowerCase()
@@ -223,12 +227,12 @@ function norm(s) {
     .trim()
     .replace(/^the /, '');
 }
-const compact = (s) => norm(s).replace(/ /g, '');
+export const compact = (s) => norm(s).replace(/ /g, '');
 
 // Name keys for a coaster name: full form, plus the form without a trailing
 // "(…)" disambiguator (Wikipedia/Wikidata style, e.g. "Wildcat (Cedar Point)")
 // and without a trailing "roller coaster".
-function nameKeys(s) {
+export function nameKeys(s) {
   if (!s) return [];
   const keys = new Set();
   const base = String(s).replace(/\s*\([^)]*\)\s*$/, '');
@@ -243,8 +247,8 @@ function nameKeys(s) {
 
 // Park keys: the name, and the name without generic words, so "Kennywood Park"
 // and "Kennywood" or "Hersheypark" and "Hershey Park" meet.
-const PARK_NOISE = /\b(amusement|theme|water|park|parks|resort|and|at|the|of)\b/g;
-function parkKeys(s) {
+export const PARK_NOISE = /\b(amusement|theme|water|park|parks|resort|and|at|the|of)\b/g;
+export function parkKeys(s) {
   if (!s) return [];
   const n = norm(s);
   const keys = new Set([n.replace(/ /g, '')]);
@@ -261,10 +265,10 @@ const LENGTH_UNITS = { Q11573: 1, Q3710: 0.3048, Q828224: 1000, Q174728: 0.01, Q
 const SPEED_UNITS = { Q180154: 1, Q211256: 1.609344, Q182429: 3.6, Q128822: 1.852 };
 const TIME_UNITS = { Q11574: 1, Q7727: 60 };
 const IMPERIAL_LENGTH = new Set(['Q3710', 'Q482798', 'Q253276']);
-const STATE_NAMES = { AL: 'Alabama', AK: 'Alaska', AZ: 'Arizona', AR: 'Arkansas', CA: 'California', CO: 'Colorado', CT: 'Connecticut', DE: 'Delaware', FL: 'Florida', GA: 'Georgia', HI: 'Hawaii', ID: 'Idaho', IL: 'Illinois', IN: 'Indiana', IA: 'Iowa', KS: 'Kansas', KY: 'Kentucky', LA: 'Louisiana', ME: 'Maine', MD: 'Maryland', MA: 'Massachusetts', MI: 'Michigan', MN: 'Minnesota', MS: 'Mississippi', MO: 'Missouri', MT: 'Montana', NE: 'Nebraska', NV: 'Nevada', NH: 'New Hampshire', NJ: 'New Jersey', NM: 'New Mexico', NY: 'New York', NC: 'North Carolina', ND: 'North Dakota', OH: 'Ohio', OK: 'Oklahoma', OR: 'Oregon', PA: 'Pennsylvania', RI: 'Rhode Island', SC: 'South Carolina', SD: 'South Dakota', TN: 'Tennessee', TX: 'Texas', UT: 'Utah', VT: 'Vermont', VA: 'Virginia', WA: 'Washington', WV: 'West Virginia', WI: 'Wisconsin', WY: 'Wyoming', DC: 'District of Columbia' };
+export const STATE_NAMES = { AL: 'Alabama', AK: 'Alaska', AZ: 'Arizona', AR: 'Arkansas', CA: 'California', CO: 'Colorado', CT: 'Connecticut', DE: 'Delaware', FL: 'Florida', GA: 'Georgia', HI: 'Hawaii', ID: 'Idaho', IL: 'Illinois', IN: 'Indiana', IA: 'Iowa', KS: 'Kansas', KY: 'Kentucky', LA: 'Louisiana', ME: 'Maine', MD: 'Maryland', MA: 'Massachusetts', MI: 'Michigan', MN: 'Minnesota', MS: 'Mississippi', MO: 'Missouri', MT: 'Montana', NE: 'Nebraska', NV: 'Nevada', NH: 'New Hampshire', NJ: 'New Jersey', NM: 'New Mexico', NY: 'New York', NC: 'North Carolina', ND: 'North Dakota', OH: 'Ohio', OK: 'Oklahoma', OR: 'Oregon', PA: 'Pennsylvania', RI: 'Rhode Island', SC: 'South Carolina', SD: 'South Dakota', TN: 'Tennessee', TX: 'Texas', UT: 'Utah', VT: 'Vermont', VA: 'Virginia', WA: 'Washington', WV: 'West Virginia', WI: 'Wisconsin', WY: 'Wyoming', DC: 'District of Columbia' };
 // Local parks that straddle a state line; Wikidata may place their rides in either state.
 const BORDER_PARKS = { carowinds: ['NC', 'SC'] };
-const parkStates = (park) => BORDER_PARKS[park.id] || [park.state];
+export const parkStates = (park) => BORDER_PARKS[park.id] || [park.state];
 const round = (x, d = 0) => Math.round(x * 10 ** d) / 10 ** d;
 
 function lengthValue(v) {
@@ -312,8 +316,7 @@ function groupBy(rows, key) {
   return m;
 }
 
-function build(raw) {
-  const db = loadDb();
+export function matchWikidata(raw, db = loadDb()) {
   const retrieved = raw.retrieved.slice(0, 10);
   const issueSet = new Set(); // Wikidata data-quality notes
   const issues = { push: (m) => issueSet.add(m) };
@@ -406,28 +409,35 @@ function build(raw) {
         : Math.abs(canon(c.out) - canon(first.out)) <= 0.02 * Math.abs(canon(first.out)));
       if (!converted.every(agrees)) {
         issues.push(`${w.qid} (${w.label}): conflicting ${field} values (${converted.map((c) => `${c.v.amount ?? c.v.time.slice(0, 10)} ${c.v.unitLabel || ''}`.trim()).join('; ')}); kept ${order === 'desc' ? 'the latest/largest' : 'the earliest/smallest'}.`);
-        return { value: first.out, pid, conflict: true };
+        return { value: first.out, pid, conflict: true, st: first.v, all: converted.map((c) => c.v) };
       }
       const imperial = converted.find((c) => IMPERIAL.has(c.v.unit));
-      return { value: (imperial || first).out, pid };
+      return { value: (imperial || first).out, pid, st: (imperial || first).v };
     }
     return null;
   }
   const statsCache = new Map();
+  const picksCache = new Map(); // qid -> { field: pick result } (the chosen statement, for provenance)
   function statsFor(w) {
     if (!statsCache.has(w.qid)) statsCache.set(w.qid, computeStats(w));
     return statsCache.get(w.qid);
   }
+  function picksFor(w) {
+    statsFor(w);
+    return picksCache.get(w.qid);
+  }
   function computeStats(w) {
     const s = {};
+    const picks = {};
+    picksCache.set(w.qid, picks);
     const h = pick(w, ['P2048'], lengthValue, 'height');
-    if (h) s.height = h.value;
+    if (h) { s.height = h.value; picks.height = h; }
     const sp = pick(w, ['P2052'], speedValue, 'speed');
-    if (sp) s.speed = sp.value;
+    if (sp) { s.speed = sp.value; picks.speed = sp; }
     const l = pick(w, ['P2043'], lengthValue, 'length');
-    if (l) s.length = l.value;
+    if (l) { s.length = l.value; picks.length = l; }
     const d = pick(w, ['P2047'], durationValue, 'duration');
-    if (d) s.duration = d.value;
+    if (d) { s.duration = d.value; picks.duration = d; }
     s.inversions = null; // no Wikidata property exists for this
     if (w.manufacturer.length) s.manufacturer = w.manufacturer;
     if (w.designer.length) s.designer = w.designer;
@@ -436,9 +446,9 @@ function build(raw) {
     if (w.material.length) s.material = w.material;
     if (w.basedOn.length) s.model = w.basedOn;
     const o = pick(w, ['P1619', 'P580', 'P571'], dateValue, 'opening date');
-    if (o) s.opened = o.value;
+    if (o) { s.opened = o.value; picks.opened = o; }
     const c = pick(w, ['P3999', 'P582', 'P576'], dateValue, 'closing date', 'desc');
-    if (c) s.closed = c.value;
+    if (c) { s.closed = c.value; picks.closed = c; }
     if (w.status) s.status = w.status;
     return s;
   }
@@ -548,7 +558,7 @@ function build(raw) {
   const candSummary = (p) => ({ coasterId: p.c.id, name: p.c.name, park: p.c.park.name, city: p.c.park.city, state: p.c.park.state, nameVia: p.nameVia, locationVia: p.parkVia });
   const flag = (w, reason, cands) => {
     ambiguousQids.add(w.qid);
-    ambiguous.push({ ...wdSummary(w), reason, candidates: cands.map(candSummary) });
+    ambiguous.push({ source: 'wikidata', ...wdSummary(w), reason, candidates: cands.map(candSummary) });
   };
 
   // Per Wikidata item: drop conflicting candidates, then accept only a unique one.
@@ -587,7 +597,7 @@ function build(raw) {
     if (list.length > 1) {
       for (const a of list) ambiguousQids.add(a.w.qid);
       ambiguous.push({
-        coasterId: c.id, name: c.name, park: c.park.name,
+        source: 'wikidata', coasterId: c.id, name: c.name, park: c.park.name,
         reason: 'Several Wikidata items match this coaster (duplicates, or rebuilt/relocated rides with separate items).',
         candidates: list.map((a) => ({ qid: a.w.qid, wikidataLabel: a.w.label, rcdbId: a.w.rcdb[0] || null, opened: statsFor(a.w).opened || null, closed: statsFor(a.w).closed || null })),
       });
@@ -621,55 +631,10 @@ function build(raw) {
     };
   }
 
-  // --- outputs: stats.json, links.json, ambiguous.json ---------------------
+  // --- results ---------------------------------------------------------------
+  // Files are written by fetch-wikipedia.mjs, which merges these results with Wikipedia.
   const wdByQid = new Map(wd.map((w) => [w.qid, w]));
-  const stats = {};
-  for (const id of Object.keys(links).sort()) {
-    const w = wdByQid.get(links[id].qid);
-    stats[id] = { qid: w.qid, wikidataLabel: w.label, ...statsFor(w), retrieved, url: `https://www.wikidata.org/wiki/${w.qid}` };
-  }
-  writeJson('stats.json', {
-    source: 'Wikidata, https://www.wikidata.org',
-    license: 'CC0 1.0 (public domain dedication). No attribution required; credit "Wikidata" as good practice.',
-    retrieved,
-    units: { height: 'm and ft', length: 'm and ft', speed: 'km/h and mph', duration: 's' },
-    notes: 'The value in the unit Wikidata stored is kept as given; the other is converted. inversions is always null (no Wikidata property). No G-force data exists in Wikidata.',
-    coasters: stats,
-  });
   const sortedLinks = Object.fromEntries(Object.keys(links).sort().map((k) => [k, links[k]]));
-  writeJson('links.json', {
-    retrieved,
-    method: 'Name (Wikidata label, en-Wikipedia title, or alias, normalized for case, accents, punctuation, and a leading "The") plus location evidence (park via P361/P276/P131, park aliases, article title, or description; else P131 city; else US state). Candidates contradicted by state or by another local park are dropped. Unique matches only; everything else is in ambiguous.json. RCDB IDs from Wikidata are shown as evidence only.',
-    confidence: { high: 'Wikidata label or en-Wikipedia title matches, and the Wikidata park (or description) names the local park', medium: 'matched through an alias, the park city, or the state alone (Wikidata gives no park and the name is unique in that state), or the item also matches another local coaster; see notes' },
-    links: sortedLinks,
-  });
-  writeJson('ambiguous.json', { retrieved, count: ambiguous.length, items: ambiguous });
-
-  // --- coverage.md -----------------------------------------------------------
-  const total = coasters.length;
-  const pct = (n, d = total) => `${((100 * n) / d).toFixed(1)}%`;
-  const ids = Object.keys(stats);
-  const has = (f) => ids.filter((id) => stats[id][f] != null && (!Array.isArray(stats[id][f]) || stats[id][f].length)).length;
-  const fields = [['height', 'Height'], ['speed', 'Speed'], ['length', 'Length'], ['inversions', 'Inversions'],
-    ['manufacturer', 'Manufacturer'], ['type', 'Type / model class'], ['designer', 'Designer'],
-    ['duration', 'Ride duration'], ['opened', 'Opening date'], ['closed', 'Closing date']];
-  const anyNumeric = ids.filter((id) => ['height', 'speed', 'length'].some((f) => stats[id][f])).length;
-  const allThree = ids.filter((id) => ['height', 'speed', 'length'].every((f) => stats[id][f])).length;
-  const conf = { high: 0, medium: 0 };
-  for (const l of Object.values(links)) conf[l.confidence]++;
-
-  // Cedar Point
-  const cpOperating = loadCedarPointOperating();
-  const fmtH = (v) => (v ? `${v.ft} ft / ${v.m} m` : '–');
-  const fmtS = (v) => (v ? `${v.mph} mph / ${v.kmh} km/h` : '–');
-  const cpRows = cpOperating.map((id) => {
-    const c = coasters.find((x) => x.id === id);
-    const s = stats[id];
-    return `| ${c ? c.name : id} | ${s ? `[${s.qid}](${s.url})` : (ambiguous.some((a) => a.coasterId === id || a.candidates?.some((x) => x.coasterId === id)) ? 'ambiguous' : 'not found')} | ${s ? links[id].confidence : '–'} | ${fmtH(s?.height)} | ${fmtS(s?.speed)} | ${s?.length ? `${s.length.ft} ft / ${s.length.m} m` : '–'} | ${s?.manufacturer?.join(', ') || '–'} |`;
-  });
-  const cpCount = (f) => cpOperating.filter((id) => stats[id]?.[f] != null).length;
-
-  // Unmatched Wikidata items
   const unmatched = wd.filter((w) => !linkedQids.has(w.qid) && !ambiguousQids.has(w.qid));
   const isClosed = (w) => {
     const s = statsFor(w);
@@ -682,41 +647,11 @@ function build(raw) {
     return `| [${w.qid}](https://www.wikidata.org/wiki/${w.qid}) | ${w.label || '(no English label)'} | ${w.parks.map((p) => p.label || p.qid).join('; ') || (w.admin.join('; ') || '–')} | ${s.opened || '–'} | ${s.closed || s.status || '–'} |`;
   };
   const byLabel = (a, b) => String(a.label).localeCompare(String(b.label));
+  const conf = { high: 0, medium: 0 };
+  for (const l of Object.values(links)) conf[l.confidence]++;
 
-  const md = `# Coaster stats coverage (Wikidata spike)
-
-Generated by \`fetch-wikidata.mjs\` from Wikidata data retrieved ${retrieved}. Source: Wikidata (CC0).
-
-## Summary
-
-- Local coasters in \`js/data.js\`: **${total}** in ${db.parks.length} parks.
-- US roller coasters on Wikidata (instance of Q204832 or a subclass, country US or park in US): **${wd.length}**.
-- Matched to a local coaster ID: **${ids.length}** (${pct(ids.length)}): ${conf.high} high confidence, ${conf.medium} medium.
-- Ambiguous, left for human review: **${ambiguous.length}** entries (\`ambiguous.json\`).
-- Wikidata items with no local match: ${unmatched.length} (${closedMissing.length} closed or removed per Wikidata, ${openMissing.length} not marked closed).
-
-## Field availability
-
-Counts are over all ${total} local coasters, and over the ${ids.length} matched.
-
-| Field | Coasters with it | % of all ${total} | % of ${ids.length} matched |
-| --- | ---: | ---: | ---: |
-${fields.map(([f, label]) => `| ${label} | ${has(f)} | ${pct(has(f))} | ${pct(has(f), ids.length || 1)} |`).join('\n')}
-| Any of height, speed, length | ${anyNumeric} | ${pct(anyNumeric)} | ${pct(anyNumeric, ids.length || 1)} |
-| All three of height, speed, length | ${allThree} | ${pct(allThree)} | ${pct(allThree, ids.length || 1)} |
-| G-force | 0 | 0% | 0% |
-
-Wikidata has no property for number of inversions or G-force, so both are empty for every coaster.
-
-## Cedar Point (18 operating coasters)
-
-From \`js/guides/cedar-point.js\` \`credits.operating\`. Matched ${cpOperating.filter((id) => stats[id]).length} of ${cpOperating.length}; height ${cpCount('height')}, speed ${cpCount('speed')}, length ${cpCount('length')}, manufacturer ${cpCount('manufacturer')}, inversions 0.
-
-| Coaster | Wikidata | Confidence | Height | Speed | Length | Manufacturer |
-| --- | --- | --- | --- | --- | --- | --- |
-${cpRows.join('\n')}
-
-## On Wikidata but not matched: closed or removed (report only, not added)
+  // Markdown sections for coverage.md that only concern Wikidata.
+  const unmatchedMd = `## On Wikidata but not matched: closed or removed (report only, not added)
 
 Wikidata marks these closed (closing date or state of use). Some may be in \`js/data.js\` under another name or park; check before adding anything.
 
@@ -726,7 +661,7 @@ ${closedMissing.sort(byLabel).map(row).join('\n')}
 
 ## On Wikidata but not matched: not marked closed
 
-Candidates for missing coasters, name variants, or parks that \`js/data.js\` does not list. Wikidata often lacks closing data, so many of these are also defunct. Review only.
+Candidates for missing coasters, name variants, or parks that \`js/data.js\` does not list. Wikidata often lacks closing data, so many of these are also defunct. Review only. (Some were added to \`js/data.js\` on 2026-10-02 and now match; this table lists only those still unmatched.)
 
 | Wikidata | Name | Park / place | Opened | Closed / state |
 | --- | --- | --- | --- | --- |
@@ -736,15 +671,17 @@ ${openMissing.sort(byLabel).map(row).join('\n')}
 
 ${issueSet.size ? [...issueSet].map((i) => `- ${i}`).join('\n') : '- None found.'}
 `;
-  writeFileSync(OUT('coverage.md'), md);
-  console.log(`linked ${ids.length}/${total} (${pct(ids.length)}), ambiguous ${ambiguous.length}, unmatched WD ${unmatched.length}`);
-  for (const [f, label] of fields) console.log(`  ${label}: ${has(f)}`);
+
+  return {
+    db, coasters, coasterById, wd, wdByQid, retrieved,
+    links: sortedLinks, ambiguous, ambiguousQids, linkedQids, conf,
+    statsFor, picksFor, unmatched, closedMissing, openMissing,
+    issues: [...issueSet], unmatchedMd, locationEvidence, wdPlaceNames,
+  };
 }
 
-function writeJson(name, obj) {
-  writeFileSync(OUT(name), JSON.stringify(obj, null, 1) + '\n');
+const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isMain) {
+  await fetchAll();
+  console.log('Next: node spikes/coaster-stats/fetch-wikipedia.mjs (fetches Wikipedia and builds every output).');
 }
-
-const offline = process.argv.includes('--offline');
-const raw = offline ? JSON.parse(readFileSync(RAW_FILE, 'utf8')) : await fetchAll();
-build(raw);
