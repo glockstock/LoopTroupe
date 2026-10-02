@@ -1,0 +1,38 @@
+{
+ "note": "Committed build input, owned by coaster_data_curator: decisions where Wikidata and Wikipedia disagree (sources/stats/review.json lists the conflicts). A rule picks one source's stated value for a list of coasters; with whenUnstated \"withhold\", a listed coaster whose sources don't state that value gets no value for the field. A choice picks one source for one coaster and field: { src: 'wd' | 'wp', basis: '<primary source URL>', reason, decidedBy, date }. Decide against the primary source either value cites. Without a rule or choice, a conflicting field is left out of js/stats.json.",
+ "rules": [
+  {
+   "id": "rmc-ibox-conversion-hybrid",
+   "field": "material",
+   "value": "hybrid",
+   "src": "wd",
+   "whenUnstated": "withhold",
+   "reason": "Rocky Mountain Construction I-Box retracks of an existing wooden coaster keep the wooden structure under steel track; enthusiasts call these hybrids. Wikipedia's infobox allows only Steel or Wood (editors file them as Steel), while Wikidata states \"hybrid roller coaster\" for most of them, so the material comes from Wikidata. Where no source states hybrid (Twisted Cyclone), the material is held back rather than shipped as steel. Each listed ride's conversion is stated in the lead of its English Wikipedia article (checked 2026-10-02): Iron Gwazi (Gwazi), Steel Vengeance (Mean Streak), Wildcat's Revenge (Wildcat), Twisted Timbers (Hurler), The Joker (Roar), Iron Rattler (Rattler), Twisted Colossus (Colossus), Wicked Cyclone (Cyclone), Twisted Cyclone (Georgia Cyclone), New Texas Giant (Texas Giant).",
+   "decidedBy": "coaster_data_curator",
+   "date": "2026-10-02",
+   "coasters": [
+    "busch-gardens-tampa--iron-gwazi",
+    "cedar-point--steel-vengeance",
+    "hersheypark--wildcat-s-revenge",
+    "kings-dominion--twisted-timbers",
+    "six-flags-discovery-kingdom--joker",
+    "six-flags-fiesta-texas--iron-rattler",
+    "six-flags-magic-mountain--twisted-colossus",
+    "six-flags-new-england--wicked-cyclone",
+    "six-flags-over-georgia--twisted-cyclone",
+    "six-flags-over-texas--new-texas-giant"
+   ]
+  }
+ ],
+ "choices": {
+  "six-flags-magic-mountain--full-throttle": {
+   "height": {
+    "src": "wd",
+    "basis": "https://www.sixflags.com/magicmountain/attractions/full-throttle",
+    "reason": "The park's page puts the loop, the ride's highest point, \"160 feet in the sky\". That matches Wikidata's 49 m (160.8 ft), not Wikipedia's 164 ft.",
+    "decidedBy": "coaster_data_curator",
+    "date": "2026-10-02"
+   }
+  }
+ }
+}
