@@ -1,0 +1,6856 @@
+{
+ "retrieved": "2026-10-02",
+ "method": "Name (Wikidata label, en-Wikipedia title, or alias, normalized for case, accents, punctuation, and a leading \"The\") plus location evidence (park via P361/P276/P131, park aliases, article title, or description; else P131 city; else US state). Candidates contradicted by state or by another local park are dropped. Unique matches only; everything else is in ambiguous.json. RCDB IDs from Wikidata are shown as evidence only.",
+ "confidence": {
+  "high": "Wikidata label or en-Wikipedia title matches, and the Wikidata park (or description) names the local park",
+  "medium": "matched through an alias, the park city, or the state alone (Wikidata gives no park and the name is unique in that state), or the item also matches another local coaster; see notes"
+ },
+ "links": {
+  "adventure-city--rewind-racers": {
+   "qid": "Q105443412",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Rewind Racers",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Adventure City"
+    ],
+    "rcdbId": [
+     "10976"
+    ]
+   }
+  },
+  "adventuredome--canyon-blaster": {
+   "qid": "Q1033981",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Canyon Blaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Adventuredome"
+    ],
+    "rcdbId": [
+     "104"
+    ]
+   }
+  },
+  "adventuredome--el-loco": {
+   "qid": "Q18149791",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "El Loco",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Circus Circus Las Vegas"
+    ],
+    "rcdbId": [
+     "11450"
+    ]
+   }
+  },
+  "adventureland-iowa--dragon": {
+   "qid": "Q5305095",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Dragon",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "213"
+    ]
+   }
+  },
+  "adventureland-iowa--dragon-slayer": {
+   "qid": "Q107261212",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Dragon Slayer",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Adventureland"
+    ],
+    "rcdbId": [
+     "18398"
+    ]
+   }
+  },
+  "adventureland-iowa--the-monster": {
+   "qid": "Q23833028",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Monster (Adventureland)",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "12896"
+    ]
+   }
+  },
+  "adventureland-iowa--the-outlaw": {
+   "qid": "Q7112112",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Outlaw",
+    "nameVia": "label",
+    "locationVia": "city",
+    "wikidataPark": [],
+    "rcdbId": [
+     "214"
+    ]
+   },
+   "notes": [
+    "Park matched by city (Altoona), not by park name."
+   ]
+  },
+  "adventureland-iowa--tornado": {
+   "qid": "Q7825974",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Tornado",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Adventureland"
+    ],
+    "rcdbId": [
+     "212"
+    ]
+   }
+  },
+  "adventureland-iowa--underground": {
+   "qid": "Q39071034",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Underground",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Adventureland"
+    ],
+    "rcdbId": [
+     "215"
+    ]
+   }
+  },
+  "adventureland-new-york--turbulence": {
+   "qid": "Q105443750",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Turbulence",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Adventureland"
+    ]
+   }
+  },
+  "alabama-adventure-splash-adventure--rampage": {
+   "qid": "Q7290001",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Rampage",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Alabama Adventure & Splash Adventure"
+    ],
+    "rcdbId": [
+     "475"
+    ]
+   }
+  },
+  "alabama-adventure-splash-adventure--zoomerang": {
+   "qid": "Q8074180",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Zoomerang",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "2953"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (AL); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "bay-beach--zippin-pippin": {
+   "qid": "Q8072661",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Zippin Pippin",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Bay Beach Amusement Park"
+    ],
+    "rcdbId": [
+     "9088"
+    ]
+   }
+  },
+  "beech-bend-park--kentucky-rumbler": {
+   "qid": "Q997720",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Kentucky Rumbler",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "2967"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (KY); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "beech-bend-park--wild-mouse": {
+   "qid": "Q20710758",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wild Mouse",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "2968"
+    ]
+   }
+  },
+  "belmont-park--giant-dipper": {
+   "qid": "Q1522717",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Giant Dipper",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "203"
+    ]
+   }
+  },
+  "busch-gardens-tampa--air-grover": {
+   "qid": "Q4698003",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Air Grover",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "8632"
+    ]
+   }
+  },
+  "busch-gardens-tampa--cheetah-hunt": {
+   "qid": "Q1068893",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Cheetah Hunt",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Busch Gardens Tampa"
+    ],
+    "rcdbId": [
+     "9456"
+    ]
+   }
+  },
+  "busch-gardens-tampa--cobra-s-curse": {
+   "qid": "Q23831274",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Cobra's Curse",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Busch Gardens Tampa"
+    ],
+    "rcdbId": [
+     "12781"
+    ]
+   }
+  },
+  "busch-gardens-tampa--iron-gwazi": {
+   "qid": "Q966471",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Iron Gwazi",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Busch Gardens Tampa"
+    ],
+    "rcdbId": [
+     "16985"
+    ]
+   }
+  },
+  "busch-gardens-tampa--kumba": {
+   "qid": "Q679029",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Kumba",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Busch Gardens Tampa"
+    ],
+    "rcdbId": [
+     "94"
+    ]
+   }
+  },
+  "busch-gardens-tampa--montu": {
+   "qid": "Q740173",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Montu",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "87"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (FL); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "busch-gardens-tampa--python": {
+   "qid": "Q7263917",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Python",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Busch Gardens Tampa"
+    ],
+    "rcdbId": [
+     "96"
+    ]
+   }
+  },
+  "busch-gardens-tampa--sand-serpent": {
+   "qid": "Q3471802",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Sand Serpent",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "2595"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (FL); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "busch-gardens-tampa--scorpion": {
+   "qid": "Q376984",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Scorpion",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "95"
+    ]
+   }
+  },
+  "busch-gardens-tampa--sheikra": {
+   "qid": "Q662032",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "SheiKra",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "2662"
+    ]
+   }
+  },
+  "busch-gardens-tampa--tigris": {
+   "qid": "Q60764525",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Tigris",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Busch Gardens Tampa"
+    ],
+    "rcdbId": [
+     "16607"
+    ]
+   }
+  },
+  "busch-gardens-williamsburg--alpengeist": {
+   "qid": "Q1453566",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Alpengeist",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Busch Gardens Williamsburg"
+    ],
+    "rcdbId": [
+     "277"
+    ]
+   }
+  },
+  "busch-gardens-williamsburg--apollo-s-chariot": {
+   "qid": "Q619527",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Apollo's Chariot",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Busch Gardens Williamsburg"
+    ],
+    "rcdbId": [
+     "531"
+    ]
+   }
+  },
+  "busch-gardens-williamsburg--griffon": {
+   "qid": "Q1546634",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Griffon",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Busch Gardens Williamsburg"
+    ],
+    "rcdbId": [
+     "3631"
+    ]
+   }
+  },
+  "busch-gardens-williamsburg--grover-s-alpine-express": {
+   "qid": "Q5611500",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Grover's Alpine Express",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "4282"
+    ]
+   }
+  },
+  "busch-gardens-williamsburg--invadr": {
+   "qid": "Q25006727",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "InvadR",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Busch Gardens Williamsburg"
+    ],
+    "rcdbId": [
+     "8027"
+    ]
+   }
+  },
+  "busch-gardens-williamsburg--loch-ness-monster": {
+   "qid": "Q1867264",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Loch Ness Monster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "110"
+    ]
+   }
+  },
+  "busch-gardens-williamsburg--pantheon": {
+   "qid": "Q84176797",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Pantheon",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "16812"
+    ]
+   }
+  },
+  "busch-gardens-williamsburg--tempesto": {
+   "qid": "Q20648687",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Tempesto",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Busch Gardens Williamsburg"
+    ],
+    "rcdbId": [
+     "12277"
+    ]
+   }
+  },
+  "busch-gardens-williamsburg--verbolten": {
+   "qid": "Q2514199",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Verbolten",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Busch Gardens Williamsburg"
+    ],
+    "rcdbId": [
+     "9463"
+    ]
+   }
+  },
+  "california-s-great-america--demon": {
+   "qid": "Q1186421",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Demon",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "California's Great America"
+    ]
+   }
+  },
+  "california-s-great-america--flight-deck": {
+   "qid": "Q1428707",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Flight Deck",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "California's Great America"
+    ],
+    "rcdbId": [
+     "80"
+    ]
+   }
+  },
+  "california-s-great-america--gold-striker": {
+   "qid": "Q5578883",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Gold Striker",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "California's Great America"
+    ],
+    "rcdbId": [
+     "10857"
+    ]
+   }
+  },
+  "california-s-great-america--grizzly": {
+   "qid": "Q7738325",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Grizzly",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "California's Great America"
+    ],
+    "rcdbId": [
+     "77"
+    ]
+   }
+  },
+  "california-s-great-america--patriot": {
+   "qid": "Q2534605",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Patriot",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "California's Great America"
+    ],
+    "rcdbId": [
+     "79"
+    ]
+   }
+  },
+  "california-s-great-america--railblazer": {
+   "qid": "Q39048970",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "RailBlazer",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "California's Great America"
+    ],
+    "rcdbId": [
+     "15412"
+    ]
+   }
+  },
+  "california-s-great-america--woodstock-s-express": {
+   "qid": "Q22058482",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Woodstock's Express",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "California's Great America"
+    ],
+    "rcdbId": [
+     "78"
+    ]
+   }
+  },
+  "camden-park--big-dipper": {
+   "qid": "Q106696223",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Big Dipper",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Camden Park"
+    ],
+    "rcdbId": [
+     "315"
+    ]
+   }
+  },
+  "canobie-lake-park--canobie-corkscrew": {
+   "qid": "Q666094",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Canobie Corkscrew",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Canobie Lake Park"
+    ],
+    "rcdbId": [
+     "296"
+    ]
+   }
+  },
+  "canobie-lake-park--untamed": {
+   "qid": "Q7897563",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Untamed",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Canobie Lake Park"
+    ],
+    "rcdbId": [
+     "9517"
+    ]
+   }
+  },
+  "canobie-lake-park--yankee-cannonball": {
+   "qid": "Q14705421",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Yankee Cannonball",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Canobie Lake Park"
+    ],
+    "rcdbId": [
+     "298"
+    ]
+   }
+  },
+  "carowinds--afterburn": {
+   "qid": "Q389146",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Afterburn",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "527"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (NC); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "carowinds--carolina-cyclone": {
+   "qid": "Q1044389",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Carolina Cyclone",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "81"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (NC); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "carowinds--carolina-goldrusher": {
+   "qid": "Q5044835",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Carolina Goldrusher",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "83"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (NC); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "carowinds--copperhead-strike": {
+   "qid": "Q59563612",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Copperhead Strike",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Carowinds"
+    ],
+    "rcdbId": [
+     "16349"
+    ]
+   }
+  },
+  "carowinds--flying-cobras": {
+   "qid": "Q5044796",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Flying Cobras",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Carowinds",
+     "Carowinds"
+    ],
+    "rcdbId": [
+     "4269"
+    ]
+   }
+  },
+  "carowinds--flying-super-saturator": {
+   "qid": "Q5463536",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Flying Super Saturator",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Carowinds"
+    ],
+    "rcdbId": [
+     "598"
+    ]
+   }
+  },
+  "carowinds--fury-325": {
+   "qid": "Q18150522",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Fury 325",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Carowinds"
+    ],
+    "rcdbId": [
+     "12273"
+    ]
+   }
+  },
+  "carowinds--intimidator": {
+   "qid": "Q1671491",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Intimidator",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Carowinds"
+    ],
+    "rcdbId": [
+     "8588"
+    ]
+   }
+  },
+  "carowinds--nighthawk": {
+   "qid": "Q1693012",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Nighthawk",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "2514"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (NC); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "carowinds--ricochet": {
+   "qid": "Q7332308",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Ricochet",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "1478"
+    ]
+   }
+  },
+  "carowinds--thunder-road": {
+   "qid": "Q1675977",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Thunder Road",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "84"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (NC); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "carowinds--vortex": {
+   "qid": "Q2534606",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Vortex",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Carowinds"
+    ],
+    "rcdbId": [
+     "86"
+    ]
+   }
+  },
+  "carowinds--woodstock-express": {
+   "qid": "Q8033425",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Woodstock Express",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "82"
+    ]
+   }
+  },
+  "casino-pier--hydrus": {
+   "qid": "Q30610188",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Hydrus",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "14231"
+    ]
+   }
+  },
+  "casino-pier--jet-star": {
+   "qid": "Q1141240",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Jet Star",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "344"
+    ]
+   }
+  },
+  "casino-pier--star-jet": {
+   "qid": "Q30642835",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Star Jet",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Casino Pier"
+    ],
+    "rcdbId": [
+     "1477"
+    ]
+   }
+  },
+  "castles-n-coasters--desert-storm": {
+   "qid": "Q5264027",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Desert Storm",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "350"
+    ]
+   }
+  },
+  "cedar-point--blue-streak": {
+   "qid": "Q885897",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Blue Streak",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "12"
+    ]
+   }
+  },
+  "cedar-point--cedar-creek-mine-ride": {
+   "qid": "Q2943776",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Cedar Creek Mine Ride",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "18"
+    ]
+   }
+  },
+  "cedar-point--corkscrew": {
+   "qid": "Q1133019",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Corkscrew",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point",
+     "Sandusky"
+    ],
+    "rcdbId": [
+     "13"
+    ]
+   }
+  },
+  "cedar-point--disaster-transport": {
+   "qid": "Q1228345",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Disaster Transport",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "19"
+    ]
+   }
+  },
+  "cedar-point--gatekeeper": {
+   "qid": "Q596922",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "GateKeeper",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "10891"
+    ]
+   }
+  },
+  "cedar-point--gemini": {
+   "qid": "Q1501093",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Gemini",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "14"
+    ]
+   }
+  },
+  "cedar-point--iron-dragon": {
+   "qid": "Q836592",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Iron Dragon",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "17"
+    ]
+   }
+  },
+  "cedar-point--magnum-xl-200": {
+   "qid": "Q1749312",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Magnum XL-200",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "11"
+    ]
+   }
+  },
+  "cedar-point--maverick": {
+   "qid": "Q1911911",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Maverick",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "3570"
+    ]
+   }
+  },
+  "cedar-point--mean-streak": {
+   "qid": "Q60845759",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Mean Streak",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "16"
+    ]
+   }
+  },
+  "cedar-point--millennium-force": {
+   "qid": "Q1065056",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Millennium Force",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "594"
+    ]
+   }
+  },
+  "cedar-point--raptor": {
+   "qid": "Q683300",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Raptor",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "1"
+    ]
+   }
+  },
+  "cedar-point--rougarou": {
+   "qid": "Q1476401",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Rougarou",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "7"
+    ]
+   }
+  },
+  "cedar-point--siren-s-curse": {
+   "qid": "Q130332677",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Siren's Curse",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "22124"
+    ]
+   }
+  },
+  "cedar-point--steel-vengeance": {
+   "qid": "Q1787446",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Steel Vengeance",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "15411"
+    ]
+   }
+  },
+  "cedar-point--valravn": {
+   "qid": "Q20962800",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Valravn",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "13383"
+    ]
+   }
+  },
+  "cedar-point--wicked-twister": {
+   "qid": "Q648978",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wicked Twister",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "1571"
+    ]
+   }
+  },
+  "cedar-point--wildcat": {
+   "qid": "Q3568102",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "WildCat",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "20"
+    ]
+   }
+  },
+  "cedar-point--wilderness-run": {
+   "qid": "Q6298633",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wilderness Run",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "15"
+    ]
+   }
+  },
+  "cedar-point--woodstock-express": {
+   "qid": "Q8033426",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Woodstock Express",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cedar Point"
+    ],
+    "rcdbId": [
+     "553"
+    ]
+   }
+  },
+  "celebration-city--ozark-wildcat": {
+   "qid": "Q7116517",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Ozark Wildcat",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Celebration City"
+    ],
+    "rcdbId": [
+     "1888"
+    ]
+   }
+  },
+  "clementon-park-splash-world--jack-rabbit": {
+   "qid": "Q96418654",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Jack Rabbit",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Clementon Amusement Park"
+    ],
+    "rcdbId": [
+     "221"
+    ]
+   }
+  },
+  "cliff-s-amusement-park--new-mexico-rattler": {
+   "qid": "Q19332764",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "New Mexico Rattler",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Cliff's Amusement Park"
+    ],
+    "rcdbId": [
+     "1659"
+    ]
+   }
+  },
+  "columbus-zoo-and-aquarium--sea-dragon": {
+   "qid": "Q7439875",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Sea Dragon",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Columbus Zoo and Aquarium"
+    ],
+    "rcdbId": [
+     "324"
+    ]
+   }
+  },
+  "conneaut-lake-park--blue-streak": {
+   "qid": "Q885896",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Blue Streak",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "249"
+    ]
+   }
+  },
+  "conneaut-lake-park--little-dipper": {
+   "qid": "Q6649783",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Little Dipper",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "250"
+    ]
+   }
+  },
+  "darien-lake--hoot-n-holler": {
+   "qid": "Q5898663",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Hoot N Holler",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Darien Lake"
+    ],
+    "rcdbId": [
+     "751"
+    ]
+   }
+  },
+  "darien-lake--motocoaster": {
+   "qid": "Q6917959",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Moto Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Darien Lake"
+    ],
+    "rcdbId": [
+     "4138"
+    ]
+   }
+  },
+  "darien-lake--predator": {
+   "qid": "Q2108259",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Predator",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Darien Lake"
+    ],
+    "rcdbId": [
+     "223"
+    ]
+   }
+  },
+  "darien-lake--tantrum": {
+   "qid": "Q60770886",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Tantrum",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Darien Lake"
+    ],
+    "rcdbId": [
+     "15603"
+    ]
+   }
+  },
+  "darien-lake--viper": {
+   "qid": "Q2527551",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Viper",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Darien Lake"
+    ],
+    "rcdbId": [
+     "224"
+    ]
+   }
+  },
+  "disney-california-adventure--goofy-s-sky-school": {
+   "qid": "Q3327600",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Goofy's Sky School",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "732"
+    ]
+   }
+  },
+  "disney-s-animal-kingdom--expedition-everest": {
+   "qid": "Q1341067",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Expedition Everest",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Asia",
+     "Disney's Animal Kingdom"
+    ],
+    "rcdbId": [
+     "2389"
+    ]
+   }
+  },
+  "disney-s-animal-kingdom--primeval-whirl": {
+   "qid": "Q3403239",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Primeval Whirl",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "DinoLand U.S.A.",
+     "Disney's Animal Kingdom"
+    ],
+    "rcdbId": [
+     "1868",
+     "1566"
+    ]
+   }
+  },
+  "disney-s-hollywood-studios--rock-n-roller-coaster": {
+   "qid": "Q139394198",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Rock ’n’ Roller Coaster Starring The Muppets",
+    "nameVia": "alias",
+    "locationVia": "park",
+    "wikidataPark": []
+   },
+   "notes": [
+    "Name matched a Wikidata alias (former or alternate name); the Wikidata label is \"Rock ’n’ Roller Coaster Starring The Muppets\"."
+   ]
+  },
+  "disney-s-hollywood-studios--slinky-dog-dash": {
+   "qid": "Q35006966",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Slinky Dog Dash",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Toy Story Land",
+     "Disney's Hollywood Studios"
+    ],
+    "rcdbId": [
+     "13377"
+    ]
+   }
+  },
+  "disney-s-magic-kingdom--big-thunder-mountain-railroad": {
+   "qid": "Q85474505",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Big Thunder Mountain Railroad",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Big Thunder Mountain Railroad",
+     "Frontierland at Magic Kingdom"
+    ]
+   }
+  },
+  "disney-s-magic-kingdom--seven-dwarfs-mine-train": {
+   "qid": "Q2182970",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Seven Dwarfs Mine Train",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Magic Kingdom",
+     "Shanghai Disneyland Park"
+    ],
+    "rcdbId": [
+     "9720",
+     "11646"
+    ]
+   }
+  },
+  "disney-s-magic-kingdom--space-mountain": {
+   "qid": "Q2306317",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Space Mountain",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Magic Kingdom"
+    ],
+    "rcdbId": [
+     "267"
+    ]
+   }
+  },
+  "disney-s-magic-kingdom--the-barnstormer": {
+   "qid": "Q2884723",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Barnstormer",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Walt Disney World Resort"
+    ],
+    "rcdbId": [
+     "274"
+    ]
+   }
+  },
+  "disney-s-magic-kingdom--tron-lightcycle-run": {
+   "qid": "Q123594444",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "TRON Lightcycle / Run",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Tomorrowland"
+    ],
+    "rcdbId": [
+     "15286"
+    ]
+   }
+  },
+  "disneyland-park--gadget-s-go-coaster": {
+   "qid": "Q3094227",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Gadget's Go Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Disneyland",
+     "Tokyo Disneyland"
+    ],
+    "rcdbId": [
+     "295",
+     "1184"
+    ]
+   }
+  },
+  "disneyland-park--matterhorn-bobsleds": {
+   "qid": "Q1849003",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Matterhorn Bobsleds",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Disneyland"
+    ],
+    "rcdbId": [
+     "200"
+    ]
+   }
+  },
+  "disneyland-park--space-mountain": {
+   "qid": "Q7572427",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Space Mountain",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Disneyland"
+    ],
+    "rcdbId": [
+     "201"
+    ]
+   }
+  },
+  "dixie-landin-blue-bayou-waterpark--loco-loco": {
+   "qid": "Q6665921",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Loco-Loco",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "8977"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (LA); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "dollywood--big-bear-mountain": {
+   "qid": "Q115804804",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Big Bear Mountain",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dollywood"
+    ]
+   }
+  },
+  "dollywood--blazing-fury": {
+   "qid": "Q14709813",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Blazing Fury (dark ride)",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dollywood"
+    ],
+    "rcdbId": [
+     "501"
+    ]
+   }
+  },
+  "dollywood--dragonflier": {
+   "qid": "Q105063597",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Dragonflier",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dollywood"
+    ],
+    "rcdbId": [
+     "16124"
+    ]
+   }
+  },
+  "dollywood--firechaser-express": {
+   "qid": "Q15047510",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "FireChaser Express",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dollywood"
+    ],
+    "rcdbId": [
+     "6691"
+    ]
+   }
+  },
+  "dollywood--lightning-rod": {
+   "qid": "Q22073205",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Lightning Rod",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dollywood"
+    ],
+    "rcdbId": [
+     "13369"
+    ]
+   }
+  },
+  "dollywood--mystery-mine": {
+   "qid": "Q1956905",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Mystery Mine",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dollywood"
+    ],
+    "rcdbId": [
+     "3609"
+    ]
+   }
+  },
+  "dollywood--tennessee-tornado": {
+   "qid": "Q2403629",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Tennessee Tornado",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dollywood"
+    ],
+    "rcdbId": [
+     "534"
+    ]
+   }
+  },
+  "dollywood--thunderhead": {
+   "qid": "Q1559667",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Thunderhead",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dollywood"
+    ],
+    "rcdbId": [
+     "2451"
+    ]
+   }
+  },
+  "dollywood--wild-eagle": {
+   "qid": "Q2544502",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wild Eagle",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dollywood"
+    ],
+    "rcdbId": [
+     "10148"
+    ]
+   }
+  },
+  "dorney-park-wildwater-kingdom--hercules": {
+   "qid": "Q1609595",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Hercules",
+    "nameVia": "label",
+    "locationVia": "city",
+    "wikidataPark": [],
+    "rcdbId": [
+     "241"
+    ]
+   },
+   "notes": [
+    "Park matched by city (Allentown), not by park name."
+   ]
+  },
+  "dorney-park-wildwater-kingdom--hydra-the-revenge": {
+   "qid": "Q1545220",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Hydra the Revenge",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dorney Park & Wildwater Kingdom"
+    ],
+    "rcdbId": [
+     "2528"
+    ]
+   }
+  },
+  "dorney-park-wildwater-kingdom--possessed": {
+   "qid": "Q2105808",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Possessed",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dorney Park & Wildwater Kingdom"
+    ],
+    "rcdbId": [
+     "4039"
+    ]
+   }
+  },
+  "dorney-park-wildwater-kingdom--steel-first": {
+   "qid": "Q7605670",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Steel First",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "242"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (PA); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "dorney-park-wildwater-kingdom--steel-force": {
+   "qid": "Q2335777",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Steel Force",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dorney Park & Wildwater Kingdom"
+    ],
+    "rcdbId": [
+     "276"
+    ]
+   }
+  },
+  "dorney-park-wildwater-kingdom--talon": {
+   "qid": "Q2390682",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Talon",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dorney Park & Wildwater Kingdom"
+    ],
+    "rcdbId": [
+     "735"
+    ]
+   }
+  },
+  "dorney-park-wildwater-kingdom--thunderhawk": {
+   "qid": "Q2429902",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Thunderhawk",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dorney Park & Wildwater Kingdom"
+    ],
+    "rcdbId": [
+     "239"
+    ]
+   }
+  },
+  "dutch-wonderland--joust": {
+   "qid": "Q15047522",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Joust",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dutch Wonderland"
+    ]
+   }
+  },
+  "dutch-wonderland--kingdom-coaster": {
+   "qid": "Q6412474",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Kingdom Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dutch Wonderland"
+    ],
+    "rcdbId": [
+     "251"
+    ]
+   }
+  },
+  "dutch-wonderland--merlin-s-mayhem": {
+   "qid": "Q105081816",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Merlin's Mayhem",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Dutch Wonderland"
+    ],
+    "rcdbId": [
+     "14395"
+    ]
+   }
+  },
+  "elitch-gardens--halfpipe": {
+   "qid": "Q1135493",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Half Pipe",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Elitch Gardens Theme Park",
+     "Särkänniemi"
+    ],
+    "rcdbId": [
+     "2648",
+     "1826"
+    ]
+   }
+  },
+  "elitch-gardens--sidewinder": {
+   "qid": "Q7508555",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Sidewinder",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "209"
+    ]
+   }
+  },
+  "elitch-gardens--twister-ii": {
+   "qid": "Q1432851",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Twister II",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "210"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (CO); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "epcot--guardians-of-the-galaxy-cosmic-rewind": {
+   "qid": "Q36259219",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Guardians of the Galaxy: Cosmic Rewind",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "World Discovery",
+     "Epcot"
+    ],
+    "rcdbId": [
+     "15504"
+    ]
+   }
+  },
+  "family-kingdom-amusement-park--swamp-fox": {
+   "qid": "Q7653328",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Swamp Fox",
+    "nameVia": "label",
+    "locationVia": "city",
+    "wikidataPark": [],
+    "rcdbId": [
+     "337"
+    ]
+   },
+   "notes": [
+    "Park matched by city (Myrtle Beach), not by park name."
+   ]
+  },
+  "freestyle-music-park--time-machine": {
+   "qid": "Q2414672",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Time Machine",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "3852"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (SC); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "frontier-city--silver-bullet": {
+   "qid": "Q85847212",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Silver Bullet",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Frontier City"
+    ],
+    "rcdbId": [
+     "153"
+    ]
+   }
+  },
+  "frontier-city--steel-lasso": {
+   "qid": "Q7605686",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Steel Lasso",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Frontier City"
+    ],
+    "rcdbId": [
+     "4191"
+    ]
+   }
+  },
+  "frontier-city--wildcat": {
+   "qid": "Q61945012",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wildcat",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Frontier City"
+    ],
+    "rcdbId": [
+     "155"
+    ]
+   }
+  },
+  "fun-spot--afterburner": {
+   "qid": "Q2131335",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Afterburner",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Fun Spot Amusement Park & Zoo"
+    ],
+    "rcdbId": [
+     "332"
+    ]
+   }
+  },
+  "fun-spot-america-atlanta--arieforce-one": {
+   "qid": "Q109849943",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "ArieForce One",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Fayetteville"
+    ],
+    "rcdbId": [
+     "19332"
+    ]
+   }
+  },
+  "fun-spot-america-orlando--freedom-flyer": {
+   "qid": "Q18748989",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Freedom Flyer",
+    "nameVia": "label",
+    "locationVia": "city",
+    "wikidataPark": [],
+    "rcdbId": [
+     "10347"
+    ]
+   },
+   "notes": [
+    "Park matched by city (Orlando), not by park name."
+   ]
+  },
+  "fun-spot-america-orlando--white-lightning": {
+   "qid": "Q14686576",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "White Lightning",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "10348"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (FL); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "funtown-splashtown-usa--excalibur": {
+   "qid": "Q1383421",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Excalibur",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "471"
+    ]
+   }
+  },
+  "galveston-island-pleasure-pier--iron-shark": {
+   "qid": "Q15047519",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Iron Shark",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "10290"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (TX); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "geauga-lake-s-wildwater-kingdom--beaver-land-mine-ride": {
+   "qid": "Q4878126",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Beaver Land Mine Ride",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Geauga Lake"
+    ],
+    "rcdbId": [
+     "634"
+    ]
+   }
+  },
+  "geauga-lake-s-wildwater-kingdom--big-dipper": {
+   "qid": "Q858766",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Big Dipper",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Geauga Lake"
+    ],
+    "rcdbId": [
+     "236"
+    ]
+   }
+  },
+  "geauga-lake-s-wildwater-kingdom--double-loop": {
+   "qid": "Q1251430",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Double Loop",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "237"
+    ]
+   }
+  },
+  "geauga-lake-s-wildwater-kingdom--the-villain": {
+   "qid": "Q2526040",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Villain",
+    "nameVia": "label",
+    "locationVia": "city",
+    "wikidataPark": [],
+    "rcdbId": [
+     "633"
+    ]
+   },
+   "notes": [
+    "Park matched by city (Aurora), not by park name."
+   ]
+  },
+  "glenwood-caverns-adventure-park--cliffhanger": {
+   "qid": "Q5132836",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Cliffhanger",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "10462"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (CO); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "glenwood-caverns-adventure-park--defiance": {
+   "qid": "Q108166881",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Defiance",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Glenwood Caverns"
+    ],
+    "rcdbId": [
+     "19510"
+    ]
+   }
+  },
+  "hersheypark--candymonium": {
+   "qid": "Q85750456",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Candymonium",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Hersheypark"
+    ],
+    "rcdbId": [
+     "16682"
+    ]
+   }
+  },
+  "hersheypark--comet": {
+   "qid": "Q5151571",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Comet",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Hersheypark"
+    ],
+    "rcdbId": [
+     "106"
+    ]
+   }
+  },
+  "hersheypark--fahrenheit": {
+   "qid": "Q202493",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Fahrenheit",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "4049"
+    ]
+   }
+  },
+  "hersheypark--great-bear": {
+   "qid": "Q1294688",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Great Bear",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Hersheypark"
+    ],
+    "rcdbId": [
+     "468"
+    ]
+   }
+  },
+  "hersheypark--laff-trakk": {
+   "qid": "Q20487039",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Laff Trakk",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Hersheypark"
+    ],
+    "rcdbId": [
+     "12270"
+    ]
+   }
+  },
+  "hersheypark--lightning-racer": {
+   "qid": "Q906447",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Lightning Racer",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Hersheypark"
+    ],
+    "rcdbId": [
+     "597"
+    ]
+   }
+  },
+  "hersheypark--roller-soaker": {
+   "qid": "Q1472834",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Roller Soaker",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Hersheypark"
+    ],
+    "rcdbId": [
+     "1497"
+    ]
+   }
+  },
+  "hersheypark--sidewinder": {
+   "qid": "Q7508554",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Jolly Rancher Remix",
+    "nameVia": "alias",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Hersheypark",
+     "Hersheypark"
+    ],
+    "rcdbId": [
+     "109"
+    ]
+   },
+   "notes": [
+    "Name matched a Wikidata alias (former or alternate name); the Wikidata label is \"Jolly Rancher Remix\"."
+   ]
+  },
+  "hersheypark--skyrush": {
+   "qid": "Q2293407",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Skyrush",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Hersheypark"
+    ],
+    "rcdbId": [
+     "10089"
+    ]
+   }
+  },
+  "hersheypark--sooperdooperlooper": {
+   "qid": "Q2302588",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "SooperDooperLooper",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Hersheypark"
+    ],
+    "rcdbId": [
+     "108"
+    ]
+   }
+  },
+  "hersheypark--storm-runner": {
+   "qid": "Q1500945",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Storm Runner",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Hersheypark"
+    ],
+    "rcdbId": [
+     "2498"
+    ]
+   }
+  },
+  "hersheypark--trailblazer": {
+   "qid": "Q7832773",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Trailblazer",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Hersheypark"
+    ],
+    "rcdbId": [
+     "107"
+    ]
+   }
+  },
+  "hersheypark--wild-mouse": {
+   "qid": "Q8000725",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wild Mouse",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Hersheypark"
+    ],
+    "rcdbId": [
+     "539"
+    ]
+   }
+  },
+  "hersheypark--wildcat-s-revenge": {
+   "qid": "Q2570460",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wildcat’s Revenge",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Hersheypark"
+    ],
+    "rcdbId": [
+     "20462"
+    ]
+   }
+  },
+  "holiday-world-splashin-safari--good-gravy": {
+   "qid": "Q131465731",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Good Gravy!",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "21070"
+    ]
+   }
+  },
+  "holiday-world-splashin-safari--howler": {
+   "qid": "Q14688824",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Howler",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "555"
+    ]
+   }
+  },
+  "holiday-world-splashin-safari--raven": {
+   "qid": "Q2413721",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Raven",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "136"
+    ]
+   }
+  },
+  "holiday-world-splashin-safari--the-legend": {
+   "qid": "Q2412446",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Legend",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "582"
+    ]
+   }
+  },
+  "holiday-world-splashin-safari--the-voyage": {
+   "qid": "Q2415004",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Voyage",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Holiday World & Splashin' Safari"
+    ],
+    "rcdbId": [
+     "3231"
+    ]
+   }
+  },
+  "holiday-world-splashin-safari--thunderbird": {
+   "qid": "Q18158819",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Thunderbird",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Holiday World & Splashin' Safari"
+    ],
+    "rcdbId": [
+     "12260"
+    ]
+   }
+  },
+  "idlewild-soak-zone--rollo-coaster": {
+   "qid": "Q15047496",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Rollo Coaster",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "272"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (PA); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "idlewild-soak-zone--wild-mouse": {
+   "qid": "Q3568116",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wild Mouse",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "271"
+    ]
+   }
+  },
+  "indiana-beach--cornball-express": {
+   "qid": "Q1133164",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Cornball Express",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Indiana Beach"
+    ],
+    "rcdbId": [
+     "741"
+    ]
+   }
+  },
+  "indiana-beach--dragon-wagon": {
+   "qid": "Q16930998",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Dragon Wagon",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "11898"
+    ]
+   }
+  },
+  "indiana-beach--hoosier-hurricane": {
+   "qid": "Q1627485",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Hoosier Hurricane",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Indiana Beach"
+    ],
+    "rcdbId": [
+     "270"
+    ]
+   }
+  },
+  "indiana-beach--lost-coaster-of-superstition-mountain": {
+   "qid": "Q1870687",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Lost Coaster of Superstition Mountain",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "460"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (IN); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "indiana-beach--steel-hawg": {
+   "qid": "Q3497779",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Steel Hawg",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Indiana Beach"
+    ],
+    "rcdbId": [
+     "2722"
+    ]
+   }
+  },
+  "indiana-beach--tig-rr-coaster": {
+   "qid": "Q7801307",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Tig'rr Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Indiana Beach"
+    ],
+    "rcdbId": [
+     "285"
+    ]
+   }
+  },
+  "jolly-roger-amusement-park--wildcat": {
+   "qid": "Q85848040",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wildcat",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Jolly Roger Amusement Park"
+    ],
+    "rcdbId": [
+     "12205"
+    ]
+   }
+  },
+  "kemah-boardwalk-amusements--boardwalk-bullet": {
+   "qid": "Q681716",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Boardwalk Bullet",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kemah Boardwalk"
+    ],
+    "rcdbId": [
+     "3757"
+    ]
+   }
+  },
+  "kennywood--exterminator": {
+   "qid": "Q1385028",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Exterminator",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kennywood"
+    ],
+    "rcdbId": [
+     "538"
+    ]
+   }
+  },
+  "kennywood--jack-rabbit": {
+   "qid": "Q1677171",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Jack Rabbit",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kennywood"
+    ],
+    "rcdbId": [
+     "120"
+    ]
+   }
+  },
+  "kennywood--phantom-s-revenge": {
+   "qid": "Q666461",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Phantom's Revenge",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kennywood"
+    ],
+    "rcdbId": [
+     "123"
+    ]
+   }
+  },
+  "kennywood--racer": {
+   "qid": "Q951111",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Racer",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kennywood",
+     "Kennywood"
+    ],
+    "rcdbId": [
+     "121"
+    ]
+   }
+  },
+  "kennywood--sky-rocket": {
+   "qid": "Q1131734",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Sky Rocket",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kennywood"
+    ],
+    "rcdbId": [
+     "8612"
+    ]
+   }
+  },
+  "kennywood--steel-curtain": {
+   "qid": "Q56274345",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Steel Curtain",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kennywood"
+    ],
+    "rcdbId": [
+     "16479"
+    ]
+   }
+  },
+  "kennywood--thunderbolt": {
+   "qid": "Q1307380",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Thunderbolt",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kennywood",
+     "Kennywood"
+    ],
+    "rcdbId": [
+     "122"
+    ]
+   }
+  },
+  "kentucky-kingdom--kentucky-flyer": {
+   "qid": "Q105043981",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Kentucky Flyer",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kentucky Kingdom"
+    ],
+    "rcdbId": [
+     "16676"
+    ]
+   }
+  },
+  "kentucky-kingdom--lightning-run": {
+   "qid": "Q18153602",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Lightning Run",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kentucky Kingdom"
+    ],
+    "rcdbId": [
+     "7982"
+    ]
+   }
+  },
+  "kentucky-kingdom--roller-skater": {
+   "qid": "Q7361042",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Roller Skater",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kentucky Kingdom"
+    ],
+    "rcdbId": [
+     "172"
+    ]
+   }
+  },
+  "kentucky-kingdom--t3": {
+   "qid": "Q2183558",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "T3",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "175"
+    ]
+   }
+  },
+  "kentucky-kingdom--thunder-run": {
+   "qid": "Q2085501",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Thunder Run",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kentucky Kingdom"
+    ],
+    "rcdbId": [
+     "173"
+    ]
+   }
+  },
+  "kings-dominion--anaconda": {
+   "qid": "Q483518",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Anaconda",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Dominion"
+    ],
+    "rcdbId": [
+     "92"
+    ]
+   }
+  },
+  "kings-dominion--avalanche": {
+   "qid": "Q4827461",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Avalanche",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Dominion"
+    ],
+    "rcdbId": [
+     "282"
+    ]
+   }
+  },
+  "kings-dominion--backlot-stunt-coaster": {
+   "qid": "Q798461",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Backlot Stunt Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Canada's Wonderland",
+     "Kings Dominion"
+    ],
+    "rcdbId": [
+     "2860",
+     "2861",
+     "3302"
+    ]
+   }
+  },
+  "kings-dominion--dominator": {
+   "qid": "Q951359",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Dominator",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Dominion"
+    ],
+    "rcdbId": [
+     "4079"
+    ]
+   }
+  },
+  "kings-dominion--grizzly": {
+   "qid": "Q1547136",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Grizzly",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Dominion"
+    ],
+    "rcdbId": [
+     "90"
+    ]
+   }
+  },
+  "kings-dominion--hurler": {
+   "qid": "Q1619573",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Hurler",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Dominion"
+    ],
+    "rcdbId": [
+     "85",
+     "93"
+    ]
+   }
+  },
+  "kings-dominion--hypersonic-xlc": {
+   "qid": "Q1640820",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Hypersonic XLC",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Dominion"
+    ],
+    "rcdbId": [
+     "729"
+    ]
+   }
+  },
+  "kings-dominion--intimidator-305": {
+   "qid": "Q954833",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Pantherian",
+    "nameVia": "alias",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Dominion"
+    ],
+    "rcdbId": [
+     "4520"
+    ]
+   },
+   "notes": [
+    "Name matched a Wikidata alias (former or alternate name); the Wikidata label is \"Pantherian\"."
+   ]
+  },
+  "kings-dominion--rebel-yell": {
+   "qid": "Q7302076",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Rebel Yell",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Dominion"
+    ]
+   }
+  },
+  "kings-dominion--ricochet": {
+   "qid": "Q16968585",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Ricochet",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Dominion"
+    ],
+    "rcdbId": [
+     "930"
+    ]
+   }
+  },
+  "kings-dominion--shockwave": {
+   "qid": "Q2279717",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Shockwave",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Dominion",
+     "Kings Dominion"
+    ],
+    "rcdbId": [
+     "91"
+    ]
+   }
+  },
+  "kings-dominion--twisted-timbers": {
+   "qid": "Q39048402",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Twisted Timbers",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Dominion"
+    ],
+    "rcdbId": [
+     "15028"
+    ]
+   }
+  },
+  "kings-dominion--volcano-the-blast-coaster": {
+   "qid": "Q259175",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Volcano, The Blast Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Dominion"
+    ],
+    "rcdbId": [
+     "474"
+    ]
+   }
+  },
+  "kings-dominion--woodstock-express": {
+   "qid": "Q8033428",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Woodstock Express",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Dominion"
+    ],
+    "rcdbId": [
+     "89"
+    ]
+   }
+  },
+  "kings-island--adventure-express": {
+   "qid": "Q379935",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Adventure Express",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Island"
+    ],
+    "rcdbId": [
+     "70"
+    ]
+   }
+  },
+  "kings-island--backlot-stunt-coaster": {
+   "qid": "Q18545696",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Backlot Stunt Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Island",
+     "Kings Island"
+    ],
+    "rcdbId": [
+     "2860"
+    ]
+   }
+  },
+  "kings-island--banshee": {
+   "qid": "Q14674081",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Banshee",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "6640"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (OH); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "kings-island--diamondback": {
+   "qid": "Q922374",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Diamondback",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Island"
+    ],
+    "rcdbId": [
+     "4253"
+    ]
+   }
+  },
+  "kings-island--firehawk": {
+   "qid": "Q574000",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Firehawk",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Island"
+    ],
+    "rcdbId": [
+     "3793"
+    ]
+   }
+  },
+  "kings-island--invertigo": {
+   "qid": "Q48450165",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Invertigo",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Island"
+    ],
+    "rcdbId": [
+     "530"
+    ]
+   }
+  },
+  "kings-island--king-cobra": {
+   "qid": "Q1742012",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "King Cobra",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Island"
+    ],
+    "rcdbId": [
+     "68"
+    ]
+   }
+  },
+  "kings-island--mystic-timbers": {
+   "qid": "Q28446247",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Mystic Timbers",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Island"
+    ],
+    "rcdbId": [
+     "14116"
+    ]
+   }
+  },
+  "kings-island--orion": {
+   "qid": "Q66498889",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Orion",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Island"
+    ],
+    "rcdbId": [
+     "11437"
+    ]
+   }
+  },
+  "kings-island--racer": {
+   "qid": "Q841577",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Racer",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Island"
+    ],
+    "rcdbId": [
+     "69"
+    ]
+   }
+  },
+  "kings-island--scooby-s-ghoster-coaster": {
+   "qid": "Q7434348",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Scooby's Ghoster Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Island"
+    ],
+    "rcdbId": [
+     "505"
+    ]
+   }
+  },
+  "kings-island--son-of-beast": {
+   "qid": "Q283168",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Son of Beast",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Island"
+    ],
+    "rcdbId": [
+     "584"
+    ]
+   }
+  },
+  "kings-island--the-beast": {
+   "qid": "Q664237",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Beast",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Island"
+    ],
+    "rcdbId": [
+     "67"
+    ]
+   }
+  },
+  "kings-island--vortex": {
+   "qid": "Q689340",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Vortex",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Island"
+    ],
+    "rcdbId": [
+     "71"
+    ]
+   }
+  },
+  "kings-island--woodstock-express": {
+   "qid": "Q2260635",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Woodstock Express",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Kings Island"
+    ],
+    "rcdbId": [
+     "72"
+    ]
+   }
+  },
+  "knoebels-amusement-park--black-diamond": {
+   "qid": "Q4920646",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Black Diamond",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Knoebels Amusement Resort"
+    ],
+    "rcdbId": [
+     "4454"
+    ]
+   }
+  },
+  "knoebels-amusement-park--flying-turns": {
+   "qid": "Q1434625",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Flying Turns",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "3458"
+    ]
+   }
+  },
+  "knoebels-amusement-park--high-speed-thrill-coaster": {
+   "qid": "Q12060067",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "High Speed Thrill Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Knoebels Amusement Resort"
+    ],
+    "rcdbId": [
+     "146"
+    ]
+   }
+  },
+  "knoebels-amusement-park--impulse": {
+   "qid": "Q20055172",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Impulse",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "12000"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (PA); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "knoebels-amusement-park--kozmo-s-kurves": {
+   "qid": "Q6435353",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Kozmo's Kurves",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "4453"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (PA); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "knoebels-amusement-park--phoenix": {
+   "qid": "Q2088479",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Phoenix",
+    "nameVia": "label",
+    "locationVia": "city",
+    "wikidataPark": [],
+    "rcdbId": [
+     "143"
+    ]
+   },
+   "notes": [
+    "Park matched by city (Elysburg), not by park name."
+   ]
+  },
+  "knoebels-amusement-park--twister": {
+   "qid": "Q2462356",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Twister",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Knoebels Amusement Resort"
+    ],
+    "rcdbId": [
+     "546"
+    ]
+   }
+  },
+  "knott-s-berry-farm--coast-rider": {
+   "qid": "Q5138207",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Coast Rider",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Knott's Berry Farm"
+    ],
+    "rcdbId": [
+     "11074"
+    ]
+   }
+  },
+  "knott-s-berry-farm--hang-time": {
+   "qid": "Q39073843",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "HangTime",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Knott's Berry Farm"
+    ],
+    "rcdbId": [
+     "15413"
+    ]
+   }
+  },
+  "knott-s-berry-farm--jaguar": {
+   "qid": "Q1678491",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Jaguar!",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "291"
+    ]
+   }
+  },
+  "knott-s-berry-farm--montezooma-s-revenge": {
+   "qid": "Q3322684",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Montezooma's Revenge",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Knott's Berry Farm"
+    ],
+    "rcdbId": [
+     "292"
+    ]
+   }
+  },
+  "knott-s-berry-farm--pony-express": {
+   "qid": "Q3397820",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Pony Express",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "4089"
+    ]
+   }
+  },
+  "knott-s-berry-farm--sierra-sidewinder": {
+   "qid": "Q2284495",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Sierra Sidewinder",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "3704"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (CA); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "knott-s-berry-farm--silver-bullet": {
+   "qid": "Q1784195",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Silver Bullet",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Knott's Berry Farm"
+    ],
+    "rcdbId": [
+     "2536"
+    ]
+   }
+  },
+  "knott-s-berry-farm--timberline-twister": {
+   "qid": "Q3528737",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Timberline Twister",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "293"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (CA); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "knott-s-berry-farm--wacky-soap-box-racers": {
+   "qid": "Q3564952",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wacky Soap Box Racers",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Knott's Berry Farm"
+    ]
+   }
+  },
+  "knott-s-berry-farm--windjammer": {
+   "qid": "Q2583642",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Windjammer Surf Racers",
+    "nameVia": "partial",
+    "locationVia": "park",
+    "wikidataPark": []
+   },
+   "notes": [
+    "Partial name match (sponsor prefix or subtitle): Wikidata \"Windjammer Surf Racers\", local \"Windjammer\"."
+   ]
+  },
+  "lagoon--bat": {
+   "qid": "Q4868452",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Bat",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Lagoon Amusement Park"
+    ],
+    "rcdbId": [
+     "2954"
+    ]
+   }
+  },
+  "lagoon--bombora": {
+   "qid": "Q18210308",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "BomBora",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Lagoon Amusement Park"
+    ],
+    "rcdbId": [
+     "9223"
+    ]
+   }
+  },
+  "lagoon--cannibal": {
+   "qid": "Q17986250",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Cannibal",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Lagoon Amusement Park"
+    ],
+    "rcdbId": [
+     "11579"
+    ]
+   }
+  },
+  "lagoon--colossus-the-fire-dragon": {
+   "qid": "Q5149145",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Colossus the Fire Dragon",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Lagoon Amusement Park"
+    ],
+    "rcdbId": [
+     "197"
+    ]
+   }
+  },
+  "lagoon--jet-star-2": {
+   "qid": "Q18152677",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Jet Star 2",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "198"
+    ]
+   }
+  },
+  "lagoon--roller-coaster": {
+   "qid": "Q7361012",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Roller Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Lagoon Amusement Park"
+    ],
+    "rcdbId": [
+     "196"
+    ]
+   }
+  },
+  "lagoon--the-spider": {
+   "qid": "Q7577010",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Spider",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "2164"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (UT); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "lagoon--wicked": {
+   "qid": "Q201844",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wicked",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Lagoon Amusement Park"
+    ],
+    "rcdbId": [
+     "3534"
+    ]
+   }
+  },
+  "lagoon--wild-mouse": {
+   "qid": "Q18159280",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wild Mouse",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "507"
+    ]
+   }
+  },
+  "lake-compounce--boulder-dash": {
+   "qid": "Q895046",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Boulder Dash",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Lake Compounce"
+    ],
+    "rcdbId": [
+     "602"
+    ]
+   }
+  },
+  "lake-compounce--kiddie-coaster": {
+   "qid": "Q6404685",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Kiddie Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "603"
+    ]
+   }
+  },
+  "lake-compounce--wildcat": {
+   "qid": "Q2570454",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wildcat",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Lake Compounce"
+    ],
+    "rcdbId": [
+     "420"
+    ]
+   }
+  },
+  "lake-compounce--zoomerang": {
+   "qid": "Q8074183",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Zoomerang",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Lake Compounce"
+    ],
+    "rcdbId": [
+     "432"
+    ]
+   }
+  },
+  "lake-winnepesaukah--cannon-ball": {
+   "qid": "Q5032751",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Cannon Ball",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Lake Winnepesaukah"
+    ],
+    "rcdbId": [
+     "348"
+    ]
+   }
+  },
+  "lakemont-park--leap-the-dips": {
+   "qid": "Q1125804",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Leap-The-Dips",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "243"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (PA); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "lakemont-park--little-leaper": {
+   "qid": "Q6650672",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Little Leaper",
+    "nameVia": "label",
+    "locationVia": "city",
+    "wikidataPark": [],
+    "rcdbId": [
+     "244"
+    ]
+   },
+   "notes": [
+    "Park matched by city (Altoona), not by park name."
+   ]
+  },
+  "lakemont-park--skyliner": {
+   "qid": "Q1502938",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Skyliner",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "246"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (PA); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "lakemont-park--toboggan": {
+   "qid": "Q7811717",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Toboggan",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "247"
+    ]
+   }
+  },
+  "lakeside-amusement-park--cyclone": {
+   "qid": "Q85754903",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Cyclone",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Lakeside Amusement Park"
+    ],
+    "rcdbId": [
+     "211"
+    ]
+   }
+  },
+  "legoland-florida--project-x": {
+   "qid": "Q23663063",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Project X",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Legoland Florida"
+    ]
+   }
+  },
+  "lost-island-theme-park--matugani": {
+   "qid": "Q134966734",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Matugani",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Lost Island Theme Park",
+     "Lost Island Theme Park"
+    ],
+    "rcdbId": [
+     "18326"
+    ]
+   }
+  },
+  "lost-island-theme-park--nopuko-air-coaster": {
+   "qid": "Q112659284",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Nopuko Air Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Lost Island Theme Park"
+    ],
+    "rcdbId": [
+     "18891"
+    ]
+   }
+  },
+  "luna-park--cyclone": {
+   "qid": "Q677558",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Coney Island Cyclone",
+    "nameVia": "alias",
+    "locationVia": "city",
+    "wikidataPark": [
+     "Coney Island"
+    ],
+    "rcdbId": [
+     "222"
+    ]
+   },
+   "notes": [
+    "Name matched a Wikidata alias (former or alternate name); the Wikidata label is \"Coney Island Cyclone\".",
+    "Park matched by city (Brooklyn), not by park name."
+   ]
+  },
+  "luna-park--soarin-eagle": {
+   "qid": "Q7549857",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Soarin' Eagle",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "9515"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (NY); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "magic-springs-crystal-falls--arkansas-twister": {
+   "qid": "Q673114",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Arkansas Twister",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Magic Springs and Crystal Falls"
+    ],
+    "rcdbId": [
+     "418"
+    ]
+   }
+  },
+  "magic-springs-crystal-falls--gauntlet": {
+   "qid": "Q96408757",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "The Gauntlet",
+    "nameVia": "label",
+    "locationVia": "city",
+    "wikidataPark": [],
+    "rcdbId": [
+     "2421"
+    ]
+   },
+   "notes": [
+    "Park matched by city (Hot Springs), not by park name."
+   ]
+  },
+  "magic-springs-crystal-falls--x-coaster": {
+   "qid": "Q8041435",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "X-Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Magic Springs and Crystal Falls"
+    ],
+    "rcdbId": [
+     "3312"
+    ]
+   }
+  },
+  "memphis-kiddie-park--little-dipper": {
+   "qid": "Q6649785",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Little Dipper",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "328",
+     "635"
+    ]
+   }
+  },
+  "mgm-grand-adventures--lightning-bolt": {
+   "qid": "Q85846399",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Lightning Bolt",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "MGM Grand Adventures Theme Park"
+    ],
+    "rcdbId": [
+     "105"
+    ]
+   }
+  },
+  "michigan-s-adventure--corkscrew": {
+   "qid": "Q5170868",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Corkscrew",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Michigan's Adventure",
+     "Muskegon"
+    ],
+    "rcdbId": [
+     "218"
+    ]
+   }
+  },
+  "michigan-s-adventure--mad-mouse": {
+   "qid": "Q6726024",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Mad Mouse",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "537"
+    ]
+   }
+  },
+  "michigan-s-adventure--shivering-timbers": {
+   "qid": "Q2279581",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Shivering Timbers",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "478"
+    ]
+   }
+  },
+  "michigan-s-adventure--thunderhawk": {
+   "qid": "Q7799143",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Thunderhawk",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "4053"
+    ]
+   }
+  },
+  "michigan-s-adventure--wolverine-wildcat": {
+   "qid": "Q2592905",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wolverine Wildcat",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "219"
+    ]
+   }
+  },
+  "michigan-s-adventure--zach-s-zoomer": {
+   "qid": "Q3574493",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Zach's Zoomer",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "415"
+    ]
+   }
+  },
+  "morey-s-mariner-s-landing--rollie-s-coaster": {
+   "qid": "Q14705861",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Rollies Coaster",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "648"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (NJ); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "mt-olympus-water-theme-park--cyclops": {
+   "qid": "Q1147609",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Cyclops",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Mt. Olympus Water & Theme Park"
+    ],
+    "rcdbId": [
+     "161"
+    ]
+   }
+  },
+  "mt-olympus-water-theme-park--hades-360": {
+   "qid": "Q765634",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Hades 360",
+    "nameVia": "label",
+    "locationVia": "city",
+    "wikidataPark": [],
+    "rcdbId": [
+     "2667"
+    ]
+   },
+   "notes": [
+    "Park matched by city (Wisconsin Dells), not by park name."
+   ]
+  },
+  "mt-olympus-water-theme-park--opa": {
+   "qid": "Q7095506",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Opa",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "3386"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (WI); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "mt-olympus-water-theme-park--pegasus": {
+   "qid": "Q2067284",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Pegasus",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "279"
+    ]
+   }
+  },
+  "mt-olympus-water-theme-park--zeus": {
+   "qid": "Q197013",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Zeus",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Mt. Olympus Water & Theme Park"
+    ],
+    "rcdbId": [
+     "280"
+    ]
+   }
+  },
+  "myrtle-beach-pavilion-park--mad-mouse": {
+   "qid": "Q6726029",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Mad Mouse",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "503"
+    ]
+   }
+  },
+  "nascar-cafe--speed-the-ride": {
+   "qid": "Q2308436",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Speed – The Ride",
+    "nameVia": "label",
+    "locationVia": "city",
+    "wikidataPark": [],
+    "rcdbId": [
+     "593"
+    ]
+   },
+   "notes": [
+    "Park matched by city (Las Vegas), not by park name."
+   ]
+  },
+  "niagara-amusement-park-splash-world--silver-comet": {
+   "qid": "Q1712350",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Silver Comet",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Niagara Amusement Park and Splash World"
+    ],
+    "rcdbId": [
+     "548"
+    ]
+   }
+  },
+  "nickelodeon-universe--avatar-airbender": {
+   "qid": "Q4827808",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Avatar Airbender",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Nickelodeon Universe"
+    ],
+    "rcdbId": [
+     "4094"
+    ]
+   }
+  },
+  "nickelodeon-universe--back-at-the-barnyard-hayride": {
+   "qid": "Q4839216",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Back at the Barnyard Hayride",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Nickelodeon Universe"
+    ],
+    "rcdbId": [
+     "673"
+    ]
+   }
+  },
+  "nickelodeon-universe--fairly-odd-coaster": {
+   "qid": "Q5430561",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Fairly Odd Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Nickelodeon Universe"
+    ],
+    "rcdbId": [
+     "2508"
+    ]
+   }
+  },
+  "nickelodeon-universe--orange-streak": {
+   "qid": "Q7166496",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Pepsi Orange Streak",
+    "nameVia": "partial",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Nickelodeon Universe"
+    ],
+    "rcdbId": [
+     "101"
+    ]
+   },
+   "notes": [
+    "Partial name match (sponsor prefix or subtitle): Wikidata \"Pepsi Orange Streak\", local \"Orange Streak\"."
+   ]
+  },
+  "nickelodeon-universe--sponge-bob-squarepants-rock-bottom-plunge": {
+   "qid": "Q1420749",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "SpongeBob SquarePants Rock Bottom Plunge",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Nickelodeon Universe"
+    ],
+    "rcdbId": [
+     "3727"
+    ]
+   }
+  },
+  "oaks-park--adrenaline-peak": {
+   "qid": "Q88081218",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Adrenaline Peak",
+    "nameVia": "label",
+    "locationVia": "city",
+    "wikidataPark": [],
+    "rcdbId": [
+     "15410"
+    ]
+   },
+   "notes": [
+    "Park matched by city (Portland), not by park name."
+   ]
+  },
+  "pacific-park--west-coaster": {
+   "qid": "Q78209480",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Santa Monica West Coaster",
+    "nameVia": "partial",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Pacific Park",
+     "Santa Monica Pier"
+    ],
+    "rcdbId": [
+     "434"
+    ]
+   },
+   "notes": [
+    "Partial name match (sponsor prefix or subtitle): Wikidata \"Santa Monica West Coaster\", local \"West Coaster\"."
+   ]
+  },
+  "playland-rye--dragon": {
+   "qid": "Q5305180",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Dragon Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "231"
+    ]
+   }
+  },
+  "quassy-amusement-park--wooden-warrior": {
+   "qid": "Q14715154",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wooden Warrior",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Quassy Amusement Park"
+    ],
+    "rcdbId": [
+     "4495"
+    ]
+   }
+  },
+  "santa-cruz-beach-boardwalk--giant-dipper": {
+   "qid": "Q1522718",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Giant Dipper",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Santa Cruz Beach Boardwalk"
+    ],
+    "rcdbId": [
+     "204"
+    ]
+   }
+  },
+  "santa-cruz-beach-boardwalk--undertow": {
+   "qid": "Q7883822",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Undertow",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Santa Cruz Beach Boardwalk"
+    ],
+    "rcdbId": [
+     "10930"
+    ]
+   }
+  },
+  "seabreeze-amusement-park--bobsleds": {
+   "qid": "Q108795077",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Bobsleds",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Seabreeze Amusement Park"
+    ],
+    "rcdbId": [
+     "228"
+    ]
+   }
+  },
+  "seabreeze-amusement-park--jack-rabbit": {
+   "qid": "Q1677168",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Jack Rabbit",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Seabreeze Amusement Park"
+    ],
+    "rcdbId": [
+     "227"
+    ]
+   }
+  },
+  "seabreeze-amusement-park--whirlwind": {
+   "qid": "Q7993787",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "WhirlWind",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Seabreeze Amusement Park"
+    ],
+    "rcdbId": [
+     "2315"
+    ]
+   }
+  },
+  "seaworld-orlando--journey-to-atlantis": {
+   "qid": "Q15115792",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Journey to Atlantis",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "SeaWorld Orlando"
+    ],
+    "rcdbId": [
+     "1904"
+    ]
+   }
+  },
+  "seaworld-orlando--mako": {
+   "qid": "Q22695524",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Mako",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "SeaWorld Orlando",
+     "SeaWorld Orlando"
+    ],
+    "rcdbId": [
+     "12758"
+    ]
+   }
+  },
+  "seaworld-orlando--manta": {
+   "qid": "Q940233",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Manta",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "SeaWorld Orlando",
+     "SeaWorld Orlando"
+    ],
+    "rcdbId": [
+     "4190"
+    ]
+   }
+  },
+  "seaworld-orlando--pipeline-the-surf-coaster": {
+   "qid": "Q114743928",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Pipeline: The Surf Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "SeaWorld Orlando"
+    ],
+    "rcdbId": [
+     "20042"
+    ]
+   }
+  },
+  "seaworld-san-antonio--great-white": {
+   "qid": "Q3115987",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Great White",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "SeaWorld San Antonio"
+    ],
+    "rcdbId": [
+     "278"
+    ]
+   }
+  },
+  "seaworld-san-antonio--journey-to-atlantis": {
+   "qid": "Q1709924",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Journey to Atlantis",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "SeaWorld San Antonio"
+    ]
+   }
+  },
+  "seaworld-san-antonio--steel-eel": {
+   "qid": "Q1471807",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Steel Eel",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "SeaWorld San Antonio"
+    ],
+    "rcdbId": [
+     "532"
+    ]
+   }
+  },
+  "seaworld-san-antonio--texas-stingray": {
+   "qid": "Q81772169",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Texas Stingray",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "17278"
+    ]
+   }
+  },
+  "seaworld-san-antonio--wave-breaker-the-rescue-coaster": {
+   "qid": "Q28126845",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wave Breaker: The Rescue Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "SeaWorld San Antonio",
+     "SeaWorld San Antonio"
+    ],
+    "rcdbId": [
+     "14302"
+    ]
+   }
+  },
+  "seaworld-san-diego--electric-eel": {
+   "qid": "Q88293031",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Electric Eel",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "SeaWorld San Diego"
+    ],
+    "rcdbId": [
+     "14683"
+    ]
+   }
+  },
+  "seaworld-san-diego--journey-to-atlantis": {
+   "qid": "Q917240",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Journey to Atlantis",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "SeaWorld San Diego"
+    ],
+    "rcdbId": [
+     "2079",
+     "1904",
+     "3635"
+    ]
+   }
+  },
+  "seaworld-san-diego--manta": {
+   "qid": "Q1891206",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Manta (SeaWorld San Diego)",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "SeaWorld San Diego"
+    ],
+    "rcdbId": [
+     "9819"
+    ]
+   }
+  },
+  "sesame-place-philadelphia--oscar-s-wacky-taxi": {
+   "qid": "Q59587152",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Oscar's Wacky Taxi",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Sesame Place Philadelphia"
+    ],
+    "rcdbId": [
+     "15486"
+    ]
+   }
+  },
+  "sesame-place-philadelphia--vapor-trail": {
+   "qid": "Q42307228",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Vapor Trail",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Sesame Place Philadelphia"
+    ],
+    "rcdbId": [
+     "487"
+    ]
+   }
+  },
+  "silver-dollar-city--grand-exposition-coaster": {
+   "qid": "Q5594532",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Grand Exposition Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "3401"
+    ]
+   }
+  },
+  "silver-dollar-city--outlaw-run": {
+   "qid": "Q1521787",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Outlaw Run",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Silver Dollar City"
+    ],
+    "rcdbId": [
+     "10582"
+    ]
+   }
+  },
+  "silver-dollar-city--powder-keg": {
+   "qid": "Q1432683",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Powder Keg: A Blast into the Wilderness",
+    "nameVia": "partial",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Silver Dollar City"
+    ],
+    "rcdbId": [
+     "1903"
+    ]
+   },
+   "notes": [
+    "Partial name match (sponsor prefix or subtitle): Wikidata \"Powder Keg: A Blast into the Wilderness\", local \"Powder Keg\"."
+   ]
+  },
+  "silver-dollar-city--thunderation": {
+   "qid": "Q7799067",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Thunderation",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Silver Dollar City"
+    ],
+    "rcdbId": [
+     "220"
+    ]
+   }
+  },
+  "silver-dollar-city--time-traveler": {
+   "qid": "Q39073930",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Time Traveler",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Silver Dollar City",
+     "Silver Dollar City"
+    ],
+    "rcdbId": [
+     "15168"
+    ]
+   }
+  },
+  "silver-dollar-city--wildfire": {
+   "qid": "Q1754269",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wildfire",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Silver Dollar City"
+    ],
+    "rcdbId": [
+     "720"
+    ]
+   }
+  },
+  "silverwood-theme-park--stunt-pilot": {
+   "qid": "Q104876747",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Stunt Pilot",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Silverwood Theme Park"
+    ],
+    "rcdbId": [
+     "18691"
+    ]
+   }
+  },
+  "silverwood-theme-park--timber-terror": {
+   "qid": "Q1416282",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Timber Terror",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Silverwood Theme Park"
+    ],
+    "rcdbId": [
+     "176"
+    ]
+   }
+  },
+  "silverwood-theme-park--tremors": {
+   "qid": "Q2451377",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Tremors",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "550"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (ID); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "six-flags-america--batwing": {
+   "qid": "Q581586",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Batwing",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags America"
+    ],
+    "rcdbId": [
+     "1089"
+    ]
+   }
+  },
+  "six-flags-america--joker-s-jinx": {
+   "qid": "Q826800",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Joker's Jinx",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags America",
+     "Six Flags America"
+    ],
+    "rcdbId": [
+     "544"
+    ]
+   }
+  },
+  "six-flags-america--the-great-chase": {
+   "qid": "Q5598953",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Great Chase",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "568"
+    ]
+   }
+  },
+  "six-flags-america--wild-one": {
+   "qid": "Q689070",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Wild One",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags America"
+    ],
+    "rcdbId": [
+     "148"
+    ]
+   }
+  },
+  "six-flags-astroworld--batman-the-escape": {
+   "qid": "Q2261217",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Batman The Escape",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "51",
+     "52",
+     "53",
+     "3472"
+    ]
+   }
+  },
+  "six-flags-astroworld--serpent": {
+   "qid": "Q2251445",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Serpent",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "135"
+    ]
+   }
+  },
+  "six-flags-astroworld--texas-cyclone": {
+   "qid": "Q1425281",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Texas Cyclone",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "54"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (TX); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "six-flags-astroworld--viper": {
+   "qid": "Q14711399",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Viper (Six Flags AstroWorld)",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "50"
+    ]
+   }
+  },
+  "six-flags-astroworld--xlr-8": {
+   "qid": "Q1448266",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "XLR-8",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "134"
+    ]
+   }
+  },
+  "six-flags-discovery-kingdom--cobra": {
+   "qid": "Q5138963",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Cobra",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": []
+   }
+  },
+  "six-flags-discovery-kingdom--joker": {
+   "qid": "Q21593102",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Joker",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Discovery Kingdom"
+    ],
+    "rcdbId": [
+     "13422"
+    ]
+   }
+  },
+  "six-flags-discovery-kingdom--kong": {
+   "qid": "Q3198647",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Kong",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "163"
+    ]
+   }
+  },
+  "six-flags-discovery-kingdom--medusa": {
+   "qid": "Q1916715",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Medusa",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "617"
+    ]
+   }
+  },
+  "six-flags-discovery-kingdom--road-runner-express": {
+   "qid": "Q7339402",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Road Runner Express",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "572"
+    ]
+   }
+  },
+  "six-flags-discovery-kingdom--superman-ultimate-flight": {
+   "qid": "Q1699142",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Superman: Ultimate Flight (Six Flags Discovery Kingdom)",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Discovery Kingdom"
+    ],
+    "rcdbId": [
+     "10139"
+    ]
+   }
+  },
+  "six-flags-discovery-kingdom--v2-vertical-velocity": {
+   "qid": "Q1627160",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "The Flash: Vertical Velocity",
+    "nameVia": "partial",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Discovery Kingdom"
+    ],
+    "rcdbId": [
+     "1143"
+    ]
+   },
+   "notes": [
+    "Partial name match (sponsor prefix or subtitle): Wikidata \"The Flash: Vertical Velocity\", local \"V2 Vertical Velocity\"."
+   ]
+  },
+  "six-flags-fiesta-texas--batman-the-ride": {
+   "qid": "Q17985775",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Batman: The Ride",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Fiesta Texas"
+    ],
+    "rcdbId": [
+     "12283"
+    ]
+   }
+  },
+  "six-flags-fiesta-texas--dr-diabolicals-cliffhanger": {
+   "qid": "Q108084356",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Dr. Diabolical’s Cliffhanger",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Fiesta Texas"
+    ],
+    "rcdbId": [
+     "19495"
+    ]
+   }
+  },
+  "six-flags-fiesta-texas--goliath": {
+   "qid": "Q2796656",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Goliath",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Fiesta Texas"
+    ],
+    "rcdbId": [
+     "3976"
+    ]
+   }
+  },
+  "six-flags-fiesta-texas--iron-rattler": {
+   "qid": "Q928467",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Iron Rattler",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Fiesta Texas",
+     "Six Flags Fiesta Texas"
+    ],
+    "rcdbId": [
+     "11663"
+    ]
+   }
+  },
+  "six-flags-fiesta-texas--poltergeist": {
+   "qid": "Q679065",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Poltergeist",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Fiesta Texas"
+    ],
+    "rcdbId": [
+     "528"
+    ]
+   }
+  },
+  "six-flags-fiesta-texas--road-runner-express": {
+   "qid": "Q2765124",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Road Runner Express",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "265"
+    ]
+   }
+  },
+  "six-flags-fiesta-texas--superman-krypton-coaster": {
+   "qid": "Q688767",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Superman: Krypton Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Fiesta Texas",
+     "Six Flags Fiesta Texas"
+    ],
+    "rcdbId": [
+     "605"
+    ]
+   }
+  },
+  "six-flags-fiesta-texas--the-rattler": {
+   "qid": "Q18631696",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Rattler",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Fiesta Texas"
+    ]
+   }
+  },
+  "six-flags-fiesta-texas--wonder-woman-golden-lasso": {
+   "qid": "Q39047934",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wonder Woman Golden Lasso Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Fiesta Texas",
+     "Six Flags Fiesta Texas"
+    ],
+    "rcdbId": [
+     "15368"
+    ]
+   }
+  },
+  "six-flags-great-adventure--bizarro": {
+   "qid": "Q764887",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Medusa",
+    "nameVia": "alias",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "502"
+    ]
+   },
+   "notes": [
+    "Name matched a Wikidata alias (former or alternate name); the Wikidata label is \"Medusa\"."
+   ]
+  },
+  "six-flags-great-adventure--el-toro": {
+   "qid": "Q1324667",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "El Toro",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Great Adventure"
+    ],
+    "rcdbId": [
+     "3183"
+    ]
+   }
+  },
+  "six-flags-great-adventure--great-american-scream-machine": {
+   "qid": "Q1334442",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Great American Scream Machine",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Great Adventure"
+    ],
+    "rcdbId": [
+     "34"
+    ]
+   }
+  },
+  "six-flags-great-adventure--green-lantern": {
+   "qid": "Q693862",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Green Lantern",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Great Adventure"
+    ],
+    "rcdbId": [
+     "275",
+     "8932"
+    ]
+   }
+  },
+  "six-flags-great-adventure--harley-quinn-crazy-train": {
+   "qid": "Q13629857",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Harley Quinn Crazy Train",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Great Adventure"
+    ],
+    "rcdbId": [
+     "567"
+    ]
+   }
+  },
+  "six-flags-great-adventure--jersey-devil-coaster": {
+   "qid": "Q104844713",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Jersey Devil Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Great Adventure"
+    ],
+    "rcdbId": [
+     "17658"
+    ]
+   }
+  },
+  "six-flags-great-adventure--kingda-ka": {
+   "qid": "Q830458",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Kingda Ka",
+    "nameVia": "label",
+    "locationVia": "city",
+    "wikidataPark": [],
+    "rcdbId": [
+     "2832"
+    ]
+   },
+   "notes": [
+    "Park matched by city (Jackson), not by park name."
+   ]
+  },
+  "six-flags-great-adventure--nitro": {
+   "qid": "Q662497",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Nitro",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "1106"
+    ]
+   }
+  },
+  "six-flags-great-adventure--road-runner-railway": {
+   "qid": "Q2200640",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Road Runner Railway",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "566"
+    ]
+   }
+  },
+  "six-flags-great-adventure--rolling-thunder": {
+   "qid": "Q1139712",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Rolling Thunder",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "132"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (NJ); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "six-flags-great-adventure--runaway-mine-train": {
+   "qid": "Q2957284",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Runaway Mine Train",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "131"
+    ]
+   }
+  },
+  "six-flags-great-adventure--skull-mountain": {
+   "qid": "Q954290",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Skull Mountain",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Great Adventure"
+    ],
+    "rcdbId": [
+     "35"
+    ]
+   }
+  },
+  "six-flags-great-adventure--viper": {
+   "qid": "Q2527563",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Viper",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "33"
+    ]
+   }
+  },
+  "six-flags-great-america--american-eagle": {
+   "qid": "Q464043",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "American Eagle",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Great America"
+    ],
+    "rcdbId": [
+     "9"
+    ]
+   }
+  },
+  "six-flags-great-america--goliath": {
+   "qid": "Q15047492",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Goliath (Six Flags Great America)",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "9972"
+    ]
+   }
+  },
+  "six-flags-great-america--little-dipper": {
+   "qid": "Q6649788",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Little Dipper",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "8985"
+    ]
+   }
+  },
+  "six-flags-great-america--maxx-force": {
+   "qid": "Q60741702",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Maxx Force",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Great America"
+    ],
+    "rcdbId": [
+     "16586"
+    ]
+   }
+  },
+  "six-flags-great-america--raging-bull": {
+   "qid": "Q1536832",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Raging Bull",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Great America",
+     "Southwest Territory"
+    ],
+    "rcdbId": [
+     "535"
+    ]
+   }
+  },
+  "six-flags-great-america--shockwave": {
+   "qid": "Q2279724",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Shockwave",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Great America"
+    ],
+    "rcdbId": [
+     "4"
+    ]
+   }
+  },
+  "six-flags-great-america--spacely-s-sprocket-rockets": {
+   "qid": "Q3036455",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Spacely's Sprocket Rockets",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "488"
+    ]
+   }
+  },
+  "six-flags-great-america--v2-vertical-velocity": {
+   "qid": "Q846024",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "The Flash: Vertical Velocity",
+    "nameVia": "partial",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "747"
+    ]
+   },
+   "notes": [
+    "Partial name match (sponsor prefix or subtitle): Wikidata \"The Flash: Vertical Velocity\", local \"V2 Vertical Velocity\"."
+   ]
+  },
+  "six-flags-great-america--viper": {
+   "qid": "Q917156",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Viper",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Great America",
+     "Southwest Territory"
+    ],
+    "rcdbId": [
+     "10"
+    ]
+   }
+  },
+  "six-flags-great-america--whizzer": {
+   "qid": "Q1899239",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Whizzer",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Great America"
+    ],
+    "rcdbId": [
+     "113"
+    ]
+   }
+  },
+  "six-flags-great-america--wrath-of-rakshasa": {
+   "qid": "Q130130645",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wrath of Rakshasa",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Great America",
+     "Gurnee"
+    ],
+    "rcdbId": [
+     "22031"
+    ]
+   }
+  },
+  "six-flags-great-america--x-flight": {
+   "qid": "Q2597318",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "X-Flight",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Great America"
+    ],
+    "rcdbId": [
+     "10137"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--apocalypse": {
+   "qid": "Q618766",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Apocalypse",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain",
+     "Terminator"
+    ],
+    "rcdbId": [
+     "4173"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--canyon-blaster": {
+   "qid": "Q2098221",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Canyon Blaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain"
+    ],
+    "rcdbId": [
+     "576"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--colossus": {
+   "qid": "Q677477",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Colossus",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "26"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--flashback": {
+   "qid": "Q1427260",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Flashback",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain",
+     "Six Flags Great America",
+     "Six Flags Over Georgia"
+    ],
+    "rcdbId": [
+     "128"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--full-throttle": {
+   "qid": "Q3090780",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Full Throttle",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain"
+    ],
+    "rcdbId": [
+     "10948"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--goldrusher": {
+   "qid": "Q1925922",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Goldrusher",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "266"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--goliath": {
+   "qid": "Q510289",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Goliath",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "615"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--magic-flyer": {
+   "qid": "Q2626856",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Magic Flyer",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "749"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--new-revolution": {
+   "qid": "Q1501370",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The New Revolution",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain"
+    ],
+    "rcdbId": [
+     "130"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--ninja": {
+   "qid": "Q906039",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Ninja",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain"
+    ],
+    "rcdbId": [
+     "129"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--psyclone": {
+   "qid": "Q2116105",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Psyclone",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain"
+    ],
+    "rcdbId": [
+     "27"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--road-runner-express": {
+   "qid": "Q5454705",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Road Runner Express",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain"
+    ],
+    "rcdbId": [
+     "591",
+     "4346"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--scream": {
+   "qid": "Q674382",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Scream!",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain"
+    ],
+    "rcdbId": [
+     "2169"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--superman-escape-from-krypton": {
+   "qid": "Q674404",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Superman: Escape from Krypton",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "140"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--tatsu": {
+   "qid": "Q1688754",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Tatsu",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "3305"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (CA); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "six-flags-magic-mountain--the-riddler-s-revenge": {
+   "qid": "Q130266",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Riddler's Revenge",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain"
+    ],
+    "rcdbId": [
+     "470"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--twisted-colossus": {
+   "qid": "Q75099048",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Twisted Colossus",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain"
+    ],
+    "rcdbId": [
+     "12282"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--viper": {
+   "qid": "Q677430",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Viper",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain"
+    ],
+    "rcdbId": [
+     "25"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--west-coast-racers": {
+   "qid": "Q56448915",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "West Coast Racers",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain"
+    ],
+    "rcdbId": [
+     "16588"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--wonder-woman-flight-of-courage": {
+   "qid": "Q109259286",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wonder Woman Flight of Courage",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain",
+     "Six Flags Magic Mountain"
+    ],
+    "rcdbId": [
+     "19515"
+    ]
+   }
+  },
+  "six-flags-magic-mountain--x2": {
+   "qid": "Q290976",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "X2",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Magic Mountain"
+    ],
+    "rcdbId": [
+     "750"
+    ]
+   }
+  },
+  "six-flags-new-england--catwoman-s-whip": {
+   "qid": "Q5054223",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Catwoman's Whip",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags New England"
+    ],
+    "rcdbId": [
+     "630"
+    ]
+   }
+  },
+  "six-flags-new-england--cyclone": {
+   "qid": "Q1147558",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Cyclone",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "180"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (MA); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "six-flags-new-england--flashback": {
+   "qid": "Q2713867",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Flashback",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "629"
+    ]
+   }
+  },
+  "six-flags-new-england--goliath": {
+   "qid": "Q17361975",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Goliath",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags New England",
+     "Six Flags New England"
+    ],
+    "rcdbId": [
+     "10138"
+    ]
+   }
+  },
+  "six-flags-new-england--gotham-city-gauntlet-escape": {
+   "qid": "Q2327873",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Gotham City Gauntlet: Escape from Arkham Asylum",
+    "nameVia": "partial",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Maurer Söhne"
+    ],
+    "rcdbId": [
+     "9431"
+    ]
+   },
+   "notes": [
+    "Partial name match (sponsor prefix or subtitle): Wikidata \"Gotham City Gauntlet: Escape from Arkham Asylum\", local \"Gotham City Gauntlet Escape\"."
+   ]
+  },
+  "six-flags-new-england--pandemonium": {
+   "qid": "Q3098940",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Pandemonium",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags New England"
+    ]
+   }
+  },
+  "six-flags-new-england--thunderbolt": {
+   "qid": "Q1127968",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Thunderbolt",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "182"
+    ]
+   }
+  },
+  "six-flags-new-england--wicked-cyclone": {
+   "qid": "Q20925120",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wicked Cyclone",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags New England"
+    ],
+    "rcdbId": [
+     "1981"
+    ]
+   }
+  },
+  "six-flags-over-georgia--dahlonega-mine-train": {
+   "qid": "Q2492679",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Dahlonega Mine Train",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "42"
+    ]
+   }
+  },
+  "six-flags-over-georgia--dare-devil-dive": {
+   "qid": "Q1165790",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Dare Devil Dive",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "9430"
+    ]
+   }
+  },
+  "six-flags-over-georgia--deja-vu": {
+   "qid": "Q3043293",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Déjà Vu",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Over Georgia"
+    ],
+    "rcdbId": [
+     "8976"
+    ]
+   }
+  },
+  "six-flags-over-georgia--georgia-scorcher": {
+   "qid": "Q910249",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Georgia Scorcher",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "556"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (GA); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "six-flags-over-georgia--goliath": {
+   "qid": "Q689054",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Goliath",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "3290"
+    ]
+   }
+  },
+  "six-flags-over-georgia--great-american-scream-machine": {
+   "qid": "Q689029",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Great American Scream Machine",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "41"
+    ]
+   }
+  },
+  "six-flags-over-georgia--superman-ultimate-flight": {
+   "qid": "Q916932",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Superman: Ultimate Flight",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "1976",
+     "1568",
+     "1977"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (GA); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "six-flags-over-texas--aquaman-power-wave": {
+   "qid": "Q97671294",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Aquaman: Power Wave",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Over Texas"
+    ],
+    "rcdbId": [
+     "17653"
+    ]
+   }
+  },
+  "six-flags-over-texas--judge-roy-scream": {
+   "qid": "Q910221",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Judge Roy Scream",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "29"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (TX); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "six-flags-over-texas--la-vibora": {
+   "qid": "Q751483",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "La Vibora",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "99"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (TX); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "six-flags-over-texas--new-texas-giant": {
+   "qid": "Q1353100",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "New Texas Giant",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Over Texas"
+    ],
+    "rcdbId": [
+     "11662"
+    ]
+   }
+  },
+  "six-flags-over-texas--runaway-mine-train": {
+   "qid": "Q3453217",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Runaway Mine Train",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "30"
+    ]
+   }
+  },
+  "six-flags-over-texas--runaway-mountain": {
+   "qid": "Q3453218",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Runaway Mountain",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "31"
+    ]
+   }
+  },
+  "six-flags-over-texas--shockwave": {
+   "qid": "Q952700",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Shock Wave",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "28"
+    ]
+   }
+  },
+  "six-flags-over-texas--texas-giant": {
+   "qid": "Q141251805",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Texas Giant",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Six Flags Over Texas"
+    ],
+    "rcdbId": [
+     "2"
+    ]
+   }
+  },
+  "six-flags-over-texas--titan": {
+   "qid": "Q826969",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Titan",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "742"
+    ]
+   }
+  },
+  "six-flags-over-texas--wile-e-coyote-s-grand-canyon-blaster": {
+   "qid": "Q2201269",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wile E. Coyote's Grand Canyon Blaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "1117"
+    ]
+   }
+  },
+  "six-flags-st-louis--american-thunder": {
+   "qid": "Q467059",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "American Thunder",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Mid America Adventure"
+    ],
+    "rcdbId": [
+     "4045"
+    ]
+   }
+  },
+  "six-flags-st-louis--boomerang": {
+   "qid": "Q7887822",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Boomerang",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Mid America Adventure",
+     "Mid America Adventure"
+    ],
+    "rcdbId": [
+     "10947"
+    ]
+   }
+  },
+  "six-flags-st-louis--ninja": {
+   "qid": "Q1432350",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Ninja",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "124"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (MO); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "six-flags-st-louis--screamin-eagle": {
+   "qid": "Q824821",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Screamin' Eagle",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "44"
+    ]
+   }
+  },
+  "six-flags-st-louis--the-boss": {
+   "qid": "Q1502567",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Boss",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Mid America Adventure"
+    ],
+    "rcdbId": [
+     "616"
+    ]
+   }
+  },
+  "story-land--roar-o-saurus": {
+   "qid": "Q59587081",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Roar-o-Saurus",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Story Land"
+    ],
+    "rcdbId": [
+     "11611"
+    ]
+   }
+  },
+  "stratosphere-tower-hotel-casino--high-roller": {
+   "qid": "Q1515501",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "High Roller",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "The STRAT Hotel, Casino & SkyPod"
+    ],
+    "rcdbId": [
+     "141"
+    ]
+   }
+  },
+  "the-great-escape-splashwater-kingdom--canyon-blaster": {
+   "qid": "Q5034175",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Canyon Blaster (Great Escape)",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Great Escape"
+    ],
+    "rcdbId": [
+     "2214"
+    ]
+   }
+  },
+  "the-great-escape-splashwater-kingdom--comet": {
+   "qid": "Q2410399",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Comet",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Great Escape"
+    ],
+    "rcdbId": [
+     "262"
+    ]
+   }
+  },
+  "the-great-escape-splashwater-kingdom--frankie-s-mine-train": {
+   "qid": "Q5491104",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Frankie’s Mine Train",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "3079"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (NY); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "the-great-escape-splashwater-kingdom--nightmare-at-crackaxle-canyon": {
+   "qid": "Q2314615",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Nightmare at Crack Axle Canyon",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "445"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (NY); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "the-great-escape-splashwater-kingdom--steamin-demon": {
+   "qid": "Q7605471",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Steamin' Demon",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "264"
+    ]
+   }
+  },
+  "universal-epic-universe--stardust-racers": {
+   "qid": "Q124540460",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Stardust Racers",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Universal Epic Universe"
+    ],
+    "rcdbId": [
+     "20549"
+    ]
+   }
+  },
+  "universal-s-islands-of-adventure--flight-of-the-hippogriff": {
+   "qid": "Q3073731",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Flight of the Hippogriff",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "12812",
+     "703",
+     "11885"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (FL); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "universal-s-islands-of-adventure--hagrid-s-magical-creatures-motorbike-adventure": {
+   "qid": "Q48740959",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Hagrid's Magical Creatures Motorbike Adventure",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Universal's Islands of Adventure"
+    ],
+    "rcdbId": [
+     "15330"
+    ]
+   }
+  },
+  "universal-s-islands-of-adventure--incredible-hulk": {
+   "qid": "Q664228",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "The Incredible Hulk",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Marvel Super Hero Island"
+    ],
+    "rcdbId": [
+     "557"
+    ]
+   }
+  },
+  "universal-s-islands-of-adventure--jurassic-world-velocicoaster": {
+   "qid": "Q100324831",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "VelociCoaster",
+    "nameVia": "alias",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Universal's Islands of Adventure"
+    ],
+    "rcdbId": [
+     "6992"
+    ]
+   },
+   "notes": [
+    "Name matched a Wikidata alias (former or alternate name); the Wikidata label is \"VelociCoaster\"."
+   ]
+  },
+  "universal-studios-florida--harry-potter-and-the-escape-from-gringotts": {
+   "qid": "Q16201762",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Harry Potter and the Escape from Gringotts",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Diagon Alley",
+     "Diagon Alley"
+    ],
+    "rcdbId": [
+     "11887"
+    ]
+   }
+  },
+  "universal-studios-florida--hollywood-rip-ride-rockit": {
+   "qid": "Q1624931",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Hollywood Rip Ride Rockit",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "3866"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (FL); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "universal-studios-florida--woody-woodpecker-s-nuthouse-coaster": {
+   "qid": "Q3569870",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Woody Woodpecker's Nuthouse Coaster",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "563"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (FL); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "valleyfair--corkscrew": {
+   "qid": "Q570734",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Corkscrew",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "118"
+    ]
+   }
+  },
+  "valleyfair--cosmic-coaster": {
+   "qid": "Q5174058",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Cosmic Coaster",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "9837"
+    ]
+   }
+  },
+  "valleyfair--excalibur": {
+   "qid": "Q1383424",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Excalibur",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "119"
+    ]
+   }
+  },
+  "valleyfair--high-roller": {
+   "qid": "Q1617834",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "High Roller",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "117"
+    ]
+   }
+  },
+  "valleyfair--mad-mouse": {
+   "qid": "Q28458584",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Mad Mouse",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "547"
+    ]
+   }
+  },
+  "valleyfair--mild-thing": {
+   "qid": "Q6850884",
+   "confidence": "medium",
+   "evidence": {
+    "wikidataLabel": "Mild Thing",
+    "nameVia": "label",
+    "locationVia": "state",
+    "wikidataPark": [],
+    "rcdbId": [
+     "425"
+    ]
+   },
+   "notes": [
+    "Location confirmed only to the state (MN); Wikidata gives no park. The name is unique among local coasters in that state."
+   ]
+  },
+  "valleyfair--renegade": {
+   "qid": "Q1760009",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Renegade",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Valleyfair"
+    ],
+    "rcdbId": [
+     "3660"
+    ]
+   }
+  },
+  "valleyfair--steel-venom": {
+   "qid": "Q2335791",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Steel Venom",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "1920"
+    ]
+   }
+  },
+  "valleyfair--wild-thing": {
+   "qid": "Q1714470",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Wild Thing",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Valleyfair"
+    ],
+    "rcdbId": [
+     "137"
+    ]
+   }
+  },
+  "waldameer-park--comet": {
+   "qid": "Q1522024",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Comet",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Waldameer Park"
+    ],
+    "rcdbId": [
+     "377"
+    ]
+   }
+  },
+  "waldameer-park--ravine-flyer-ii": {
+   "qid": "Q2133717",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Ravine Flyer II",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "3917"
+    ]
+   }
+  },
+  "waldameer-park--steel-dragon": {
+   "qid": "Q7605666",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Steel Dragon",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Waldameer Park"
+    ],
+    "rcdbId": [
+     "2657"
+    ]
+   }
+  },
+  "waterville-usa--cannonball-run": {
+   "qid": "Q5032828",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Cannonball Run",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Waterville USA"
+    ],
+    "rcdbId": [
+     "360",
+     "12571"
+    ]
+   }
+  },
+  "whalom-park--flyer-comet": {
+   "qid": "Q1434543",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Flyer Comet",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "217"
+    ]
+   }
+  },
+  "wild-adventures--cheetah": {
+   "qid": "Q1068884",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Cheetah",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Wild Adventures"
+    ],
+    "rcdbId": [
+     "1044"
+    ]
+   }
+  },
+  "wild-adventures--swamp-thing": {
+   "qid": "Q7653346",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Swamp Thing",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "1572"
+    ]
+   }
+  },
+  "wild-adventures--twisted-typhoon": {
+   "qid": "Q85847862",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Twisted Typhoon",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Wild Adventures"
+    ],
+    "rcdbId": [
+     "561"
+    ]
+   }
+  },
+  "wild-adventures--viking-voyage": {
+   "qid": "Q7929486",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Viking Voyage",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [],
+    "rcdbId": [
+     "8849"
+    ]
+   }
+  },
+  "wonderland-park--texas-tornado": {
+   "qid": "Q7708177",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Texas Tornado",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Wonderland Park"
+    ],
+    "rcdbId": [
+     "254"
+    ]
+   }
+  },
+  "worlds-of-fun--boomerang": {
+   "qid": "Q4943496",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Boomerang",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Worlds of Fun"
+    ],
+    "rcdbId": [
+     "653"
+    ]
+   }
+  },
+  "worlds-of-fun--mamba": {
+   "qid": "Q1888144",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Mamba",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Worlds of Fun"
+    ],
+    "rcdbId": [
+     "469"
+    ]
+   }
+  },
+  "worlds-of-fun--orient-express": {
+   "qid": "Q574466",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Orient Express",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Worlds of Fun"
+    ],
+    "rcdbId": [
+     "21"
+    ]
+   }
+  },
+  "worlds-of-fun--patriot": {
+   "qid": "Q2058140",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Patriot",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Worlds of Fun"
+    ],
+    "rcdbId": [
+     "3244"
+    ]
+   }
+  },
+  "worlds-of-fun--prowler": {
+   "qid": "Q1390319",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Prowler",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Worlds of Fun"
+    ],
+    "rcdbId": [
+     "4296"
+    ]
+   }
+  },
+  "worlds-of-fun--spinning-dragons": {
+   "qid": "Q7577615",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Spinning Dragons",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Worlds of Fun"
+    ],
+    "rcdbId": [
+     "2572"
+    ]
+   }
+  },
+  "worlds-of-fun--timber-wolf": {
+   "qid": "Q2434462",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Timber Wolf",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Worlds of Fun"
+    ],
+    "rcdbId": [
+     "22"
+    ]
+   }
+  },
+  "worlds-of-fun--zambezi-zinger": {
+   "qid": "Q113499145",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Zambezi Zinger",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "Worlds of Fun"
+    ],
+    "rcdbId": [
+     "20340"
+    ]
+   }
+  },
+  "zdt-s-amusement-park--switchback": {
+   "qid": "Q22073237",
+   "confidence": "high",
+   "evidence": {
+    "wikidataLabel": "Switchback",
+    "nameVia": "label",
+    "locationVia": "park",
+    "wikidataPark": [
+     "ZDT's Amusement Park"
+    ],
+    "rcdbId": [
+     "12392"
+    ]
+   }
+  }
+ }
+}

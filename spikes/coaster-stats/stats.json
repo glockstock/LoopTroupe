@@ -1,0 +1,6681 @@
+{
+ "source": "Wikidata, https://www.wikidata.org",
+ "license": "CC0 1.0 (public domain dedication). No attribution required; credit \"Wikidata\" as good practice.",
+ "retrieved": "2026-10-02",
+ "units": {
+  "height": "m and ft",
+  "length": "m and ft",
+  "speed": "km/h and mph",
+  "duration": "s"
+ },
+ "notes": "The value in the unit Wikidata stored is kept as given; the other is converted. inversions is always null (no Wikidata property). No G-force data exists in Wikidata.",
+ "coasters": {
+  "adventure-city--rewind-racers": {
+   "qid": "Q105443412",
+   "wikidataLabel": "Rewind Racers",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q105443412"
+  },
+  "adventuredome--canyon-blaster": {
+   "qid": "Q1033981",
+   "wikidataLabel": "Canyon Blaster",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "indoor roller coaster",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1033981"
+  },
+  "adventuredome--el-loco": {
+   "qid": "Q18149791",
+   "wikidataLabel": "El Loco",
+   "inversions": null,
+   "manufacturer": [
+    "S&S Worldwide"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q18149791"
+  },
+  "adventureland-iowa--dragon": {
+   "qid": "Q5305095",
+   "wikidataLabel": "Dragon",
+   "inversions": null,
+   "manufacturer": [
+    "Hopkins Rides"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5305095"
+  },
+  "adventureland-iowa--dragon-slayer": {
+   "qid": "Q107261212",
+   "wikidataLabel": "Dragon Slayer",
+   "inversions": null,
+   "manufacturer": [
+    "S&S Worldwide"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2021-05-29",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q107261212"
+  },
+  "adventureland-iowa--the-monster": {
+   "qid": "Q23833028",
+   "wikidataLabel": "The Monster (Adventureland)",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q23833028"
+  },
+  "adventureland-iowa--the-outlaw": {
+   "qid": "Q7112112",
+   "wikidataLabel": "Outlaw",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7112112"
+  },
+  "adventureland-iowa--tornado": {
+   "qid": "Q7825974",
+   "wikidataLabel": "Tornado",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7825974"
+  },
+  "adventureland-iowa--underground": {
+   "qid": "Q39071034",
+   "wikidataLabel": "The Underground",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1996",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q39071034"
+  },
+  "adventureland-new-york--turbulence": {
+   "qid": "Q105443750",
+   "wikidataLabel": "Turbulence",
+   "length": {
+    "m": 382,
+    "ft": 1253.3
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2015-05-22",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q105443750"
+  },
+  "alabama-adventure-splash-adventure--rampage": {
+   "qid": "Q7290001",
+   "wikidataLabel": "Rampage",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7290001"
+  },
+  "alabama-adventure-splash-adventure--zoomerang": {
+   "qid": "Q8074180",
+   "wikidataLabel": "Zoomerang",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q8074180"
+  },
+  "bay-beach--zippin-pippin": {
+   "qid": "Q8072661",
+   "wikidataLabel": "Zippin Pippin",
+   "inversions": null,
+   "manufacturer": [
+    "The Gravity Group"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q8072661"
+  },
+  "beech-bend-park--kentucky-rumbler": {
+   "qid": "Q997720",
+   "wikidataLabel": "Kentucky Rumbler",
+   "inversions": null,
+   "manufacturer": [
+    "Great Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q997720"
+  },
+  "beech-bend-park--wild-mouse": {
+   "qid": "Q20710758",
+   "wikidataLabel": "Wild Mouse",
+   "inversions": null,
+   "manufacturer": [
+    "Antonio Zamperla S.p.A"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q20710758"
+  },
+  "belmont-park--giant-dipper": {
+   "qid": "Q1522717",
+   "wikidataLabel": "Giant Dipper",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1522717"
+  },
+  "busch-gardens-tampa--air-grover": {
+   "qid": "Q4698003",
+   "wikidataLabel": "Air Grover",
+   "inversions": null,
+   "manufacturer": [
+    "ZIERER Karussell- und Spezialmaschinenbau GmbH & Co. KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q4698003"
+  },
+  "busch-gardens-tampa--cheetah-hunt": {
+   "qid": "Q1068893",
+   "wikidataLabel": "Cheetah Hunt",
+   "height": {
+    "m": 31.1,
+    "ft": 102
+   },
+   "speed": {
+    "kmh": 96.6,
+    "mph": 60
+   },
+   "length": {
+    "m": 1350,
+    "ft": 4429
+   },
+   "duration": {
+    "s": 162
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster",
+    "launched roller coaster"
+   ],
+   "opened": "2011-05-27",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1068893"
+  },
+  "busch-gardens-tampa--cobra-s-curse": {
+   "qid": "Q23831274",
+   "wikidataLabel": "Cobra's Curse",
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2016-06-17",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q23831274"
+  },
+  "busch-gardens-tampa--iron-gwazi": {
+   "qid": "Q966471",
+   "wikidataLabel": "Iron Gwazi",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "type": [
+    "hybrid roller coaster"
+   ],
+   "opened": "2022-03-11",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q966471"
+  },
+  "busch-gardens-tampa--kumba": {
+   "qid": "Q679029",
+   "wikidataLabel": "Kumba",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q679029"
+  },
+  "busch-gardens-tampa--montu": {
+   "qid": "Q740173",
+   "wikidataLabel": "Montu",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q740173"
+  },
+  "busch-gardens-tampa--python": {
+   "qid": "Q7263917",
+   "wikidataLabel": "Python",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1976-07-01",
+   "closed": "2006-10-31",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7263917"
+  },
+  "busch-gardens-tampa--sand-serpent": {
+   "qid": "Q3471802",
+   "wikidataLabel": "Sand Serpent",
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3471802"
+  },
+  "busch-gardens-tampa--scorpion": {
+   "qid": "Q376984",
+   "wikidataLabel": "Scorpion",
+   "inversions": null,
+   "type": [
+    "amusement ride",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q376984"
+  },
+  "busch-gardens-tampa--sheikra": {
+   "qid": "Q662032",
+   "wikidataLabel": "SheiKra",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q662032"
+  },
+  "busch-gardens-tampa--tigris": {
+   "qid": "Q60764525",
+   "wikidataLabel": "Tigris",
+   "inversions": null,
+   "manufacturer": [
+    "Premier Rides"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q60764525"
+  },
+  "busch-gardens-williamsburg--alpengeist": {
+   "qid": "Q1453566",
+   "wikidataLabel": "Alpengeist",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1997-03-22",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1453566"
+  },
+  "busch-gardens-williamsburg--apollo-s-chariot": {
+   "qid": "Q619527",
+   "wikidataLabel": "Apollo's Chariot",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1999-03-27",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q619527"
+  },
+  "busch-gardens-williamsburg--griffon": {
+   "qid": "Q1546634",
+   "wikidataLabel": "Griffon",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1546634"
+  },
+  "busch-gardens-williamsburg--grover-s-alpine-express": {
+   "qid": "Q5611500",
+   "wikidataLabel": "Grover's Alpine Express",
+   "inversions": null,
+   "manufacturer": [
+    "ZIERER Karussell- und Spezialmaschinenbau GmbH & Co. KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5611500"
+  },
+  "busch-gardens-williamsburg--invadr": {
+   "qid": "Q25006727",
+   "wikidataLabel": "InvadR",
+   "inversions": null,
+   "manufacturer": [
+    "Great Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "2017-04-07",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q25006727"
+  },
+  "busch-gardens-williamsburg--loch-ness-monster": {
+   "qid": "Q1867264",
+   "wikidataLabel": "Loch Ness Monster",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Development"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1867264"
+  },
+  "busch-gardens-williamsburg--pantheon": {
+   "qid": "Q84176797",
+   "wikidataLabel": "Pantheon",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q84176797"
+  },
+  "busch-gardens-williamsburg--tempesto": {
+   "qid": "Q20648687",
+   "wikidataLabel": "Tempesto",
+   "inversions": null,
+   "manufacturer": [
+    "Premier Rides"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2015-04-25",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q20648687"
+  },
+  "busch-gardens-williamsburg--verbolten": {
+   "qid": "Q2514199",
+   "wikidataLabel": "Verbolten",
+   "height": {
+    "m": 26.8,
+    "ft": 88
+   },
+   "speed": {
+    "kmh": 85.3,
+    "mph": 53
+   },
+   "length": {
+    "m": 864.1,
+    "ft": 2835
+   },
+   "inversions": null,
+   "manufacturer": [
+    "ZIERER Karussell- und Spezialmaschinenbau GmbH & Co. KG"
+   ],
+   "type": [
+    "steel roller coaster",
+    "launched roller coaster"
+   ],
+   "opened": "2012-05-18",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2514199"
+  },
+  "california-s-great-america--demon": {
+   "qid": "Q1186421",
+   "wikidataLabel": "Demon",
+   "inversions": null,
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1186421"
+  },
+  "california-s-great-america--flight-deck": {
+   "qid": "Q1428707",
+   "wikidataLabel": "Flight Deck",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster",
+    "inverted roller coaster"
+   ],
+   "opened": "1993-03-19",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1428707"
+  },
+  "california-s-great-america--gold-striker": {
+   "qid": "Q5578883",
+   "wikidataLabel": "Gold Striker",
+   "inversions": null,
+   "manufacturer": [
+    "Great Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5578883"
+  },
+  "california-s-great-america--grizzly": {
+   "qid": "Q7738325",
+   "wikidataLabel": "The Grizzly",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7738325"
+  },
+  "california-s-great-america--patriot": {
+   "qid": "Q2534605",
+   "wikidataLabel": "Patriot",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "designer": [
+    "Werner Stengel"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2534605"
+  },
+  "california-s-great-america--railblazer": {
+   "qid": "Q39048970",
+   "wikidataLabel": "RailBlazer",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q39048970"
+  },
+  "california-s-great-america--woodstock-s-express": {
+   "qid": "Q22058482",
+   "wikidataLabel": "Woodstock's Express",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1987",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q22058482"
+  },
+  "camden-park--big-dipper": {
+   "qid": "Q106696223",
+   "wikidataLabel": "Big Dipper",
+   "inversions": null,
+   "manufacturer": [
+    "National Amusement Devices"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1958",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q106696223"
+  },
+  "canobie-lake-park--canobie-corkscrew": {
+   "qid": "Q666094",
+   "wikidataLabel": "Canobie Corkscrew",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q666094"
+  },
+  "canobie-lake-park--untamed": {
+   "qid": "Q7897563",
+   "wikidataLabel": "Untamed",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7897563"
+  },
+  "canobie-lake-park--yankee-cannonball": {
+   "qid": "Q14705421",
+   "wikidataLabel": "Yankee Cannonball",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q14705421"
+  },
+  "carowinds--afterburn": {
+   "qid": "Q389146",
+   "wikidataLabel": "Afterburn",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q389146"
+  },
+  "carowinds--carolina-cyclone": {
+   "qid": "Q1044389",
+   "wikidataLabel": "Carolina Cyclone",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1980-03",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1044389"
+  },
+  "carowinds--carolina-goldrusher": {
+   "qid": "Q5044835",
+   "wikidataLabel": "Carolina Goldrusher",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5044835"
+  },
+  "carowinds--copperhead-strike": {
+   "qid": "Q59563612",
+   "wikidataLabel": "Copperhead Strike",
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q59563612"
+  },
+  "carowinds--flying-cobras": {
+   "qid": "Q5044796",
+   "wikidataLabel": "The Flying Cobras",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "Boomerang"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5044796"
+  },
+  "carowinds--flying-super-saturator": {
+   "qid": "Q5463536",
+   "wikidataLabel": "Flying Super Saturator",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2000-04-01",
+   "closed": "2008",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5463536"
+  },
+  "carowinds--fury-325": {
+   "qid": "Q18150522",
+   "wikidataLabel": "Fury 325",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "opened": "2015",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q18150522"
+  },
+  "carowinds--intimidator": {
+   "qid": "Q1671491",
+   "wikidataLabel": "Intimidator",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "hypercoaster",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1671491"
+  },
+  "carowinds--nighthawk": {
+   "qid": "Q1693012",
+   "wikidataLabel": "Nighthawk",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1693012"
+  },
+  "carowinds--ricochet": {
+   "qid": "Q7332308",
+   "wikidataLabel": "Ricochet",
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster",
+    "Wild Mouse roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7332308"
+  },
+  "carowinds--thunder-road": {
+   "qid": "Q1675977",
+   "wikidataLabel": "Thunder Road",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1675977"
+  },
+  "carowinds--vortex": {
+   "qid": "Q2534606",
+   "wikidataLabel": "Vortex",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster",
+    "stand-up roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2534606"
+  },
+  "carowinds--woodstock-express": {
+   "qid": "Q8033425",
+   "wikidataLabel": "Woodstock Express",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q8033425"
+  },
+  "casino-pier--hydrus": {
+   "qid": "Q30610188",
+   "wikidataLabel": "Hydrus",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q30610188"
+  },
+  "casino-pier--jet-star": {
+   "qid": "Q1141240",
+   "wikidataLabel": "Jet Star",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1141240"
+  },
+  "casino-pier--star-jet": {
+   "qid": "Q30642835",
+   "wikidataLabel": "Star Jet",
+   "inversions": null,
+   "manufacturer": [
+    "E&F Miler Industries"
+   ],
+   "closed": "2012-10-29",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q30642835"
+  },
+  "castles-n-coasters--desert-storm": {
+   "qid": "Q5264027",
+   "wikidataLabel": "Desert Storm",
+   "inversions": null,
+   "manufacturer": [
+    "Hopkins Rides"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5264027"
+  },
+  "cedar-point--blue-streak": {
+   "qid": "Q885897",
+   "wikidataLabel": "Blue Streak",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "material": [
+    "wood"
+   ],
+   "opened": "1964-05-23",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q885897"
+  },
+  "cedar-point--cedar-creek-mine-ride": {
+   "qid": "Q2943776",
+   "wikidataLabel": "Cedar Creek Mine Ride",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster",
+    "mine train roller coaster"
+   ],
+   "material": [
+    "wood"
+   ],
+   "opened": "1969-05-24",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2943776"
+  },
+  "cedar-point--corkscrew": {
+   "qid": "Q1133019",
+   "wikidataLabel": "Corkscrew",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "material": [
+    "steel"
+   ],
+   "opened": "1976-05-15",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1133019"
+  },
+  "cedar-point--disaster-transport": {
+   "qid": "Q1228345",
+   "wikidataLabel": "Disaster Transport",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "amusement ride",
+    "steel roller coaster",
+    "bobsled roller coaster"
+   ],
+   "opened": "1985-05-11",
+   "closed": "2013-07-29",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1228345"
+  },
+  "cedar-point--gatekeeper": {
+   "qid": "Q596922",
+   "wikidataLabel": "GateKeeper",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "Wing Coaster"
+   ],
+   "material": [
+    "steel"
+   ],
+   "opened": "2013-05-11",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q596922"
+  },
+  "cedar-point--gemini": {
+   "qid": "Q1501093",
+   "wikidataLabel": "Gemini",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "wooden roller coaster",
+    "steel roller coaster",
+    "dual-tracked roller coaster"
+   ],
+   "material": [
+    "wood",
+    "steel"
+   ],
+   "opened": "1978-06-17",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1501093"
+  },
+  "cedar-point--iron-dragon": {
+   "qid": "Q836592",
+   "wikidataLabel": "Iron Dragon",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster",
+    "suspended roller coaster"
+   ],
+   "material": [
+    "steel"
+   ],
+   "opened": "1987-06-11",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q836592"
+  },
+  "cedar-point--magnum-xl-200": {
+   "qid": "Q1749312",
+   "wikidataLabel": "Magnum XL-200",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "hypercoaster",
+    "steel roller coaster"
+   ],
+   "material": [
+    "steel"
+   ],
+   "opened": "1989-05-06",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1749312"
+  },
+  "cedar-point--maverick": {
+   "qid": "Q1911911",
+   "wikidataLabel": "Maverick",
+   "height": {
+    "m": 32,
+    "ft": 105
+   },
+   "speed": {
+    "kmh": 113,
+    "mph": 70.2
+   },
+   "length": {
+    "m": 1356.4,
+    "ft": 4450
+   },
+   "duration": {
+    "s": 150
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster",
+    "launched roller coaster"
+   ],
+   "material": [
+    "steel"
+   ],
+   "opened": "2007-05-26",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1911911"
+  },
+  "cedar-point--mean-streak": {
+   "qid": "Q60845759",
+   "wikidataLabel": "Mean Streak",
+   "inversions": null,
+   "manufacturer": [
+    "Dinn Corporation"
+   ],
+   "designer": [
+    "Curtis D. Summers"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1991-05-11",
+   "closed": "2016-09-16",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q60845759"
+  },
+  "cedar-point--millennium-force": {
+   "qid": "Q1065056",
+   "wikidataLabel": "Millennium Force",
+   "height": {
+    "m": 94.5,
+    "ft": 310
+   },
+   "length": {
+    "m": 2010.2,
+    "ft": 6595
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "gigacoaster",
+    "steel roller coaster"
+   ],
+   "material": [
+    "steel"
+   ],
+   "opened": "2000-05-13",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1065056"
+  },
+  "cedar-point--raptor": {
+   "qid": "Q683300",
+   "wikidataLabel": "Raptor",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster",
+    "inverted roller coaster"
+   ],
+   "material": [
+    "steel"
+   ],
+   "opened": "1994-05-07",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q683300"
+  },
+  "cedar-point--rougarou": {
+   "qid": "Q1476401",
+   "wikidataLabel": "Rougarou",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "Floorless Coaster",
+    "steel roller coaster"
+   ],
+   "material": [
+    "steel"
+   ],
+   "opened": "2015-05-09",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1476401"
+  },
+  "cedar-point--siren-s-curse": {
+   "qid": "Q130332677",
+   "wikidataLabel": "Siren's Curse",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster",
+    "tilt coaster"
+   ],
+   "opened": "2025-06-28",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q130332677"
+  },
+  "cedar-point--steel-vengeance": {
+   "qid": "Q1787446",
+   "wikidataLabel": "Steel Vengeance",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "type": [
+    "hybrid roller coaster"
+   ],
+   "material": [
+    "wood",
+    "steel"
+   ],
+   "opened": "2018-05-05",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1787446"
+  },
+  "cedar-point--valravn": {
+   "qid": "Q20962800",
+   "wikidataLabel": "Valravn",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "Dive Coaster"
+   ],
+   "material": [
+    "steel"
+   ],
+   "opened": "2016-05-07",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q20962800"
+  },
+  "cedar-point--wicked-twister": {
+   "qid": "Q648978",
+   "wikidataLabel": "Wicked Twister",
+   "height": {
+    "m": 65.5,
+    "ft": 215
+   },
+   "speed": {
+    "kmh": 115.9,
+    "mph": 72
+   },
+   "length": {
+    "m": 210,
+    "ft": 689
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "hypercoaster",
+    "steel roller coaster",
+    "Inverted Impulse roller coaster",
+    "shuttle roller coaster",
+    "launched roller coaster",
+    "former entity"
+   ],
+   "material": [
+    "steel"
+   ],
+   "opened": "2002-05-05",
+   "closed": "2021-09-06",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q648978"
+  },
+  "cedar-point--wildcat": {
+   "qid": "Q3568102",
+   "wikidataLabel": "WildCat",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1979",
+   "closed": "2011",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3568102"
+  },
+  "cedar-point--wilderness-run": {
+   "qid": "Q6298633",
+   "wikidataLabel": "Wilderness Run",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "material": [
+    "steel"
+   ],
+   "opened": "1979",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q6298633"
+  },
+  "cedar-point--woodstock-express": {
+   "qid": "Q8033426",
+   "wikidataLabel": "Woodstock Express",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "material": [
+    "steel"
+   ],
+   "opened": "1999-05-10",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q8033426"
+  },
+  "celebration-city--ozark-wildcat": {
+   "qid": "Q7116517",
+   "wikidataLabel": "Ozark Wildcat",
+   "inversions": null,
+   "manufacturer": [
+    "Great Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7116517"
+  },
+  "clementon-park-splash-world--jack-rabbit": {
+   "qid": "Q96418654",
+   "wikidataLabel": "Jack Rabbit",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1919",
+   "closed": "2002",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q96418654"
+  },
+  "cliff-s-amusement-park--new-mexico-rattler": {
+   "qid": "Q19332764",
+   "wikidataLabel": "New Mexico Rattler",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q19332764"
+  },
+  "columbus-zoo-and-aquarium--sea-dragon": {
+   "qid": "Q7439875",
+   "wikidataLabel": "Sea Dragon",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1956",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7439875"
+  },
+  "conneaut-lake-park--blue-streak": {
+   "qid": "Q885896",
+   "wikidataLabel": "Blue Streak",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q885896"
+  },
+  "conneaut-lake-park--little-dipper": {
+   "qid": "Q6649783",
+   "wikidataLabel": "Little Dipper",
+   "inversions": null,
+   "manufacturer": [
+    "Allan Herschell Company"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q6649783"
+  },
+  "darien-lake--hoot-n-holler": {
+   "qid": "Q5898663",
+   "wikidataLabel": "Hoot N Holler",
+   "inversions": null,
+   "manufacturer": [
+    "ZIERER Karussell- und Spezialmaschinenbau GmbH & Co. KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1981",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5898663"
+  },
+  "darien-lake--motocoaster": {
+   "qid": "Q6917959",
+   "wikidataLabel": "Moto Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Antonio Zamperla S.p.A"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q6917959"
+  },
+  "darien-lake--predator": {
+   "qid": "Q2108259",
+   "wikidataLabel": "Predator",
+   "inversions": null,
+   "manufacturer": [
+    "Dinn Corporation"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2108259"
+  },
+  "darien-lake--tantrum": {
+   "qid": "Q60770886",
+   "wikidataLabel": "Tantrum",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2018-05-25",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q60770886"
+  },
+  "darien-lake--viper": {
+   "qid": "Q2527551",
+   "wikidataLabel": "Viper",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1982-05",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2527551"
+  },
+  "disney-california-adventure--goofy-s-sky-school": {
+   "qid": "Q3327600",
+   "wikidataLabel": "Goofy's Sky School",
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3327600"
+  },
+  "disney-s-animal-kingdom--expedition-everest": {
+   "qid": "Q1341067",
+   "wikidataLabel": "Expedition Everest",
+   "length": {
+    "m": 1184,
+    "ft": 3884.5
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "designer": [
+    "Walt Disney Imagineering"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "model": [
+    "Mount Everest"
+   ],
+   "opened": "2006-04-07",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1341067"
+  },
+  "disney-s-animal-kingdom--primeval-whirl": {
+   "qid": "Q3403239",
+   "wikidataLabel": "Primeval Whirl",
+   "inversions": null,
+   "manufacturer": [
+    "Reverchon Industries"
+   ],
+   "type": [
+    "Wild Mouse roller coaster"
+   ],
+   "opened": "2002-04-18",
+   "closed": "2020-03-15",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3403239"
+  },
+  "disney-s-hollywood-studios--rock-n-roller-coaster": {
+   "qid": "Q139394198",
+   "wikidataLabel": "Rock ’n’ Roller Coaster Starring The Muppets",
+   "length": {
+    "m": 996,
+    "ft": 3267.7
+   },
+   "duration": {
+    "s": 82
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "designer": [
+    "Walt Disney Imagineering"
+   ],
+   "model": [
+    "The Muppets"
+   ],
+   "opened": "2026-05-26",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q139394198"
+  },
+  "disney-s-hollywood-studios--slinky-dog-dash": {
+   "qid": "Q35006966",
+   "wikidataLabel": "Slinky Dog Dash",
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "designer": [
+    "Walt Disney Imagineering"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "model": [
+    "Slinky Dog"
+   ],
+   "opened": "2018-06-30",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q35006966"
+  },
+  "disney-s-magic-kingdom--big-thunder-mountain-railroad": {
+   "qid": "Q85474505",
+   "wikidataLabel": "Big Thunder Mountain Railroad",
+   "length": {
+    "m": 847.3,
+    "ft": 2780
+   },
+   "duration": {
+    "s": 210
+   },
+   "inversions": null,
+   "opened": "1980-09-23",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q85474505"
+  },
+  "disney-s-magic-kingdom--seven-dwarfs-mine-train": {
+   "qid": "Q2182970",
+   "wikidataLabel": "Seven Dwarfs Mine Train",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "model": [
+    "Snow White and the Seven Dwarfs"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2182970"
+  },
+  "disney-s-magic-kingdom--space-mountain": {
+   "qid": "Q2306317",
+   "wikidataLabel": "Space Mountain",
+   "inversions": null,
+   "manufacturer": [
+    "Dynamic Structures"
+   ],
+   "designer": [
+    "Walt Disney Imagineering"
+   ],
+   "type": [
+    "Space Mountain"
+   ],
+   "opened": "1975-01-15",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2306317"
+  },
+  "disney-s-magic-kingdom--the-barnstormer": {
+   "qid": "Q2884723",
+   "wikidataLabel": "The Barnstormer",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2884723"
+  },
+  "disney-s-magic-kingdom--tron-lightcycle-run": {
+   "qid": "Q123594444",
+   "wikidataLabel": "TRON Lightcycle / Run",
+   "length": {
+    "m": 966,
+    "ft": 3169.3
+   },
+   "inversions": null,
+   "designer": [
+    "Vekoma Rides Manufacturing B.V.",
+    "Walt Disney Imagineering",
+    "Grace Design Studio"
+   ],
+   "type": [
+    "enclosed roller coaster"
+   ],
+   "model": [
+    "Tron"
+   ],
+   "opened": "2023-04-04",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q123594444"
+  },
+  "disneyland-park--gadget-s-go-coaster": {
+   "qid": "Q3094227",
+   "wikidataLabel": "Gadget's Go Coaster",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "model": [
+    "Chip 'n Dale Rescue Rangers"
+   ],
+   "opened": "1996",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3094227"
+  },
+  "disneyland-park--matterhorn-bobsleds": {
+   "qid": "Q1849003",
+   "wikidataLabel": "Matterhorn Bobsleds",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1959",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1849003"
+  },
+  "disneyland-park--space-mountain": {
+   "qid": "Q7572427",
+   "wikidataLabel": "Space Mountain",
+   "inversions": null,
+   "manufacturer": [
+    "Dynamic Structures"
+   ],
+   "type": [
+    "Space Mountain"
+   ],
+   "opened": "1977-05-27",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7572427"
+  },
+  "dixie-landin-blue-bayou-waterpark--loco-loco": {
+   "qid": "Q6665921",
+   "wikidataLabel": "Loco-Loco",
+   "inversions": null,
+   "manufacturer": [
+    "E&F Miler Industries"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q6665921"
+  },
+  "dollywood--big-bear-mountain": {
+   "qid": "Q115804804",
+   "wikidataLabel": "Big Bear Mountain",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q115804804"
+  },
+  "dollywood--blazing-fury": {
+   "qid": "Q14709813",
+   "wikidataLabel": "Blazing Fury (dark ride)",
+   "inversions": null,
+   "manufacturer": [
+    "Herschend Family Entertainment"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q14709813"
+  },
+  "dollywood--dragonflier": {
+   "qid": "Q105063597",
+   "wikidataLabel": "Dragonflier",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster",
+    "suspended roller coaster"
+   ],
+   "opened": "2019-05-10",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q105063597"
+  },
+  "dollywood--firechaser-express": {
+   "qid": "Q15047510",
+   "wikidataLabel": "FireChaser Express",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2014-03-22",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q15047510"
+  },
+  "dollywood--lightning-rod": {
+   "qid": "Q22073205",
+   "wikidataLabel": "Lightning Rod",
+   "length": {
+    "m": 1158.2,
+    "ft": 3800
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "designer": [
+    "Alan Schilke"
+   ],
+   "type": [
+    "wooden roller coaster",
+    "launched roller coaster"
+   ],
+   "model": [
+    "hot rod"
+   ],
+   "opened": "2016-06-13",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q22073205"
+  },
+  "dollywood--mystery-mine": {
+   "qid": "Q1956905",
+   "wikidataLabel": "Mystery Mine",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2007-04-13",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1956905"
+  },
+  "dollywood--tennessee-tornado": {
+   "qid": "Q2403629",
+   "wikidataLabel": "Tennessee Tornado",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1999-04-17",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2403629"
+  },
+  "dollywood--thunderhead": {
+   "qid": "Q1559667",
+   "wikidataLabel": "Thunderhead",
+   "inversions": null,
+   "manufacturer": [
+    "Great Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1559667"
+  },
+  "dollywood--wild-eagle": {
+   "qid": "Q2544502",
+   "wikidataLabel": "Wild Eagle",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "hypercoaster",
+    "steel roller coaster"
+   ],
+   "opened": "2012-03-24",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2544502"
+  },
+  "dorney-park-wildwater-kingdom--hercules": {
+   "qid": "Q1609595",
+   "wikidataLabel": "Hercules",
+   "inversions": null,
+   "manufacturer": [
+    "Dinn Corporation"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1609595"
+  },
+  "dorney-park-wildwater-kingdom--hydra-the-revenge": {
+   "qid": "Q1545220",
+   "wikidataLabel": "Hydra the Revenge",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "designer": [
+    "Werner Stengel"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2005-05-07",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1545220"
+  },
+  "dorney-park-wildwater-kingdom--possessed": {
+   "qid": "Q2105808",
+   "wikidataLabel": "Possessed",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2105808"
+  },
+  "dorney-park-wildwater-kingdom--steel-first": {
+   "qid": "Q7605670",
+   "wikidataLabel": "Steel First",
+   "inversions": null,
+   "manufacturer": [
+    "Allan Herschell Company"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7605670"
+  },
+  "dorney-park-wildwater-kingdom--steel-force": {
+   "qid": "Q2335777",
+   "wikidataLabel": "Steel Force",
+   "inversions": null,
+   "manufacturer": [
+    "D. H. Morgan Manufacturing"
+   ],
+   "type": [
+    "hypercoaster",
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2335777"
+  },
+  "dorney-park-wildwater-kingdom--talon": {
+   "qid": "Q2390682",
+   "wikidataLabel": "Talon",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "designer": [
+    "Werner Stengel"
+   ],
+   "type": [
+    "steel roller coaster",
+    "inverted roller coaster"
+   ],
+   "opened": "2001-05-05",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2390682"
+  },
+  "dorney-park-wildwater-kingdom--thunderhawk": {
+   "qid": "Q2429902",
+   "wikidataLabel": "Thunderhawk",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "designer": [
+    "Herbert Schmeck"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2429902"
+  },
+  "dutch-wonderland--joust": {
+   "qid": "Q15047522",
+   "wikidataLabel": "Joust",
+   "inversions": null,
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q15047522"
+  },
+  "dutch-wonderland--kingdom-coaster": {
+   "qid": "Q6412474",
+   "wikidataLabel": "Kingdom Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q6412474"
+  },
+  "dutch-wonderland--merlin-s-mayhem": {
+   "qid": "Q105081816",
+   "wikidataLabel": "Merlin's Mayhem",
+   "inversions": null,
+   "manufacturer": [
+    "S&S Worldwide"
+   ],
+   "type": [
+    "steel roller coaster",
+    "inverted roller coaster"
+   ],
+   "opened": "2018-04-28",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q105081816"
+  },
+  "elitch-gardens--halfpipe": {
+   "qid": "Q1135493",
+   "wikidataLabel": "Half Pipe",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster",
+    "shuttle roller coaster"
+   ],
+   "opened": "2003-04-30",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1135493"
+  },
+  "elitch-gardens--sidewinder": {
+   "qid": "Q7508555",
+   "wikidataLabel": "Sidewinder",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7508555"
+  },
+  "elitch-gardens--twister-ii": {
+   "qid": "Q1432851",
+   "wikidataLabel": "Twister II",
+   "inversions": null,
+   "manufacturer": [
+    "Hensel Phelps Construction"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1432851"
+  },
+  "epcot--guardians-of-the-galaxy-cosmic-rewind": {
+   "qid": "Q36259219",
+   "wikidataLabel": "Guardians of the Galaxy: Cosmic Rewind",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "designer": [
+    "Walt Disney Imagineering"
+   ],
+   "type": [
+    "steel roller coaster",
+    "enclosed roller coaster"
+   ],
+   "model": [
+    "Guardians of the Galaxy"
+   ],
+   "opened": "2022-05-27",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q36259219"
+  },
+  "family-kingdom-amusement-park--swamp-fox": {
+   "qid": "Q7653328",
+   "wikidataLabel": "Swamp Fox",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7653328"
+  },
+  "freestyle-music-park--time-machine": {
+   "qid": "Q2414672",
+   "wikidataLabel": "Time Machine",
+   "inversions": null,
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2414672"
+  },
+  "frontier-city--silver-bullet": {
+   "qid": "Q85847212",
+   "wikidataLabel": "Silver Bullet",
+   "inversions": null,
+   "manufacturer": [
+    "Anton Schwarzkopf"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1986-07-18",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q85847212"
+  },
+  "frontier-city--steel-lasso": {
+   "qid": "Q7605686",
+   "wikidataLabel": "Steel Lasso",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2008-07-18",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7605686"
+  },
+  "frontier-city--wildcat": {
+   "qid": "Q61945012",
+   "wikidataLabel": "Wildcat",
+   "inversions": null,
+   "manufacturer": [
+    "National Amusement Devices"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1991-04-20",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q61945012"
+  },
+  "fun-spot--afterburner": {
+   "qid": "Q2131335",
+   "wikidataLabel": "Afterburner",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Development"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2131335"
+  },
+  "fun-spot-america-atlanta--arieforce-one": {
+   "qid": "Q109849943",
+   "wikidataLabel": "ArieForce One",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q109849943"
+  },
+  "fun-spot-america-orlando--freedom-flyer": {
+   "qid": "Q18748989",
+   "wikidataLabel": "Freedom Flyer",
+   "speed": {
+    "kmh": 55,
+    "mph": 34.2
+   },
+   "length": {
+    "m": 395,
+    "ft": 1296
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "suspended roller coaster"
+   ],
+   "opened": "2013-05",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q18748989"
+  },
+  "fun-spot-america-orlando--white-lightning": {
+   "qid": "Q14686576",
+   "wikidataLabel": "White Lightning",
+   "inversions": null,
+   "manufacturer": [
+    "Great Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "material": [
+    "wood"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q14686576"
+  },
+  "funtown-splashtown-usa--excalibur": {
+   "qid": "Q1383421",
+   "wikidataLabel": "Excalibur",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "material": [
+    "wood"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1383421"
+  },
+  "galveston-island-pleasure-pier--iron-shark": {
+   "qid": "Q15047519",
+   "wikidataLabel": "Iron Shark",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q15047519"
+  },
+  "geauga-lake-s-wildwater-kingdom--beaver-land-mine-ride": {
+   "qid": "Q4878126",
+   "wikidataLabel": "Beaver Land Mine Ride",
+   "inversions": null,
+   "manufacturer": [
+    "ZIERER Karussell- und Spezialmaschinenbau GmbH & Co. KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q4878126"
+  },
+  "geauga-lake-s-wildwater-kingdom--big-dipper": {
+   "qid": "Q858766",
+   "wikidataLabel": "Big Dipper",
+   "inversions": null,
+   "designer": [
+    "John Miller"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1925",
+   "closed": "2016-10-17",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q858766"
+  },
+  "geauga-lake-s-wildwater-kingdom--double-loop": {
+   "qid": "Q1251430",
+   "wikidataLabel": "Double Loop",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "amusement ride",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1251430"
+  },
+  "geauga-lake-s-wildwater-kingdom--the-villain": {
+   "qid": "Q2526040",
+   "wikidataLabel": "Villain",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2526040"
+  },
+  "glenwood-caverns-adventure-park--cliffhanger": {
+   "qid": "Q5132836",
+   "wikidataLabel": "Cliffhanger",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5132836"
+  },
+  "glenwood-caverns-adventure-park--defiance": {
+   "qid": "Q108166881",
+   "wikidataLabel": "Defiance",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2022-07-01",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q108166881"
+  },
+  "hersheypark--candymonium": {
+   "qid": "Q85750456",
+   "wikidataLabel": "Candymonium",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "hypercoaster",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q85750456"
+  },
+  "hersheypark--comet": {
+   "qid": "Q5151571",
+   "wikidataLabel": "Comet",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5151571"
+  },
+  "hersheypark--fahrenheit": {
+   "qid": "Q202493",
+   "wikidataLabel": "Fahrenheit",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q202493"
+  },
+  "hersheypark--great-bear": {
+   "qid": "Q1294688",
+   "wikidataLabel": "Great Bear",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1294688"
+  },
+  "hersheypark--laff-trakk": {
+   "qid": "Q20487039",
+   "wikidataLabel": "Laff Trakk",
+   "inversions": null,
+   "manufacturer": [
+    "Maurer Söhne"
+   ],
+   "type": [
+    "indoor roller coaster",
+    "steel roller coaster",
+    "spinning roller coaster"
+   ],
+   "opened": "2015-05-23",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q20487039"
+  },
+  "hersheypark--lightning-racer": {
+   "qid": "Q906447",
+   "wikidataLabel": "Lightning Racer",
+   "inversions": null,
+   "manufacturer": [
+    "Great Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster",
+    "dueling roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q906447"
+  },
+  "hersheypark--roller-soaker": {
+   "qid": "Q1472834",
+   "wikidataLabel": "Roller Soaker",
+   "inversions": null,
+   "type": [
+    "steel roller coaster",
+    "inverted roller coaster"
+   ],
+   "opened": "2002-05-11",
+   "closed": "2012-09-03",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1472834"
+  },
+  "hersheypark--sidewinder": {
+   "qid": "Q7508554",
+   "wikidataLabel": "Jolly Rancher Remix",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "Boomerang"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7508554"
+  },
+  "hersheypark--skyrush": {
+   "qid": "Q2293407",
+   "wikidataLabel": "Skyrush",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "hypercoaster",
+    "steel roller coaster"
+   ],
+   "opened": "2012-05-26",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2293407"
+  },
+  "hersheypark--sooperdooperlooper": {
+   "qid": "Q2302588",
+   "wikidataLabel": "SooperDooperLooper",
+   "inversions": null,
+   "manufacturer": [
+    "Anton Schwarzkopf"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2302588"
+  },
+  "hersheypark--storm-runner": {
+   "qid": "Q1500945",
+   "wikidataLabel": "Storm Runner",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster",
+    "launched roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1500945"
+  },
+  "hersheypark--trailblazer": {
+   "qid": "Q7832773",
+   "wikidataLabel": "Trailblazer",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1974-05-18",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7832773"
+  },
+  "hersheypark--wild-mouse": {
+   "qid": "Q8000725",
+   "wikidataLabel": "Wild Mouse",
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q8000725"
+  },
+  "hersheypark--wildcat-s-revenge": {
+   "qid": "Q2570460",
+   "wikidataLabel": "Wildcat’s Revenge",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "type": [
+    "steel roller coaster",
+    "hybrid roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2570460"
+  },
+  "holiday-world-splashin-safari--good-gravy": {
+   "qid": "Q131465731",
+   "wikidataLabel": "Good Gravy!",
+   "height": {
+    "m": 23.5,
+    "ft": 77
+   },
+   "length": {
+    "m": 220,
+    "ft": 721.8
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "Boomerang"
+   ],
+   "opened": "2024-05-11",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q131465731"
+  },
+  "holiday-world-splashin-safari--howler": {
+   "qid": "Q14688824",
+   "wikidataLabel": "The Howler",
+   "inversions": null,
+   "manufacturer": [
+    "Antonio Zamperla S.p.A"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q14688824"
+  },
+  "holiday-world-splashin-safari--raven": {
+   "qid": "Q2413721",
+   "wikidataLabel": "The Raven",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2413721"
+  },
+  "holiday-world-splashin-safari--the-legend": {
+   "qid": "Q2412446",
+   "wikidataLabel": "The Legend",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2412446"
+  },
+  "holiday-world-splashin-safari--the-voyage": {
+   "qid": "Q2415004",
+   "wikidataLabel": "The Voyage",
+   "inversions": null,
+   "manufacturer": [
+    "The Gravity Group"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2415004"
+  },
+  "holiday-world-splashin-safari--thunderbird": {
+   "qid": "Q18158819",
+   "wikidataLabel": "Thunderbird",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2015-04-25",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q18158819"
+  },
+  "idlewild-soak-zone--rollo-coaster": {
+   "qid": "Q15047496",
+   "wikidataLabel": "Rollo Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q15047496"
+  },
+  "idlewild-soak-zone--wild-mouse": {
+   "qid": "Q3568116",
+   "wikidataLabel": "Wild Mouse",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3568116"
+  },
+  "indiana-beach--cornball-express": {
+   "qid": "Q1133164",
+   "wikidataLabel": "Cornball Express",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1133164"
+  },
+  "indiana-beach--dragon-wagon": {
+   "qid": "Q16930998",
+   "wikidataLabel": "Dragon Wagon",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q16930998"
+  },
+  "indiana-beach--hoosier-hurricane": {
+   "qid": "Q1627485",
+   "wikidataLabel": "Hoosier Hurricane",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1627485"
+  },
+  "indiana-beach--lost-coaster-of-superstition-mountain": {
+   "qid": "Q1870687",
+   "wikidataLabel": "Lost Coaster of Superstition Mountain",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1870687"
+  },
+  "indiana-beach--steel-hawg": {
+   "qid": "Q3497779",
+   "wikidataLabel": "Steel Hawg",
+   "inversions": null,
+   "manufacturer": [
+    "S&S Worldwide"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3497779"
+  },
+  "indiana-beach--tig-rr-coaster": {
+   "qid": "Q7801307",
+   "wikidataLabel": "Tig'rr Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Anton Schwarzkopf"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7801307"
+  },
+  "jolly-roger-amusement-park--wildcat": {
+   "qid": "Q85848040",
+   "wikidataLabel": "Wildcat",
+   "inversions": null,
+   "manufacturer": [
+    "Anton Schwarzkopf"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q85848040"
+  },
+  "kemah-boardwalk-amusements--boardwalk-bullet": {
+   "qid": "Q681716",
+   "wikidataLabel": "Boardwalk Bullet",
+   "inversions": null,
+   "manufacturer": [
+    "Martin & Vleminckx"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "2007",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q681716"
+  },
+  "kennywood--exterminator": {
+   "qid": "Q1385028",
+   "wikidataLabel": "Exterminator",
+   "inversions": null,
+   "manufacturer": [
+    "Reverchon Industries"
+   ],
+   "type": [
+    "steel roller coaster",
+    "enclosed roller coaster",
+    "Wild Mouse roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1385028"
+  },
+  "kennywood--jack-rabbit": {
+   "qid": "Q1677171",
+   "wikidataLabel": "Jack Rabbit",
+   "inversions": null,
+   "manufacturer": [
+    "Harry C. Baker"
+   ],
+   "designer": [
+    "John Miller"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1920",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1677171"
+  },
+  "kennywood--phantom-s-revenge": {
+   "qid": "Q666461",
+   "wikidataLabel": "Phantom's Revenge",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics",
+    "D. H. Morgan Manufacturing"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q666461"
+  },
+  "kennywood--racer": {
+   "qid": "Q951111",
+   "wikidataLabel": "Racer",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q951111"
+  },
+  "kennywood--sky-rocket": {
+   "qid": "Q1131734",
+   "wikidataLabel": "Sky Rocket",
+   "inversions": null,
+   "manufacturer": [
+    "Premier Rides"
+   ],
+   "type": [
+    "steel roller coaster",
+    "launched roller coaster"
+   ],
+   "opened": "2010-06-29",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1131734"
+  },
+  "kennywood--steel-curtain": {
+   "qid": "Q56274345",
+   "wikidataLabel": "Steel Curtain",
+   "inversions": null,
+   "manufacturer": [
+    "S&S Worldwide"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2019-07-13",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q56274345"
+  },
+  "kennywood--thunderbolt": {
+   "qid": "Q1307380",
+   "wikidataLabel": "Thunderbolt",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1307380"
+  },
+  "kentucky-kingdom--kentucky-flyer": {
+   "qid": "Q105043981",
+   "wikidataLabel": "Kentucky Flyer",
+   "inversions": null,
+   "manufacturer": [
+    "The Gravity Group"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "2019-04-28",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q105043981"
+  },
+  "kentucky-kingdom--lightning-run": {
+   "qid": "Q18153602",
+   "wikidataLabel": "Lightning Run",
+   "inversions": null,
+   "manufacturer": [
+    "Chance Rides"
+   ],
+   "opened": "2014-05-24",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q18153602"
+  },
+  "kentucky-kingdom--roller-skater": {
+   "qid": "Q7361042",
+   "wikidataLabel": "Roller Skater",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7361042"
+  },
+  "kentucky-kingdom--t3": {
+   "qid": "Q2183558",
+   "wikidataLabel": "T3",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2183558"
+  },
+  "kentucky-kingdom--thunder-run": {
+   "qid": "Q2085501",
+   "wikidataLabel": "Thunder Run",
+   "inversions": null,
+   "manufacturer": [
+    "Dinn Corporation"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2085501"
+  },
+  "kings-dominion--anaconda": {
+   "qid": "Q483518",
+   "wikidataLabel": "Anaconda",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q483518"
+  },
+  "kings-dominion--avalanche": {
+   "qid": "Q4827461",
+   "wikidataLabel": "Avalanche",
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q4827461"
+  },
+  "kings-dominion--backlot-stunt-coaster": {
+   "qid": "Q798461",
+   "wikidataLabel": "Backlot Stunt Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Premier Rides"
+   ],
+   "type": [
+    "amusement ride",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q798461"
+  },
+  "kings-dominion--dominator": {
+   "qid": "Q951359",
+   "wikidataLabel": "Dominator",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "Floorless Coaster",
+    "amusement ride",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q951359"
+  },
+  "kings-dominion--grizzly": {
+   "qid": "Q1547136",
+   "wikidataLabel": "Grizzly",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1547136"
+  },
+  "kings-dominion--hurler": {
+   "qid": "Q1619573",
+   "wikidataLabel": "Hurler",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1619573"
+  },
+  "kings-dominion--hypersonic-xlc": {
+   "qid": "Q1640820",
+   "wikidataLabel": "Hypersonic XLC",
+   "inversions": null,
+   "manufacturer": [
+    "S&S Worldwide"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2001-03-24",
+   "closed": "2007",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1640820"
+  },
+  "kings-dominion--intimidator-305": {
+   "qid": "Q954833",
+   "wikidataLabel": "Pantherian",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "gigacoaster",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q954833"
+  },
+  "kings-dominion--rebel-yell": {
+   "qid": "Q7302076",
+   "wikidataLabel": "Rebel Yell",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7302076"
+  },
+  "kings-dominion--ricochet": {
+   "qid": "Q16968585",
+   "wikidataLabel": "Ricochet",
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "Wild Mouse roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q16968585"
+  },
+  "kings-dominion--shockwave": {
+   "qid": "Q2279717",
+   "wikidataLabel": "Shockwave",
+   "inversions": null,
+   "manufacturer": [
+    "TOGO"
+   ],
+   "type": [
+    "steel roller coaster",
+    "stand-up roller coaster"
+   ],
+   "closed": "2015-08-09",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2279717"
+  },
+  "kings-dominion--twisted-timbers": {
+   "qid": "Q39048402",
+   "wikidataLabel": "Twisted Timbers",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "type": [
+    "hybrid roller coaster"
+   ],
+   "opened": "2018-03-24",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q39048402"
+  },
+  "kings-dominion--volcano-the-blast-coaster": {
+   "qid": "Q259175",
+   "wikidataLabel": "Volcano, The Blast Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q259175"
+  },
+  "kings-dominion--woodstock-express": {
+   "qid": "Q8033428",
+   "wikidataLabel": "Woodstock Express",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q8033428"
+  },
+  "kings-island--adventure-express": {
+   "qid": "Q379935",
+   "wikidataLabel": "Adventure Express",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1991-04-13",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q379935"
+  },
+  "kings-island--backlot-stunt-coaster": {
+   "qid": "Q18545696",
+   "wikidataLabel": "Backlot Stunt Coaster",
+   "inversions": null,
+   "type": [
+    "steel roller coaster",
+    "amusement ride",
+    "Backlot Stunt Coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q18545696"
+  },
+  "kings-island--banshee": {
+   "qid": "Q14674081",
+   "wikidataLabel": "Banshee",
+   "speed": {
+    "kmh": 109.4,
+    "mph": 68
+   },
+   "length": {
+    "m": 1257,
+    "ft": 4124
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2014-04-18",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q14674081"
+  },
+  "kings-island--diamondback": {
+   "qid": "Q922374",
+   "wikidataLabel": "Diamondback",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "amusement ride",
+    "hypercoaster",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q922374"
+  },
+  "kings-island--firehawk": {
+   "qid": "Q574000",
+   "wikidataLabel": "Firehawk",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q574000"
+  },
+  "kings-island--invertigo": {
+   "qid": "Q48450165",
+   "wikidataLabel": "Invertigo",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "Invertigo"
+   ],
+   "opened": "1999-04-17",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q48450165"
+  },
+  "kings-island--king-cobra": {
+   "qid": "Q1742012",
+   "wikidataLabel": "King Cobra",
+   "inversions": null,
+   "manufacturer": [
+    "TOGO"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1742012"
+  },
+  "kings-island--mystic-timbers": {
+   "qid": "Q28446247",
+   "wikidataLabel": "Mystic Timbers",
+   "inversions": null,
+   "manufacturer": [
+    "Great Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "2017-04-15",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q28446247"
+  },
+  "kings-island--orion": {
+   "qid": "Q66498889",
+   "wikidataLabel": "Orion",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "opened": "2020",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q66498889"
+  },
+  "kings-island--racer": {
+   "qid": "Q841577",
+   "wikidataLabel": "The Racer",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q841577"
+  },
+  "kings-island--scooby-s-ghoster-coaster": {
+   "qid": "Q7434348",
+   "wikidataLabel": "Scooby's Ghoster Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Caripro"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7434348"
+  },
+  "kings-island--son-of-beast": {
+   "qid": "Q283168",
+   "wikidataLabel": "Son of Beast",
+   "height": {
+    "m": 66.4,
+    "ft": 218
+   },
+   "speed": {
+    "kmh": 126.2,
+    "mph": 78.4
+   },
+   "length": {
+    "m": 2143.4,
+    "ft": 7032
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Roller Coaster Corporation of America"
+   ],
+   "type": [
+    "hypercoaster",
+    "wooden roller coaster",
+    "former entity"
+   ],
+   "opened": "2000-04-28",
+   "closed": "2009-06-16",
+   "status": "permanently closed",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q283168"
+  },
+  "kings-island--the-beast": {
+   "qid": "Q664237",
+   "wikidataLabel": "The Beast",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q664237"
+  },
+  "kings-island--vortex": {
+   "qid": "Q689340",
+   "wikidataLabel": "Vortex",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q689340"
+  },
+  "kings-island--woodstock-express": {
+   "qid": "Q2260635",
+   "wikidataLabel": "Woodstock Express",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1972-04-29",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2260635"
+  },
+  "knoebels-amusement-park--black-diamond": {
+   "qid": "Q4920646",
+   "wikidataLabel": "Black Diamond",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q4920646"
+  },
+  "knoebels-amusement-park--flying-turns": {
+   "qid": "Q1434625",
+   "wikidataLabel": "Flying Turns",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster",
+    "bobsled roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1434625"
+  },
+  "knoebels-amusement-park--high-speed-thrill-coaster": {
+   "qid": "Q12060067",
+   "wikidataLabel": "High Speed Thrill Coaster",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1955",
+   "closed": "2008",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q12060067"
+  },
+  "knoebels-amusement-park--impulse": {
+   "qid": "Q20055172",
+   "wikidataLabel": "Impulse",
+   "inversions": null,
+   "manufacturer": [
+    "ZIERER Karussell- und Spezialmaschinenbau GmbH & Co. KG"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q20055172"
+  },
+  "knoebels-amusement-park--kozmo-s-kurves": {
+   "qid": "Q6435353",
+   "wikidataLabel": "Kozmo's Kurves",
+   "inversions": null,
+   "manufacturer": [
+    "E&F Miler Industries"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q6435353"
+  },
+  "knoebels-amusement-park--phoenix": {
+   "qid": "Q2088479",
+   "wikidataLabel": "Phoenix",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2088479"
+  },
+  "knoebels-amusement-park--twister": {
+   "qid": "Q2462356",
+   "wikidataLabel": "Twister",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2462356"
+  },
+  "knott-s-berry-farm--coast-rider": {
+   "qid": "Q5138207",
+   "wikidataLabel": "Coast Rider",
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5138207"
+  },
+  "knott-s-berry-farm--hang-time": {
+   "qid": "Q39073843",
+   "wikidataLabel": "HangTime",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2018-05-18",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q39073843"
+  },
+  "knott-s-berry-farm--jaguar": {
+   "qid": "Q1678491",
+   "wikidataLabel": "Jaguar!",
+   "inversions": null,
+   "manufacturer": [
+    "ZIERER Karussell- und Spezialmaschinenbau GmbH & Co. KG"
+   ],
+   "type": [
+    "amusement ride",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1678491"
+  },
+  "knott-s-berry-farm--montezooma-s-revenge": {
+   "qid": "Q3322684",
+   "wikidataLabel": "Montezooma's Revenge",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3322684"
+  },
+  "knott-s-berry-farm--pony-express": {
+   "qid": "Q3397820",
+   "wikidataLabel": "Pony Express",
+   "inversions": null,
+   "manufacturer": [
+    "Antonio Zamperla S.p.A"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3397820"
+  },
+  "knott-s-berry-farm--sierra-sidewinder": {
+   "qid": "Q2284495",
+   "wikidataLabel": "Sierra Sidewinder",
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2284495"
+  },
+  "knott-s-berry-farm--silver-bullet": {
+   "qid": "Q1784195",
+   "wikidataLabel": "Silver Bullet",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2004-12-07",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1784195"
+  },
+  "knott-s-berry-farm--timberline-twister": {
+   "qid": "Q3528737",
+   "wikidataLabel": "Timberline Twister",
+   "inversions": null,
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3528737"
+  },
+  "knott-s-berry-farm--wacky-soap-box-racers": {
+   "qid": "Q3564952",
+   "wikidataLabel": "Wacky Soap Box Racers",
+   "inversions": null,
+   "type": [
+    "Steeplechase (roller coaster)"
+   ],
+   "opened": "1976",
+   "closed": "1996",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3564952"
+  },
+  "knott-s-berry-farm--windjammer": {
+   "qid": "Q2583642",
+   "wikidataLabel": "Windjammer Surf Racers",
+   "inversions": null,
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2583642"
+  },
+  "lagoon--bat": {
+   "qid": "Q4868452",
+   "wikidataLabel": "Bat",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q4868452"
+  },
+  "lagoon--bombora": {
+   "qid": "Q18210308",
+   "wikidataLabel": "BomBora",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2011-04-02",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q18210308"
+  },
+  "lagoon--cannibal": {
+   "qid": "Q17986250",
+   "wikidataLabel": "Cannibal",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2015-07-02",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q17986250"
+  },
+  "lagoon--colossus-the-fire-dragon": {
+   "qid": "Q5149145",
+   "wikidataLabel": "Colossus the Fire Dragon",
+   "inversions": null,
+   "manufacturer": [
+    "Anton Schwarzkopf"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5149145"
+  },
+  "lagoon--jet-star-2": {
+   "qid": "Q18152677",
+   "wikidataLabel": "Jet Star 2",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q18152677"
+  },
+  "lagoon--roller-coaster": {
+   "qid": "Q7361012",
+   "wikidataLabel": "Roller Coaster",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1921",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7361012"
+  },
+  "lagoon--the-spider": {
+   "qid": "Q7577010",
+   "wikidataLabel": "Spider",
+   "inversions": null,
+   "manufacturer": [
+    "Maurer Söhne"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7577010"
+  },
+  "lagoon--wicked": {
+   "qid": "Q201844",
+   "wikidataLabel": "Wicked",
+   "inversions": null,
+   "manufacturer": [
+    "ZIERER Karussell- und Spezialmaschinenbau GmbH & Co. KG"
+   ],
+   "type": [
+    "steel roller coaster",
+    "launched roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q201844"
+  },
+  "lagoon--wild-mouse": {
+   "qid": "Q18159280",
+   "wikidataLabel": "Wild Mouse",
+   "inversions": null,
+   "manufacturer": [
+    "Maurer Söhne"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q18159280"
+  },
+  "lake-compounce--boulder-dash": {
+   "qid": "Q895046",
+   "wikidataLabel": "Boulder Dash",
+   "speed": {
+    "kmh": 96.6,
+    "mph": 60
+   },
+   "length": {
+    "m": 1440.2,
+    "ft": 4725
+   },
+   "duration": {
+    "s": 150
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "2000-05-21",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q895046"
+  },
+  "lake-compounce--kiddie-coaster": {
+   "qid": "Q6404685",
+   "wikidataLabel": "Kiddie Coaster",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1997-06-27",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q6404685"
+  },
+  "lake-compounce--wildcat": {
+   "qid": "Q2570454",
+   "wikidataLabel": "Wildcat",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2570454"
+  },
+  "lake-compounce--zoomerang": {
+   "qid": "Q8074183",
+   "wikidataLabel": "Zoomerang",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q8074183"
+  },
+  "lake-winnepesaukah--cannon-ball": {
+   "qid": "Q5032751",
+   "wikidataLabel": "Cannon Ball",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5032751"
+  },
+  "lakemont-park--leap-the-dips": {
+   "qid": "Q1125804",
+   "wikidataLabel": "Leap-The-Dips",
+   "inversions": null,
+   "type": [
+    "side friction roller coaster",
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1125804"
+  },
+  "lakemont-park--little-leaper": {
+   "qid": "Q6650672",
+   "wikidataLabel": "Little Leaper",
+   "inversions": null,
+   "manufacturer": [
+    "Allan Herschell Company"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q6650672"
+  },
+  "lakemont-park--skyliner": {
+   "qid": "Q1502938",
+   "wikidataLabel": "Skyliner",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1502938"
+  },
+  "lakemont-park--toboggan": {
+   "qid": "Q7811717",
+   "wikidataLabel": "Toboggan",
+   "inversions": null,
+   "manufacturer": [
+    "Chance Rides"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7811717"
+  },
+  "lakeside-amusement-park--cyclone": {
+   "qid": "Q85754903",
+   "wikidataLabel": "Cyclone",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1940-05-17",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q85754903"
+  },
+  "legoland-florida--project-x": {
+   "qid": "Q23663063",
+   "wikidataLabel": "Project X",
+   "inversions": null,
+   "type": [
+    "Wild Mouse roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q23663063"
+  },
+  "lost-island-theme-park--matugani": {
+   "qid": "Q134966734",
+   "wikidataLabel": "Matugani",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "designer": [
+    "Werner Stengel"
+   ],
+   "opened": "2023-05-20",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q134966734"
+  },
+  "lost-island-theme-park--nopuko-air-coaster": {
+   "qid": "Q112659284",
+   "wikidataLabel": "Nopuko Air Coaster",
+   "inversions": null,
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q112659284"
+  },
+  "luna-park--cyclone": {
+   "qid": "Q677558",
+   "wikidataLabel": "Coney Island Cyclone",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q677558"
+  },
+  "luna-park--soarin-eagle": {
+   "qid": "Q7549857",
+   "wikidataLabel": "Soarin' Eagle",
+   "inversions": null,
+   "manufacturer": [
+    "Antonio Zamperla S.p.A"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7549857"
+  },
+  "magic-springs-crystal-falls--arkansas-twister": {
+   "qid": "Q673114",
+   "wikidataLabel": "Arkansas Twister",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q673114"
+  },
+  "magic-springs-crystal-falls--gauntlet": {
+   "qid": "Q96408757",
+   "wikidataLabel": "The Gauntlet",
+   "length": {
+    "m": 688.8,
+    "ft": 2260
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2004-04-10",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q96408757"
+  },
+  "magic-springs-crystal-falls--x-coaster": {
+   "qid": "Q8041435",
+   "wikidataLabel": "X-Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Maurer Söhne"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q8041435"
+  },
+  "memphis-kiddie-park--little-dipper": {
+   "qid": "Q6649785",
+   "wikidataLabel": "Little Dipper",
+   "inversions": null,
+   "manufacturer": [
+    "Allan Herschell Company"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q6649785"
+  },
+  "mgm-grand-adventures--lightning-bolt": {
+   "qid": "Q85846399",
+   "wikidataLabel": "Lightning Bolt",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1993",
+   "closed": "2000-09-04",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q85846399"
+  },
+  "michigan-s-adventure--corkscrew": {
+   "qid": "Q5170868",
+   "wikidataLabel": "Corkscrew",
+   "speed": {
+    "kmh": 72.4,
+    "mph": 45
+   },
+   "length": {
+    "m": 381,
+    "ft": 1250
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "material": [
+    "steel"
+   ],
+   "opened": "1979",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5170868"
+  },
+  "michigan-s-adventure--mad-mouse": {
+   "qid": "Q6726024",
+   "wikidataLabel": "Mad Mouse",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q6726024"
+  },
+  "michigan-s-adventure--shivering-timbers": {
+   "qid": "Q2279581",
+   "wikidataLabel": "Shivering Timbers",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2279581"
+  },
+  "michigan-s-adventure--thunderhawk": {
+   "qid": "Q7799143",
+   "wikidataLabel": "Thunderhawk",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7799143"
+  },
+  "michigan-s-adventure--wolverine-wildcat": {
+   "qid": "Q2592905",
+   "wikidataLabel": "Wolverine Wildcat",
+   "inversions": null,
+   "manufacturer": [
+    "Dinn Corporation"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2592905"
+  },
+  "michigan-s-adventure--zach-s-zoomer": {
+   "qid": "Q3574493",
+   "wikidataLabel": "Zach's Zoomer",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3574493"
+  },
+  "morey-s-mariner-s-landing--rollie-s-coaster": {
+   "qid": "Q14705861",
+   "wikidataLabel": "Rollies Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Pinfari"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q14705861"
+  },
+  "mt-olympus-water-theme-park--cyclops": {
+   "qid": "Q1147609",
+   "wikidataLabel": "Cyclops",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1147609"
+  },
+  "mt-olympus-water-theme-park--hades-360": {
+   "qid": "Q765634",
+   "wikidataLabel": "Hades 360",
+   "inversions": null,
+   "manufacturer": [
+    "The Gravity Group"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q765634"
+  },
+  "mt-olympus-water-theme-park--opa": {
+   "qid": "Q7095506",
+   "wikidataLabel": "Opa",
+   "inversions": null,
+   "manufacturer": [
+    "Antonio Zamperla S.p.A"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7095506"
+  },
+  "mt-olympus-water-theme-park--pegasus": {
+   "qid": "Q2067284",
+   "wikidataLabel": "Pegasus",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2067284"
+  },
+  "mt-olympus-water-theme-park--zeus": {
+   "qid": "Q197013",
+   "wikidataLabel": "Zeus",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q197013"
+  },
+  "myrtle-beach-pavilion-park--mad-mouse": {
+   "qid": "Q6726029",
+   "wikidataLabel": "Mad Mouse",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q6726029"
+  },
+  "nascar-cafe--speed-the-ride": {
+   "qid": "Q2308436",
+   "wikidataLabel": "Speed – The Ride",
+   "height": {
+    "m": 68.3,
+    "ft": 224
+   },
+   "speed": {
+    "kmh": 112.7,
+    "mph": 70
+   },
+   "length": {
+    "m": 416.1,
+    "ft": 1365
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Premier Rides"
+   ],
+   "type": [
+    "hypercoaster",
+    "steel roller coaster",
+    "shuttle roller coaster",
+    "former entity"
+   ],
+   "opened": "2000-04-28",
+   "closed": "2011-05-01",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2308436"
+  },
+  "niagara-amusement-park-splash-world--silver-comet": {
+   "qid": "Q1712350",
+   "wikidataLabel": "Silver Comet",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1999-05-01",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1712350"
+  },
+  "nickelodeon-universe--avatar-airbender": {
+   "qid": "Q4827808",
+   "wikidataLabel": "Avatar Airbender",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "model": [
+    "Avatar: The Last Airbender"
+   ],
+   "opened": "2008-03-15",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q4827808"
+  },
+  "nickelodeon-universe--back-at-the-barnyard-hayride": {
+   "qid": "Q4839216",
+   "wikidataLabel": "Back at the Barnyard Hayride",
+   "inversions": null,
+   "manufacturer": [
+    "Antonio Zamperla S.p.A"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1995",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q4839216"
+  },
+  "nickelodeon-universe--fairly-odd-coaster": {
+   "qid": "Q5430561",
+   "wikidataLabel": "Fairly Odd Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "model": [
+    "The Fairly OddParents"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5430561"
+  },
+  "nickelodeon-universe--orange-streak": {
+   "qid": "Q7166496",
+   "wikidataLabel": "Pepsi Orange Streak",
+   "inversions": null,
+   "manufacturer": [
+    "ZIERER Karussell- und Spezialmaschinenbau GmbH & Co. KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1992-08-11",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7166496"
+  },
+  "nickelodeon-universe--sponge-bob-squarepants-rock-bottom-plunge": {
+   "qid": "Q1420749",
+   "wikidataLabel": "SpongeBob SquarePants Rock Bottom Plunge",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "model": [
+    "SpongeBob SquarePants",
+    "Rock Bottom"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1420749"
+  },
+  "oaks-park--adrenaline-peak": {
+   "qid": "Q88081218",
+   "wikidataLabel": "Adrenaline Peak",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q88081218"
+  },
+  "pacific-park--west-coaster": {
+   "qid": "Q78209480",
+   "wikidataLabel": "Santa Monica West Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "D. H. Morgan Manufacturing"
+   ],
+   "opened": "1996-05-25",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q78209480"
+  },
+  "playland-rye--dragon": {
+   "qid": "Q5305180",
+   "wikidataLabel": "Dragon Coaster",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5305180"
+  },
+  "quassy-amusement-park--wooden-warrior": {
+   "qid": "Q14715154",
+   "wikidataLabel": "Wooden Warrior",
+   "inversions": null,
+   "manufacturer": [
+    "The Gravity Group"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "2011-04-23",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q14715154"
+  },
+  "santa-cruz-beach-boardwalk--giant-dipper": {
+   "qid": "Q1522718",
+   "wikidataLabel": "Giant Dipper",
+   "inversions": null,
+   "designer": [
+    "Charles I. D. Looff"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "material": [
+    "wood"
+   ],
+   "opened": "1924",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1522718"
+  },
+  "santa-cruz-beach-boardwalk--undertow": {
+   "qid": "Q7883822",
+   "wikidataLabel": "Undertow",
+   "inversions": null,
+   "manufacturer": [
+    "Maurer Söhne"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7883822"
+  },
+  "seabreeze-amusement-park--bobsleds": {
+   "qid": "Q108795077",
+   "wikidataLabel": "Bobsleds",
+   "length": {
+    "m": 378,
+    "ft": 1240
+   },
+   "inversions": null,
+   "type": [
+    "hybrid roller coaster"
+   ],
+   "opened": "1954",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q108795077"
+  },
+  "seabreeze-amusement-park--jack-rabbit": {
+   "qid": "Q1677168",
+   "wikidataLabel": "Jack Rabbit",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1920",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1677168"
+  },
+  "seabreeze-amusement-park--whirlwind": {
+   "qid": "Q7993787",
+   "wikidataLabel": "WhirlWind",
+   "inversions": null,
+   "manufacturer": [
+    "Maurer Söhne"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7993787"
+  },
+  "seaworld-orlando--journey-to-atlantis": {
+   "qid": "Q15115792",
+   "wikidataLabel": "Journey to Atlantis",
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster",
+    "water coaster"
+   ],
+   "opened": "1998",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q15115792"
+  },
+  "seaworld-orlando--mako": {
+   "qid": "Q22695524",
+   "wikidataLabel": "Mako",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2016-06-10",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q22695524"
+  },
+  "seaworld-orlando--manta": {
+   "qid": "Q940233",
+   "wikidataLabel": "Manta",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2009-05-22",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q940233"
+  },
+  "seaworld-orlando--pipeline-the-surf-coaster": {
+   "qid": "Q114743928",
+   "wikidataLabel": "Pipeline: The Surf Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q114743928"
+  },
+  "seaworld-san-antonio--great-white": {
+   "qid": "Q3115987",
+   "wikidataLabel": "The Great White",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3115987"
+  },
+  "seaworld-san-antonio--journey-to-atlantis": {
+   "qid": "Q1709924",
+   "wikidataLabel": "Journey to Atlantis",
+   "inversions": null,
+   "type": [
+    "steel roller coaster",
+    "water coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1709924"
+  },
+  "seaworld-san-antonio--steel-eel": {
+   "qid": "Q1471807",
+   "wikidataLabel": "Steel Eel",
+   "inversions": null,
+   "manufacturer": [
+    "D. H. Morgan Manufacturing"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1471807"
+  },
+  "seaworld-san-antonio--texas-stingray": {
+   "qid": "Q81772169",
+   "wikidataLabel": "Texas Stingray",
+   "inversions": null,
+   "manufacturer": [
+    "Great Coasters International"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q81772169"
+  },
+  "seaworld-san-antonio--wave-breaker-the-rescue-coaster": {
+   "qid": "Q28126845",
+   "wikidataLabel": "Wave Breaker: The Rescue Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2017-06-16",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q28126845"
+  },
+  "seaworld-san-diego--electric-eel": {
+   "qid": "Q88293031",
+   "wikidataLabel": "Electric Eel",
+   "inversions": null,
+   "manufacturer": [
+    "Premier Rides"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q88293031"
+  },
+  "seaworld-san-diego--journey-to-atlantis": {
+   "qid": "Q917240",
+   "wikidataLabel": "Journey to Atlantis",
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster",
+    "water coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q917240"
+  },
+  "seaworld-san-diego--manta": {
+   "qid": "Q1891206",
+   "wikidataLabel": "Manta (SeaWorld San Diego)",
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2012-05-26",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1891206"
+  },
+  "sesame-place-philadelphia--oscar-s-wacky-taxi": {
+   "qid": "Q59587152",
+   "wikidataLabel": "Oscar's Wacky Taxi",
+   "inversions": null,
+   "manufacturer": [
+    "The Gravity Group"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q59587152"
+  },
+  "sesame-place-philadelphia--vapor-trail": {
+   "qid": "Q42307228",
+   "wikidataLabel": "Vapor Trail",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1998",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q42307228"
+  },
+  "silver-dollar-city--grand-exposition-coaster": {
+   "qid": "Q5594532",
+   "wikidataLabel": "Grand Exposition Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Antonio Zamperla S.p.A"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5594532"
+  },
+  "silver-dollar-city--outlaw-run": {
+   "qid": "Q1521787",
+   "wikidataLabel": "Outlaw Run",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "2013-03-15",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1521787"
+  },
+  "silver-dollar-city--powder-keg": {
+   "qid": "Q1432683",
+   "wikidataLabel": "Powder Keg: A Blast into the Wilderness",
+   "inversions": null,
+   "manufacturer": [
+    "S&S Worldwide"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1432683"
+  },
+  "silver-dollar-city--thunderation": {
+   "qid": "Q7799067",
+   "wikidataLabel": "Thunderation",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7799067"
+  },
+  "silver-dollar-city--time-traveler": {
+   "qid": "Q39073930",
+   "wikidataLabel": "Time Traveler",
+   "height": {
+    "m": 30.5,
+    "ft": 100
+   },
+   "speed": {
+    "kmh": 81,
+    "mph": 50.3
+   },
+   "length": {
+    "m": 920.5,
+    "ft": 3020
+   },
+   "duration": {
+    "s": 117
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "launched roller coaster"
+   ],
+   "opened": "2018-03",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q39073930"
+  },
+  "silver-dollar-city--wildfire": {
+   "qid": "Q1754269",
+   "wikidataLabel": "Wildfire",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2001-04-04",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1754269"
+  },
+  "silverwood-theme-park--stunt-pilot": {
+   "qid": "Q104876747",
+   "wikidataLabel": "Stunt Pilot",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "designer": [
+    "Alan Schilke"
+   ],
+   "type": [
+    "steel roller coaster",
+    "single-rail roller coaster"
+   ],
+   "opened": "2021-05-29",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q104876747"
+  },
+  "silverwood-theme-park--timber-terror": {
+   "qid": "Q1416282",
+   "wikidataLabel": "Timber Terror",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1416282"
+  },
+  "silverwood-theme-park--tremors": {
+   "qid": "Q2451377",
+   "wikidataLabel": "Tremors",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2451377"
+  },
+  "six-flags-america--batwing": {
+   "qid": "Q581586",
+   "wikidataLabel": "Batwing",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q581586"
+  },
+  "six-flags-america--joker-s-jinx": {
+   "qid": "Q826800",
+   "wikidataLabel": "The Joker's Jinx",
+   "inversions": null,
+   "manufacturer": [
+    "Premier Rides"
+   ],
+   "type": [
+    "amusement ride",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q826800"
+  },
+  "six-flags-america--the-great-chase": {
+   "qid": "Q5598953",
+   "wikidataLabel": "Great Chase",
+   "inversions": null,
+   "manufacturer": [
+    "Antonio Zamperla S.p.A"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5598953"
+  },
+  "six-flags-america--wild-one": {
+   "qid": "Q689070",
+   "wikidataLabel": "The Wild One",
+   "inversions": null,
+   "manufacturer": [
+    "Dinn Corporation"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q689070"
+  },
+  "six-flags-astroworld--batman-the-escape": {
+   "qid": "Q2261217",
+   "wikidataLabel": "Batman The Escape",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2261217"
+  },
+  "six-flags-astroworld--serpent": {
+   "qid": "Q2251445",
+   "wikidataLabel": "Serpent",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2251445"
+  },
+  "six-flags-astroworld--texas-cyclone": {
+   "qid": "Q1425281",
+   "wikidataLabel": "Texas Cyclone",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1425281"
+  },
+  "six-flags-astroworld--viper": {
+   "qid": "Q14711399",
+   "wikidataLabel": "Viper (Six Flags AstroWorld)",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "closed": "2005-10-30",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q14711399"
+  },
+  "six-flags-astroworld--xlr-8": {
+   "qid": "Q1448266",
+   "wikidataLabel": "XLR-8",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1448266"
+  },
+  "six-flags-discovery-kingdom--cobra": {
+   "qid": "Q5138963",
+   "wikidataLabel": "Cobra",
+   "inversions": null,
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5138963"
+  },
+  "six-flags-discovery-kingdom--joker": {
+   "qid": "Q21593102",
+   "wikidataLabel": "The Joker",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "designer": [
+    "Alan Schilke"
+   ],
+   "type": [
+    "hybrid roller coaster"
+   ],
+   "model": [
+    "The Joker"
+   ],
+   "opened": "2016-05-29",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q21593102"
+  },
+  "six-flags-discovery-kingdom--kong": {
+   "qid": "Q3198647",
+   "wikidataLabel": "Kong",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3198647"
+  },
+  "six-flags-discovery-kingdom--medusa": {
+   "qid": "Q1916715",
+   "wikidataLabel": "Medusa",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "Floorless Coaster",
+    "amusement ride",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1916715"
+  },
+  "six-flags-discovery-kingdom--road-runner-express": {
+   "qid": "Q7339402",
+   "wikidataLabel": "Road Runner Express",
+   "inversions": null,
+   "manufacturer": [
+    "Antonio Zamperla S.p.A"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7339402"
+  },
+  "six-flags-discovery-kingdom--superman-ultimate-flight": {
+   "qid": "Q1699142",
+   "wikidataLabel": "Superman: Ultimate Flight (Six Flags Discovery Kingdom)",
+   "inversions": null,
+   "manufacturer": [
+    "Premier Rides"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1699142"
+  },
+  "six-flags-discovery-kingdom--v2-vertical-velocity": {
+   "qid": "Q1627160",
+   "wikidataLabel": "The Flash: Vertical Velocity",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1627160"
+  },
+  "six-flags-fiesta-texas--batman-the-ride": {
+   "qid": "Q17985775",
+   "wikidataLabel": "Batman: The Ride",
+   "inversions": null,
+   "manufacturer": [
+    "S&S Worldwide"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "model": [
+    "Batman"
+   ],
+   "opened": "2015-05-23",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q17985775"
+  },
+  "six-flags-fiesta-texas--dr-diabolicals-cliffhanger": {
+   "qid": "Q108084356",
+   "wikidataLabel": "Dr. Diabolical’s Cliffhanger",
+   "length": {
+    "m": 762.3,
+    "ft": 2501
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "Dive Coaster"
+   ],
+   "opened": "2022-07-30",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q108084356"
+  },
+  "six-flags-fiesta-texas--goliath": {
+   "qid": "Q2796656",
+   "wikidataLabel": "Goliath",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2796656"
+  },
+  "six-flags-fiesta-texas--iron-rattler": {
+   "qid": "Q928467",
+   "wikidataLabel": "Iron Rattler",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "type": [
+    "hybrid roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q928467"
+  },
+  "six-flags-fiesta-texas--poltergeist": {
+   "qid": "Q679065",
+   "wikidataLabel": "Poltergeist",
+   "inversions": null,
+   "manufacturer": [
+    "Premier Rides"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q679065"
+  },
+  "six-flags-fiesta-texas--road-runner-express": {
+   "qid": "Q2765124",
+   "wikidataLabel": "Road Runner Express",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2765124"
+  },
+  "six-flags-fiesta-texas--superman-krypton-coaster": {
+   "qid": "Q688767",
+   "wikidataLabel": "Superman: Krypton Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q688767"
+  },
+  "six-flags-fiesta-texas--the-rattler": {
+   "qid": "Q18631696",
+   "wikidataLabel": "The Rattler",
+   "height": {
+    "m": 54.6,
+    "ft": 179
+   },
+   "speed": {
+    "kmh": 117.5,
+    "mph": 73
+   },
+   "inversions": null,
+   "opened": "1992-03-14",
+   "closed": "2012-08-04",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q18631696"
+  },
+  "six-flags-fiesta-texas--wonder-woman-golden-lasso": {
+   "qid": "Q39047934",
+   "wikidataLabel": "Wonder Woman Golden Lasso Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "model": [
+    "Wonder Woman"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q39047934"
+  },
+  "six-flags-great-adventure--bizarro": {
+   "qid": "Q764887",
+   "wikidataLabel": "Medusa",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "Floorless Coaster",
+    "amusement ride",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q764887"
+  },
+  "six-flags-great-adventure--el-toro": {
+   "qid": "Q1324667",
+   "wikidataLabel": "El Toro",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "2006-06-12",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1324667"
+  },
+  "six-flags-great-adventure--great-american-scream-machine": {
+   "qid": "Q1334442",
+   "wikidataLabel": "Great American Scream Machine",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster",
+    "destroyed building or structure"
+   ],
+   "closed": "2010-07-18",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1334442"
+  },
+  "six-flags-great-adventure--green-lantern": {
+   "qid": "Q693862",
+   "wikidataLabel": "Green Lantern",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "closed": "2024-11-10",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q693862"
+  },
+  "six-flags-great-adventure--harley-quinn-crazy-train": {
+   "qid": "Q13629857",
+   "wikidataLabel": "Harley Quinn Crazy Train",
+   "inversions": null,
+   "manufacturer": [
+    "ZIERER Karussell- und Spezialmaschinenbau GmbH & Co. KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q13629857"
+  },
+  "six-flags-great-adventure--jersey-devil-coaster": {
+   "qid": "Q104844713",
+   "wikidataLabel": "Jersey Devil Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "type": [
+    "steel roller coaster",
+    "single-rail roller coaster"
+   ],
+   "opened": "2021-06-13",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q104844713"
+  },
+  "six-flags-great-adventure--kingda-ka": {
+   "qid": "Q830458",
+   "wikidataLabel": "Kingda Ka",
+   "height": {
+    "m": 139,
+    "ft": 456
+   },
+   "speed": {
+    "kmh": 206,
+    "mph": 128
+   },
+   "length": {
+    "m": 950.4,
+    "ft": 3118
+   },
+   "duration": {
+    "s": 28
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster",
+    "launched roller coaster",
+    "stratacoaster"
+   ],
+   "opened": "2005-05-21",
+   "closed": "2024-11-10",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q830458"
+  },
+  "six-flags-great-adventure--nitro": {
+   "qid": "Q662497",
+   "wikidataLabel": "Nitro",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "amusement ride",
+    "hypercoaster",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q662497"
+  },
+  "six-flags-great-adventure--road-runner-railway": {
+   "qid": "Q2200640",
+   "wikidataLabel": "Road Runner Railway",
+   "inversions": null,
+   "manufacturer": [
+    "Antonio Zamperla S.p.A"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2200640"
+  },
+  "six-flags-great-adventure--rolling-thunder": {
+   "qid": "Q1139712",
+   "wikidataLabel": "Rolling Thunder",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1139712"
+  },
+  "six-flags-great-adventure--runaway-mine-train": {
+   "qid": "Q2957284",
+   "wikidataLabel": "Runaway Mine Train",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Development"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2957284"
+  },
+  "six-flags-great-adventure--skull-mountain": {
+   "qid": "Q954290",
+   "wikidataLabel": "Skull Mountain",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1996-06-03",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q954290"
+  },
+  "six-flags-great-adventure--viper": {
+   "qid": "Q2527563",
+   "wikidataLabel": "Viper",
+   "inversions": null,
+   "manufacturer": [
+    "TOGO"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2527563"
+  },
+  "six-flags-great-america--american-eagle": {
+   "qid": "Q464043",
+   "wikidataLabel": "American Eagle",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q464043"
+  },
+  "six-flags-great-america--goliath": {
+   "qid": "Q15047492",
+   "wikidataLabel": "Goliath (Six Flags Great America)",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q15047492"
+  },
+  "six-flags-great-america--little-dipper": {
+   "qid": "Q6649788",
+   "wikidataLabel": "Little Dipper",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q6649788"
+  },
+  "six-flags-great-america--maxx-force": {
+   "qid": "Q60741702",
+   "wikidataLabel": "Maxx Force",
+   "inversions": null,
+   "manufacturer": [
+    "S&S Worldwide"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q60741702"
+  },
+  "six-flags-great-america--raging-bull": {
+   "qid": "Q1536832",
+   "wikidataLabel": "Raging Bull",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "amusement ride",
+    "hypercoaster",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1536832"
+  },
+  "six-flags-great-america--shockwave": {
+   "qid": "Q2279724",
+   "wikidataLabel": "Shockwave",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1988-06-03",
+   "closed": "2002",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2279724"
+  },
+  "six-flags-great-america--spacely-s-sprocket-rockets": {
+   "qid": "Q3036455",
+   "wikidataLabel": "Spacely's Sprocket Rockets",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3036455"
+  },
+  "six-flags-great-america--v2-vertical-velocity": {
+   "qid": "Q846024",
+   "wikidataLabel": "The Flash: Vertical Velocity",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q846024"
+  },
+  "six-flags-great-america--viper": {
+   "qid": "Q917156",
+   "wikidataLabel": "Viper",
+   "inversions": null,
+   "manufacturer": [
+    "Six Flags"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q917156"
+  },
+  "six-flags-great-america--whizzer": {
+   "qid": "Q1899239",
+   "wikidataLabel": "Whizzer",
+   "inversions": null,
+   "manufacturer": [
+    "Anton Schwarzkopf"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1899239"
+  },
+  "six-flags-great-america--wrath-of-rakshasa": {
+   "qid": "Q130130645",
+   "wikidataLabel": "Wrath of Rakshasa",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "Dive Coaster"
+   ],
+   "material": [
+    "steel"
+   ],
+   "opened": "2025-05-31",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q130130645"
+  },
+  "six-flags-great-america--x-flight": {
+   "qid": "Q2597318",
+   "wikidataLabel": "X-Flight",
+   "height": {
+    "m": 37,
+    "ft": 121
+   },
+   "speed": {
+    "kmh": 89,
+    "mph": 55.3
+   },
+   "length": {
+    "m": 910,
+    "ft": 2986
+   },
+   "duration": {
+    "s": 69
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2012-05-16",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2597318"
+  },
+  "six-flags-magic-mountain--apocalypse": {
+   "qid": "Q618766",
+   "wikidataLabel": "Apocalypse",
+   "inversions": null,
+   "manufacturer": [
+    "Great Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "model": [
+    "Terminator Salvation"
+   ],
+   "opened": "2009-05-23",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q618766"
+  },
+  "six-flags-magic-mountain--canyon-blaster": {
+   "qid": "Q2098221",
+   "wikidataLabel": "Canyon Blaster",
+   "inversions": null,
+   "manufacturer": [
+    "E&F Miler Industries"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2098221"
+  },
+  "six-flags-magic-mountain--colossus": {
+   "qid": "Q677477",
+   "wikidataLabel": "Colossus",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q677477"
+  },
+  "six-flags-magic-mountain--flashback": {
+   "qid": "Q1427260",
+   "wikidataLabel": "Flashback",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1427260"
+  },
+  "six-flags-magic-mountain--full-throttle": {
+   "qid": "Q3090780",
+   "wikidataLabel": "Full Throttle",
+   "height": {
+    "m": 49,
+    "ft": 161
+   },
+   "speed": {
+    "kmh": 112.7,
+    "mph": 70
+   },
+   "length": {
+    "m": 670.6,
+    "ft": 2200
+   },
+   "duration": {
+    "s": 90
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Premier Rides"
+   ],
+   "type": [
+    "steel roller coaster",
+    "launched roller coaster"
+   ],
+   "opened": "2013-06-22",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3090780"
+  },
+  "six-flags-magic-mountain--goldrusher": {
+   "qid": "Q1925922",
+   "wikidataLabel": "Goldrusher",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Development"
+   ],
+   "type": [
+    "amusement ride",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1925922"
+  },
+  "six-flags-magic-mountain--goliath": {
+   "qid": "Q510289",
+   "wikidataLabel": "Goliath",
+   "inversions": null,
+   "manufacturer": [
+    "Giovanola"
+   ],
+   "type": [
+    "amusement ride",
+    "hypercoaster",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q510289"
+  },
+  "six-flags-magic-mountain--magic-flyer": {
+   "qid": "Q2626856",
+   "wikidataLabel": "Magic Flyer",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2626856"
+  },
+  "six-flags-magic-mountain--new-revolution": {
+   "qid": "Q1501370",
+   "wikidataLabel": "The New Revolution",
+   "inversions": null,
+   "manufacturer": [
+    "Anton Schwarzkopf"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1501370"
+  },
+  "six-flags-magic-mountain--ninja": {
+   "qid": "Q906039",
+   "wikidataLabel": "Ninja",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q906039"
+  },
+  "six-flags-magic-mountain--psyclone": {
+   "qid": "Q2116105",
+   "wikidataLabel": "Psyclone",
+   "inversions": null,
+   "manufacturer": [
+    "Dinn Corporation"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1991-03-23",
+   "closed": "2006",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2116105"
+  },
+  "six-flags-magic-mountain--road-runner-express": {
+   "qid": "Q5454705",
+   "wikidataLabel": "Road Runner Express",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5454705"
+  },
+  "six-flags-magic-mountain--scream": {
+   "qid": "Q674382",
+   "wikidataLabel": "Scream!",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q674382"
+  },
+  "six-flags-magic-mountain--superman-escape-from-krypton": {
+   "qid": "Q674404",
+   "wikidataLabel": "Superman: Escape from Krypton",
+   "height": {
+    "m": 126.5,
+    "ft": 415
+   },
+   "length": {
+    "m": 376.4,
+    "ft": 1235
+   },
+   "inversions": null,
+   "type": [
+    "amusement ride",
+    "steel roller coaster",
+    "shuttle roller coaster",
+    "launched roller coaster",
+    "stratacoaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q674404"
+  },
+  "six-flags-magic-mountain--tatsu": {
+   "qid": "Q1688754",
+   "wikidataLabel": "Tatsu",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1688754"
+  },
+  "six-flags-magic-mountain--the-riddler-s-revenge": {
+   "qid": "Q130266",
+   "wikidataLabel": "The Riddler's Revenge",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q130266"
+  },
+  "six-flags-magic-mountain--twisted-colossus": {
+   "qid": "Q75099048",
+   "wikidataLabel": "Twisted Colossus",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "type": [
+    "hybrid roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q75099048"
+  },
+  "six-flags-magic-mountain--viper": {
+   "qid": "Q677430",
+   "wikidataLabel": "Viper",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1990-04-07",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q677430"
+  },
+  "six-flags-magic-mountain--west-coast-racers": {
+   "qid": "Q56448915",
+   "wikidataLabel": "West Coast Racers",
+   "speed": {
+    "kmh": 88.5,
+    "mph": 55
+   },
+   "duration": {
+    "s": 180
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Premier Rides"
+   ],
+   "type": [
+    "steel roller coaster",
+    "Möbius loop roller coaster",
+    "launched roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q56448915"
+  },
+  "six-flags-magic-mountain--wonder-woman-flight-of-courage": {
+   "qid": "Q109259286",
+   "wikidataLabel": "Wonder Woman Flight of Courage",
+   "height": {
+    "m": 39.9,
+    "ft": 131
+   },
+   "length": {
+    "m": 1005.8,
+    "ft": 3300
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "type": [
+    "single-rail roller coaster"
+   ],
+   "opened": "2022-07-16",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q109259286"
+  },
+  "six-flags-magic-mountain--x2": {
+   "qid": "Q290976",
+   "wikidataLabel": "X2",
+   "height": {
+    "m": 53,
+    "ft": 174
+   },
+   "speed": {
+    "kmh": 122,
+    "mph": 75.8
+   },
+   "length": {
+    "m": 1100,
+    "ft": 3609
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q290976"
+  },
+  "six-flags-new-england--catwoman-s-whip": {
+   "qid": "Q5054223",
+   "wikidataLabel": "Catwoman's Whip",
+   "inversions": null,
+   "manufacturer": [
+    "ZIERER Karussell- und Spezialmaschinenbau GmbH & Co. KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "model": [
+    "Catwoman"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5054223"
+  },
+  "six-flags-new-england--cyclone": {
+   "qid": "Q1147558",
+   "wikidataLabel": "Cyclone",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1147558"
+  },
+  "six-flags-new-england--flashback": {
+   "qid": "Q2713867",
+   "wikidataLabel": "Flashback",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2713867"
+  },
+  "six-flags-new-england--goliath": {
+   "qid": "Q17361975",
+   "wikidataLabel": "Goliath",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "Giant Inverted Boomerang"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q17361975"
+  },
+  "six-flags-new-england--gotham-city-gauntlet-escape": {
+   "qid": "Q2327873",
+   "wikidataLabel": "Gotham City Gauntlet: Escape from Arkham Asylum",
+   "inversions": null,
+   "manufacturer": [
+    "Maurer Söhne"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2327873"
+  },
+  "six-flags-new-england--pandemonium": {
+   "qid": "Q3098940",
+   "wikidataLabel": "Pandemonium",
+   "inversions": null,
+   "type": [
+    "Pandemonium"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3098940"
+  },
+  "six-flags-new-england--thunderbolt": {
+   "qid": "Q1127968",
+   "wikidataLabel": "Thunderbolt",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1127968"
+  },
+  "six-flags-new-england--wicked-cyclone": {
+   "qid": "Q20925120",
+   "wikidataLabel": "Wicked Cyclone",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "type": [
+    "hybrid roller coaster"
+   ],
+   "opened": "2015-05-24",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q20925120"
+  },
+  "six-flags-over-georgia--dahlonega-mine-train": {
+   "qid": "Q2492679",
+   "wikidataLabel": "Dahlonega Mine Train",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2492679"
+  },
+  "six-flags-over-georgia--dare-devil-dive": {
+   "qid": "Q1165790",
+   "wikidataLabel": "Dare Devil Dive",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "type": [
+    "amusement ride",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1165790"
+  },
+  "six-flags-over-georgia--deja-vu": {
+   "qid": "Q3043293",
+   "wikidataLabel": "Déjà Vu",
+   "inversions": null,
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3043293"
+  },
+  "six-flags-over-georgia--georgia-scorcher": {
+   "qid": "Q910249",
+   "wikidataLabel": "Georgia Scorcher",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "amusement ride",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q910249"
+  },
+  "six-flags-over-georgia--goliath": {
+   "qid": "Q689054",
+   "wikidataLabel": "Goliath",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "amusement ride",
+    "hypercoaster",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q689054"
+  },
+  "six-flags-over-georgia--great-american-scream-machine": {
+   "qid": "Q689029",
+   "wikidataLabel": "Great American Scream Machine",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q689029"
+  },
+  "six-flags-over-georgia--superman-ultimate-flight": {
+   "qid": "Q916932",
+   "wikidataLabel": "Superman: Ultimate Flight",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2002",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q916932"
+  },
+  "six-flags-over-texas--aquaman-power-wave": {
+   "qid": "Q97671294",
+   "wikidataLabel": "Aquaman: Power Wave",
+   "length": {
+    "m": 216,
+    "ft": 708.7
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "model": [
+    "Aquaman"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q97671294"
+  },
+  "six-flags-over-texas--judge-roy-scream": {
+   "qid": "Q910221",
+   "wikidataLabel": "Judge Roy Scream",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q910221"
+  },
+  "six-flags-over-texas--la-vibora": {
+   "qid": "Q751483",
+   "wikidataLabel": "La Vibora",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "amusement ride",
+    "steel roller coaster",
+    "bobsled roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q751483"
+  },
+  "six-flags-over-texas--new-texas-giant": {
+   "qid": "Q1353100",
+   "wikidataLabel": "New Texas Giant",
+   "inversions": null,
+   "manufacturer": [
+    "Rocky Mountain Construction"
+   ],
+   "designer": [
+    "Alan Schilke"
+   ],
+   "type": [
+    "steel roller coaster",
+    "hybrid roller coaster"
+   ],
+   "opened": "2011-04-22",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1353100"
+  },
+  "six-flags-over-texas--runaway-mine-train": {
+   "qid": "Q3453217",
+   "wikidataLabel": "Runaway Mine Train",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Development"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3453217"
+  },
+  "six-flags-over-texas--runaway-mountain": {
+   "qid": "Q3453218",
+   "wikidataLabel": "Runaway Mountain",
+   "inversions": null,
+   "manufacturer": [
+    "Premier Rides"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3453218"
+  },
+  "six-flags-over-texas--shockwave": {
+   "qid": "Q952700",
+   "wikidataLabel": "Shock Wave",
+   "inversions": null,
+   "type": [
+    "amusement ride",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q952700"
+  },
+  "six-flags-over-texas--texas-giant": {
+   "qid": "Q141251805",
+   "wikidataLabel": "Texas Giant",
+   "inversions": null,
+   "manufacturer": [
+    "Dinn Corporation"
+   ],
+   "designer": [
+    "Curtis D. Summers"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1990-03-17",
+   "closed": "2009-11-01",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q141251805"
+  },
+  "six-flags-over-texas--titan": {
+   "qid": "Q826969",
+   "wikidataLabel": "Titan",
+   "height": {
+    "m": 74.7,
+    "ft": 245
+   },
+   "length": {
+    "m": 1619.1,
+    "ft": 5312
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Giovanola"
+   ],
+   "type": [
+    "amusement ride",
+    "hypercoaster",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q826969"
+  },
+  "six-flags-over-texas--wile-e-coyote-s-grand-canyon-blaster": {
+   "qid": "Q2201269",
+   "wikidataLabel": "Wile E. Coyote's Grand Canyon Blaster",
+   "inversions": null,
+   "manufacturer": [
+    "Chance Rides"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2201269"
+  },
+  "six-flags-st-louis--american-thunder": {
+   "qid": "Q467059",
+   "wikidataLabel": "American Thunder",
+   "inversions": null,
+   "manufacturer": [
+    "Great Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q467059"
+  },
+  "six-flags-st-louis--boomerang": {
+   "qid": "Q7887822",
+   "wikidataLabel": "Boomerang",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "Boomerang"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7887822"
+  },
+  "six-flags-st-louis--ninja": {
+   "qid": "Q1432350",
+   "wikidataLabel": "Ninja",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1432350"
+  },
+  "six-flags-st-louis--screamin-eagle": {
+   "qid": "Q824821",
+   "wikidataLabel": "Screamin' Eagle",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q824821"
+  },
+  "six-flags-st-louis--the-boss": {
+   "qid": "Q1502567",
+   "wikidataLabel": "The Boss",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "material": [
+    "wood"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1502567"
+  },
+  "story-land--roar-o-saurus": {
+   "qid": "Q59587081",
+   "wikidataLabel": "Roar-o-Saurus",
+   "inversions": null,
+   "manufacturer": [
+    "The Gravity Group"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q59587081"
+  },
+  "stratosphere-tower-hotel-casino--high-roller": {
+   "qid": "Q1515501",
+   "wikidataLabel": "High Roller",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1996-04-29",
+   "closed": "2005-12-30",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1515501"
+  },
+  "the-great-escape-splashwater-kingdom--canyon-blaster": {
+   "qid": "Q5034175",
+   "wikidataLabel": "Canyon Blaster (Great Escape)",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5034175"
+  },
+  "the-great-escape-splashwater-kingdom--comet": {
+   "qid": "Q2410399",
+   "wikidataLabel": "The Comet",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1994-06-25",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2410399"
+  },
+  "the-great-escape-splashwater-kingdom--frankie-s-mine-train": {
+   "qid": "Q5491104",
+   "wikidataLabel": "Frankie’s Mine Train",
+   "inversions": null,
+   "manufacturer": [
+    "Antonio Zamperla S.p.A"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5491104"
+  },
+  "the-great-escape-splashwater-kingdom--nightmare-at-crackaxle-canyon": {
+   "qid": "Q2314615",
+   "wikidataLabel": "Nightmare at Crack Axle Canyon",
+   "inversions": null,
+   "manufacturer": [
+    "Anton Schwarzkopf"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "closed": "2006",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2314615"
+  },
+  "the-great-escape-splashwater-kingdom--steamin-demon": {
+   "qid": "Q7605471",
+   "wikidataLabel": "Steamin' Demon",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7605471"
+  },
+  "universal-epic-universe--stardust-racers": {
+   "qid": "Q124540460",
+   "wikidataLabel": "Stardust Racers",
+   "height": {
+    "m": 40.5,
+    "ft": 133
+   },
+   "speed": {
+    "kmh": 99.8,
+    "mph": 62
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Mack Rides GmbH & Co KG"
+   ],
+   "type": [
+    "steel roller coaster",
+    "dueling roller coaster"
+   ],
+   "opened": "2025-05-22",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q124540460"
+  },
+  "universal-s-islands-of-adventure--flight-of-the-hippogriff": {
+   "qid": "Q3073731",
+   "wikidataLabel": "Flight of the Hippogriff",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3073731"
+  },
+  "universal-s-islands-of-adventure--hagrid-s-magical-creatures-motorbike-adventure": {
+   "qid": "Q48740959",
+   "wikidataLabel": "Hagrid's Magical Creatures Motorbike Adventure",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "2019-06-13",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q48740959"
+  },
+  "universal-s-islands-of-adventure--incredible-hulk": {
+   "qid": "Q664228",
+   "wikidataLabel": "The Incredible Hulk",
+   "height": {
+    "m": 33.5,
+    "ft": 110
+   },
+   "speed": {
+    "kmh": 107.8,
+    "mph": 67
+   },
+   "length": {
+    "m": 1127.8,
+    "ft": 3700
+   },
+   "duration": {
+    "s": 135
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster",
+    "launched roller coaster"
+   ],
+   "model": [
+    "Hulk"
+   ],
+   "opened": "1999-05-28",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q664228"
+  },
+  "universal-s-islands-of-adventure--jurassic-world-velocicoaster": {
+   "qid": "Q100324831",
+   "wikidataLabel": "VelociCoaster",
+   "height": {
+    "m": 47.2,
+    "ft": 155
+   },
+   "length": {
+    "m": 1432.6,
+    "ft": 4700
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster",
+    "launched roller coaster"
+   ],
+   "model": [
+    "Jurassic Park"
+   ],
+   "opened": "2021-06-10",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q100324831"
+  },
+  "universal-studios-florida--harry-potter-and-the-escape-from-gringotts": {
+   "qid": "Q16201762",
+   "wikidataLabel": "Harry Potter and the Escape from Gringotts",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "designer": [
+    "Universal Creative"
+   ],
+   "type": [
+    "steel roller coaster",
+    "transporter dark ride in wagon"
+   ],
+   "opened": "2014-07-08",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q16201762"
+  },
+  "universal-studios-florida--hollywood-rip-ride-rockit": {
+   "qid": "Q1624931",
+   "wikidataLabel": "Hollywood Rip Ride Rockit",
+   "inversions": null,
+   "manufacturer": [
+    "Maurer Söhne"
+   ],
+   "designer": [
+    "Universal Creative"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1624931"
+  },
+  "universal-studios-florida--woody-woodpecker-s-nuthouse-coaster": {
+   "qid": "Q3569870",
+   "wikidataLabel": "Woody Woodpecker's Nuthouse Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "designer": [
+    "Universal Creative"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1999-03-13",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q3569870"
+  },
+  "valleyfair--corkscrew": {
+   "qid": "Q570734",
+   "wikidataLabel": "Corkscrew",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q570734"
+  },
+  "valleyfair--cosmic-coaster": {
+   "qid": "Q5174058",
+   "wikidataLabel": "Cosmic Coaster",
+   "inversions": null,
+   "manufacturer": [
+    "Antonio Zamperla S.p.A"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5174058"
+  },
+  "valleyfair--excalibur": {
+   "qid": "Q1383424",
+   "wikidataLabel": "Excalibur",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Dynamics"
+   ],
+   "type": [
+    "amusement ride",
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1383424"
+  },
+  "valleyfair--high-roller": {
+   "qid": "Q1617834",
+   "wikidataLabel": "High Roller",
+   "inversions": null,
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1617834"
+  },
+  "valleyfair--mad-mouse": {
+   "qid": "Q28458584",
+   "wikidataLabel": "Mad Mouse",
+   "inversions": null,
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q28458584"
+  },
+  "valleyfair--mild-thing": {
+   "qid": "Q6850884",
+   "wikidataLabel": "Mild Thing",
+   "inversions": null,
+   "manufacturer": [
+    "Allan Herschell Company"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q6850884"
+  },
+  "valleyfair--renegade": {
+   "qid": "Q1760009",
+   "wikidataLabel": "Renegade",
+   "inversions": null,
+   "manufacturer": [
+    "Great Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1760009"
+  },
+  "valleyfair--steel-venom": {
+   "qid": "Q2335791",
+   "wikidataLabel": "Steel Venom",
+   "inversions": null,
+   "manufacturer": [
+    "Intamin Amusement Rides Int. Corp. Est."
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2335791"
+  },
+  "valleyfair--wild-thing": {
+   "qid": "Q1714470",
+   "wikidataLabel": "Wild Thing",
+   "inversions": null,
+   "manufacturer": [
+    "D. H. Morgan Manufacturing"
+   ],
+   "type": [
+    "hypercoaster",
+    "steel roller coaster"
+   ],
+   "opened": "1996-05-11",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1714470"
+  },
+  "waldameer-park--comet": {
+   "qid": "Q1522024",
+   "wikidataLabel": "Comet",
+   "inversions": null,
+   "manufacturer": [
+    "Philadelphia Toboggan Coasters"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "material": [
+    "wood"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1522024"
+  },
+  "waldameer-park--ravine-flyer-ii": {
+   "qid": "Q2133717",
+   "wikidataLabel": "Ravine Flyer II",
+   "inversions": null,
+   "manufacturer": [
+    "The Gravity Group"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2133717"
+  },
+  "waldameer-park--steel-dragon": {
+   "qid": "Q7605666",
+   "wikidataLabel": "Steel Dragon",
+   "inversions": null,
+   "manufacturer": [
+    "Maurer Söhne"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7605666"
+  },
+  "waterville-usa--cannonball-run": {
+   "qid": "Q5032828",
+   "wikidataLabel": "Cannonball Run",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster",
+    "destroyed building or structure"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q5032828"
+  },
+  "whalom-park--flyer-comet": {
+   "qid": "Q1434543",
+   "wikidataLabel": "Flyer Comet",
+   "inversions": null,
+   "manufacturer": [
+    "National Amusement Devices"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1434543"
+  },
+  "wild-adventures--cheetah": {
+   "qid": "Q1068884",
+   "wikidataLabel": "Cheetah",
+   "inversions": null,
+   "manufacturer": [
+    "Custom Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "2001-06-16",
+   "closed": "2020-03-15",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1068884"
+  },
+  "wild-adventures--swamp-thing": {
+   "qid": "Q7653346",
+   "wikidataLabel": "Swamp Thing",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7653346"
+  },
+  "wild-adventures--twisted-typhoon": {
+   "qid": "Q85847862",
+   "wikidataLabel": "Twisted Typhoon",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1999-05-08",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q85847862"
+  },
+  "wild-adventures--viking-voyage": {
+   "qid": "Q7929486",
+   "wikidataLabel": "Viking Voyage",
+   "inversions": null,
+   "manufacturer": [
+    "E&F Miler Industries"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "opened": "2010",
+   "closed": "2018",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7929486"
+  },
+  "wonderland-park--texas-tornado": {
+   "qid": "Q7708177",
+   "wikidataLabel": "Texas Tornado",
+   "height": {
+    "m": 24.4,
+    "ft": 80
+   },
+   "length": {
+    "m": 624.8,
+    "ft": 2050
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Hopkins Rides"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1985",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7708177"
+  },
+  "worlds-of-fun--boomerang": {
+   "qid": "Q4943496",
+   "wikidataLabel": "Boomerang",
+   "inversions": null,
+   "manufacturer": [
+    "Vekoma Rides Manufacturing B.V."
+   ],
+   "type": [
+    "Boomerang"
+   ],
+   "opened": "2000-04-08",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q4943496"
+  },
+  "worlds-of-fun--mamba": {
+   "qid": "Q1888144",
+   "wikidataLabel": "Mamba",
+   "height": {
+    "m": 62.5,
+    "ft": 205
+   },
+   "speed": {
+    "kmh": 120.7,
+    "mph": 75
+   },
+   "length": {
+    "m": 1706.9,
+    "ft": 5600
+   },
+   "inversions": null,
+   "manufacturer": [
+    "D. H. Morgan Manufacturing"
+   ],
+   "type": [
+    "hypercoaster",
+    "steel roller coaster"
+   ],
+   "opened": "1998-04-18",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1888144"
+  },
+  "worlds-of-fun--orient-express": {
+   "qid": "Q574466",
+   "wikidataLabel": "Orient Express",
+   "inversions": null,
+   "manufacturer": [
+    "Arrow Development"
+   ],
+   "designer": [
+    "Ron Toomer"
+   ],
+   "type": [
+    "steel roller coaster"
+   ],
+   "opened": "1980-04-04",
+   "closed": "2003-10-26",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q574466"
+  },
+  "worlds-of-fun--patriot": {
+   "qid": "Q2058140",
+   "wikidataLabel": "Patriot",
+   "inversions": null,
+   "manufacturer": [
+    "Bolliger & Mabillard"
+   ],
+   "type": [
+    "steel roller coaster",
+    "amusement ride"
+   ],
+   "opened": "2006-04-08",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2058140"
+  },
+  "worlds-of-fun--prowler": {
+   "qid": "Q1390319",
+   "wikidataLabel": "Prowler",
+   "inversions": null,
+   "manufacturer": [
+    "Great Coasters International"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "2009-05-02",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q1390319"
+  },
+  "worlds-of-fun--spinning-dragons": {
+   "qid": "Q7577615",
+   "wikidataLabel": "Spinning Dragons",
+   "inversions": null,
+   "manufacturer": [
+    "Gerstlauer Amusement Rides GmbH"
+   ],
+   "type": [
+    "steel roller coaster",
+    "spinning roller coaster"
+   ],
+   "opened": "2004-04-17",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q7577615"
+  },
+  "worlds-of-fun--timber-wolf": {
+   "qid": "Q2434462",
+   "wikidataLabel": "Timber Wolf",
+   "inversions": null,
+   "manufacturer": [
+    "Dinn Corporation"
+   ],
+   "type": [
+    "wooden roller coaster"
+   ],
+   "opened": "1989-04-01",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q2434462"
+  },
+  "worlds-of-fun--zambezi-zinger": {
+   "qid": "Q113499145",
+   "wikidataLabel": "Zambezi Zinger",
+   "height": {
+    "m": 22.6,
+    "ft": 74
+   },
+   "length": {
+    "m": 756.5,
+    "ft": 2482
+   },
+   "inversions": null,
+   "manufacturer": [
+    "Great Coasters International"
+   ],
+   "designer": [
+    "Skyline Attractions"
+   ],
+   "type": [
+    "wooden roller coaster",
+    "hybrid roller coaster"
+   ],
+   "material": [
+    "wood",
+    "steel"
+   ],
+   "opened": "2023-06-19",
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q113499145"
+  },
+  "zdt-s-amusement-park--switchback": {
+   "qid": "Q22073237",
+   "wikidataLabel": "Switchback",
+   "height": {
+    "m": 19.5,
+    "ft": 64
+   },
+   "inversions": null,
+   "manufacturer": [
+    "The Gravity Group"
+   ],
+   "type": [
+    "wooden roller coaster",
+    "shuttle roller coaster"
+   ],
+   "retrieved": "2026-10-02",
+   "url": "https://www.wikidata.org/wiki/Q22073237"
+  }
+ }
+}
