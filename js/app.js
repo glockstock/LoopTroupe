@@ -1291,6 +1291,28 @@
   const STAT_DATE_RE = /^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?$/;
 
   const isNum = n => typeof n === 'number' && Number.isFinite(n);
+
+  // `type` mixes Wikipedia infobox words ("Launched", "Wild Mouse") with Wikidata
+  // classes ("launched roller coaster", "amusement ride"). For display: drop the
+  // classes that say nothing about the ride, or that would imply it has closed
+  // (no status until Q-029/T-4); trim "roller coaster" suffixes; Title Case like
+  // the infobox ("Mine Train", "Out and Back"), keeping existing capitals
+  // ("Euro-Fighter", "4th Dimension"); de-duplicate.
+  const TYPE_SKIP = new Set(['amusement ride', 'roller coaster', 'former entity', 'destroyed building or structure']);
+  function rideTypes(list) {
+    const out = [];
+    const seen = new Set();
+    for (const raw of list) {
+      if (typeof raw !== 'string') continue;
+      let t = raw.trim().replace(/\s*\(roller coaster\)$/i, '');
+      if (!t || TYPE_SKIP.has(t.toLowerCase())) continue;
+      t = t.replace(/\s+roller coaster$/i, '') || t;
+      t = t.replace(/[^\s-]+/g, (w, at) => (at > 0 && /^(and|or|of|the|a)$/.test(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)));
+      const key = t.toLowerCase();
+      if (!seen.has(key)) { seen.add(key); out.push(t); }
+    }
+    return out;
+  }
   const fig = (n, digits = 0) => n.toLocaleString('en-US', { maximumFractionDigits: digits });
   const refOk = (src, ref) => !!ref && typeof ref === 'object' && (src === 'wp'
     ? ref.lang === 'en' && typeof ref.title === 'string' && ref.title.trim() !== '' && Number.isInteger(ref.revid) && ref.revid > 0
@@ -1316,7 +1338,7 @@
       case 'int': return Number.isInteger(v) && v >= 0 ? { main: String(v) } : null;
       case 'material': return Object.prototype.hasOwnProperty.call(MATERIALS, v) ? { main: MATERIALS[v] } : null;
       case 'list': {
-        const a = (Array.isArray(v) ? v : [v]).filter(s => typeof s === 'string' && s.trim());
+        const a = rideTypes(Array.isArray(v) ? v : [v]);
         return a.length ? { main: esc(a.join(', ')) } : null;
       }
       case 'str': return typeof v === 'string' && v.trim() ? { main: esc(v) } : null;
@@ -1335,14 +1357,14 @@
     if (!data) return '<p class="ride-stats-msg">Ride stats aren\'t available yet.</p>';
     const e = Object.prototype.hasOwnProperty.call(data.coasters, id) ? data.coasters[id] : null;
     const own = e && e.refs && typeof e.refs === 'object' ? e.refs : {};
-    // `lang` and `retrieved` are hoisted to the top of the file; a coaster's ref
-    // carries its own only where it differs (per-coaster value, else file default).
+    // Shared ref fields (`lang`, `retrieved`) are hoisted to `refDefaults`; a
+    // coaster's own value wins. Effective ref = { ...refDefaults[src], ...refs[src] }.
+    const defs = data.refDefaults && typeof data.refDefaults === 'object' ? data.refDefaults : {};
     const refs = {};
     for (const k of Object.keys(SOURCE_NAMES)) {
       const r = own[k];
-      if (r && typeof r === 'object') {
-        refs[k] = { lang: data.lang, retrieved: data.retrieved, ...r };
-      }
+      const d = defs[k] && typeof defs[k] === 'object' ? defs[k] : {};
+      if (r && typeof r === 'object') refs[k] = { ...d, ...r };
     }
     const used = new Set();
     const rows = STAT_ROWS.map(row => {
@@ -1370,7 +1392,8 @@
       credit += `Stats from the Wikipedia article ${ext(`https://en.wikipedia.org/w/index.php?title=${encodeURIComponent(wp.title)}&amp;oldid=${wp.revid}`, `“${esc(wp.title)}”`)} by Wikipedia contributors, licensed ${ext('https://creativecommons.org/licenses/by-sa/4.0/', 'CC BY-SA 4.0')}`;
     }
     if (wd) credit += `${wp ? ', and from ' : 'Stats from '}${ext(`https://www.wikidata.org/wiki/${wd.qid}`, 'Wikidata')} (CC0)`;
-    credit += '. Units converted by Loop Troupe.';
+    // Only claim a conversion when a measurement with a second unit is on screen.
+    credit += rows.some(({ val }) => val && val.alt) ? '. Units converted by Loop Troupe.' : '.';
     const checked = [wp, wd].filter(Boolean).map(r => r.retrieved).filter(d => typeof d === 'string' && DATE_RE.test(d)).sort()[0];
     if (checked) credit += ` Checked ${esc(fmtDate(checked))}.`;
 
